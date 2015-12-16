@@ -33,14 +33,22 @@ Para gerar o HTML correspondente à documentação, execute:
 ```sh
 $ jekyll build
 ```
+
 Para rodar um servidor local para teste, com o HTML compilado:
 
 ```sh
 $ jekyll serve
 ```
 
+Para rodar um servidor local com acesso público a outros computadores na mesma rede:
+
+```sh
+$ jekyll serve -H 150.162.196.185
+# Troque '150.162.196.185' por seu IP de rede atual
+```
+
 # Para saber mais
 
 * [Portable Jekyll para Windows](https://github.com/madhur/PortableJekyll)
-* [Ruby installer for Windows](rubyinstaller.org)
+* [Ruby installer for Windows](http://rubyinstaller.org)
 * [Site oficial do Jekyll](http://jekyllrb.com/)

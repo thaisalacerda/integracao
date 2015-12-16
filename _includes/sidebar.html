@@ -1,4 +1,4 @@
-<form action="/search.html">
+<form id="search-form">
   <input type="search" placeholder="Pesquisar..." name="q" id="search-input" autocomplete="off">
 </form>
 
@@ -10,6 +10,11 @@
     resultsContainer: document.getElementById('search-results'),
     json: '{{ site.baseurl }}/search.json',
     noResultsText: 'Nenhum resultado encontrado'
+  });
+
+  document.getElementById('search-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    return false;
   });
 </script>
 

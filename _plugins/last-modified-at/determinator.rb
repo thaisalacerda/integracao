@@ -3,6 +3,8 @@
 
 module Jekyll
   module LastModifiedAt
+    PATH_CACHE = {}
+    
     class Determinator
       attr_reader :site_source, :page_path, :opts
 
