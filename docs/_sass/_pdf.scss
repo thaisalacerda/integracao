@@ -30,7 +30,15 @@
   }
 }
 
+.pdf.shown {
+  display: block;
+}
+
+.pdf.hidden {
+  display: none;
+}
+
 .pdf-separator {
     border: 2px solid #ddd;
-    margin-bottom: 25px;
+    margin: 50px 0;
 }

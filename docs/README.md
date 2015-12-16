@@ -2,12 +2,12 @@
 
 Repositório base para documentação de projetos.
 
-## Como instalar
+## Como adicionar a um projeto
 
 Adicione este sistema de documentação a um projeto com o comando:
 
 ```sh
-$ git subtree add --squash --prefix docs/ https://github.com/sismob/jekyll master
+$ git subtree add --squash --prefix docs/ https://github.com/bridge-ufsc/jekyll master
 ```
 
 Uma pasta `docs/` será criada com os fontes deste repositório. Modifique os arquivos de acordo com as necessidades do projeto.
@@ -17,7 +17,7 @@ Uma pasta `docs/` será criada com os fontes deste repositório. Modifique os ar
 A partir da raiz de um projeto usando este sistema de documentação, execute:
 
 ```sh
-$ git subtree pull --squash --prefix docs/ https://github.com/sismob/jekyll master
+$ git subtree pull --squash --prefix docs/ https://github.com/bridge-ufsc/jekyll master
 ```
 
 Sendo `docs/` o nome da pasta que contém os fontes do sistema de documentação.

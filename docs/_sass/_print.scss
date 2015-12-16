@@ -4,9 +4,6 @@ $print-font-size: 9pt !important;
     *,
     *:before,
     *:after {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
         box-shadow: none !important;
         text-shadow: none !important;
         font-size: $print-font-size;
@@ -17,45 +14,30 @@ $print-font-size: 9pt !important;
         text-decoration: underline;
     }
 
-    /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
-
     pre,
     blockquote {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
 
-    table { page-break-inside:auto }
-    tr    { page-break-inside:avoid; page-break-after:auto }
-    thead { display:table-header-group }
-    tfoot { display:table-footer-group }
+    table { page-break-inside: auto; }
+    tr    { page-break-inside: avoid; page-break-after:auto; }
+    thead { display: table-header-group; }
+    tfoot { display: table-footer-group; }
 
     img {
         page-break-inside: avoid;
-    }
-
-    img {
         max-width: 100% !important;
+        max-height: 700px !important;
     }
 
     p,
-    h1,
-    h2,
-    h3 {
+    h1, h2, h3, h4, h5, h6 {
         orphans: 3;
         widows: 3;
     }
 
-    h1,
-    h2,
-    h3 {
+    h1, h2, h3, h4, h5, h6 {
         page-break-after: avoid;
     }
 
@@ -93,5 +75,17 @@ $print-font-size: 9pt !important;
         padding: 0;
         width: 100%;
         float: none;
+    }
+
+    .pdf-separator {
+      visibility: hidden;
+    }
+
+    .pdf.shown {
+      page-break-after: always;
+    }
+
+    .pdf.shown:last-of-type {
+      page-break-after: avoid;
     }
 }

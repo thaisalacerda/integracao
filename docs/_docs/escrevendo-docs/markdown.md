@@ -167,16 +167,16 @@ Produz: [Visite Github](http://github.com).
 Para criar imagens, use o seguinte padrão:
 
 ```
-![Texto alternativo (alt)](/caminho/absoluto/para/a/imagem.png)
+![Texto alternativo (alt)](caminho/relativo/para/a/imagem.png "Hint da imagem") *Legenda da imagem*
 ```
 
 Por exemplo, o seguinte trecho produzirá
 
 ```
-![e-sus AB](/docs/escrevendo-docs/e-sus.jpg)
+![Texto alternativo (impresso caso a imagem não carregue)](e-sus.jpg "Título da imagem") *Legenda da imagem aqui*
 ```
 
-![e-sus AB](/docs/escrevendo-docs/e-sus.jpg)
+![Texto alternativo (impresso caso a imagem não carregue)](e-sus.jpg "Título da imagem") *Legenda da imagem aqui*
 
 # Tabelas
 

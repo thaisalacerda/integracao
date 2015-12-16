@@ -86,10 +86,13 @@ icon: icon-pdf
   traverseRoot(function(el, index) {
     el.addEventListener("change", function() {
       var pdfId = el.value;
+      var contentDiv = document.getElementById(pdfId);
+      contentDiv.classList.remove('shown');
+      contentDiv.classList.remove('hidden');
       if (el.checked) {
-        document.getElementById(pdfId).style.display = '';
+        contentDiv.classList.add('shown');
       } else {
-        document.getElementById(pdfId).style.display = 'none';
+        contentDiv.classList.add('hidden');
       }
     });
   });

@@ -34,6 +34,13 @@ Para rodar um servidor local para teste, com o HTML compilado:
 $ jekyll serve
 ```
 
+Para rodar um servidor local com acesso público a outros computadores na mesma rede:
+
+```sh
+$ jekyll serve -H 150.162.196.185
+# Troque '150.162.196.185' por seu IP de rede atual
+```
+
 # Para saber mais
 
 * [Site oficial do Jekyll](http://jekyllrb.com/)
