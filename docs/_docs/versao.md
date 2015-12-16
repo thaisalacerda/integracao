@@ -1,0 +1,18 @@
+---
+layout: doc
+title: Versão
+id: versao
+order: 1
+---
+
+# Versão
+
+## Versao
+
+|Coluna	|Tipo	|Obrigatoriedade |Regra	|
+|--- |--- |--- |--- |--- |
+|major |Integer |Sim |Valor único = 2 |
+|minor |Integer |Sim |Valor único = 0	|
+|revision |Integer |Sim |Valor único = 0 |
+
+Observação: Indica a versão do dado a ser transportado. A versão do dado não necessariamente reflete a versão do sistema.
