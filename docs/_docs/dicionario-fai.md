@@ -14,7 +14,7 @@ Profissionais que realizaram o atendimento
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|VariasLotacoesHeader|	Requerido|	-|	-|
+|VariasLotacoesHeader|	Sim|	-|	-|
 
 **Referências:**	[Profissional]({% url profissional %})
 
@@ -34,7 +34,7 @@ Código UUID para identificar a ficha na base de dados nacional.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Requerido|	36|	44|
+|String|	Sim|	36|	44|
 
 **Regras:** É recomendado concatenar o CNES na frente do UUID, de modo que os 7 digitos (CNES) + 1 de hífen somados aos 36 (32 caracteres + 4 hífen) do UUID são a limitação de 44 bytes do campo. Formato canônico.
 
@@ -56,7 +56,7 @@ Número do prontuário.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Opcional|	0|	30|
+|String|	Não|	0|	30|
 
 **Regras:** Apenas letras e números são aceitos.
 
@@ -65,7 +65,7 @@ CNS do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Opcional|	15|	15|
+|String|	Não|	15|	15|
 
 **Regras:** CNS válido de acordo com o algoritmo.
 
@@ -76,7 +76,7 @@ Data de nascimento do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Requerido|	-|	-|
+|Long|	Sim|	-|	-|
 
 **Regras:** Não pode ser posterior a [dataAtendimento]({% url profissional %}#5-dataatendimento) e anterior a 130 anos a partir da [dataAtendimento]({% url profissional %}#5-dataatendimento).
 
@@ -87,7 +87,7 @@ Código do local onde o atendimento foi realizado.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Requerido|	-|	-|
+|Long|	Sim|	-|	-|
 
 **Regras:** Apenas valores de `1L` a `10L`.
 
@@ -98,7 +98,7 @@ Código do sexo do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Requerido|	-|	-|
+|Long|	Sim|	-|	-|
 
 **Referências:** [Sexo]({% url dicionario %}#sexo)
 
@@ -107,7 +107,7 @@ Código do turno em que o atendimento foi realizado.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Opcional|	-|	-|
+|Long|	Não|	-|	-|
 
 **Referências:** [Turno]({% url dicionario %}#turno)
 
@@ -116,7 +116,7 @@ Código do tipo de atendimento realizado.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Requerido|	-|	-|
+|Long|	Sim|	-|	-|
 
 **Regras:** Apenas valores de `1L` a `6L`
 
@@ -127,7 +127,7 @@ Peso do cidadão em Kg.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Double|	Opcional|	1|	6|
+|Double|	Não|	1|	6|
 
 **Regras:**
 
@@ -141,7 +141,7 @@ Altura do cidadão em cm.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Double|	Opcional|	2|	4|
+|Double|	Não|	2|	4|
 
 **Regras:**
 
@@ -155,7 +155,7 @@ Código do marcador referente ao aleitamento materno.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Opcional|	-|	-|
+|Long|	Não|	-|	-|
 
 **Referências:**	[AleitamentoMaterno]({% url dicionario %}#aleitamentomaterno)
 
@@ -164,7 +164,7 @@ Data da última menstruação da gestante.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Opcional|	-|	-|
+|Long|	Não|	-|	-|
 
 **Regras:**
 
@@ -178,7 +178,7 @@ Idade gestacional em semanas.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Integer|	Opcional|	0|	2|
+|Integer|	Não|	0|	2|
 
 **Regras**
 
@@ -190,7 +190,7 @@ Código do modalidade AD do cidadão atendido.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Opcional|	-|	-|
+|Long|	Não|	-|	-|
 
 **Regras:** Apenas valores de `1L` a `3L`.
 
@@ -201,7 +201,7 @@ Situações de saúde avaliadas no atendimento.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|ProblemaCondicaoAvaliacaoAI|	Requerido|	-|	-|
+|ProblemaCondicaoAvaliacaoAI|	Sim|	-|	-|
 
 **Referências:**	[ListaCiapCondicaoAvaliada](#listaciapcondicaoavaliada)
 
@@ -210,7 +210,7 @@ Lista de exames solicitados que são apresentados na ficha.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|List\<String>|	Opcional|	0|	23|
+|List\<String>|	Não|	0|	23|
 
 **Regras:** Não pode conter dois exames iguais.
 
@@ -221,7 +221,7 @@ Lista de exames avaliados que são apresentados na ficha.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|List\<String>|	Opcional|	0|	23|
+|List\<String>|	Não|	0|	23|
 
 **Regras:**
 * Não pode conter dois exames iguais.
@@ -233,7 +233,7 @@ Lista de outros exames.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|List\<OutrosSia>|	Opcional|	0|	3|
+|List\<OutrosSia>|	Não|	0|	3|
 
 **Referências:** [OutrosSia](#outrossia)
 
@@ -242,14 +242,14 @@ Marcador referente a vacinação em dia do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Boolean|	Opcional|	-|	-|
+|Boolean|	Não|	-|	-|
 
 ### \#19	pic
 Código das Práticas Integrativas e Complementares.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Opcional|	-|	-|
+|Long|	Não|	-|	-|
 
 **Referências**: [PraticasIntegrativasComplementares]({% url dicionario %}#praticasintegrativascomplementares)
 
@@ -258,14 +258,14 @@ Marcador referente se o cidadão ficou em observação no atendimento.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Boolean|	Opcional|	-|	-|
+|Boolean|	Não|	-|	-|
 
 ### \#21	nasfs
 Código das ações realizadas pelo Núcleo de Atenção a Saúde da Família.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|List\<Long>|	Opcional|	0|	3|
+|List\<Long>|	Não|	0|	3|
 
 **Referências:** [Nasf]({% url dicionario %}#nasf)
 
@@ -274,7 +274,7 @@ Código das condutas adotadas no atendimento.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|List\<Long>|	Requerido|	1|	12|
+|List\<Long>|	Sim|	1|	12|
 
 **Regras:** Não deve conter duas condutas iguais.
 
@@ -285,7 +285,7 @@ Marcador que indica se a gravidez é planejada.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Boolean|	Opcional|	-|	-|
+|Boolean|	Não|	-|	-|
 
 **Regras:** Não pode ser preenchido quando [Sexo](#5-sexo) = `0L (masculino)`.
 
@@ -294,7 +294,7 @@ Número de gestações prévias.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Integer|	Opcional|	0|	2|
+|Integer|	Não|	0|	2|
 
 **Regras:** Não pode ser preenchido quando [Sexo](#5-sexo) = `0L (masculino)`.
 
@@ -303,7 +303,7 @@ Número de partos que a mulher já teve.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Integer|	Opcional|	0|	2|
+|Integer|	Não|	0|	2|
 
 **Regras:** Não pode ser preenchido quando [Sexo](#5-sexo) = `0L (masculino)`.
 
@@ -314,7 +314,7 @@ Código do exame solicitado ou avaliado.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Requerido|	-|	-|
+|String|	Sim|	-|	-|
 
 **Regras:** Deve ser um procedimento com um código válido.
 
@@ -327,7 +327,7 @@ Código do indicador se o exame foi `Solicitado` e / ou `Avaliado`.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|List\<String>|	Requerido|	-|	-|
+|List\<String>|	Sim|	-|	-|
 
 **Referências:** [SituacaoExame]({% url dicionario %}#situacaoexame)
 

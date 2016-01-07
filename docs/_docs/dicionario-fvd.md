@@ -121,6 +121,6 @@ Código dos resultados da ação de visita.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Long |Requerido |- |- |
+|Long |Sim |- |- |
 
 **Referência:** [Desfecho]({% url dicionario#desfecho %}).

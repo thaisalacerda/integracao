@@ -40,7 +40,7 @@ Informações sobre o profissional e a data do cadastro.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 | ---| --- |---  | --- |
-| HeaderCdsCadastro|	Requerido|	-|	-|
+| HeaderCdsCadastro|	Sim|	-|	-|
 
 **Referências:**	[HeaderCdsCadastro]({% url profissional %}#headercdscadastro)
 
@@ -71,7 +71,7 @@ Marcador que indica se a ficha é uma atualização.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Boolean|	Requerido|	1|	1|
+|Boolean|	Sim|	1|	1|
 
 ### \#7	quantosAnimaisNoDomicilio
 Número de animais no domicílio.
@@ -101,14 +101,14 @@ Marcador que indica se o cadastro foi utilizado o termo de recusa de cadastro do
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Boolean|	Opcional|	-|	-|
+|Boolean|	Não|	-|	-|
 
 ### \#10	tpCdsOrigem
 Tipo de origem dos dados do registro.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Integer|	Requerido|	1|	1|
+|Integer|	Sim|	1|	1|
 
 **Regras:** Utilizar valor 3 (sistemas terceiros).
 
@@ -117,7 +117,7 @@ Código UUID para identificar a ficha na base de dados nacional.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Requerido|	36|	44|
+|String|	Sim|	36|	44|
 
 **Regras:** É recomendado concatenar o CNES na frente do UUID, de modo que os 7 digitos (CNES) + 1 de hífen somados aos 36 (32 caracteres + 4 hífen) do UUID são a limitação de 44 bytes do campo. Formato canônico.
 
@@ -128,7 +128,7 @@ Código UUID para identificar a ficha que deu origem ao cadastro do registro.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Requerido|	36|	44|
+|String|	Sim|	36|	44|
 
 **Regras:** Se for uma ficha de atualização, deve ser preenchido com o UUID da ficha que deu origem ao registro. Se for uma ficha de cadastro, este campo deve ser igual ao campo [UUID](#11-uuid).
 
@@ -141,7 +141,7 @@ Data de nascimento, no formato epoch time, do cidadão responsável pela famíli
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Opcional|	-|	-|
+|Long|	Não|	-|	-|
 
 **Referências:** [Epoch Wikipedia](https://en.wikipedia.org/wiki/Epoch_(reference_date)).
 
@@ -150,7 +150,7 @@ CNS do responsável familiar.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Requerido|	15|	15|
+|String|	Sim|	15|	15|
 
 **Referências:** Para ver o algoritmo utilizado, acesse: [Cartão Net Datasus](http://cartaonet.datasus.gov.br/), em "Downloads" baixe o arquivo de rotina de validação Java.
 
@@ -159,14 +159,14 @@ Quantidade de membros do núcleo familiar.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Interger|	Opcional|	0|	2|
+|Interger|	Não|	0|	2|
 
 ### \#4	numeroProntuario
 Código do prontuário familiar na UBS.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Opcional|	0|	30|
+|String|	Não|	0|	30|
 
 **Regras:** Apenas letras e números.
 
@@ -175,7 +175,7 @@ Código da renda familiar em salários mínimos.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Opcional|	-|	-|
+|Long|	Não|	-|	-|
 
 **Referências:** [RendaFamiliar]({% url dicionario %}#rendafamiliar)
 
@@ -184,7 +184,7 @@ Mês e ano que a família começou a residir no domicílio, no formato epoch tim
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Opcional|	-|	-|
+|Long|	Não|	-|	-|
 
 **Referências:** [Epoch Wikipedia](https://en.wikipedia.org/wiki/Epoch_(reference_date)).
 
@@ -193,7 +193,7 @@ Marcador que indica se a familia mudou-se.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Boolean|	Opcional|	-|	-|
+|Boolean|	Não|	-|	-|
 
 ## EnderecoLocalPermanencia
 
@@ -202,14 +202,14 @@ Bairro onde está localizado o domicílio.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Requerido|	1|	256|
+|String|	Sim|	1|	256|
 
 ### \#2	cep
 CEP do logradouro do domicílio.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-| String|	Opcional|	8|	8|
+| String|	Não|	8|	8|
 
 **Regras:**	Apenas números.
 
@@ -218,7 +218,7 @@ Código IBGE do município.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Requerido|	-|	-|
+|String|	Sim|	-|	-|
 
 **Referências:** [Municipios]({% url municipios %})
 
@@ -227,21 +227,21 @@ Complemento do endereço do domicílio.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Opcional|	1|	256|
+|String|	Não|	1|	256|
 
 ### \#5	nomeLogradouro
 Nome do logradouro.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Requerido|	1|	256|
+|String|	Sim|	1|	256|
 
 ### \#6	numero
 Número do domicílio.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Requerido|	1|	10|
+|String|	Sim|	1|	10|
 
 **Regras:**
 
@@ -253,7 +253,7 @@ Código indexador referente a Unidade Federativa.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Requerido|	-|	-|
+|String|	Sim|	-|	-|
 
 **Referências:** [Estados]({% url referencias %}#uf)
 
@@ -262,7 +262,7 @@ Telefone de referência.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Opcional|	10|	11|
+|String|	Não|	10|	11|
 
 **Regras:** Mínimo 10 dígitos, máximo 11 (DDD + 8 ou 9).
 
@@ -271,7 +271,7 @@ Telefone residencial.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Opcional|	10|	11|
+|String|	Não|	10|	11|
 
 **Regras:** Mínimo 10 dígitos, máximo 11 (DDD + 8 ou 9).
 
@@ -280,7 +280,7 @@ Tipo do logradouro onde está o domicílio.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Requerido|	-|	-|
+|String|	Sim|	-|	-|
 
 **Regras:** Deve ser informado o código DNE.
 
@@ -291,7 +291,7 @@ Marcador que indica que o domicílio não possui número.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Boolean|	Opcional|	-|	-|
+|Boolean|	Não|	-|	-|
 
 ##CondicaoMoradia
 
@@ -300,7 +300,7 @@ Código do tipo de abastecimento de água.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Opcional|	-|	-|
+|Long|	Não|	-|	-|
 
 **Referências:**	[AbastecimentoDeAgua]({% url dicionario %}#abastecimentodeagua)
 
@@ -320,7 +320,7 @@ Código do destino do lixo.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Opcional|	-|	-|
+|Long|	Não|	-|	-|
 
 **Referências:** [DestinoDoLixo]({% url dicionario %}#destinodolixo)
 
@@ -329,7 +329,7 @@ Código da forma de escoamento do banheiro ou sanitário.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Opcional|	-|	-|
+|Long|	Não|	-|	-|
 
 **Referências:** [FormaDeEscoamentoDoBanheiroOuSanitario]({% url dicionario %}#formadeescoamentodobanheiroousanitario)
 
@@ -338,7 +338,7 @@ Código do localização do domicílio.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Requerido|	-|	-|
+|Long|	Sim|	-|	-|
 
 **Referências:** [LocalizacaoDaMoradia]({% url dicionario %}#localizacaodamoradia)
 
@@ -347,7 +347,7 @@ Código do tipo de material predominante nas paredes externas do domicílio.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Opcional|	-|	-|
+|Long|	Não|	-|	-|
 
 **Referências:** [MaterialPredominanteNaConstrucao]({% url dicionario %}#materialpredominantenaconstrucao)
 
@@ -356,21 +356,21 @@ Número de cômodos do domicílio.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Opcional|	0|	2|
+|String|	Não|	0|	2|
 
 ### \#8	nuMoradores
 Número de moradores do domicílio.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Opcional|	0|	2|
+|String|	Não|	0|	2|
 
 ### \#9 situacaoMoradiaPosseTerra
 Código da situação de moradia ou de posse da terra.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Requerido|	-|	-|
+|Long|	Sim|	-|	-|
 
 **Referências:** [SituacaoDeMoradia]({% url dicionario %}#situacaodemoradia)
 
@@ -379,14 +379,14 @@ Marcador que indica se existe disponibilidade de energia elétrica.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Boolean|	Opcional|	-|	-|
+|Boolean|	Não|	-|	-|
 
 ### \#11 tipoAcessoDomicilio
 Código do tipo de acesso ao domicílio.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Opcional|	-|	-|
+|Long|	Não|	-|	-|
 
 **Referências:** [TipoDeAcessoAoDomicilio]({% url dicionario %}#tipodeacessoaodomicilio)
 
@@ -395,7 +395,7 @@ Código do tipo de domicílio.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Opcional|	-|	-|
+|Long|	Não|	-|	-|
 
 **Referências:** [TipoDeDomicilio]({% url dicionario %}#tipodedomicilio)
 
@@ -404,6 +404,6 @@ Código do tipo do tratamento de água do domicílio.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Opcional|	-|	-|
+|Long|	Não|	-|	-|
 
 **Referências:** [TratamentoDeAguaNoDomicilio]({% url dicionario %}#tratamentodeaguanodomicilio)
