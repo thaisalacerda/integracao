@@ -14,7 +14,7 @@ Código UUID para identificar a ficha na base de dados nacional.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Requerido|	36|	44|
+|String|	Sim|	36|	44|
 
 **Regras:** É recomendado concatenar o CNES na frente do UUID, de modo que os 7 digitos (CNES) + 1 de hífen somados aos 36 (32 caracteres + 4 hífen) do UUID são a limitação de 44 bytes do campo. Formato canônico.
 
@@ -25,7 +25,7 @@ Profissionais que realizaram o atendimento.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|VariasLotacoesHeader|	Requerido|	-|	-|
+|VariasLotacoesHeader|	Sim|	-|	-|
 
 **Referências:** [Profissional]({% url profissional %})
 
@@ -34,7 +34,7 @@ Registro individualizado dos atendimentos.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|List\<FichaAtendimentoOdontologicoChild>|	Requerido|	1|	13|
+|List\<FichaAtendimentoOdontologicoChild>|	Sim|	1|	13|
 
 **Regras:** No máximo 13 atendimentos podem ser registrados.
 
@@ -45,7 +45,7 @@ Tipo de origem dos dados do registro.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Integer|	Requerido|	1|	1|
+|Integer|	Sim|	1|	1|
 
 **Regras:** Utilizar valor 3 (sistemas terceiros).
 
@@ -56,7 +56,7 @@ Data de nascimento do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Requerido|	-|	-|
+|Long|	Sim|	-|	-|
 
 **Regras:** Não pode ser posterior a [dataAtendimento]({% url profissional %}#5-dataatendimento) e anterior a 130 anos a partir da [dataAtendimento]({% url profissional %}#5-dataatendimento).
 
@@ -67,7 +67,7 @@ CNS do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Opcional|	15|	15|
+|String|	Não|	15|	15|
 
 **Regras:** CNS válido de acordo com o algoritmo.
 
@@ -78,7 +78,7 @@ Número do prontuário do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String	|Opcional|	0|	30|
+|String	|Não|	0|	30|
 
 **Regras:** Apenas letras e números são aceitos.
 
@@ -87,7 +87,7 @@ Marcador que indica se o cidadão está gestante.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Boolean|	Opcional|	-|	-|
+|Boolean|	Não|	-|	-|
 
 **Regras:** [Sexo](#14-sexo) = `1L (feminino)`.
 
@@ -96,14 +96,14 @@ Marcador que indica se o cidadão é portador de necessidades especiais.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Boolean|	Opcional|	-|	-|
+|Boolean|	Não|	-|	-|
 
 ### \#6	localAtendimento
 Código do local onde o atendimento foi realizado.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Requerido|	-|	-|
+|Long|	Sim|	-|	-|
 
 **Regras:** Apenas valores de `1L` a `10L`.
 
@@ -114,7 +114,7 @@ Código do tipo de atendimento realizado.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Requerido|	-|	-|
+|Long|	Sim|	-|	-|
 
 **Regras:** Apenas valores de `2L` a `6L`.
 
@@ -125,7 +125,7 @@ Código das condutas adotadas e possíveis encaminhamentos.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|List\<Long>|	Requerido|	1|	16|
+|List\<Long>|	Sim|	1|	16|
 
 **Referências:** [CondutaEncaminhamentoOdonto]({% url dicionario %}#condutaencaminhamentoodonto)
 
@@ -134,7 +134,7 @@ Código dos materiais fornecidos durante o atendimento.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|List\<Long>|	Opcional	|0|	3|
+|List\<Long>|	Não	|0|	3|
 
 **Referências:** [FornecimentoOdonto]({% url dicionario %}#fornecimentoodonto)
 
@@ -143,7 +143,7 @@ Código dos marcadores referentes a situação de vigilância em saúde bucal.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|List\<Long>|	Requerido|	1|	7|
+|List\<Long>|	Sim|	1|	7|
 
 **Referências:** [VigilanciaEmSaudeBucal]({% url dicionario %}#vigilanciaemsaudebucal)
 
@@ -169,7 +169,7 @@ Código dos procedimentos que são apresentados na ficha.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|List\<ProcedimentoQuantidade>|	Opcional|	0|	27|
+|List\<ProcedimentoQuantidade>|	Não|	0|	27|
 
 **Regras:**
 
@@ -182,7 +182,7 @@ Lista de outros códigos de procedimentos.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|List\<ProcedimentoQuantidade>|	Opcional|	0|	24|
+|List\<ProcedimentoQuantidade>|	Não|	0|	24|
 
 **Regras:**
 
@@ -196,7 +196,7 @@ Código do sexo do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Requerido|	-|	-|
+|Long|	Sim|	-|	-|
 
 **Referências:** [Sexo]({% url dicionario %}#sexo)
 
@@ -205,7 +205,7 @@ Código do turno em que o atendimento foi realizado.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Opcional|	-|	-|
+|Long|	Não|	-|	-|
 
 **Referências:** [Turno]({% url dicionario %}#turno)
 
@@ -216,7 +216,7 @@ Código do procedimento no MS.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Requerido|	-|	-|
+|String|	Sim|	-|	-|
 
 **Regras:** Deve ser um procedimento com um código válido.
 
@@ -227,7 +227,7 @@ Quantidade de procedimentos realizados.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Integer|	Requerido|	0|	2|
+|Integer|	Sim|	0|	2|
 
 **Regras:**
 

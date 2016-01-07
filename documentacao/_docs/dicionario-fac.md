@@ -14,7 +14,7 @@ Código UUID para identificar a ficha na base de dados nacional.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Requerido|	36|	44|
+|String|	Sim|	36|	44|
 
 **Regras:** É recomendado concatenar o CNES na frente do UUID, de modo que os 7 digitos (CNES) + 1 de hífen somados aos 36 (32 caracteres + 4 hífen) do UUID são a limitação de 44 bytes do campo. Formato canônico.
 
@@ -25,7 +25,7 @@ Data de realização da atividade coletiva.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Requerido|	-|-|
+|Long|	Sim|	-|-|
 
 **Regras:** Não pode ser posterior a data atual.
 
@@ -36,7 +36,7 @@ Previsão da quantidade de participantes para a atividade coletiva.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Integer|	Opcional|	0|	3|
+|Integer|	Não|	0|	3|
 
 **Regras:**	Valores entre 0 e 999.
 
@@ -45,14 +45,14 @@ Descrição do local onde é realizada a atividade coletiva.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Opcional|	0|	250|
+|String|	Não|	0|	250|
 
 ### \#5	horaInicio
 Hora de início da realização da atividade coletiva.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Opcional|	-|	-|
+|Long|	Não|	-|	-|
 
 **Regras:** Verificar validações.
 
@@ -63,7 +63,7 @@ Hora de fim de realização da atividade coletiva.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Opcional|	-|	-|
+|Long|	Não|	-|	-|
 
 **Regras:** Deve ser posterior a [horaInicio](#5-horainicio).
 
@@ -74,14 +74,14 @@ Número INEP da instituição.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Opcional|	0|	8|
+|Long|	Não|	0|	8|
 
 ### \#8	responsavelCns
 CNS do responsável pela atividade coletiva.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Requerido|	15|	15|
+|String|	Sim|	15|	15|
 
 **Regras:**
 
@@ -95,21 +95,21 @@ Código CNES da unidade do responsável pela atividade coletiva.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Requerido	|7|	7|
+|String|	Sim	|7|	7|
 
 ### \#10	responsavelNumIne
 Código INE da equipe do responsável pela atividade coletiva.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Opcional|	10|	10|
+|String|	Não|	10|	10|
 
 ### \#11	numParticipantes
 Número de participantes da atividade.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Integer|	Opcional|	0|	3|
+|Integer|	Não|	0|	3|
 
 **Regras:** Valores entre 0 e 999.
 
@@ -118,7 +118,7 @@ Número de avaliações alteradas.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Integer|	Opcional|	0|	3|
+|Integer|	Não|	0|	3|
 
 **Regras:**	Valores entre 0 e 999.
 
@@ -127,7 +127,7 @@ Lista dos profissionais que participaram da atividade.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|List\<ProfissionalCboRowItem\> |Sim |1	|99 |
+|List\<ProfissionalCboRowItem\> |Obrigatório |1	|99 |
 
 **Regras:** Entre 1 e 99 registros.
 
@@ -138,7 +138,7 @@ Código do tipo da atividade que será realizada.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Sim |	-|	-|
+|Long|	Obrigatório |	-|	-|
 
 **Referências**: [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva)
 
@@ -189,7 +189,7 @@ Cidadãos que participaram da atividade coletiva.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|List\<ParticipanteRowItem\>|	Opcional|	0|33|
+|List\<ParticipanteRowItem\>|	Não|	0|33|
 
 **Referência:** [ParticipanteRowItem](#participanterowitem)
 
@@ -198,7 +198,7 @@ Tipo de origem dos dados do registro.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Integer|	Requerido|	1|	1|
+|Integer|	Sim|	1|	1|
 
 **Observações**: Utilizar valor 3 (sistemas terceiros).
 
@@ -229,7 +229,7 @@ Data de nascimento do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|	Long|	Opcional|	-|	-|
+|	Long|	Não|	-|	-|
 
 **Regras:** 	Não pode ser posterior a [dataAtendimento]({% url profissional %}#5-dataatendimento) e anterior a 130 anos a partir da [dataAtendimento]({% url profissional %}#5-dataatendimento).
 
@@ -240,14 +240,14 @@ Marcador que indica que a avaliação do cidadão teve um valor diferente dos co
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Boolean|	Opcional|	-|	-|
+|Boolean|	Não|	-|	-|
 
 ### \#4	peso
 Peso do cidadão em Kg.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|	Double|	Opcional|	1|	6|
+|	Double|	Não|	1|	6|
 
 **Regras:**
 
@@ -261,7 +261,7 @@ Altura do cidadão em cm.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Double|	Opcional| 	2|	4|
+|Double|	Não| 	2|	4|
 
 **Regras:**
 
@@ -275,7 +275,7 @@ Marcação se o cidadão cessou o hábito de fumar.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Boolean|	Opcional|	-|	-|
+|Boolean|	Não|	-|	-|
 
 **Regras:** Não deve ser preenchido se o [praticasTemasParaSaude]({% url dicionario %}#praticastemasparasaude) não for 25, 26, 27 ou 28 (referentes ao PNCT).
 
@@ -284,6 +284,6 @@ Marcação se o cidadão abandonou o grupo de tabagismo.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Boolean|	Opcional|	-|	-|
+|Boolean|	Não|	-|	-|
 
 **Regras:** Não deve ser preenchido se o [praticasTemasParaSaude]({% url dicionario %}#praticastemasparasaude) não for 25, 26, 27 ou 28 (referentes ao PNCT).

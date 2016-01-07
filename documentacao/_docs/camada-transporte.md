@@ -55,14 +55,14 @@ Código INE da equipe que gerou a ficha.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-| String | Opcional |	10|	10|
+| String | Não |	10|	10|
 
 ### \#6	numLote
 Número do lote para controle interno dos arquivos enviados.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Opcional	|-	|	-	|
+|Long|	Não	|-	|	-	|
 
 ### \#7	dadoSerializado
 Dado serializado através do [TBinaryProtocol](https://github.com/apache/thrift/blob/0.9.2/lib/java/src/org/apache/thrift/protocol/TBinaryProtocol.java) a partir de uma ficha.
@@ -94,7 +94,7 @@ Identifica a versão do e-SUS AB.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-| Versao| Requerido	|-|	-|
+| Versao| Sim	|-|	-|
 
 **Referência:** [Versão]({%url versao %})
 
@@ -105,7 +105,7 @@ Identifica o software que gerou o dado (pec/cds, cdsOff ou software de terceiros
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Requerido|	-|	-	|
+|String|	Sim|	-|	-	|
 
 **Regras:** Seguir o padrão `<Nome do software do município> - Versão 2015`
 
@@ -116,7 +116,7 @@ Observações: Campo serve para a identificar a instalação que gerou / cadastr
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Requerido|	-|	-|
+|String|	Sim|	-|	-|
 
 Observações: Campo serve para a identificar a instalação que gerou / cadastrou / enviou os dados.
 
@@ -125,7 +125,7 @@ CPF do responsável ou CNPJ da empresa responsável.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Requerido|	11|	15|
+|String|	Sim|	11|	15|
 
 Observações:
 
@@ -137,7 +137,7 @@ Nome do responsável ou razão social da empresa responsável.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Requerido|	-|	-|
+|String|	Sim|	-|	-|
 
 Observações: Campo serve para a identificar a instalação que gerou / cadastrou / enviou os dados.
 
@@ -146,7 +146,7 @@ Telefone da pessoa ou empresa responsável.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Opcional|	10|	11|
+|String|	Não|	10|	11|
 
 Observações: Campo serve para a identificar a instalação que gerou / cadastrou / enviou os dados.
 
@@ -155,7 +155,7 @@ Email da pessoa ou empresa responsável.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Opcional|	6|	255|
+|String|	Não|	6|	255|
 
 **Regras:** Requerido seguir o padrão `endereco@domínio.extensão`.
 

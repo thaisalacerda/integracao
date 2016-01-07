@@ -72,7 +72,7 @@ Marcador que indica se o termo de recusa foi assinalado.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Boolean |Opcional |- |- |
+|Boolean |Não |- |- |
 
 ### \#8 tpCdsOrigem
 Tipo de origem dos dados do registro.
@@ -121,28 +121,28 @@ Condição de saúde informada pelo cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|String |Opcional |0 |100 |
+|String |Não |0 |100 |
 
 ### \#3 descricaoOutraCondicao2
 Condição de saúde informada pelo cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|String |Opcional |0 |100 |
+|String |Não |0 |100 |
 
 ### \#4 descricaoOutraCondicao3
 Condição de saúde informada pelo cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|String |Opcional |0 |100 |
+|String |Não |0 |100 |
 
 ### \#5 descricaoPlantasMedicinaisUsadas
 Descrição das plantas medicinais utilizadas.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|String |Opcional |0 |100 |
+|String |Não |0 |100 |
 
 **Regras:** Não deve ser preenchido se o campo [statusUsaPlantasMedicinais](#30-statususaplantasmedicinais) = `false`.
 
@@ -193,7 +193,7 @@ Nome da maternidade de referência.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|String |Opcional |0 |100 |
+|String |Não |0 |100 |
 
 **Regras:** Não pode ser preenchido se o campo [statusEhGestante](#14-statusehgestante) = `false`.
 
@@ -202,7 +202,7 @@ Código da situação referente ao peso corporal.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Long |Opcional |- |- |
+|Long |Não |- |- |
 
 **Referência:** [ConsideracaoPeso]({% url dicionario %}#consideracaopeso).
 
@@ -211,28 +211,28 @@ Marcador se o cidadão é dependente de álcool.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Boolean |Opcional |- |- |
+|Boolean |Não |- |- |
 
 ### \#12 statusEhDependenteOutrasDrogas
 Marcador se o cidadão é dependente de outras drogas.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Boolean |Opcional |- |- |
+|Boolean |Não |- |- |
 
 ### \#13 statusEhFumante
 Marcador se o cidadão é fumante.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Boolean |Opcional |- |- |
+|Boolean |Não |- |- |
 
 ### \#14 statusEhGestante
 Marcador se o cidadão está gestante.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Boolean |Opcional |- |- |
+|Boolean |Não |- |- |
 
 **Regras:** Só pode ser preenchido se:
 
@@ -244,112 +244,112 @@ Marcador se o cidadão está acamado.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Boolean |Opcional |- |- |
+|Boolean |Não |- |- |
 
 ### \#16 statusEstaDomiciliado
 Marcador se o cidadão está domiciliado.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Boolean |Opcional |- |- |
+|Boolean |Não |- |- |
 
 ### \#17 statusTemDiabetes
 Marcador se o cidadão tem diabetes.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Boolean |Opcional |- |- |
+|Boolean |Não |- |- |
 
 ### \#18 statusTemDoencaRespiratorio
 Marcador se o cidadão tem doença respiratória.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Boolean |Opcional |- |- |
+|Boolean |Não |- |- |
 
 ### \#19 statusTemHanseniase
 Marcador se o cidadão tem hanseníase.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Boolean |Opcional |- |- |
+|Boolean |Não |- |- |
 
 ### \#20 statusTemHipertensaoArterial
 Marcador se o cidadão tem hipertensão arterial.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Boolean |Opcional |- |- |
+|Boolean |Não |- |- |
 
 ### \#21 statusTemTeveCancer
 Marcador se o cidadão tem ou teve câncer.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Boolean |Opcional |- |- |
+|Boolean |Não |- |- |
 
 ### \#22 statusTemTeveDoencasRins
 Marcador se o cidadão tem ou teve doenças nos rins.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Boolean |Opcional |- |- |
+|Boolean |Não |- |- |
 
 ### \#23 statusTemTuberculose
 Marcador se o cidadão tem tuberculose.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Boolean |Opcional |- |- |
+|Boolean |Não |- |- |
 
 ### \#24 statusTeveAvcDerrame
 Marcador se o cidadão teve AVC.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Boolean |Opcional |- |- |
+|Boolean |Não |- |- |
 
 ### \#25 statusTeveDoencaCardiaca
 Marcador se o cidadão teve doença cardíaca.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Boolean |Opcional |- |- |
+|Boolean |Não |- |- |
 
 ### \#26 statusTeveInfarto
 Marcador se o cidadão teve infarto.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Boolean |Opcional |- |- |
+|Boolean |Não |- |- |
 
 ### \#27 statusTeveInternadoem12Meses
 Marcador se o cidadão esteve internado nos últimos 12 meses.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Boolean |Opcional |- |- |
+|Boolean |Não |- |- |
 
 ### \#28 statusTratamentoPsiquicoOuProblemaMental
 Marcador se o cidadão está em tratamento psiquico ou tem problema mental.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Boolean |Opcional |- |- |
+|Boolean |Não |- |- |
 
 ### \#29 statusUsaOutrasPraticasIntegrativasOuComplementares
 Marcador se o cidadão utiliza outras práticas integrativas complementares.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Boolean |Opcional |- |- |
+|Boolean |Não |- |- |
 
 ### \#30 statusUsaPlantasMedicinais
 Marcador se o cidadão utiliza plantas medicinais.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Boolean |Opcional |- |- |
+|Boolean |Não |- |- |
 
 ## EmSituacaoDeRua
 
@@ -384,7 +384,7 @@ Código da origem da alimentação do cidadão em situação de rua.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|List\<Long\> |Opcional |0 |5 |
+|List\<Long\> |Não |0 |5 |
 
 **Regras:** Não pode ser preechido se o campo [statusSituacaoRua](#9-statussituacaorua) = `false`.
 
@@ -395,7 +395,7 @@ Nome de outra instituição que acompanha o cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|String |Opcional |0 |100 |
+|String |Não |0 |100 |
 
 **Regras:**
 
@@ -407,7 +407,7 @@ Código da quantidade de vezes que o cidadão se alimenta por dia.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Long |Opcional |- |- |
+|Long |Não |- |- |
 
 **Regras:** Não pode ser preechido se o campo [statusSituacaoRua](#9-statussituacaorua) = `false`.
 
@@ -418,7 +418,7 @@ Marcador que indica se o cidadão é acompanhado por outra instituição.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Boolean |Opcional |- |- |
+|Boolean |Não |- |- |
 
 **Regras:** Não pode ser preechido se o campo [statusSituacaoRua](#9-statussituacaorua) = `false`.
 
@@ -427,7 +427,7 @@ Marcador que indica se o cidadão possuiu alguma referência familiar.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Boolean |Opcional |- |- |
+|Boolean |Não |- |- |
 
 **Regras:** Não pode ser preechido se o campo [statusSituacaoRua](#9-statussituacaorua) = `false`.
 
@@ -436,7 +436,7 @@ Marcador que indica se o cidadão recebe algum benefício.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Boolean |Opcional |- |- |
+|Boolean |Não |- |- |
 
 **Regras:** Não pode ser preechido se o campo [statusSituacaoRua](#9-statussituacaorua) = `false`.
 
@@ -452,7 +452,7 @@ Marcador que indica se o cidadão tem acesso a higiene pessoal.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Boolean |Opcional |- |- |
+|Boolean |Não |- |- |
 
 **Regras:** Não pode ser preechido se o campo [statusSituacaoRua](#9-statussituacaorua) = `false`.
 
@@ -461,7 +461,7 @@ Marcador que indica se o cidadão visita algum familiar frequentemente.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Boolean |Opcional |- |- |
+|Boolean |Não |- |- |
 
 **Regras:** Não pode ser preechido se o campo [statusSituacaoRua](#9-statussituacaorua) = `false`.
 
@@ -470,7 +470,7 @@ Código do tempo que o cidadão está em situação de rua.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Long |Opcional |- |- |
+|Long |Não |- |- |
 
 **Regras:** Não pode ser preechido se o campo [statusSituacaoRua](#9-statussituacaorua) = `false`.
 
@@ -483,7 +483,7 @@ Nome social do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|String |Opcional |0 |100 |
+|String |Não |0 |100 |
 
 ### \#2 codigoIbgeMunicipioNascimento
 Código IBGE do município.
@@ -512,7 +512,7 @@ Data de nascimento do responsável pelo cidadão no formato epoch time.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Long |Opcional |- |- |
+|Long |Não |- |- |
 
 **Regras:** Não pode ser posterior a [dataAtendimento]({% url profissional %}#5-dataatendimento) ou mais anterior que 130 anos a partir da [dataAtendimento]({% url profissional %}#5-dataatendimento).
 
@@ -523,14 +523,14 @@ Marcador que indica que o cidadão desconhece o nome da mãe
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Boolean |Opcional |- |- |
+|Boolean |Não |- |- |
 
 ### \#6 emailCidadao
 Email do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|String |Opcional |6 |100 |
+|String |Não |6 |100 |
 
 **Regras:** Requerido seguir o padrão `endereco@domínio.extensao`.
 
@@ -569,7 +569,7 @@ CNS do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|String |Opcional |15 |15 |
+|String |Não |15 |15 |
 
 **Regras:** Validado por algoritmo.
 
@@ -580,7 +580,7 @@ CNS do responsável do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|String |Opcional |15 |15 |
+|String |Não |15 |15 |
 
 **Regras:**
 * Validado por algoritmo.
@@ -593,7 +593,7 @@ Número de celular do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|String |Opcional |10 |11 |
+|String |Não |10 |11 |
 
 **Regras:** Apenas números.
 
@@ -602,14 +602,14 @@ Número do PIS/PASEP do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|String |Opcional |11 |11 |
+|String |Não |11 |11 |
 
 ### \#14 paisNascimento
 Código do país de nascimento do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Long |Opcional |- |- |
+|Long |Não |- |- |
 
 **Regras:** Só pode ser preenchido se o campo [nacionalidadeCidadao](#7-nacionalidadecidadao) = `1L (Brasileira)`.
 
@@ -638,7 +638,7 @@ Marcador que indica se o cidadão é responsável familiar.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Boolean |Opcional |- |- |
+|Boolean |Não |- |- |
 
 ## InformacoesSocioDemograficas
 
@@ -660,7 +660,7 @@ Código do curso mais elevado que o cidadão frequenta ou frequentou.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Long |Opcional |- |- |
+|Long |Não |- |- |
 
 **Referência:** [CursoMaisElevado]({% url dicionario %}#cursomaiselevado).
 
@@ -669,7 +669,7 @@ Código do motivo da saída do cidadão do cadastro.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Long |Opcional |- |- |
+|Long |Não |- |- |
 
 **Referência:** [MotivoSaida]({% url dicionario %}#motivosaida).
 
@@ -678,7 +678,7 @@ Código do CBO que representa a ocupaçao do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|String |Opcional |6 |6 |
+|String |Não |6 |6 |
 
 **Regras:**
 * Deve ser um código de CBO válido.
@@ -691,7 +691,7 @@ Código da orientação sexual informada pelo cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Long |Opcional |- |- |
+|Long |Não |- |- |
 
 **Referência:** [OrientacaoSexual]({% url dicionario %}#orientacaosexual).
 
@@ -700,7 +700,7 @@ Nome da comunidade tradicional que o cidadão frequenta.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|String |Opcional |0 |100 |
+|String |Não |0 |100 |
 
 **Regras:** Não deve ser preenchido se o campo [statusMembroPovoComunidadeTradicional](#13-statusmembropovocomunidadetradicional) = `false`.
 
@@ -709,7 +709,7 @@ Código da relação de parentesco com o responsável familiar.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Long |Opcional |- |- |
+|Long |Não |- |- |
 
 **Referência:** [RelacaoParentesco]({% url dicionario %}#relacaoparentesco).
 
@@ -718,7 +718,7 @@ Código do responsável por crianças de até 9 anos.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Long |Opcional |- |- |
+|Long |Não |- |- |
 
 **Referência:** [ResponsavelCrianca]({% url dicionario %}#responsavelcrianca).
 
@@ -727,7 +727,7 @@ Código da situação do cidadão no mercado de trabalho.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Long |Opcional |- |- |
+|Long |Não |- |- |
 
 **Referência:** [SituacaoMercadoTrabalho]({% url dicionario %}#situacaomercadotrabalho).
 
@@ -736,14 +736,14 @@ Marcador que indica se o cidadão deseja informar sua orientação sexual.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Boolean |Opcional |- |- |
+|Boolean |Não |- |- |
 
 ### \#11 statusFrequentaBenzedeira
 Marcador que indica se o cidadão frequenta cuidador tradicional.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Boolean |Opcional |- |- |
+|Boolean |Não |- |- |
 
 ### \#12 statusFrequentaEscola
 Marcador que indica se o cidadão frequenta escola ou creche.
@@ -757,21 +757,21 @@ Marcador que indica se o cidadão é membro de um povo ou comunidade tradicional
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Boolean |Opcional |- |- |
+|Boolean |Não |- |- |
 
 ### \#14 statusParticipaGrupoComunitario
 Marcador que indica se o cidadão participa de algum grupo comunitário.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Boolean |Opcional |- |- |
+|Boolean |Não |- |- |
 
 ### \#15 statusPossuiPlanoSaudePrivado
 Marcador que indica se o cidadão possui plano de saúde privado.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Boolean |Opcional |- |- |
+|Boolean |Não |- |- |
 
 ### \#16 statusTemAlgumaDeficiencia
 Marcador que indica se cidadão tem alguma dificiência.

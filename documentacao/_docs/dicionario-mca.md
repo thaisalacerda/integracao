@@ -24,7 +24,7 @@ CNS do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|String |Opcional |15 |15 |
+|String |Sim |15 |15 |
 
 **Regras:** CNS válido de acordo com o algoritmo.
 
@@ -181,7 +181,7 @@ Pergunta do questionário de cidadãos que tem vinte e quatro meses ou mais.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|PerguntaCriancasComMaisDoisAnosEnum | Requerido |- |- |
+|PerguntaCriancasComMaisDoisAnosEnum | Sim |- |- |
 
 **Referência:** [PerguntaCriancasComMaisDoisAnosEnum](#perguntacriancascommaisdoisanosenum).
 

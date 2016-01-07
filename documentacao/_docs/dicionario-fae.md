@@ -67,7 +67,7 @@ Nome social do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Opcional|	0|	100|
+|String|	Não|	0|	100|
 
 **Regras:**
 
@@ -124,14 +124,14 @@ Marcador que indica que o cidadão desconhece o nome da mãe.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Boolean|	Opcional|	-|	-|
+|Boolean|	Não|	-|	-|
 
 ### \#12	codigoIbgeMunicipioNascimento
 Código IBGE do município.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Opcional|	-|	-|
+|String|	Não|	-|	-|
 
 **Regras:** Não pode ser preenchido se [codigoNacionalidade](#13-codigonacionalidade) for diferente de `1L (brasileiro)`.
 
@@ -155,7 +155,7 @@ Email do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Opcional|	6|	255	|
+|String|	Não|	6|	255	|
 
 **Regras:** Requerido seguir o padrão `endereco@domínio.extensão`.
 
@@ -164,7 +164,7 @@ Número do PIS/PASEP do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Opcional|	11|	11|
+|String|	Não|	11|	11|
 
 **Regras:** Apenas números.
 
@@ -204,7 +204,7 @@ Marcadores de situações presentes.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|List\<Long>|	Opcional|	1|	24|
+|List\<Long>|	Não|	1|	24|
 
 **Referências:** [QuestionárioDeSituaçõesPresentes](#questionáriodesituaçõespresentes)
 
@@ -222,7 +222,7 @@ Código do CID10 registrado na avaliação.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Opcional|	-|	-|
+|String|	Não|	-|	-|
 
 **Regras:** Não pode ser igual ao [CID10Principal](#20-cid10principal) nem [CID10Terceiro](#22-cid10terceiro).
 
@@ -231,7 +231,7 @@ Código do CID10 registrado na avaliação.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Opcional|	-|	-|
+|String|	Não|	-|	-|
 
 **Regras:** Não pode ser igual ao [CID10Principal](#20-cid10principal) nem [CID10Segundo](#21-cid10segundo).
 
@@ -270,7 +270,7 @@ Código da relação de parentesco do cuidador com o cidadão em atenção domic
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Opcional|	-|	-|
+|Long|	Não|	-|	-|
 
 **Referências:** [CuidadorCidadao]({% url dicionario %}#cuidadorcidadao)
 
@@ -288,7 +288,7 @@ CEP do logradouro do domicílio.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Opcional|	8|	8|
+|String|	Não|	8|	8|
 
 **Regras:**	Apenas números.
 
@@ -306,7 +306,7 @@ Complemento do endereço do domicílio.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Opcional|	1|	256|
+|String|	Não|	1|	256|
 
 ### \#5	nomeLogradouro
 Nome do logradouro.
@@ -341,7 +341,7 @@ Telefone de referência.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Opcional|	10|	11|
+|String|	Não|	10|	11|
 
 Observações: Mínimo 10 dígitos, máximo 11 (DDD + 8 ou 9)
 
@@ -350,7 +350,7 @@ Telefone residencial.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String| Opcional|	10|	11|
+|String| Não|	10|	11|
 
 Observações: Mínimo 10 dígitos, máximo 11 (DDD + 8 ou 9)
 
@@ -370,7 +370,7 @@ Marcador que indica que o domicílio não possui número.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Boolean|	Opcional|	-|	-|
+|Boolean|	Não|	-|	-|
 
 ## QuestionárioDeSituaçõesPresentes
 |Descrição | Código|
