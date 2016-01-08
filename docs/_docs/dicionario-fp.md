@@ -119,14 +119,14 @@ Número do prontuário do cidadão na UBS.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|String |Opcional |0 |30 |
+|String |Não |0 |30 |
 
 ### \#2 numCartaoSus
 Numero do cartão SUS do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|String |Opcional |15 |15 |
+|String |Não |15 |15 |
 
 ### \#3 dtNascimento
 Data de nascimento do cidadão no formato epoch time.
@@ -162,7 +162,7 @@ Código do turno onde aconteceu o atendimento.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Long |Opcional |- |- |
+|Long |Não |- |- |
 
 **Referência:** [Turno]({% url dicionario %}#turno).
 
@@ -171,7 +171,7 @@ Indica a realização da escuta inicial.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Long |Opcional |- |- |
+|Long |Não |- |- |
 
 ### \#8 procedimentos
 Lista dos códigos dos procedimentos que são registrados na ficha de procedimentos.

@@ -14,7 +14,7 @@ Código UUID para identificar a ficha na base de dados nacional.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Sim|	36|	44|
+|String|	Obrigatório|	36|	44|
 
 **Regras:** É recomendado concatenar o CNES na frente do UUID, de modo que os 7 digitos (CNES) + 1 de hífen somados aos 36 (32 caracteres + 4 hífen) do UUID são a limitação de 44 bytes do campo.
 
@@ -25,7 +25,7 @@ Tipo de origem dos dados do registro.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Integer|	Sim|	1|	1|
+|Integer|	Obrigatório|	1|	1|
 
 Observações: Utilizar valor 3 (sistemas terceiros).
 
@@ -34,7 +34,7 @@ Profissional que realizou a visita.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|UnicaLotacaoHeader|	Sim|	-|	-|
+|UnicaLotacaoHeader|	Obrigatório|	-|	-|
 
 **Referências:**	[UnicaLotacaoHeader]({% url profissional %}#unicalotacaoheader)
 
@@ -43,7 +43,7 @@ Lista dos atendimentos realizados pelo profissional.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|List\<FichaAtendimentoDomiciliarChild\>|	Sim|	1|	13|
+|List\<FichaAtendimentoDomiciliarChild\>|	Obrigatório|	1|	13|
 
 ## FichaAtendimentoDomiciliarChild
 
@@ -52,7 +52,7 @@ Código do turno onde aconteceu o atendimento.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Sim|	-|	-|
+|Long|	Obrigatório|	-|	-|
 
 **Referências:** [Turno]({% url dicionario %}#turno)
 
@@ -61,7 +61,7 @@ CNS do cidadão que participou da atividade.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Opcional|	15|	15|
+|String|	Não|	15|	15|
 
 **Regras:** Validado pelo algoritmo.
 
@@ -72,7 +72,7 @@ Data de nascimento do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Sim|	-|	-|
+|Long|	Obrigatório|	-|	-|
 
 **Regras:** Não pode ser posterior a [dataAtendimento]({% url profissional%}#5-dataatendimento) e anterior a 130 anos a partir da [dataAtendimento]({% url profissional%}#5-dataatendimento).
 
@@ -83,7 +83,7 @@ Código do sexo do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Sim|	-|	-|
+|Long|	Obrigatório|	-|	-|
 
 **Referências:**	[Sexo]({% url dicionario%}#sexo)
 
@@ -92,7 +92,7 @@ Cógido do local onde o atendimento foi realizado.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Sim|	-|	-|
+|Long|	Obrigatório|	-|	-|
 
 **Referências:** [LocalDeAtendimento]({% url dicionario%}#localdeatendimento)
 
@@ -101,7 +101,7 @@ Código da modalidade AD do cidadão atendido.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Sim|	-|	-|
+|Long|	Obrigatório|	-|	-|
 
 **Regras:** Apenas as opções `1L`, `2L` e `3L` são aceitas.
 
@@ -112,7 +112,7 @@ Código do tipo de atendimento.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Sim|	-|	-|
+|Long|	Obrigatório|	-|	-|
 
 **Regras:** Apenas as opções `7L` e `8L` são aceitas.
 
@@ -123,28 +123,28 @@ Marcadores das situações presentes.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|List\<Long\>|	Opcional|	0|	24|
+|List\<Long\>|	Não|	0|	24|
 
 ### \#9	cid
 Código do CID registrado no atendimento.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Opcional|	-|	-|
+|String|	Não|	-|	-|
 
 ### \#10	ciap
 Código do CIAP registrado no atendimento.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Opcional|	-	|-|
+|String|	Não|	-	|-|
 
 ### \#11	procedimentos
 Código dos procedimentos registrados no atendimento disponíveis na ficha.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|List\<String\>|	Opcional|	0|	21|
+|List\<String\>|	Não|	0|	21|
 
 **Referências:** [ProcedimentosDaAtençãoDomiciliar](#procedimentos-da-atenção-domiciliar)
 
@@ -153,7 +153,7 @@ Código dos procedimentos SIGTAP registrados no atendimento.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|List\<String\>|	Opcional	|0|	4|
+|List\<String\>|	Não	|0|	4|
 
 **Regras:**
 
@@ -165,7 +165,7 @@ Código do desfecho do atendimento do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Opcional|	-|	-|
+|Long|	Não|	-|	-|
 
 **Regras:**	Não podem conter as opções `7L` ou `8L`.
 
@@ -176,7 +176,7 @@ Marcador que indica se a família irá receber acompanhamento pós-óbito.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Boolean|	Opcional|	-|	-|
+|Boolean|	Não|	-|	-|
 
 ## Questionário de Situações Presentes
 

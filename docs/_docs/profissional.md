@@ -47,7 +47,7 @@ Código INE da equipe do profissional.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|String |Opcional |10 |10 |
+|String |Não |10 |10 |
 
 Observações: Esta entidade é utilizada para representar o profissional responsável pelas fichas.
 
@@ -89,7 +89,7 @@ CNS do profissional1.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|String |Opcional |15 |15 |
+|String |Não |15 |15 |
 
 **Regras:** CNS válido de acordo com o algoritmo.
 
@@ -102,7 +102,7 @@ Código do CBO do profissional1.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|String |Opcional |- |- |
+|String |Não |- |- |
 
 **Regras:** Deve ser preenchido somente se profissionalCNS1 estiver preenchido.
 
@@ -213,7 +213,7 @@ Código do INE da equipe do profissional.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|String |Opcional |10 |10 |
+|String |Não |10 |10 |
 
 Observações: Esta entidade é utilizada para representar o profissional que realizou uma ação (Cadastro Individual e Cadastro Domiciliar) e a respectiva data.
 
@@ -222,6 +222,6 @@ Microárea onde está sendo realizada a ação.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Long |Opcional |0 |2 |
+|Long |Não |0 |2 |
 
 Observações: Esta entidade é utilizada para representar o profissional que realizou uma ação (Cadastro Individual e Cadastro Domiciliar) e a respectiva data.
