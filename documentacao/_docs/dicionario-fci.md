@@ -611,7 +611,7 @@ Código do país de nascimento do cidadão.
 |--- |--- |--- |--- |
 |Long |Não |- |- |
 
-**Regras:** Só pode ser preenchido se o campo [nacionalidadeCidadao](#7-nacionalidadecidadao) = `1L (Brasileira)`.
+**Regras:** Só pode ser preenchido se o campo [nacionalidadeCidadao](#7-nacionalidadecidadao) for diferente de `1L (Brasileira)`.
 
 **Referência:** [País]({% url referencias %}#país).
 
