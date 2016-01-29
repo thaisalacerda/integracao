@@ -681,8 +681,8 @@ Código do CBO que representa a ocupaçao do cidadão.
 |String |Não |6 |6 |
 
 **Regras:**
+
 * Deve ser um código de CBO válido.
-* Não pode ser preenchido se o campo [statusDesejaInformarOrientacaoSexual](#10-statusdesejainformarorientacaosexual) = `false`.
 
 **Referência:** [CBO]({% url cbo %}).
 
@@ -692,6 +692,9 @@ Código da orientação sexual informada pelo cidadão.
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
 |Long |Não |- |- |
+
+**Regras:**
+* Não pode ser preenchido se o campo [statusDesejaInformarOrientacaoSexual](#10-statusdesejainformarorientacaosexual) = `false`.
 
 **Referência:** [OrientacaoSexual]({% url dicionario %}#orientacaosexual).
 
