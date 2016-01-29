@@ -186,7 +186,7 @@ Código das doenças renais que o cidadão informou.
 * Requerido preenchimento de pelo menos um item se o campo [statusTemTeveDoencasRins](#22-statustemtevedoencasrins) = `true`.
 * Não deve ser preenchido se o campo [statusTemTeveDoencasRins](#22-statustemtevedoencasrins) = `false`.
 
-**Referência:** [ConsideracaoPeso]({% url dicionario %}#consideracaopeso).
+**Referência:** [ProblemasRins]({% url dicionario %}#problemasrins).
 
 ### \#9 maternidadeDeReferencia
 Nome da maternidade de referência.
