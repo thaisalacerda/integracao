@@ -209,7 +209,7 @@ CEP do logradouro do domicílio.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-| String|	Não|	8|	8|
+| String|	Sim|	8|	8|
 
 **Regras:**	Apenas números.
 
@@ -311,7 +311,7 @@ Código da condição de posse e uso da terra.
 |---| --- |---  | --- |
 |Long|	Condicional | 	-|	-|
 
-**Regras:** Preenchimento obrigatório caso o campo [Localização](#5-localizacao) = `84L (rural)`.
+**Regras:** Preenchimento obrigatório caso o campo [Localização](#5-localizacao) = `84 (rural)`.
 
 **Referências:** [CondicaoDePosseEUsoDaTerra]({% url dicionario %}#condicaodeposseeusodaterra)
 

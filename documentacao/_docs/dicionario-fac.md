@@ -151,8 +151,8 @@ Temas para reunião.
 
 **Regras:**
 
-* É Requerido se [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva) for `1L`, `2L` ou `3L`.
-* Não pode ser preenchido se [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva) for `4L`, `5L`, `6L` ou `7L`.
+* É Requerido se [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva) for `1`, `2` ou `3`.
+* Não pode ser preenchido se [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva) for `4`, `5`, `6` ou `7`.
 
 **Referência:** [TemasParaReuniao]({% url dicionario %}#temasparareuniao)
 
@@ -165,8 +165,8 @@ Código do público alvo da atividade.
 
 **Regras:**
 
-* É Requerido se [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva) for `4L`, `5L`, `6L` ou `7L`.
-* Não pode ser preenchido se [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva) for `1L`, `2L` ou `3L`.
+* É Requerido se [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva) for `4`, `5`, `6` ou `7`.
+* Não pode ser preenchido se [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva) for `1`, `2` ou `3`.
 
 **Referência:** [PublicoAlvo]({% url dicionario %}#publicoalvo)
 
@@ -179,8 +179,8 @@ Código das práticas ou temas abordados na atividade.
 
 **Regras:**
 
-* É Requerido se [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva) for `4L`, `5L`, `6L` ou `7L`.
-* Não pode ser preenchido se [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva) for `1L`, `2L` ou `3L`.
+* É Requerido se [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva) for `4`, `5`, `6` ou `7`.
+* Não pode ser preenchido se [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva) for `1`, `2` ou `3`.
 
 **Referências**:	[PraticasTemasParaSaude]({% url dicionario %}#praticastemasparasaude)
 

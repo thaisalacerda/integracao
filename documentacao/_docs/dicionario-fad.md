@@ -103,7 +103,7 @@ Código da modalidade AD do cidadão atendido.
 |---| --- |---  | --- |
 |Long|	Obrigatório|	-|	-|
 
-**Regras:** Apenas as opções `1L`, `2L` e `3L` são aceitas.
+**Regras:** Apenas as opções `1`, `2` e `3` são aceitas.
 
 **Referências:** [ModalidadeAD]({% url dicionario %}#modalidadead)
 
@@ -114,7 +114,7 @@ Código do tipo de atendimento.
 |---| --- |---  | --- |
 |Long|	Obrigatório|	-|	-|
 
-**Regras:** Apenas as opções `7L` e `8L` são aceitas.
+**Regras:** Apenas as opções `7` e `8` são aceitas.
 
 **Referências:**: [TipoDeAtendimento]({% url dicionario %}#tipodeatendimento)
 
@@ -167,7 +167,7 @@ Código do desfecho do atendimento do cidadão.
 |---| --- |---  | --- |
 |Long|	Não|	-|	-|
 
-**Regras:**	Não podem conter as opções `7L` ou `8L`.
+**Regras:**	Não podem conter as opções `7` ou `8`.
 
 **Referências:**	[CondutaDesfecho]({% url dicionario %}#condutadesfecho)
 
@@ -182,30 +182,30 @@ Marcador que indica se a família irá receber acompanhamento pós-óbito.
 
 |Nome|	Código|
 |--- |---|
-|Acamado	|1 L|
-|Domiciliado	|2 L|
-|Úlceras / Feridas (grau III ou IV)	|3 L|
-|Acompanhamento nutricional	|4 L|
-|Uso de sonda naso-gástrica - SNG	|5 L|
-|Uso de sonda naso-enteral - SNE	|6 L|
-|Uso de gastrostomia	|7 L|
-|Uso de colostomia	|8 L|
-|Uso de cistostomia	|9 L|
-|Uso de sonda vesical de demora - SVD	|10 L|
-|Acompanhamento pré-operatório	|11 L|
-|Acompanhamento pós-operatório	|12 L|
-|Adaptação ao uso de órtese / prótese	|13 L|
-|Reabilitação domiciliar	|14 L|
-|Cuidados paliativos oncológico	|15 L|
-|Cuidados paliativos não-oncológico	|16 L|
-|Oxigenoterapia domiciliar	|17 L|
-|Uso de traqueostomia	|18 L|
-|Uso de aspirador de vias aéreas para higiene brônquica	|19 L|
-|Suporte ventilatório não invasivo - CPAP	|20 L|
-|Suporte ventilatório não invasivo - BiPAP	|21 L|
-|Diálise peritonial |	22 L |
-|Paracentese | 23 L |
-|Medicação  parenteral	|24 L |
+|Acamado	|1|
+|Domiciliado	|2|
+|Úlceras / Feridas (grau III ou IV)	|3|
+|Acompanhamento nutricional	|4|
+|Uso de sonda naso-gástrica - SNG	|5|
+|Uso de sonda naso-enteral - SNE	|6|
+|Uso de gastrostomia	|7|
+|Uso de colostomia	|8|
+|Uso de cistostomia	|9|
+|Uso de sonda vesical de demora - SVD	|10|
+|Acompanhamento pré-operatório	|11|
+|Acompanhamento pós-operatório	|12|
+|Adaptação ao uso de órtese / prótese	|13|
+|Reabilitação domiciliar	|14|
+|Cuidados paliativos oncológico	|15|
+|Cuidados paliativos não-oncológico	|16|
+|Oxigenoterapia domiciliar	|17|
+|Uso de traqueostomia	|18|
+|Uso de aspirador de vias aéreas para higiene brônquica	|19|
+|Suporte ventilatório não invasivo - CPAP	|20|
+|Suporte ventilatório não invasivo - BiPAP	|21|
+|Diálise peritonial | 22|
+|Paracentese | 23|
+|Medicação  parenteral	|24|
 
 ## Procedimentos da Atenção Domiciliar
 

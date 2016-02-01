@@ -60,7 +60,7 @@ Nome do cidadão.
 
 * Ter ao menos duas palavras.
 * Somente texto e apóstrofo (`'`).
-*	Opcional caso [conclusaoDestinoElegivel](#23-conclusaodestinoelegivel) for diferente de `1L (admissão própria emad)`.
+*	Opcional caso [conclusaoDestinoElegivel](#23-conclusaodestinoelegivel) for diferente de `1 (admissão própria emad)`.
 
 ### \#6	nomeSocialCidadao
 Nome social do cidadão.
@@ -102,7 +102,7 @@ Código da raça / cor do cidadão.
 
 **Regras:**
 
-*	Opcional caso [conclusaoDestinoElegivel](#23-conclusaodestinoelegivel) for diferente de `1L (admissão própria emad)`.
+*	Opcional caso [conclusaoDestinoElegivel](#23-conclusaodestinoelegivel) for diferente de `1 (admissão própria emad)`.
 
 **Referências:** [RacaCor]({% url dicionario %}#racacor)
 
@@ -133,7 +133,7 @@ Código IBGE do município.
 |---| --- |---  | --- |
 |String|	Não|	-|	-|
 
-**Regras:** Não pode ser preenchido se [codigoNacionalidade](#13-codigonacionalidade) for diferente de `1L (brasileiro)`.
+**Regras:** Não pode ser preenchido se [codigoNacionalidade](#13-codigonacionalidade) for diferente de `1 (brasileiro)`.
 
 **Referências:** [Municípios]({% url municipios %})
 
@@ -146,7 +146,7 @@ Código do marcador que indica se o cidadão é brasileiro, naturalizado ou estr
 
 **Regras:**
 
-*	Opcional caso [conclusaoDestinoElegivel](#23-conclusaodestinoelegivel) for diferente de `1L (admissão própria emad)`.
+*	Opcional caso [conclusaoDestinoElegivel](#23-conclusaodestinoelegivel) for diferente de `1 (admissão própria emad)`.
 
 **Referências:** [Nacionalidade]({% url dicionario %}#nacionalidade)
 
@@ -177,7 +177,7 @@ Informações sobre o endereço do domicílio
 
 **Regras:**
 
-*	Opcional caso [conclusaoDestinoElegivel](#23-conclusaodestinoelegivel) for diferente de `1L (admissão própria emad)`.
+*	Opcional caso [conclusaoDestinoElegivel](#23-conclusaodestinoelegivel) for diferente de `1 (admissão própria emad)`.
 
 **Referências:**	[EnderecoLocalPermanencia](#enderecolocalpermanencia)
 
@@ -244,7 +244,7 @@ Código da conduta adotada caso cidadão seja `Elegível`.
 
 **Regras:**
 
-* Só pode ser preenchido se [atencaoDomiciliarModalidade](#18-atencaodomiciliarmodalidade) for diferente de `4L (inelegível)`.
+* Só pode ser preenchido se [atencaoDomiciliarModalidade](#18-atencaodomiciliarmodalidade) for diferente de `4 (inelegível)`.
 
 **Referências:** [ConclusaoDestinoElegivel]({% url dicionario %}#conclusaodestinoelegivel)
 
@@ -259,7 +259,7 @@ Código da conduta adotada caso cidadão seja `Inelegível`.
 
 **Regras:**
 
-* Só pode ser preenchido se [atencaoDomiciliarModalidade](#18-atencaoDomiciliarModalidade) for igual a de `4L (inelegível)`.
+* Só pode ser preenchido se [atencaoDomiciliarModalidade](#18-atencaoDomiciliarModalidade) for igual a de `4 (inelegível)`.
 
 **Referências:** [ConclusaoDestinoInelegivel]({% url dicionario %}#conclusaodestinoinelegivel)
 
@@ -375,27 +375,27 @@ Marcador que indica que o domicílio não possui número.
 ## QuestionárioDeSituaçõesPresentes
 |Descrição | Código|
 |--- | ---|
-|Acamado	|1 L|
-|Domiciliado	|2 L|
-|Úlceras / Feridas (grau III ou IV)	|3 L|
-|Acompanhamento nutricional	|4 L|
-|Uso de sonda naso-gástrica - SNG	|5 L|
-|Uso de sonda naso-enteral - SNE	|6 L|
-|Uso de gastrostomia	|7 L|
-|Uso de colostomia	|8 L|
-|Uso de cistostomia	|9 L|
-|Uso de sonda vesical de demora - SVD	|10 L|
-|Acompanhamento pré-operatório	|11 L|
-|Acompanhamento pós-operatório	|12 L|
-|Adaptação ao uso de órtese / prótese	|13 L|
-|Reabilitação domiciliar	|14 L|
-|Cuidados paliativos oncológico	|15 L|
-|Cuidados paliativos não-oncológico	|16 L|
-|Oxigenoterapia domiciliar	|17 L|
-|Uso de traqueostomia	|18 L|
-|Uso de aspirador de vias aéreas para higiene brônquica	|19 L|
-|Suporte ventilatório não invasivo - CPAP	|20 L|
-|Suporte ventilatório não invasivo - BiPAP	|21 L|
-|Diálise peritonial	|22 L|
-|Paracentese	|23 L|
-|Medicação parenteral	|24 L|
+|Acamado	|1 |
+|Domiciliado	|2 |
+|Úlceras / Feridas (grau III ou IV)	|3 |
+|Acompanhamento nutricional	|4 |
+|Uso de sonda naso-gástrica - SNG	|5 |
+|Uso de sonda naso-enteral - SNE	|6 |
+|Uso de gastrostomia	|7 |
+|Uso de colostomia	|8 |
+|Uso de cistostomia	|9 |
+|Uso de sonda vesical de demora - SVD	|10 |
+|Acompanhamento pré-operatório	|11 |
+|Acompanhamento pós-operatório	|12 |
+|Adaptação ao uso de órtese / prótese	|13 |
+|Reabilitação domiciliar	|14 |
+|Cuidados paliativos oncológico	|15 |
+|Cuidados paliativos não-oncológico	|16 |
+|Oxigenoterapia domiciliar	|17 |
+|Uso de traqueostomia	|18 |
+|Uso de aspirador de vias aéreas para higiene brônquica	|19 |
+|Suporte ventilatório não invasivo - CPAP	|20 |
+|Suporte ventilatório não invasivo - BiPAP	|21 |
+|Diálise peritonial	|22 |
+|Paracentese	|23 |
+|Medicação parenteral	|24 |

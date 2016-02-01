@@ -89,7 +89,7 @@ Código do local onde o atendimento foi realizado.
 |---| --- |---  | --- |
 |Long|	Sim|	-|	-|
 
-**Regras:** Apenas valores de `1L` a `10L`.
+**Regras:** Apenas valores de `1` a `10`.
 
 **Referências:** [LocalDeAtendimento]({% url dicionario %}#localdeatendimento)
 
@@ -118,7 +118,7 @@ Código do tipo de atendimento realizado.
 |---| --- |---  | --- |
 |Long|	Sim|	-|	-|
 
-**Regras:** Apenas valores de `1L` a `6L`
+**Regras:** Apenas valores de `1` a `6`
 
 **Referências:** [TipoDeAtendimento]({% url dicionario %}#tipodeatendimento)
 
@@ -169,7 +169,7 @@ Data da última menstruação da gestante.
 **Regras:**
 
 * Não pode ser superior a [dataAtendimento]({% url profissional %}#5-dataatendimento), nem inferior a data de nascimento.
-* Não pode ser preenchido quando [Sexo](#5-sexo) = `0L (masculino)`.
+* Não pode ser preenchido quando [Sexo](#5-sexo) = `0 (masculino)`.
 
 **Referências:** [Epoch Wikipedia](https://en.wikipedia.org/wiki/Epoch_(reference_date))
 
@@ -183,7 +183,7 @@ Idade gestacional em semanas.
 **Regras**
 
 * Valor mínimo 1 e máximo 42.
-* Não pode ser preenchido quando [Sexo](#5-sexo) = `0L (masculino)`.
+* Não pode ser preenchido quando [Sexo](#5-sexo) = `0 (masculino)`.
 
 ### \#13	atencaoDomiciliarModalidade
 Código do modalidade AD do cidadão atendido.
@@ -192,7 +192,7 @@ Código do modalidade AD do cidadão atendido.
 |---| --- |---  | --- |
 |Long|	Não|	-|	-|
 
-**Regras:** Apenas valores de `1L` a `3L`.
+**Regras:** Apenas valores de `1` a `3`.
 
 **Referências:**	[ModalidadeAD]({% url dicionario %}#modalidadead)
 
@@ -287,7 +287,7 @@ Marcador que indica se a gravidez é planejada.
 |---| --- |---  | --- |
 |Boolean|	Não|	-|	-|
 
-**Regras:** Não pode ser preenchido quando [Sexo](#5-sexo) = `0L (masculino)`.
+**Regras:** Não pode ser preenchido quando [Sexo](#5-sexo) = `0 (masculino)`.
 
 ### \#24	nuGestasPrevias
 Número de gestações prévias.
@@ -296,7 +296,7 @@ Número de gestações prévias.
 |---| --- |---  | --- |
 |Integer|	Não|	0|	2|
 
-**Regras:** Não pode ser preenchido quando [Sexo](#5-sexo) = `0L (masculino)`.
+**Regras:** Não pode ser preenchido quando [Sexo](#5-sexo) = `0 (masculino)`.
 
 ### \#25	nuPartos
 Número de partos que a mulher já teve.
@@ -305,7 +305,7 @@ Número de partos que a mulher já teve.
 |---| --- |---  | --- |
 |Integer|	Não|	0|	2|
 
-**Regras:** Não pode ser preenchido quando [Sexo](#5-sexo) = `0L (masculino)`.
+**Regras:** Não pode ser preenchido quando [Sexo](#5-sexo) = `0 (masculino)`.
 
 ## OutrosSia
 

@@ -492,7 +492,7 @@ Código IBGE do município.
 |--- |--- |--- |--- |
 |String |Condicional |7 |7 |
 
-**Regras:** Requerido se o campo [nacionalidadeCidadao](#7-nacionalidadecidadao) = `1L (Brasileiro)` e não pode ser preenchido se for outra nacionalidade.
+**Regras:** Requerido se o campo [nacionalidadeCidadao](#7-nacionalidadecidadao) = `1 (Brasileiro)` e não pode ser preenchido se for outra nacionalidade.
 
 **Referência:** [Municipios]({% url municipios %}).
 
@@ -611,7 +611,7 @@ Código do país de nascimento do cidadão.
 |--- |--- |--- |--- |
 |Long |Não |- |- |
 
-**Regras:** Só pode ser preenchido se o campo [nacionalidadeCidadao](#7-nacionalidadecidadao) for diferente de `1L (Brasileira)`.
+**Regras:** Só pode ser preenchido se o campo [nacionalidadeCidadao](#7-nacionalidadecidadao) for diferente de `1 (Brasileira)`.
 
 **Referência:** [País]({% url referencias %}#país).
 
