@@ -186,7 +186,7 @@ Código das doenças renais que o cidadão informou.
 * Requerido preenchimento de pelo menos um item se o campo [statusTemTeveDoencasRins](#22-statustemtevedoencasrins) = `true`.
 * Não deve ser preenchido se o campo [statusTemTeveDoencasRins](#22-statustemtevedoencasrins) = `false`.
 
-**Referência:** [ConsideracaoPeso]({% url dicionario %}#consideracaopeso).
+**Referência:** [ProblemasRins]({% url dicionario %}#problemasrins).
 
 ### \#9 maternidadeDeReferencia
 Nome da maternidade de referência.
@@ -611,7 +611,7 @@ Código do país de nascimento do cidadão.
 |--- |--- |--- |--- |
 |Long |Não |- |- |
 
-**Regras:** Só pode ser preenchido se o campo [nacionalidadeCidadao](#7-nacionalidadecidadao) = `1L (Brasileira)`.
+**Regras:** Só pode ser preenchido se o campo [nacionalidadeCidadao](#7-nacionalidadecidadao) for diferente de `1L (Brasileira)`.
 
 **Referência:** [País]({% url referencias %}#país).
 
@@ -681,8 +681,8 @@ Código do CBO que representa a ocupaçao do cidadão.
 |String |Não |6 |6 |
 
 **Regras:**
+
 * Deve ser um código de CBO válido.
-* Não pode ser preenchido se o campo [statusDesejaInformarOrientacaoSexual](#10-statusdesejainformarorientacaosexual) = `false`.
 
 **Referência:** [CBO]({% url cbo %}).
 
@@ -692,6 +692,9 @@ Código da orientação sexual informada pelo cidadão.
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
 |Long |Não |- |- |
+
+**Regras:**
+* Não pode ser preenchido se o campo [statusDesejaInformarOrientacaoSexual](#10-statusdesejainformarorientacaosexual) = `false`.
 
 **Referência:** [OrientacaoSexual]({% url dicionario %}#orientacaosexual).
 
