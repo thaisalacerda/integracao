@@ -169,8 +169,8 @@ Código d as doenças respiratórias que o cidadão informou.
 
 **Regras:**
 
-* Requerido preenchimento de pelo menos um item se o campo [statusTemDoencaRespiratorio](#18-statustemdoencarespiratorio) = `true`.
-*  Não deve ser preenchido o campo [statusTemDoencaRespiratorio](#18-statustemdoencarespiratorio) = `false`.
+* Requerido preenchimento de pelo menos um item se o campo [statusTemDoencaRespiratoria](#18-statustemdoencarespiratoria) = `true`.
+*  Não deve ser preenchido o campo [statusTemDoencaRespiratoria](#18-statustemdoencarespiratoria) = `false`.
 
 **Referência:** [DoencaRespiratoria]({% url dicionario %}#doencarespiratoria).
 
@@ -260,7 +260,7 @@ Marcador se o cidadão tem diabetes.
 |--- |--- |--- |--- |
 |Boolean |Não |- |- |
 
-### \#18 statusTemDoencaRespiratorio
+### \#18 statusTemDoencaRespiratoria
 Marcador se o cidadão tem doença respiratória.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
