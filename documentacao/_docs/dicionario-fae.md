@@ -82,7 +82,7 @@ Data de nascimento do cidadão no formato epoch time.
 
 **Regras:** Não pode ser posterior a [dataAtendimento]({% url profissional %}#5-dataatendimento) e anterior a 130 anos a partir da [dataAtendimento]({% url profissional %}#5-dataatendimento).
 
-**Refererência**: [Epoch Wikipedia](https://en.wikipedia.org/wiki/Epoch_(reference_date)).
+**Refererência**: [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix).
 
 ### \#8	sexoCidadao
 Código do sexo do cidadão.

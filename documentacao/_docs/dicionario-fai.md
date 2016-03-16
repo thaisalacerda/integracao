@@ -80,7 +80,7 @@ Data de nascimento do cidadão.
 
 **Regras:** Não pode ser posterior a [dataAtendimento]({% url profissional %}#5-dataatendimento) e anterior a 130 anos a partir da [dataAtendimento]({% url profissional %}#5-dataatendimento).
 
-**Refererência**: [Epoch Wikipedia](https://en.wikipedia.org/wiki/Epoch_(reference_date)).
+**Refererência**: [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix).
 
 ### \#4	localDeAtendimento
 Código do local onde o atendimento foi realizado.
@@ -123,7 +123,7 @@ Código do tipo de atendimento realizado.
 **Referências:** [TipoDeAtendimento]({% url dicionario %}#tipodeatendimento)
 
 ### \#8	pesoAcompanhamentoNutricional
-Peso do cidadão em Kg.
+Peso do cidadão em Kilogramas.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
@@ -132,12 +132,12 @@ Peso do cidadão em Kg.
 **Regras:**
 
 * Apenas números e vírgula (`,`).
-* Máximo de números após a vírgula.
+* Máximo de 2 números após a vírgula.
 * Se tiver vírgula, tamanho máximo = 7.
-* Valor mínimo = 0,5 e máximo = 500.
+* Valor mínimo 0,5 e máximo 500.
 
 ### \#9	alturaAcompanhamentoNutricional
-Altura do cidadão em cm.
+Altura do cidadão em centímetros.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
@@ -146,7 +146,7 @@ Altura do cidadão em cm.
 **Regras:**
 
 * Apenas números e vírgula (`,`).
-* Máximo de números após a vírgula.
+* Máximo de 2 números após a vírgula.
 * Se tiver vírgula, tamanho máximo = 5.
 * Valor mínimo 20 e máximo 250.
 
@@ -171,7 +171,7 @@ Data da última menstruação da gestante.
 * Não pode ser superior a [dataAtendimento]({% url profissional %}#5-dataatendimento), nem inferior a data de nascimento.
 * Não pode ser preenchido quando [Sexo](#5-sexo) = `0 (masculino)`.
 
-**Referências:** [Epoch Wikipedia](https://en.wikipedia.org/wiki/Epoch_(reference_date))
+**Referências:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix)
 
 ### \#12	idadeGestacional
 Idade gestacional em semanas.
@@ -203,7 +203,8 @@ Situações de saúde avaliadas no atendimento.
 |---| --- |---  | --- |
 |ProblemaCondicaoAvaliacaoAI|	Sim|	-|	-|
 
-**Referências:**	[ListaCiapCondicaoAvaliada](#listaciapcondicaoavaliada)
+**Referências:**
+[ProblemaCondicaoAvaliacaoAI](#problemacondicaoavaliacaoai)
 
 ### \#15	examesSolicitados
 Lista de exames solicitados que são apresentados na ficha.
@@ -419,7 +420,7 @@ Código do CID10 registrado no atendimento.
 |ABEX006|		Exame de escarro|
 |ABEX026|		Glicemia|
 |ABEX007|		HDL|
-|ABEX008|		Hemoglobina glicosilada|
+|ABEX008|		Hemoglobina glicada|
 |ABEX028|		Hemograma|
 |ABEX009|		LDL|
 |ABEX013|		Retinografia/Fundo de olho com oftamologista|

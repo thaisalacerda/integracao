@@ -29,7 +29,7 @@ Data de realização da atividade coletiva.
 
 **Regras:** Não pode ser posterior a data atual.
 
-**Referência:** [Epoch Wikipedia](https://en.wikipedia.org/wiki/Epoch)
+**Referência:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix)
 
 ### \#3	numParticipantesProgramados
 Previsão da quantidade de participantes para a atividade coletiva.
@@ -56,7 +56,7 @@ Hora de início da realização da atividade coletiva.
 
 **Regras:** Verificar validações.
 
-**Referência:** [Epoch Wikipedia](https://en.wikipedia.org/wiki/Epoch)
+**Referência:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix)
 
 ### \#6	horaFim
 Hora de fim de realização da atividade coletiva.
@@ -67,7 +67,7 @@ Hora de fim de realização da atividade coletiva.
 
 **Regras:** Deve ser posterior a [horaInicio](#5-horainicio).
 
-**Referência:** [Epoch Wikipedia](https://en.wikipedia.org/wiki/Epoch)
+**Referência:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix)
 
 ### \#7	inep
 Número INEP da instituição.
@@ -233,7 +233,7 @@ Data de nascimento do cidadão.
 
 **Regras:** 	Não pode ser posterior a [dataAtendimento]({% url profissional %}#5-dataatendimento) e anterior a 130 anos a partir da [dataAtendimento]({% url profissional %}#5-dataatendimento).
 
-**Referências**: [Epoch Wikipedia](https://en.wikipedia.org/wiki/Epoch_(reference_date))
+**Referências**: [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix_(reference_date))
 
 ### \#3	avaliacaoAlterada
 Marcador que indica que a avaliação do cidadão teve um valor diferente dos considerados normais.

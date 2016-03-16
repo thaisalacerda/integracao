@@ -505,7 +505,7 @@ Data de nascimento do cidadão no formato epoch time.
 
 **Regras:** Não pode ser posterior a [dataAtendimento]({% url profissional %}#5-dataatendimento) ou mais anterior que 130 anos a partir da [dataAtendimento]({% url profissional %}#5-dataatendimento).
 
-**Referência:** [Epoch Wikipedia](https://en.wikipedia.org/wiki/Epoch_(reference_date)).
+**Referência:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix).
 
 ### \#4 dataNascimentoResponsavel
 Data de nascimento do responsável pelo cidadão no formato epoch time.
@@ -516,7 +516,7 @@ Data de nascimento do responsável pelo cidadão no formato epoch time.
 
 **Regras:** Não pode ser posterior a [dataAtendimento]({% url profissional %}#5-dataatendimento) ou mais anterior que 130 anos a partir da [dataAtendimento]({% url profissional %}#5-dataatendimento).
 
-**Referência:** [Epoch Wikipedia](https://en.wikipedia.org/wiki/Epoch_(reference_date)).
+**Referência:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix).
 
 ### \#5 desconheceNomeMae
 Marcador que indica que o cidadão desconhece o nome da mãe
