@@ -60,7 +60,7 @@ Data de nascimento do cidadão.
 
 **Regras:** Não pode ser posterior a [dataAtendimento]({% url profissional %}#5-dataatendimento) e anterior a 130 anos a partir da [dataAtendimento]({% url profissional %}#5-dataatendimento).
 
-**Referências:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix)
+**Referências:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milisegundos.
 
 ### \#2	numCartaoSus
 CNS do cidadão.

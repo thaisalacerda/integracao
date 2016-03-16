@@ -80,7 +80,7 @@ Data de nascimento do cidadão.
 
 **Regras:** Não pode ser posterior a [dataAtendimento]({% url profissional %}#5-dataatendimento) e anterior a 130 anos a partir da [dataAtendimento]({% url profissional %}#5-dataatendimento).
 
-**Refererência**: [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix).
+**Refererência**: [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milisegundos.
 
 ### \#4	localDeAtendimento
 Código do local onde o atendimento foi realizado.
@@ -171,7 +171,7 @@ Data da última menstruação da gestante.
 * Não pode ser superior a [dataAtendimento]({% url profissional %}#5-dataatendimento), nem inferior a data de nascimento.
 * Não pode ser preenchido quando [Sexo](#5-sexo) = `0 (masculino)`.
 
-**Referências:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix)
+**Referências:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milisegundos.
 
 ### \#12	idadeGestacional
 Idade gestacional em semanas.

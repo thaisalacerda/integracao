@@ -29,7 +29,7 @@ Data de realização da atividade coletiva.
 
 **Regras:** Não pode ser posterior a data atual.
 
-**Referência:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix)
+**Referência:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milisegundos.
 
 ### \#3	numParticipantesProgramados
 Previsão da quantidade de participantes para a atividade coletiva.
@@ -56,7 +56,7 @@ Hora de início da realização da atividade coletiva.
 
 **Regras:** Verificar validações.
 
-**Referência:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix)
+**Referência:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milisegundos.
 
 ### \#6	horaFim
 Hora de fim de realização da atividade coletiva.
@@ -67,7 +67,7 @@ Hora de fim de realização da atividade coletiva.
 
 **Regras:** Deve ser posterior a [horaInicio](#5-horainicio).
 
-**Referência:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix)
+**Referência:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milisegundos.
 
 ### \#7	inep
 Número INEP da instituição.

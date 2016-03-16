@@ -143,7 +143,7 @@ Data de nascimento, no formato epoch time, do cidadão responsável pela famíli
 |---| --- |---  | --- |
 |Long|	Não|	-|	-|
 
-**Referências:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix).
+**Referências:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milisegundos.
 
 ### \#2	numeroCnsResponsavel
 CNS do responsável familiar.
@@ -186,7 +186,7 @@ Mês e ano que a família começou a residir no domicílio, no formato epoch tim
 |---| --- |---  | --- |
 |Long|	Não|	-|	-|
 
-**Referências:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix).
+**Referências:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milisegundos.
 
 ### \#7	stMudanca
 Marcador que indica se a familia mudou-se.

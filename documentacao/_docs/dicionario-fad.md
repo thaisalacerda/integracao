@@ -76,7 +76,7 @@ Data de nascimento do cidadão.
 
 **Regras:** Não pode ser posterior a [dataAtendimento]({% url profissional%}#5-dataatendimento) e anterior a 130 anos a partir da [dataAtendimento]({% url profissional%}#5-dataatendimento).
 
-**Referencias:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix)
+**Referencias:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milisegundos.
 
 ### \#4	sexo
 Código do sexo do cidadão.
