@@ -60,7 +60,7 @@ Data de nascimento do cidadão.
 
 **Regras:** Não pode ser posterior a [dataAtendimento]({% url profissional %}#5-dataatendimento) e anterior a 130 anos a partir da [dataAtendimento]({% url profissional %}#5-dataatendimento).
 
-**Referências:** [Epoch Wikipedia](https://en.wikipedia.org/wiki/Epoch_(reference_date))
+**Referências:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milisegundos.
 
 ### \#2	numCartaoSus
 CNS do cidadão.
@@ -89,7 +89,7 @@ Marcador que indica se o cidadão está gestante.
 |---| --- |---  | --- |
 |Boolean|	Não|	-|	-|
 
-**Regras:** [Sexo](#14-sexo) = `1L (feminino)`.
+**Regras:** [Sexo](#14-sexo) = `1 (feminino)`.
 
 ### \#5	necessidadesEspeciais
 Marcador que indica se o cidadão é portador de necessidades especiais.
@@ -105,7 +105,7 @@ Código do local onde o atendimento foi realizado.
 |---| --- |---  | --- |
 |Long|	Sim|	-|	-|
 
-**Regras:** Apenas valores de `1L` a `10L`.
+**Regras:** Apenas valores de `1` a `10`.
 
 **Referências:** [LocalDeAtendimento]({% url dicionario %}#localdeatendimento)
 
@@ -116,7 +116,7 @@ Código do tipo de atendimento realizado.
 |---| --- |---  | --- |
 |Long|	Sim|	-|	-|
 
-**Regras:** Apenas valores de `2L` a `6L`.
+**Regras:** Apenas valores de `2` a `6`.
 
 **Referências:**	[TipoDeAtendimento]({% url dicionario %}#tipodeatendimento)
 
@@ -156,10 +156,10 @@ Código do tipo de consulta odontológica realizada.
 
 **Regras:**
 
-* É Requerido se o [TipoDeAtendimento]({% url dicionario %}#tipodeatendimento) = `2L (consulta agendada)`.
-* Não pode ser preenchido se o [TipoDeAtendimento]({% url dicionario %}#tipodeatendimento) = `4L (escuta inicial ou orientação)`.
-* Se o [TipoDeAtendimento]({% url dicionario %}#tipodeatendimento) = `6L (atendimento de urgência)`, a opção de `2L (consulta de retorno)` não pode ser marcada.
-* Se [TipoDeAtendimento]({% url dicionario %}#tipodeatendimento) = `5L (consulta no dia)`, o campo é opcional.
+* É Requerido se o [TipoDeAtendimento]({% url dicionario %}#tipodeatendimento) = `2 (consulta agendada)`.
+* Não pode ser preenchido se o [TipoDeAtendimento]({% url dicionario %}#tipodeatendimento) = `4 (escuta inicial ou orientação)`.
+* Se o [TipoDeAtendimento]({% url dicionario %}#tipodeatendimento) = `6 (atendimento de urgência)`, a opção de `2 (consulta de retorno)` não pode ser marcada.
+* Se [TipoDeAtendimento]({% url dicionario %}#tipodeatendimento) = `5 (consulta no dia)`, o campo é opcional.
 * Aceita apenas um registro.
 
 **Referências:** [TipoDeConsultaOdonto]({% url dicionario %}#tipodeconsultaodonto)

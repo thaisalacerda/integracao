@@ -169,8 +169,8 @@ Código d as doenças respiratórias que o cidadão informou.
 
 **Regras:**
 
-* Requerido preenchimento de pelo menos um item se o campo [statusTemDoencaRespiratorio](#18-statustemdoencarespiratorio) = `true`.
-*  Não deve ser preenchido o campo [statusTemDoencaRespiratorio](#18-statustemdoencarespiratorio) = `false`.
+* Requerido preenchimento de pelo menos um item se o campo [statusTemDoencaRespiratoria](#18-statustemdoencarespiratoria) = `true`.
+*  Não deve ser preenchido o campo [statusTemDoencaRespiratoria](#18-statustemdoencarespiratoria) = `false`.
 
 **Referência:** [DoencaRespiratoria]({% url dicionario %}#doencarespiratoria).
 
@@ -260,7 +260,7 @@ Marcador se o cidadão tem diabetes.
 |--- |--- |--- |--- |
 |Boolean |Não |- |- |
 
-### \#18 statusTemDoencaRespiratorio
+### \#18 statusTemDoencaRespiratoria
 Marcador se o cidadão tem doença respiratória.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -492,7 +492,7 @@ Código IBGE do município.
 |--- |--- |--- |--- |
 |String |Condicional |7 |7 |
 
-**Regras:** Requerido se o campo [nacionalidadeCidadao](#7-nacionalidadecidadao) = `1L (Brasileiro)` e não pode ser preenchido se for outra nacionalidade.
+**Regras:** Requerido se o campo [nacionalidadeCidadao](#7-nacionalidadecidadao) = `1 (Brasileiro)` e não pode ser preenchido se for outra nacionalidade.
 
 **Referência:** [Municipios]({% url municipios %}).
 
@@ -505,7 +505,7 @@ Data de nascimento do cidadão no formato epoch time.
 
 **Regras:** Não pode ser posterior a [dataAtendimento]({% url profissional %}#5-dataatendimento) ou mais anterior que 130 anos a partir da [dataAtendimento]({% url profissional %}#5-dataatendimento).
 
-**Referência:** [Epoch Wikipedia](https://en.wikipedia.org/wiki/Epoch_(reference_date)).
+**Referência:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milisegundos.
 
 ### \#4 dataNascimentoResponsavel
 Data de nascimento do responsável pelo cidadão no formato epoch time.
@@ -516,7 +516,7 @@ Data de nascimento do responsável pelo cidadão no formato epoch time.
 
 **Regras:** Não pode ser posterior a [dataAtendimento]({% url profissional %}#5-dataatendimento) ou mais anterior que 130 anos a partir da [dataAtendimento]({% url profissional %}#5-dataatendimento).
 
-**Referência:** [Epoch Wikipedia](https://en.wikipedia.org/wiki/Epoch_(reference_date)).
+**Referência:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milisegundos.
 
 ### \#5 desconheceNomeMae
 Marcador que indica que o cidadão desconhece o nome da mãe
@@ -611,7 +611,7 @@ Código do país de nascimento do cidadão.
 |--- |--- |--- |--- |
 |Long |Não |- |- |
 
-**Regras:** Só pode ser preenchido se o campo [nacionalidadeCidadao](#7-nacionalidadecidadao) for diferente de `1L (Brasileira)`.
+**Regras:** Só pode ser preenchido se o campo [nacionalidadeCidadao](#7-nacionalidadecidadao) for diferente de `1 (Brasileira)`.
 
 **Referência:** [País]({% url referencias %}#país).
 

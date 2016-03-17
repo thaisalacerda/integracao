@@ -143,7 +143,7 @@ Data de nascimento, no formato epoch time, do cidadão responsável pela famíli
 |---| --- |---  | --- |
 |Long|	Não|	-|	-|
 
-**Referências:** [Epoch Wikipedia](https://en.wikipedia.org/wiki/Epoch_(reference_date)).
+**Referências:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milisegundos.
 
 ### \#2	numeroCnsResponsavel
 CNS do responsável familiar.
@@ -186,7 +186,7 @@ Mês e ano que a família começou a residir no domicílio, no formato epoch tim
 |---| --- |---  | --- |
 |Long|	Não|	-|	-|
 
-**Referências:** [Epoch Wikipedia](https://en.wikipedia.org/wiki/Epoch_(reference_date)).
+**Referências:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milisegundos.
 
 ### \#7	stMudanca
 Marcador que indica se a familia mudou-se.
@@ -209,7 +209,7 @@ CEP do logradouro do domicílio.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-| String|	Não|	8|	8|
+| String|	Sim|	8|	8|
 
 **Regras:**	Apenas números.
 
@@ -311,7 +311,7 @@ Código da condição de posse e uso da terra.
 |---| --- |---  | --- |
 |Long|	Condicional | 	-|	-|
 
-**Regras:** Preenchimento obrigatório caso o campo [Localização](#5-localizacao) = `84L (rural)`.
+**Regras:** Preenchimento obrigatório caso o campo [Localização](#5-localizacao) = `84 (rural)`.
 
 **Referências:** [CondicaoDePosseEUsoDaTerra]({% url dicionario %}#condicaodeposseeusodaterra)
 

@@ -218,75 +218,75 @@ Observações: Os campos `#2` e `#3` são mutuamente exclusivos, isto é, um e a
 
 |Descrição	|Código | Respostas aceitas |
 |--- |--- |--- |
-|A\_CRIANCA\_ONTEM\_TOMOU\_LEITE\_DO\_PEITO |1L |• 1L - SIM <br> • 2L - NÃO <br> • 3L - NÃO\_SABE |
-|MINGAU |3L |• 1L - SIM <br> • 2L - NÃO <br> • 3L - NÃO\_SABE |
-|AGUA\_CHA |4L |• 1L - SIM <br> • 2L - NÃO <br> • 3L - NÃO\_SABE |
-|LEITE\_VACA |5L |• 1L - SIM <br> • 2L - NÃO <br> • 3L - NÃO\_SABE |
-|FORMULA\_INFANTIL |6L |• 1L - SIM <br> • 2L - NÃO <br> • 3L - NÃO\_SABE |
-|SUCO\_FRUTA	|7L |• 1L - SIM <br> • 2L - NÃO <br> • 3L - NÃO\_SABE |
-|FRUTA |8L |• 1L - SIM <br> • 2L - NÃO <br> • 3L - NÃO\_SABE |
-|COMIDA\_DE\_SAL |9L | • 1L - SIM <br> • 2L - NÃO <br> • 3L - NÃO\_SABE |
-|OUTROS\_ALIMENTOS\_BEBIDAS |10L | • 1L - SIM <br> • 2L - NÃO <br> • 3L - NÃO\_SABE |
+|A\_CRIANCA\_ONTEM\_TOMOU\_LEITE\_DO\_PEITO |1 |• 1 - SIM <br> • 2 - NÃO <br> • 3 - NÃO\_SABE |
+|MINGAU |3 |• 1 - SIM <br> • 2 - NÃO <br> • 3 - NÃO\_SABE |
+|AGUA\_CHA |4 |• 1 - SIM <br> • 2 - NÃO <br> • 3 - NÃO\_SABE |
+|LEITE\_VACA |5 |• 1 - SIM <br> • 2 - NÃO <br> • 3 - NÃO\_SABE |
+|FORMULA\_INFANTIL |6 |• 1 - SIM <br> • 2 - NÃO <br> • 3 - NÃO\_SABE |
+|SUCO\_FRUTA	|7 |• 1 - SIM <br> • 2 - NÃO <br> • 3 - NÃO\_SABE |
+|FRUTA |8 |• 1 - SIM <br> • 2 - NÃO <br> • 3 - NÃO\_SABE |
+|COMIDA\_DE\_SAL |9 | • 1 - SIM <br> • 2 - NÃO <br> • 3 - NÃO\_SABE |
+|OUTROS\_ALIMENTOS\_BEBIDAS |10 | • 1 - SIM <br> • 2 - NÃO <br> • 3 - NÃO\_SABE |
 
 ## PerguntaCriancasDeSeisVinteTresMesesEnum
 
 |Descrição |Código |Respostas aceitas |
 |--- |--- |--- |
-|A\_CRIANCA\_ONTEM\_TOMOU\_LEITE\_PEITO  |21L |• 1L - SIM <br> • 2L - NÃO <br> • 3L - NÃO\_SABE|
-|ONTEM\_A\_CRIANCA\_COMEU\_FRUTA\_INTEIRA\_PEDACO\_AMASSADO |22L |• 1L - SIM <br> • 2L - NÃO <br> • 3L - NÃO\_SABE|
-|SE\_COMEU\_FRUTA\_QUANTAS\_VEZES |23L |• 3L - NÃO\_SABE <br> • 4L - UMA\_VEZ <br> • 5L - DUAS\_VEZES <br> • 6L - TRES\_VEZES\_OU\_MAIS |
-|ONTEM\_A\_CRIANCA\_COMEU\_COMIDA\_DE\_SAL |24L |• 1L - SIM <br> • 2L - NÃO <br> • 3L - NÃO\_SABE |
-|SE\_COMEU\_COMIDA\_DE\_SAL\_QUANTAS\_VEZES |25L | • 3L - NÃO\_SABE <br> • 4L - UMA\_VEZ <br> • 5L - DUAS\_VEZES <br> • 6L - TRES\_VEZES\_OU\_MAIS |
-|SE\_SIM\_ESSA\_COMIDA\_FOI\_OFERECIDA |26L | • 3L - NÃO\_SABE <br> • 7L - EM\_PEDACOS <br> • 8L - AMASSADA <br> • 9L - PASSADA\_NA\_PENEIRA <br> • 10L - LIQUIDIFICADA <br> • 11L - SO\_O\_CALDO |
-|OUTRO\_LEITE\_QUE\_NAO\_LEITE\_DO\_PEITO |28L |• 1L - SIM <br>• 2L - NÃO <br> • 3L - NÃO\_SABE |
-|MINGAU\_COM\_LEITE |29L |• 1L - SIM <br>• 2L - NÃO <br> • 3L - NÃO\_SABE |
-|IOGURTE |30L |• 1L - SIM <br>• 2L - NÃO <br> • 3L - NÃO\_SABE |
-|LEGUMES |31L |• 1L - SIM <br>• 2L - NÃO <br> • 3L - NÃO\_SABE |
-|VEGETAL\_OU\_FRUTAS\_COR\_ALARANJADA\_OU\_FOLHAS\_ESCURAS |32L |• 1L - SIM <br>• 2L - NÃO <br> • 3L - NÃO\_SABE |
-|VERDURA\_DE\_FOLHA |33L |• 1L - SIM <br>• 2L - NÃO <br> • 3L - NÃO\_SABE |
-|CARNE |34L |• 1L - SIM <br>• 2L - NÃO <br> • 3L - NÃO\_SABE |
-|FIGADO |35L |• 1L - SIM <br>• 2L - NÃO <br> • 3L - NÃO\_SABE |
-|FEIJAO |36L |• 1L - SIM <br>• 2L - NÃO <br> • 3L - NÃO\_SABE |
-|ARROZ\_BATATA\_INHAME\_MANDIOCA\_FARINHA\_MACARRAO |37L |• 1L - SIM <br>• 2L - NÃO <br> • 3L - NÃO\_SABE |
-|HAMBURGUER\_E\_OU\_EMBUTIDOS |38L |• 1L - SIM <br>• 2L - NÃO <br> • 3L - NÃO\_SABE |
-|BEBIDAS\_ADOCADAS |39L |• 1L - SIM <br>• 2L - NÃO <br> • 3L - NÃO\_SABE |
-|MACARRAO\_INSTANTANEO\_SALGADINHOS\_BISCOITOS |40L |• 1L - SIM <br>• 2L - NÃO <br> • 3L - NÃO\_SABE |
-|BISCOITO\_RECHEADO\_DOCES\_OU\_GULOSEIMAS |41L |• 1L - SIM <br>• 2L - NÃO <br> • 3L - NÃO\_SABE |
+|A\_CRIANCA\_ONTEM\_TOMOU\_LEITE\_PEITO  |21 |• 1 - SIM <br> • 2 - NÃO <br> • 3 - NÃO\_SABE|
+|ONTEM\_A\_CRIANCA\_COMEU\_FRUTA\_INTEIRA\_PEDACO\_AMASSADO |22 |• 1 - SIM <br> • 2 - NÃO <br> • 3 - NÃO\_SABE|
+|SE\_COMEU\_FRUTA\_QUANTAS\_VEZES |23 |• 3 - NÃO\_SABE <br> • 4 - UMA\_VEZ <br> • 5 - DUAS\_VEZES <br> • 6 - TRES\_VEZES\_OU\_MAIS |
+|ONTEM\_A\_CRIANCA\_COMEU\_COMIDA\_DE\_SAL |24 |• 1 - SIM <br> • 2 - NÃO <br> • 3 - NÃO\_SABE |
+|SE\_COMEU\_COMIDA\_DE\_SAL\_QUANTAS\_VEZES |25 | • 3 - NÃO\_SABE <br> • 4 - UMA\_VEZ <br> • 5 - DUAS\_VEZES <br> • 6 - TRES\_VEZES\_OU\_MAIS |
+|SE\_SIM\_ESSA\_COMIDA\_FOI\_OFERECIDA |26 | • 3 - NÃO\_SABE <br> • 7 - EM\_PEDACOS <br> • 8 - AMASSADA <br> • 9 - PASSADA\_NA\_PENEIRA <br> • 10 - LIQUIDIFICADA <br> • 11 - SO\_O\_CALDO |
+|OUTRO\_LEITE\_QUE\_NAO\_LEITE\_DO\_PEITO |28 |• 1 - SIM <br>• 2 - NÃO <br> • 3 - NÃO\_SABE |
+|MINGAU\_COM\_LEITE |29 |• 1 - SIM <br>• 2 - NÃO <br> • 3 - NÃO\_SABE |
+|IOGURTE |30 |• 1 - SIM <br>• 2 - NÃO <br> • 3 - NÃO\_SABE |
+|LEGUMES |31 |• 1 - SIM <br>• 2 - NÃO <br> • 3 - NÃO\_SABE |
+|VEGETAL\_OU\_FRUTAS\_COR\_ALARANJADA\_OU\_FOLHAS\_ESCURAS |32 |• 1 - SIM <br>• 2 - NÃO <br> • 3 - NÃO\_SABE |
+|VERDURA\_DE\_FOLHA |33 |• 1 - SIM <br>• 2 - NÃO <br> • 3 - NÃO\_SABE |
+|CARNE |34 |• 1 - SIM <br>• 2 - NÃO <br> • 3 - NÃO\_SABE |
+|FIGADO |35 |• 1 - SIM <br>• 2 - NÃO <br> • 3 - NÃO\_SABE |
+|FEIJAO |36 |• 1 - SIM <br>• 2 - NÃO <br> • 3 - NÃO\_SABE |
+|ARROZ\_BATATA\_INHAME\_MANDIOCA\_FARINHA\_MACARRAO |37 |• 1 - SIM <br>• 2 - NÃO <br> • 3 - NÃO\_SABE |
+|HAMBURGUER\_E\_OU\_EMBUTIDOS |38 |• 1 - SIM <br>• 2 - NÃO <br> • 3 - NÃO\_SABE |
+|BEBIDAS\_ADOCADAS |39 |• 1 - SIM <br>• 2 - NÃO <br> • 3 - NÃO\_SABE |
+|MACARRAO\_INSTANTANEO\_SALGADINHOS\_BISCOITOS |40 |• 1 - SIM <br>• 2 - NÃO <br> • 3 - NÃO\_SABE |
+|BISCOITO\_RECHEADO\_DOCES\_OU\_GULOSEIMAS |41 |• 1 - SIM <br>• 2 - NÃO <br> • 3 - NÃO\_SABE |
 
 ## PerguntaCriancasComMaisDoisAnosEnum
 |Descrição	|Código	|Respostas aceitas|
 |--- |--- |--- |
-|VOCE\_TEM\_COSTUME\_DE\_REALIZAR\_AS\_REFEICOES\_ASSISTINDO\_TV\_MEXENDO\_NO\_COMPUTADOR\_E\_OU\_CELULAR |11 |• 1L - SIM <br>• 2L - NÃO <br> • 3L - NÃO\_SABE |
+|VOCE\_TEM\_COSTUME\_DE\_REALIZAR\_AS\_REFEICOES\_ASSISTINDO\_TV\_MEXENDO\_NO\_COMPUTADOR\_E\_OU\_CELULAR |11 |• 1 - SIM <br>• 2 - NÃO <br> • 3 - NÃO\_SABE |
 |QUAIS\_REFEICOES\_VOCE\_FAZ\_AO\_LONGO\_DO\_DIA |12 | [RespostaMultiplaEscolhaEnum](#respostamultiplaescolhaenum) |
-|FEIJAO	|14	|• 1L - SIM <br>• 2L - NÃO <br> • 3L - NÃO\_SABE |
-|FRUTAS\_FRESCAS	|15	|• 1L - SIM <br>• 2L - NÃO <br> • 3L - NÃO\_SABE |
-|VERDURAS\_E\_OU\_LEGUMES |16 |• 1L - SIM <br>• 2L - NÃO <br> • 3L - NÃO\_SABE |
-|HAMBURGUER\_E\_OU\_EMBUTIDOS |17 |• 1L - SIM <br>• 2L - NÃO <br> • 3L - NÃO\_SABE |
-|BEBIDAS\_ADOCADAS |18 |• 1L - SIM <br>• 2L - NÃO <br> • 3L - NÃO\_SABE |
-|MACARRAO\_INSTANTANEO\_SALGADINHOS\_BISCOITOS |19 |• 1L - SIM <br>• 2L - NÃO <br> • 3L - NÃO\_SABE |
-|BISCOITO\_RECHEADO\_DOCES\_OU\_GULOSEIMAS |20 |• 1L - SIM <br>• 2L - NÃO <br> • 3L - NÃO\_SABE |
+|FEIJAO	|14	|• 1 - SIM <br>• 2 - NÃO <br> • 3 - NÃO\_SABE |
+|FRUTAS\_FRESCAS	|15	|• 1 - SIM <br>• 2 - NÃO <br> • 3 - NÃO\_SABE |
+|VERDURAS\_E\_OU\_LEGUMES |16 |• 1 - SIM <br>• 2 - NÃO <br> • 3 - NÃO\_SABE |
+|HAMBURGUER\_E\_OU\_EMBUTIDOS |17 |• 1 - SIM <br>• 2 - NÃO <br> • 3 - NÃO\_SABE |
+|BEBIDAS\_ADOCADAS |18 |• 1 - SIM <br>• 2 - NÃO <br> • 3 - NÃO\_SABE |
+|MACARRAO\_INSTANTANEO\_SALGADINHOS\_BISCOITOS |19 |• 1 - SIM <br>• 2 - NÃO <br> • 3 - NÃO\_SABE |
+|BISCOITO\_RECHEADO\_DOCES\_OU\_GULOSEIMAS |20 |• 1 - SIM <br>• 2 - NÃO <br> • 3 - NÃO\_SABE |
 
 ## RespostaUnicaEscolhaEnum
 |Descrição |Código |
 |--- |--- |
-|SIM |1L |
-|NÃO |2L |
-|NAO\_SABE |3L |
-|UMA\_VEZ |4L |
-|DUAS\_VEZES |5L |
-|TRES\_VEZES\_OU\_MAIS |6L |
-|EM\_PEDACOS |7L |
-|AMASSADA |8L |
-|PASSADA\_NA\_PENEIRA |9L |
-|LIQUIDIFICADA	 |10L |
-|SO\_O\_CALDO	 |11L |
+|SIM |1 |
+|NÃO |2 |
+|NAO\_SABE |3 |
+|UMA\_VEZ |4 |
+|DUAS\_VEZES |5 |
+|TRES\_VEZES\_OU\_MAIS |6 |
+|EM\_PEDACOS |7 |
+|AMASSADA |8 |
+|PASSADA\_NA\_PENEIRA |9 |
+|LIQUIDIFICADA	 |10 |
+|SO\_O\_CALDO	 |11 |
 
 ## RespostaMultiplaEscolhaEnum
 |Descrição |Código |
 |--- |--- |
-|CAFE\_DA\_MANHA |12L |
-|LANCHE\_DA\_MANHA |13L |
-|ALMOCO |14L |
-|LANCHE\_DA\_TARDE |15L |
-|JANTAR |16L |
-|CEIA |17L |
+|CAFE\_DA\_MANHA |12 |
+|LANCHE\_DA\_MANHA |13 |
+|ALMOCO |14 |
+|LANCHE\_DA\_TARDE |15 |
+|JANTAR |16 |
+|CEIA |17 |

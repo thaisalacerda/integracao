@@ -29,7 +29,7 @@ Data de realização da atividade coletiva.
 
 **Regras:** Não pode ser posterior a data atual.
 
-**Referência:** [Epoch Wikipedia](https://en.wikipedia.org/wiki/Epoch)
+**Referência:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milisegundos.
 
 ### \#3	numParticipantesProgramados
 Previsão da quantidade de participantes para a atividade coletiva.
@@ -56,7 +56,7 @@ Hora de início da realização da atividade coletiva.
 
 **Regras:** Verificar validações.
 
-**Referência:** [Epoch Wikipedia](https://en.wikipedia.org/wiki/Epoch)
+**Referência:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milisegundos.
 
 ### \#6	horaFim
 Hora de fim de realização da atividade coletiva.
@@ -67,7 +67,7 @@ Hora de fim de realização da atividade coletiva.
 
 **Regras:** Deve ser posterior a [horaInicio](#5-horainicio).
 
-**Referência:** [Epoch Wikipedia](https://en.wikipedia.org/wiki/Epoch)
+**Referência:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milisegundos.
 
 ### \#7	inep
 Número INEP da instituição.
@@ -151,8 +151,8 @@ Temas para reunião.
 
 **Regras:**
 
-* É Requerido se [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva) for `1L`, `2L` ou `3L`.
-* Não pode ser preenchido se [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva) for `4L`, `5L`, `6L` ou `7L`.
+* É Requerido se [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva) for `1`, `2` ou `3`.
+* Não pode ser preenchido se [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva) for `4`, `5`, `6` ou `7`.
 
 **Referência:** [TemasParaReuniao]({% url dicionario %}#temasparareuniao)
 
@@ -165,8 +165,8 @@ Código do público alvo da atividade.
 
 **Regras:**
 
-* É Requerido se [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva) for `4L`, `5L`, `6L` ou `7L`.
-* Não pode ser preenchido se [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva) for `1L`, `2L` ou `3L`.
+* É Requerido se [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva) for `4`, `5`, `6` ou `7`.
+* Não pode ser preenchido se [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva) for `1`, `2` ou `3`.
 
 **Referência:** [PublicoAlvo]({% url dicionario %}#publicoalvo)
 
@@ -179,8 +179,8 @@ Código das práticas ou temas abordados na atividade.
 
 **Regras:**
 
-* É Requerido se [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva) for `4L`, `5L`, `6L` ou `7L`.
-* Não pode ser preenchido se [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva) for `1L`, `2L` ou `3L`.
+* É Requerido se [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva) for `4`, `5`, `6` ou `7`.
+* Não pode ser preenchido se [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva) for `1`, `2` ou `3`.
 
 **Referências**:	[PraticasTemasParaSaude]({% url dicionario %}#praticastemasparasaude)
 
@@ -233,7 +233,7 @@ Data de nascimento do cidadão.
 
 **Regras:** 	Não pode ser posterior a [dataAtendimento]({% url profissional %}#5-dataatendimento) e anterior a 130 anos a partir da [dataAtendimento]({% url profissional %}#5-dataatendimento).
 
-**Referências**: [Epoch Wikipedia](https://en.wikipedia.org/wiki/Epoch_(reference_date))
+**Referências**: [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix_(reference_date))
 
 ### \#3	avaliacaoAlterada
 Marcador que indica que a avaliação do cidadão teve um valor diferente dos considerados normais.

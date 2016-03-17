@@ -262,7 +262,7 @@ order: 0
 |1 |	AD 1|	-|
 |2 |	AD 2|	-|
 |3 |	AD 3|	-|
-|4 |	Ielegível |	Utilizado apenas na ficha de avaliação de elegibilidade|
+|4 |	Inelegível |	Utilizado apenas na ficha de avaliação de elegibilidade|
 
 ## MotivoSaida
 |Código|	Descrição|	Observações|
