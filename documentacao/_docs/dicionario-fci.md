@@ -47,6 +47,8 @@ Marcador que indica se a ficha é uma atualização.
 |--- |--- |--- |--- |
 |Boolean |Sim |- |- |
 
+**Observação:** Caso seja uma ficha de atualização, o campo [uuidFichaOriginadora](#10-uuidfichaoriginadora) deve ser preenchido com o UUID da ficha que deu origem ao registro.
+
 ### \#5 identificacaoUsuarioCidadao
 Dados que identificam o cidadão.
 
