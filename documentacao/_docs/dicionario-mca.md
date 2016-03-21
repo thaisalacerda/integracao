@@ -137,7 +137,9 @@ Identificador da pergunta referente ao questionário para cidadãos menores de s
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|PerguntaCriancasMenoresSeisMesesEnum |Sim |- |- |
+|PerguntaCriancasMenoresSeisMesesEnum |Condicional |- |- |
+
+**Regras:** Obrigatório caso a [dataNascimento](4-datanascimento) seja menos que 6 meses anterior à [DataAtendimento](#5-dataatendimento).
 
 **Referência:** [PerguntaCriancasMenoresSeisMesesEnum](#perguntacriancasmenoresseismesesenum).
 
@@ -146,9 +148,9 @@ Resposta referente à pergunta.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|RespostaUnicaEscolhaEnum |Sim |- |- |
+|RespostaUnicaEscolhaEnum |Condicional |- |- |
 
-**Regras:** Deve respeitar as regras das respostas referentes à pergunta.
+**Regras:** Obrigatório caso a [dataNascimento](4-datanascimento) seja menos que 6 meses anterior à [DataAtendimento](#5-dataatendimento).
 
 **Referência:** [RespostaUnicaEscolhaEnum](#respostaunicaescolhaenum).
 
@@ -159,7 +161,9 @@ Identificador da pergunta referente ao questionário para cidadãos menores de s
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|PerguntaCriancasDeSeisVinteTresMesesEnum |Sim |- |- |
+|PerguntaCriancasDeSeisVinteTresMesesEnum |Condicional |- |- |
+
+**Regras:** Obrigatório caso a [dataNascimento](4-datanascimento) seja menos que 23 meses e mais que 6 meses anterior à [DataAtendimento](#5-dataatendimento).
 
 **Referências:** [PerguntaCriancasDeSeisVinteTresMesesEnum](#perguntacriancasdeseisvintetresmesesenum).
 
@@ -168,9 +172,9 @@ Resposta referente a pergunta.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|RespostaUnicaEscolhaEnum |Sim |- |- |
+|RespostaUnicaEscolhaEnum |Condicional |- |- |
 
-**Regras:** Deve respeitar as regras das respostas referente a pergunta.
+**Regras:** Obrigatório caso a [dataNascimento](4-datanascimento) seja menos que 24 meses e mais que 6 meses anterior à [DataAtendimento](#5-dataatendimento).
 
 **Referências:** [RespostaUnicaEscolhaEnum](#respostaunicaescolhaenum).
 
@@ -181,7 +185,9 @@ Pergunta do questionário de cidadãos que tem vinte e quatro meses ou mais.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|PerguntaCriancasComMaisDoisAnosEnum | Sim |- |- |
+|PerguntaCriancasComMaisDoisAnosEnum | Condicional |- |- |
+
+**Regras:** Obrigatório caso a [dataNascimento](4-datanascimento) seja mais que 24 meses anterior à [DataAtendimento](#5-dataatendimento).
 
 **Referência:** [PerguntaCriancasComMaisDoisAnosEnum](#perguntacriancascommaisdoisanosenum).
 
@@ -192,7 +198,7 @@ Resposta referente a pergunta do registro.
 |--- |--- |--- |--- |
 |RespostaUnicaEscolhaEnum |Condicional |- |- |
 
-**Regras:** Deve respeitar as regras das respostas referente a pergunta.
+**Regras:** Obrigatório caso a [dataNascimento](4-datanascimento) seja mais que 24 meses anterior à [DataAtendimento](#5-dataatendimento).
 
 **Referência:** [RespostaUnicaEscolhaEnum](#respostaunicaescolhaenum).
 
