@@ -182,7 +182,7 @@ Lista dos códigos dos procedimentos que são registrados na ficha de procedimen
 
 **Regras:** Caracteres maiúsculos e sem espaço em branco.
 
-**Referência:** [ListaDeProcedimento](#listadeprocedimento).
+**Referência:** [Procedimentos da Ficha](#procedimentos-da-ficha).
 
 Observação: É requerido pelo menos um dentre os itens `#8` e `#9`.
 
