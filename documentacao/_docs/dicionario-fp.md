@@ -178,7 +178,7 @@ Lista dos códigos dos procedimentos que são registrados na ficha de procedimen
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|List\<String\> |Condicional |0 |32 |
+|List\<String\> |Condicional |0 |23 |
 
 **Regras:** Caracteres maiúsculos e sem espaço em branco.
 
