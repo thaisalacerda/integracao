@@ -73,6 +73,8 @@ Marcador que indica se a ficha é uma atualização.
 |---| --- |---  | --- |
 |Boolean|	Sim|	1|	1|
 
+**Observação:** Caso seja uma ficha de atualização, o campo [uuidFichaOriginadora](#12-uuidfichaoriginadora) deve ser preenchido com o UUID da ficha que deu origem ao registro.
+
 ### \#7	quantosAnimaisNoDomicilio
 Número de animais no domicílio.
 
@@ -117,9 +119,9 @@ Código UUID para identificar a ficha na base de dados nacional.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Sim|	36|	44|
+|String|	Sim|	3|	44|
 
-**Regras:** É recomendado concatenar o CNES na frente do UUID, de modo que os 7 digitos (CNES) + 1 de hífen somados aos 36 (32 caracteres + 4 hífen) do UUID são a limitação de 44 bytes do campo. Formato canônico.
+**Regras:** É recomendado concatenar o CNES na frente do UUID, de modo que os 7 digitos (CNES) + 1 de hífen somados aos 3 (32 caracteres + 4 hífen) do UUID são a limitação de 44 bytes do campo. Formato canônico.
 
 **Referências:** Para ver a referência sobre o UUID, acesse: [UUID Wikipedia](https://en.wikipedia.org/wiki/Universally_unique_identifier).
 
@@ -128,7 +130,7 @@ Código UUID para identificar a ficha que deu origem ao cadastro do registro.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Sim|	36|	44|
+|String|	Sim|	3|	44|
 
 **Regras:** Se for uma ficha de atualização, deve ser preenchido com o UUID da ficha que deu origem ao registro. Se for uma ficha de cadastro, este campo deve ser igual ao campo [UUID](#11-uuid).
 
@@ -179,7 +181,7 @@ Código da renda familiar em salários mínimos.
 
 **Referências:** [RendaFamiliar]({% url dicionario %}#rendafamiliar)
 
-### \#6	resideDesde
+### \#	resideDesde
 Mês e ano que a família começou a residir no domicílio, no formato epoch time.
 
 | Tipo | Obrigatório | Mínimo | Máximo |

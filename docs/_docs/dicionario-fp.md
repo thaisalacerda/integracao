@@ -178,11 +178,11 @@ Lista dos códigos dos procedimentos que são registrados na ficha de procedimen
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|List\<String\> |Condicional |0 |32 |
+|List\<String\> |Condicional |0 |23 |
 
 **Regras:** Caracteres maiúsculos e sem espaço em branco.
 
-**Referência:** [ListaDeProcedimento](#listadeprocedimento).
+**Referência:** [Procedimentos da Ficha](#procedimentos-da-ficha).
 
 Observação: É requerido pelo menos um dentre os itens `#8` e `#9`.
 
