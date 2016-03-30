@@ -233,7 +233,7 @@ Data de nascimento do cidadão.
 
 **Regras:** 	Não pode ser posterior a [dataAtendimento]({% url profissional %}#5-dataatendimento) e anterior a 130 anos a partir da [dataAtendimento]({% url profissional %}#5-dataatendimento).
 
-**Referências**: [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix_(reference_date))
+**Referências**: [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milisegundos.
 
 ### \#3	avaliacaoAlterada
 Marcador que indica que a avaliação do cidadão teve um valor diferente dos considerados normais.
