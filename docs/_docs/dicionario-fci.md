@@ -20,15 +20,6 @@ Formulário referente as condições de saúde do cidadão.
 
 **Referência:** [CondicoesDeSaude](#condicoesdesaude)
 
-### \#2 dadosGerais
-Dados referentes ao profissional e a data do cadastro.
-
-| Tipo | Obrigatório | Mínimo | Máximo |
-|--- |--- |--- |--- |
-|HeaderCdsCadastro |Sim |- |- |
-
-**Referência:** [HeaderCdsCadastro]({% url profissional %}#headercdscadastro).
-
 ### \#3 emSituacaoDeRua
 Formulário referente a informações de situação de rua (se o cidadão se encontrar nessa situação).
 
@@ -106,6 +97,15 @@ Código UUID para identificar a ficha que deu origem ao cadastro do registro.
 **Regras:** Se for uma ficha de atualização, deve ser preenchido com o UUID da ficha que deu origem ao registro. Se for a ficha de cadastro, este campo deve ser igual ao campo uuid.
 
 **Referência:** Para ver a referência sobre o UUID, acesse: [UUID Wikipedia](https://en.wikipedia.org/wiki/Universally_unique_identifier)
+
+### \#12 unicaLotacao
+Dados referentes ao profissional e a data do cadastro.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|--- |--- |--- |--- |
+|unicaLotacao |Sim |- |- |
+
+**Referência:** [unicaLotacao]({% url profissional %}#unicalotacao).
 
 ## CondicoesDeSaude
 
@@ -332,13 +332,6 @@ Marcador se o cidadão esteve internado nos últimos 12 meses.
 |--- |--- |--- |--- |
 |Boolean |Não |- |- |
 
-### \#28 statusTratamentoPsiquicoOuProblemaMental
-Marcador se o cidadão está em tratamento psiquico ou tem problema mental.
-
-| Tipo | Obrigatório | Mínimo | Máximo |
-|--- |--- |--- |--- |
-|Boolean |Não |- |- |
-
 ### \#29 statusUsaOutrasPraticasIntegrativasOuComplementares
 Marcador se o cidadão utiliza outras práticas integrativas complementares.
 
@@ -348,6 +341,13 @@ Marcador se o cidadão utiliza outras práticas integrativas complementares.
 
 ### \#30 statusUsaPlantasMedicinais
 Marcador se o cidadão utiliza plantas medicinais.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|--- |--- |--- |--- |
+|Boolean |Não |- |- |
+
+### \#31 statusDiagnosticoMental
+Marcador que indica se o cidadão teve diagnóstico de problema mental.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
@@ -480,12 +480,12 @@ Código do tempo que o cidadão está em situação de rua.
 
 ## IdentificacaoUsuarioCidadao
 
-### \#1 nomeSocialCidadao
+### \#1 nomeSocial
 Nome social do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|String |Não |0 |100 |
+|String |Não |0 |70 |
 
 ### \#2 codigoIbgeMunicipioNascimento
 Código IBGE do município.
@@ -504,17 +504,6 @@ Data de nascimento do cidadão no formato epoch time.
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
 |Long |Sim |- |- |
-
-**Regras:** Não pode ser posterior a [dataAtendimento]({% url profissional %}#5-dataatendimento) ou mais anterior que 130 anos a partir da [dataAtendimento]({% url profissional %}#5-dataatendimento).
-
-**Referência:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milisegundos.
-
-### \#4 dataNascimentoResponsavel
-Data de nascimento do responsável pelo cidadão no formato epoch time.
-
-| Tipo | Obrigatório | Mínimo | Máximo |
-|--- |--- |--- |--- |
-|Long |Não |- |- |
 
 **Regras:** Não pode ser posterior a [dataAtendimento]({% url profissional %}#5-dataatendimento) ou mais anterior que 130 anos a partir da [dataAtendimento]({% url profissional %}#5-dataatendimento).
 
@@ -550,7 +539,7 @@ Nome completo do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|String |Sim |5 |100 |
+|String |Sim |3 |70 |
 
 **Regras:** Requerido espaço em branco para indicar o sobrenome.
 
@@ -559,14 +548,14 @@ Nome da mãe do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|String |Condicional |5 |100 |
+|String |Condicional |3 |70 |
 
 **Regras:**
 
 * Requerido espaço em branco para indicar o sobrenome.
 * Não deve ser preenchido se o campo [desconheceNomeMae](#5-desconhecenomemae) = `true`.
 
-### \#10 numeroCartaoSus
+### \#10 cnsCidadao
 CNS do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -577,7 +566,7 @@ CNS do cidadão.
 
 **Referência:** Para ver o algoritmo utilizado, acesse: [Cartão Net Datasus](http://cartaonet.datasus.gov.br/), em "Downloads" baixe o arquivo de rotina de validação Java.
 
-### \#11 numeroCartaoSusResponsavel
+### \#11 cnsResponsavelFamiliar
 CNS do responsável do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -585,12 +574,13 @@ CNS do responsável do cidadão.
 |String |Não |15 |15 |
 
 **Regras:**
+
 * Validado por algoritmo.
 * Só pode ser preenchido se o campo [statusEhResponsavel](#17-statusehresponsavel) = `true`.
 
 **Referência:** Para ver o algoritmo utilizado, acesse: [Cartão Net Datasus](http://cartaonet.datasus.gov.br/), em "Downloads" baixe o arquivo de rotina de validação Java.
 
-### \#12 numeroCelularCidadao
+### \#12 telefoneCelular
 Número de celular do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -611,9 +601,11 @@ Código do país de nascimento do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Long |Não |- |- |
+|Long |Conditional |- |- |
 
-**Regras:** Só pode ser preenchido se o campo [nacionalidadeCidadao](#7-nacionalidadecidadao) for diferente de `1 (Brasileira)`.
+**Regras:** 
+* Só pode ser preenchido se o campo [nacionalidadeCidadao](#7-nacionalidadecidadao) for diferente de `1 (Brasileira)`;
+* Se o campo [nacionalidadeCidadao](#7-nacionalidadecidadao) for igual a `3 (Estrangeiro)`, este campo é de preenchimento obrigatório.
 
 **Referência:** [País]({% url referencias %}#país).
 
@@ -641,6 +633,88 @@ Marcador que indica se o cidadão é responsável familiar.
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
 |Boolean |Não |- |- |
+
+## \#18 etnia
+Etnia do cidadão.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|--- |--- |--- |--- |
+|Long |Condicional |-|- |
+
+**Regras:** Só deve ser preenchido se o campo [racaCorCidadao](#15-racacorcidadao) = `5`. Neste caso o preenchimento é obrigatório.
+
+**Referência:** [etnia]({% url dicionario %}#etnia).
+
+### \#19 nomePaiCidadao
+Nome do pai do cidadão.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|--- |--- |--- |--- |
+|String |Condicional |3 |70 |
+
+**Regras:**
+
+* Requerido espaço em branco para indicar o sobrenome.
+* Não deve ser preenchido se o campo [desconheceNomePai](#20-desconhecenomepai) = `true`. Caso contrário, o preenchimento é obrigatório.
+
+### \#20 desconheceNomePai
+Marcador que indica que o cidadão desconhece o nome do pai.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|--- |--- |--- |--- |
+|Boolean |Não |- |- |
+
+### \#21 dtNaturalizacao
+Data de naturalização do cidadão no formato epoch time.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|--- |--- |--- |--- |
+|Long |Condicional |- |- |
+
+**Regras:**
+
+* Só deve ser preenchido se o campo [nacionalidadeCidadao](#7-nacionalidadecidadao) = `2`. Neste caso, é de preenchimento obrigatório;
+* Não pode ser posterior a [dataAtendimento]({% url profissional %}#5-dataatendimento);
+* Não pode ser anterior a [dataNascimentoCidadao](#3-datanascimentocidadao).
+
+### \#22 portariaNaturalizacao
+Data de naturalização do cidadão no formato epoch time.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|--- |--- |--- |--- |
+|String |Condicional |0 |16 |
+
+**Regras:** Só deve ser preenchido se o campo [nacionalidadeCidadao](#7-nacionalidadecidadao) = `2`. Neste caso o preenchimento é obrigatório.
+
+### \#23 dtEntradaBrasil
+Data de naturalização do cidadão no formato epoch time.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|--- |--- |--- |--- |
+|Long |Condicional |- |- |
+
+**Regras:**
+
+* Só deve ser preenchido se o campo [nacionalidadeCidadao](#7-nacionalidadecidadao) = `3`. Neste caso o preenchimento é obrigatório;
+* Não pode ser posterior a [dataAtendimento]({% url profissional %}#5-dataatendimento);
+* Não pode ser anterior a [dataNascimentoCidadao](#3-datanascimentocidadao).
+
+### \#24 microarea
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|--- |--- |--- |--- |
+|String |Condicional | 2 | 2 |
+
+**Regras:** Não deve ser preenchido se o campo [foraArea](#25-foraarea) = `true`. Caso contrário, o preenchimento é obrigatório.
+
+
+### \#25 foraArea
+Marcador que indica que o cidadão está fora da área.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|--- |--- |--- |--- |
+|Boolean |Não |- |- |
+
 
 ## InformacoesSocioDemograficas
 
@@ -695,8 +769,7 @@ Código da orientação sexual informada pelo cidadão.
 |--- |--- |--- |--- |
 |Long |Não |- |- |
 
-**Regras:**
-* Não pode ser preenchido se o campo [statusDesejaInformarOrientacaoSexual](#10-statusdesejainformarorientacaosexual) = `false`.
+**Regras:** Não pode ser preenchido se o campo [statusDesejaInformarOrientacaoSexual](#10-statusdesejainformarorientacaosexual) = `false`.
 
 **Referência:** [OrientacaoSexual]({% url dicionario %}#orientacaosexual).
 
@@ -716,16 +789,8 @@ Código da relação de parentesco com o responsável familiar.
 |--- |--- |--- |--- |
 |Long |Não |- |- |
 
+**Regras:** Só pode ser preenchido se o campo [statusEhResponsavel](#17-statusehresponsavel) = `false`.
 **Referência:** [RelacaoParentesco]({% url dicionario %}#relacaoparentesco).
-
-### \#8 responsavelPorCrianca
-Código do responsável por crianças de até 9 anos.
-
-| Tipo | Obrigatório | Mínimo | Máximo |
-|--- |--- |--- |--- |
-|Long |Não |- |- |
-
-**Referência:** [ResponsavelCrianca]({% url dicionario %}#responsavelcrianca).
 
 ### \#9 situacaoMercadoTrabalhoCidadao
 Código da situação do cidadão no mercado de trabalho.
@@ -784,3 +849,48 @@ Marcador que indica se cidadão tem alguma dificiência.
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
 |Boolean |Sim |- |- |
+
+### \#17 identidadeGeneroCidadao
+Código da identidade de gênero informada pelo cidadão.  
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|--- |--- |--- |--- |
+|Long |Não |- |- |
+
+**Regras:** Não pode ser preenchido se o campo [statusDesejaInformarIdentidadeGenero](#10-statusdesejainformaridentidadegenero) = `false`.
+
+**Referência:** [identidadeGeneroCidadao]({% url dicionario %}#identidadegenerocidadao).
+
+### \#18 statusDesejaInformarIdentidadeGenero
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|--- |--- |--- |--- |
+|Boolean |Não |- |- |
+
+### \#19 dataObito
+Data de óbito do cidadão no formato epoch time.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|--- |--- |--- |--- |
+|Long |Condicional |- |- |
+
+**Regras:** Só pode ser preenchido se o campo [motivoSaidaCidadao](#3-motivosaidacidadao) = `135`. Neste caso o preenchimento é obrigatório.
+
+### \#20 numeroDO
+Data de óbito do cidadão no formato epoch time.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|--- |--- |--- |--- |
+|String |Não |9 |9 |
+
+**Regras:** Só pode ser preenchido se o campo [motivoSaidaCidadao](#3-motivosaidacidadao) = `135`.
+
+### \#21 responsavelPorCrianca
+Código do responsável por crianças de até 9 anos.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|--- |--- |--- |--- |
+|List\<Long\> |Não |- |- |
+
+**Regras:** Não pode ser preenchido se a [dataNascimentoCidadao](#3-datanascimentocidadao) for anterior ou igual a 10 anos a partir da [dataAtendimento]({% url profissional %}#5-dataatendimento).
+**Referência:** [ResponsavelCrianca]({% url dicionario %}#responsavelcrianca).

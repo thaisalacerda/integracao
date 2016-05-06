@@ -35,7 +35,7 @@ Nome do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|String |Sim |5 |100 |
+|String |Sim |3 |70 |
 
 **Regras:**
 

@@ -54,7 +54,7 @@ Nome do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String |	Condicional	|5|	100|
+|String |	Condicional	|3|	70|
 
 **Regras:**
 
@@ -67,7 +67,7 @@ Nome social do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Não|	0|	100|
+|String|	Não|	0|	70|
 
 **Regras:**
 
@@ -111,7 +111,7 @@ Nome da mãe do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Condicional |	5|	100|
+|String|	Condicional | 3| 70|
 
 **Regras:**
 
@@ -281,7 +281,7 @@ Bairro onde está localizado o domicílio.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Requerido|	1|	256|
+|String|	Requerido|	0|	72|
 
 ### \#2	cep
 CEP do logradouro do domicílio.
@@ -306,14 +306,14 @@ Complemento do endereço do domicílio.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Não|	1|	256|
+|String|	Não|	0|	30|
 
 ### \#5	nomeLogradouro
 Nome do logradouro.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Requerido|	1|	256|
+|String|	Requerido|	0|	72|
 
 ### \#6	numero
 Número do domicílio.
