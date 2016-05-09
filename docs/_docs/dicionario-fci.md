@@ -163,7 +163,7 @@ Código das doenças cardíacas que o cidadão informou.
 **Referência:** [DoencaCardiaca]({% url dicionario %}#doencacardiaca).
 
 ### \#7 doencaRespiratoria
-Código d as doenças respiratórias que o cidadão informou.
+Código das doenças respiratórias que o cidadão informou.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
@@ -678,7 +678,7 @@ Data de naturalização do cidadão no formato epoch time.
 * Não pode ser anterior a [dataNascimentoCidadao](#3-datanascimentocidadao).
 
 ### \#22 portariaNaturalizacao
-Data de naturalização do cidadão no formato epoch time.
+Portaria de naturalização do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
@@ -687,7 +687,7 @@ Data de naturalização do cidadão no formato epoch time.
 **Regras:** Só deve ser preenchido se o campo [nacionalidadeCidadao](#7-nacionalidadecidadao) = `2`. Neste caso o preenchimento é obrigatório.
 
 ### \#23 dtEntradaBrasil
-Data de naturalização do cidadão no formato epoch time.
+Data em que o cidadão entrou no Brasil. 
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
@@ -700,6 +700,8 @@ Data de naturalização do cidadão no formato epoch time.
 * Não pode ser anterior a [dataNascimentoCidadao](#3-datanascimentocidadao).
 
 ### \#24 microarea
+
+Microárea na qual o cidadão se encontra.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
@@ -726,6 +728,7 @@ Código das deficiências que o cidadão possui.
 |List\<Long\> |Condicional |1 |5 |
 
 **Regras:**
+
 * Requerido preenchimento de pelo menos um item se o campo [statusTemAlgumaDeficiencia](#16-statustemalgumadeficiencia) = `true`.
 * Não deve ser preenchido se o campo [statusTemAlgumaDeficiencia](#16-statustemalgumadeficiencia) = `false`.
 
@@ -863,6 +866,8 @@ Código da identidade de gênero informada pelo cidadão.
 
 ### \#18 statusDesejaInformarIdentidadeGenero
 
+Marcador que indica se o cidadão deseja informar sua identidade de gênero.
+
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
 |Boolean |Não |- |- |
@@ -893,4 +898,5 @@ Código do responsável por crianças de até 9 anos.
 |List\<Long\> |Não |- |- |
 
 **Regras:** Não pode ser preenchido se a [dataNascimentoCidadao](#3-datanascimentocidadao) for anterior ou igual a 10 anos a partir da [dataAtendimento]({% url profissional %}#5-dataatendimento).
+
 **Referência:** [ResponsavelCrianca]({% url dicionario %}#responsavelcrianca).

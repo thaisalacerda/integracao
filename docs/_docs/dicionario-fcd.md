@@ -93,7 +93,7 @@ Marcador que indica se existem animais no domicílio.
 * Não pode ser preenchido se o campo [statusTermoRecusaCadastroDomiciliarAtencaoBasica](#9-statustermorecusacadatrodomiciliaratencaobasica) = `true`.
 
 ### \#9	statusTermoRecusaCadatroDomiciliarAtencaoBasica
-Marcador que indica se o cadastro foi utilizado o termo de recusa de cadastro do domicílio.
+Marcador que indica se o termo de recusa de cadastro do domicílio foi selecionado.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
@@ -382,13 +382,15 @@ Marcador que indica que o domicílio não possui número.
 |Boolean|	Não|	-|	-|
 
 ### \#12	pontoReferencia
-Marcador que indica que o domicílio não possui número.
+Indica um ponto de referência para o domicílio do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
 |String |	Não|	0|	40|
 
 ### \#13 microarea
+
+Microárea na qual o cidadão se encontra.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
@@ -447,7 +449,7 @@ Código da forma de escoamento do banheiro ou sanitário.
 **Referências:** [FormaDeEscoamentoDoBanheiroOuSanitario]({% url dicionario %}#formadeescoamentodobanheiroousanitario)
 
 ### \#5	localizacao
-Código do localização do domicílio.
+Código da localização do domicílio.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
@@ -463,6 +465,7 @@ Código do tipo de material predominante nas paredes externas do domicílio.
 |Long|	Não|	-|	-|
 
 **Regras:** Não deve ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = 07 Abrigo, 08 Instituição de longa permanência para idosos, 09 Unidade prisional, 10 Unidade de medida socioeducativa e 11 Delegacia.
+
 **Referências:** [MaterialPredominanteNaConstrucao]({% url dicionario %}#materialpredominantenaconstrucao)
 
 ### \#7	nuComodos
@@ -490,6 +493,7 @@ Código da situação de moradia ou de posse da terra.
 
 
 **Regras:** Não devem ser preenchidos se o campo [tipoDeImovel](#1-tipodeimovel) = 07 Abrigo, 08 Instituição de longa permanência para idosos, 09 Unidade prisional, 10 Unidade de medida socioeducativa e 11 Delegacia.
+
 **Referências:** [SituacaoDeMoradia]({% url dicionario %}#situacaodemoradia)
 
 ### \#10 stDiponibilidadeEnergiaeletrica
@@ -507,6 +511,7 @@ Código do tipo de acesso ao domicílio.
 |Long|	Não|	-|	-|
 
 **Regras:** Não deve ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = 07 Abrigo, 08 Instituição de longa permanência para idosos, 09 Unidade prisional, 10 Unidade de medida socioeducativa e 11 Delegacia.
+
 **Referências:** [TipoDeAcessoAoDomicilio]({% url dicionario %}#tipodeacessoaodomicilio)
 
 ### \#12 tipoDomicilio
@@ -517,10 +522,11 @@ Código do tipo de domicílio.
 |Long|	Não|	-|	-|
 
 **Regras:** Não deve ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = 07 Abrigo, 08 Instituição de longa permanência para idosos, 09 Unidade prisional, 10 Unidade de medida socioeducativa e 11 Delegacia.
+
 **Referências:** [TipoDeDomicilio]({% url dicionario %}#tipodedomicilio)
 
-### \#13 AguaConsumoDomicilio
-Código do tipo do tratamento de água do domicílio.
+### \#13 aguaConsumoDomicilio
+Código do tipo do tratamento de água para consumo do domicílio.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
