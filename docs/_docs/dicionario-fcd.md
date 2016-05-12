@@ -14,11 +14,11 @@ Lista de código dos animais no domicílio.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|List\<Long\>|	Condicional|	0|	5|
+|List\<Long\>|	Condicional| 0|	5|
 
 **Regras:**
 
-* Só pode ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = 01 Domicílio.
+* Só pode ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = `01` Domicílio.
 * Não pode ser preenchido se o campo [statusTermoRecusaCadastroDomiciliarAtencaoBasica](#9-statustermorecusacadatrodomiciliaratencaobasica) = `true`.
 
 **Referências:** [AnimalNoDomicilio]({% url dicionario %}#animalnodomicilio)
@@ -32,7 +32,7 @@ Condições de moradia do domicílio.
 
 **Regras:**
 
-* Não devem ser preenchidos se o campo [tipoDeImovel](#1-tipodeimovel) = 02 Comércio, 03 Terreno baldio, 04 Ponto Estratégico, 05 Escola, 06 Creche, 12 Estabelecimento Religioso, 99 Outros.
+* Não devem ser preenchidos se o campo [tipoDeImovel](#1-tipodeimovel) = `02` Comércio, `03` Terreno baldio, `04` Ponto Estratégico, `05` Escola, `06` Creche, `12` Estabelecimento Religioso, `99` Outros.
 * Não devem ser preenchidos se o campo [statusTermoRecusaCadastroDomiciliarAtencaoBasica](#9-statustermorecusacadatrodomiciliaratencaobasica) = `true`.
 
 **Referências:** [CondicaoMoradia](#condicaomoradia)
@@ -57,7 +57,7 @@ Lista das famílias que residem no domicílio.
 
 **Regras:**
 
-* Só pode ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = 01 Domicílio.
+* Só pode ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = `01` Domicílio.
 * Não pode ser preenchido caso o campo [statusTermoRecusaCadastroDomiciliarAtencaoBasica](#9-statustermorecusacadatrodomiciliaratencaobasica) = `true`.
 
 ### \#6	fichaAtualizada
@@ -148,17 +148,17 @@ Condições de moradia do domicílio.
 
 **Regras:** 
 
-* Só podem ser preenchidos quando o campo [tipoDeImovel](#1-tipodeimovel) = 07 Abrigo, 08 Instituição de longa permanência para idosos, 09 Unidade prisional, 10 Unidade de medida socioeducativa e 11 Delegacia.
+* Só podem ser preenchidos quando o campo [tipoDeImovel](#1-tipodeimovel) = `07` Abrigo, `08` Instituição de longa permanência para idosos, `09` Unidade prisional, `10` Unidade de medida socioeducativa e `11` Delegacia.
 * Não devem ser preenchidos se o campo [statusTermoRecusaCadastroDomiciliarAtencaoBasica](#9-statustermorecusacadatrodomiciliaratencaobasica) = `true`.
 
-### \#15 unicaLotacao
+### \#15 headerTransport
 Informações sobre o profissional e a data do cadastro.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 | ---| --- |---  | --- |
 | unicaLotacao|	Sim|	-|	-|
 
-**Referências:** [unicaLotacao]({% url profissional %}#unicalotacao)
+**Referências:** [headerTransport]({% url profissional %}#headertransport)
 
 ## identificacaoImovel
 
@@ -178,7 +178,7 @@ Indica o nome da instituição de permanência.
 |--- |--- |--- |--- |
 |String |Condicional | 0 | 100 |
 
-**Regras:** Só pode ser preenchido quando o campo [tipoDeImovel](#1-tipodeimovel) = 07 Abrigo, 08 Instituição de longa permanência para idosos, 09 Unidade prisional, 10 Unidade de medida socioeducativa e 11 Delegacia.
+**Regras:** Só pode ser preenchido quando o campo [tipoDeImovel](#1-tipodeimovel) = `07` Abrigo, `08` Instituição de longa permanência para idosos, `09` Unidade prisional, `10` Unidade de medida socioeducativa e `11` Delegacia.
 
 ### \#3 stOutrosProfissionaisVinculados
 
@@ -188,7 +188,7 @@ Marcador que indica se existem outros profissional de saúde vinculados à insti
 |--- |--- |--- |--- |
 |Boolean |Não |- |- |
 
-**Regras:** Só pode ser preenchido quando o campo [tipoDeImovel](#1-tipodeimovel) = 07 Abrigo, 08 Instituição de longa permanência para idosos, 09 Unidade prisional, 10 Unidade de medida socioeducativa e 11 Delegacia.
+**Regras:** Só pode ser preenchido quando o campo [tipoDeImovel](#1-tipodeimovel) = `07` Abrigo, `08` Instituição de longa permanência para idosos, `09` Unidade prisional, `10` Unidade de medida socioeducativa e `11` Delegacia.
 
 ## identificacaoResponsavelTecnico
 
@@ -345,8 +345,8 @@ Código indexador referente a Unidade Federativa.
 
 **Referências:** [Estados]({% url referencias %}#uf)
 
-### \#8	telReferencial
-Telefone de referência.
+### \#8	telefoneContato
+Telefone para contato.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
@@ -354,8 +354,8 @@ Telefone de referência.
 
 **Regras:** Mínimo 10 dígitos, máximo 11 (DDD + 8 ou 9).
 
-### \#9	telContato
-Telefone para contato.
+### \#9	telelefoneResidencia
+Telefone residencial.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
@@ -426,7 +426,7 @@ Código da condição de posse e uso da terra.
 **Regras:** 
 
 * Preenchimento obrigatório caso o campo [Localização](#5-localizacao) = `84 (rural)`.
-* Não deve ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = 07 Abrigo, 08 Instituição de longa permanência para idosos, 09 Unidade prisional, 10 Unidade de medida socioeducativa e 11 Delegacia.
+* Não deve ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = `07` Abrigo, `08` Instituição de longa permanência para idosos, `09` Unidade prisional, `10` Unidade de medida socioeducativa e `11` Delegacia.
 
 **Referências:** [CondicaoDePosseEUsoDaTerra]({% url dicionario %}#condicaodeposseeusodaterra)
 
@@ -464,7 +464,7 @@ Código do tipo de material predominante nas paredes externas do domicílio.
 |---| --- |---  | --- |
 |Long|	Não|	-|	-|
 
-**Regras:** Não deve ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = 07 Abrigo, 08 Instituição de longa permanência para idosos, 09 Unidade prisional, 10 Unidade de medida socioeducativa e 11 Delegacia.
+**Regras:** Não deve ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = `07` Abrigo, `08` Instituição de longa permanência para idosos, `09` Unidade prisional, `10` Unidade de medida socioeducativa e `11` Delegacia.
 
 **Referências:** [MaterialPredominanteNaConstrucao]({% url dicionario %}#materialpredominantenaconstrucao)
 
@@ -475,7 +475,7 @@ Número de cômodos do domicílio.
 |---| --- |---  | --- |
 |String|	Não|	0|	2|
 
-**Regras:** Não deve ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = 07 Abrigo, 08 Instituição de longa permanência para idosos, 09 Unidade prisional, 10 Unidade de medida socioeducativa e 11 Delegacia.
+**Regras:** Não deve ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = `07` Abrigo, `08` Instituição de longa permanência para idosos, `09` Unidade prisional, `10` Unidade de medida socioeducativa e `11` Delegacia.
 
 ### \#8	nuMoradores
 Número de moradores do domicílio.
@@ -492,11 +492,11 @@ Código da situação de moradia ou de posse da terra.
 |Long|	Sim|	-|	-|
 
 
-**Regras:** Não devem ser preenchidos se o campo [tipoDeImovel](#1-tipodeimovel) = 07 Abrigo, 08 Instituição de longa permanência para idosos, 09 Unidade prisional, 10 Unidade de medida socioeducativa e 11 Delegacia.
+**Regras:** Não devem ser preenchidos se o campo [tipoDeImovel](#1-tipodeimovel) = `07` Abrigo, `08` Instituição de longa permanência para idosos, `09` Unidade prisional, `10` Unidade de medida socioeducativa e `11` Delegacia.
 
 **Referências:** [SituacaoDeMoradia]({% url dicionario %}#situacaodemoradia)
 
-### \#10 stDiponibilidadeEnergiaeletrica
+### \#10 stDisponibilidadeEnergiaEletrica
 Marcador que indica se existe disponibilidade de energia elétrica.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -510,7 +510,7 @@ Código do tipo de acesso ao domicílio.
 |---| --- |---  | --- |
 |Long|	Não|	-|	-|
 
-**Regras:** Não deve ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = 07 Abrigo, 08 Instituição de longa permanência para idosos, 09 Unidade prisional, 10 Unidade de medida socioeducativa e 11 Delegacia.
+**Regras:** Não deve ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = `07` Abrigo, `08` Instituição de longa permanência para idosos, `09` Unidade prisional, `10` Unidade de medida socioeducativa e `11` Delegacia.
 
 **Referências:** [TipoDeAcessoAoDomicilio]({% url dicionario %}#tipodeacessoaodomicilio)
 
@@ -521,7 +521,7 @@ Código do tipo de domicílio.
 |---| --- |---  | --- |
 |Long|	Não|	-|	-|
 
-**Regras:** Não deve ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = 07 Abrigo, 08 Instituição de longa permanência para idosos, 09 Unidade prisional, 10 Unidade de medida socioeducativa e 11 Delegacia.
+**Regras:** Não deve ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = `07` Abrigo, `08` Instituição de longa permanência para idosos, `09` Unidade prisional, `10` Unidade de medida socioeducativa e `11` Delegacia.
 
 **Referências:** [TipoDeDomicilio]({% url dicionario %}#tipodedomicilio)
 

@@ -98,14 +98,14 @@ Código UUID para identificar a ficha que deu origem ao cadastro do registro.
 
 **Referência:** Para ver a referência sobre o UUID, acesse: [UUID Wikipedia](https://en.wikipedia.org/wiki/Universally_unique_identifier)
 
-### \#12 unicaLotacao
+### \#12 headerTransport
 Dados referentes ao profissional e a data do cadastro.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
 |unicaLotacao |Sim |- |- |
 
-**Referência:** [unicaLotacao]({% url profissional %}#unicalotacao).
+**Referência:** [headerTransport]({% url profissional %}#headertransport).
 
 ## CondicoesDeSaude
 
@@ -494,7 +494,7 @@ Código IBGE do município.
 |--- |--- |--- |--- |
 |String |Condicional |7 |7 |
 
-**Regras:** Requerido se o campo [nacionalidadeCidadao](#7-nacionalidadecidadao) = `1 (Brasileiro)` e não pode ser preenchido se for outra nacionalidade.
+**Regras:** Só pode ser preenchido se o campo [nacionalidadeCidadao](#7-nacionalidadecidadao) = `1` (Brasileiro). 
 
 **Referência:** [Municipios]({% url municipios %}).
 
@@ -707,10 +707,10 @@ Microárea na qual o cidadão se encontra.
 |--- |--- |--- |--- |
 |String |Condicional | 2 | 2 |
 
-**Regras:** Não deve ser preenchido se o campo [foraArea](#25-foraarea) = `true`. Caso contrário, o preenchimento é obrigatório.
+**Regras:** Não deve ser preenchido se o campo [stForaArea](#25-stforaarea) = `true`. Caso contrário, o preenchimento é obrigatório.
 
 
-### \#25 foraArea
+### \#25 stForaArea
 Marcador que indica que o cidadão está fora da área.
 
 | Tipo | Obrigatório | Mínimo | Máximo |

@@ -78,7 +78,7 @@ Identifica a instalação que enviou o dado.
 |---| --- |---  | --- |
 |DadoInstalacao| Sim|	-|	-|
 
-**Referência:** [DadoInstalacao](#DadoInstalacao)
+**Referência:** [DadoInstalacao](#dadoinstalacao)
 
 ### \#9	originadora
 Identifica a instalação que cadastrou/digitou.
@@ -87,7 +87,7 @@ Identifica a instalação que cadastrou/digitou.
 |---| --- |---  | --- |
 |DadoInstalacao|	Sim |	-|	-|
 
-**Referência:** [DadoInstalacao](#DadoInstalacao)
+**Referência:** [DadoInstalacao](#dadoinstalacao)
 
 ### \#10	versao
 Identifica a versão do e-SUS AB.
@@ -107,9 +107,9 @@ Identifica o software que gerou o dado (pec/cds, cdsOff ou software de terceiros
 |---| --- |---  | --- |
 |String|	Sim|	-|	-	|
 
-**Regras:** Seguir o padrão `<Nome do software do município> - Versão 2015`
+**Regras:** Seguir o padrão `<Nome do software do município> - Versão do software`
 
-Observações: Campo serve para a identificar a instalação que gerou / cadastrou / enviou os dados.
+Observações: Campo serve para a identificar o software que gerou / cadastrou / enviou os dados.
 
 ### \#2	uuidInstalacao
 É um identificador da instalação do software que gerou o dado. Seja ele o e-SUS ou software de terceiro. Cada e-SUS possui um UUID.

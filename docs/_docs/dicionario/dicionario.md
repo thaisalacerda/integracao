@@ -273,22 +273,22 @@ order: 0
 |Código|	Descrição|	Observações|
 |---|---|---|
 |1 |	Cadastramento / Atualização|	#TIPO\_VISITA |
-|29 |	Visita periódica| - |
+|29|	Visita periódica| - |
 |2 |	Consulta|	#BUSCA\_ATIVA|
 |3 |	Exame| - |
 |4 |	Vacina| - |
-|30 |	Condicionalidades do bolsa família| - |
+|30|	Condicionalidades do bolsa família| - |
 |5 |	Gestante|	#ACOMPANHAMENTO |
 |6 |	Puérpera| - |
 |7 |	Recém-nascido| - |
 |8 |	Criança| - |
 |9 |	Pessoa com desnutrição| - |
-|10 | Pessoa em reabilitação ou com deficiência| - |
-|11 | Pessoa com hipertensão| - |
-|12 | Pessoa com diabetes| - |
+|10 | 	Pessoa em reabilitação ou com deficiência| - |
+|11 | 	Pessoa com hipertensão| - |
+|12 | 	Pessoa com diabetes| - |
 |13 |	Pessoa com asma| - |
 |14 |	Pessoa com DPOC / enfisema| -|
-|15 | Pessoa com câncer| - |
+|15 | 	Pessoa com câncer| - |
 |16 |	Pessoa com outras doenças crônicas| - |
 |17 |	Pessoa com hanseníase| - |
 |18 |	Pessoa com tuberculose| - |
@@ -300,11 +300,15 @@ order: 0
 |22 |	Saúde mental| - |
 |23 |	Usuário de álcool| - |
 |24 |	Usuário de outras drogas| - |
+|34 |	Ação educativa| #CONTROLE\_AMBIENTAL\_E\_VETORIAL |
+|35 |	Imóvel com foco| - |
+|36 |	Ação mecânica| - |
+|37 |	Tratamento focal| - |
 |25 |	Egresso de internação |	#OUTROS |
-|26 |	Controle de ambientes / vetores| - |
 |27 |	Convite para atividades coletivas / campanha de saúde| - |
 |31 |	Orientação / Prevenção| - |
 |28 |	Outros| - |
+
 
 ## Nacionalidade
 |Código|	Descrição|	Observações|
@@ -538,12 +542,12 @@ order: 0
 |Código|	Descrição|	Observações|
 |---|---|---|
 |2 |	Ficha de Cadastro Individual|	-|
-|3 |	Ficha de Cadastro Domiciliar	|-|
+|3 |	Ficha de Cadastro Domiciliar e Territorial |-|
 |4 |	Ficha de Atendimento Individual	|-|
 |5 |	Ficha de Atendimento Odontológico	|-|
 |6 |	Ficha de Atividade Coletiva	|-|
 |7 |	Ficha de Procedimentos	|-|
-|8 |	Ficha de Visita Domiciliar	|-|
+|8 |	Ficha de Visita Domiciliar e Territorial |-|
 | - |	-	| - |
 |10 |	Ficha de Atendimento Domiciliar	|-|
 |11 |	Ficha de Avaliação de Elegibilidade|	-|
