@@ -16,7 +16,7 @@ Código UUID para identificar a ficha na base de dados nacional.
 |--- |--- |--- |--- |
 |String |Sim |36 |44 |
 
-**Regras:** É recomendado concatenar o CNES na frente do UUID, de modo que os 7 digitos (CNES) + 1 de hífen somados aos 36 (32 caracteres + 4 hífen) do UUID são a limitação de 44 bytes do campo. Formato canônico.
+**Regras:** É recomendado concatenar o CNES na frente do UUID, de modo que os 7 dígitos (CNES) + 1 de hífen somados aos 36 (32 caracteres + 4 hífen) do UUID são a limitação de 44 bytes do campo. Formato canônico.
 
 **Referência:** Para ver a referência sobre o UUID, acesse [UUID Wikipedia](https://en.wikipedia.org/wiki/Universally_unique_identifier).
 
@@ -137,7 +137,7 @@ Data de nascimento do cidadão no formato epoch time.
 
 **Regras:** Não pode ser posterior a [dataAtendimento]({% url profissional %}#5-dataatendimento) e anterior a 130 anos a partir da [dataAtendimento]({% url profissional %}#5-dataatendimento).
 
-**Referência:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milisegundos.
+**Referência:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milissegundos.
 
 ### \#4 sexo
 Código do sexo do cidadão.
@@ -237,4 +237,4 @@ Observação: É requerido pelo menos um dentre os itens `#8` e `#9`.
 |ABPG029 |Administração de medicamentos via endovenosa |
 |ABPG030 |Administração de medicamentos via inalação / nebulização |
 |ABPG031 |Administração de medicamentos via tópica |
-|ABPG032 |Administração de penincilina para tratamento de sífilis |
+|ABPG032 |Administração de penicilina para tratamento de sífilis |

@@ -61,7 +61,7 @@ order: 0
 |Código|	Descrição|	Observações|
 |---|---|---|
 |1 |	Instabilidade clínica	|-|
-|2 |	Necessidade propedeutica|	-|
+|2 |	Necessidade propedêutica|	-|
 |3 |	Outro motivo	|-|
 |4 |	Ausência de cuidador |	-|
 |5 |	Outras condições sociais	|-|
@@ -321,7 +321,7 @@ order: 0
 |Código|	Descrição|	Observações|
 |---|---|---|
 |1 |	Avaliação / Diagnóstico| 	-|
-|2 |	Procedimentos clínicos terapeuticos| 	-|
+|2 |	Procedimentos clínicos terapêuticos| 	-|
 |3 |	Prescrição terapêutica| 	-|
 
 ## OrientacaoSexual
@@ -357,10 +357,10 @@ order: 0
 |Código|	Descrição|	Observações|
 |---|---|---|
 |1 |	Alimentação saudável|	-|
-|2 |	Aplicação tópica de fluor|	-|
+|2 |	Aplicação tópica de flúor|	-|
 |3 |	Saúde ocular|	-|
 |4 |	Autocuidado de pessoas com doenças crônicas |	-|
-|5 |	Cidadania e direitos homanos|	-|
+|5 |	Cidadania e direitos humanos|	-|
 |6 |	Saúde do trabalhador|	-|
 |7 |	Dependência química / tabaco / álcool / outras drogas |	-|
 |8 |	Envelhecimento / Climatério / Andropausa  / Etc|	-|

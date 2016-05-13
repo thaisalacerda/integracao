@@ -83,7 +83,7 @@ Código UUID para identificar a ficha na base de dados nacional.
 |--- |--- |--- |--- |
 |String |Condicional |36 |44 |
 
-**Regras:** É recomendado concatenar o CNES na frente do UUID, de modo que os 7 digitos (CNES) + 1 de hífen somados aos 36 (32 caracteres + 4 hífen) do UUID são a limitação de 44 bytes do campo. Formato canônico.
+**Regras:** É recomendado concatenar o CNES na frente do UUID, de modo que os 7 dígitos (CNES) + 1 de hífen somados aos 36 (32 caracteres + 4 hífen) do UUID são a limitação de 44 bytes do campo. Formato canônico.
 
 **Referência:** Para ver a referência sobre o UUID, acesse: [UUID Wikipedia](https://en.wikipedia.org/wiki/Universally_unique_identifier)
 
@@ -364,7 +364,7 @@ Grau de parentesco do familiar que frequenta.
 
 **Regras:**
 
-* Não pode ser preechido se o campo [statusSituacaoRua](#9-statussituacaorua) = `false`.
+* Não pode ser preenchido se o campo [statusSituacaoRua](#9-statussituacaorua) = `false`.
 * Não pode ser preenchido se o campo [statusVisitaFamiliarFrequentemente](#11-statusvisitafamiliarfrequentemente) = `false`.
 
 ### \#2 higienePessoalSituacaoRua
@@ -376,7 +376,7 @@ Código das condições de higiene que o cidadão tem acesso.
 
 **Regras:**
 
-* Não pode ser preechido se o campo [statusSituacaoRua](#9-statussituacaorua) = `false`.
+* Não pode ser preenchido se o campo [statusSituacaoRua](#9-statussituacaorua) = `false`.
 * Requerido preenchimento de pelo menos um item se o campo [statusTemAcessoHigienePessoalSituacaoRua](#10-statustemacessohigienepessoalsituacaorua) = `true`.
 
 **Referência:** [AcessoHigiene]({% url dicionario %}#acessohigiene).
@@ -388,7 +388,7 @@ Código da origem da alimentação do cidadão em situação de rua.
 |--- |--- |--- |--- |
 |List\<Long\> |Não |0 |5 |
 
-**Regras:** Não pode ser preechido se o campo [statusSituacaoRua](#9-statussituacaorua) = `false`.
+**Regras:** Não pode ser preenchido se o campo [statusSituacaoRua](#9-statussituacaorua) = `false`.
 
 **Referência:** [OrigemAlimentacao]({% url dicionario %}#origemalimentacao).
 
@@ -401,7 +401,7 @@ Nome de outra instituição que acompanha o cidadão.
 
 **Regras:**
 
-* Não pode ser preechido se o campo [statusSituacaoRua](#9-statussituacaorua) = `false`.
+* Não pode ser preenchido se o campo [statusSituacaoRua](#9-statussituacaorua) = `false`.
 * Não pode ser preenchido se o campo [statusAcompanhadoPorOutraInstituição](#6-statusacompanhadoporoutrainstituicao) = `false`.
 
 ### \#5 quantidadeAlimentacoesAoDiaSituacaoRua
@@ -411,7 +411,7 @@ Código da quantidade de vezes que o cidadão se alimenta por dia.
 |--- |--- |--- |--- |
 |Long |Não |- |- |
 
-**Regras:** Não pode ser preechido se o campo [statusSituacaoRua](#9-statussituacaorua) = `false`.
+**Regras:** Não pode ser preenchido se o campo [statusSituacaoRua](#9-statussituacaorua) = `false`.
 
 **Referência:** [QuantasVezesAlimentacao]({% url dicionario %}#quantasvezesalimentacao).
 
@@ -422,7 +422,7 @@ Marcador que indica se o cidadão é acompanhado por outra instituição.
 |--- |--- |--- |--- |
 |Boolean |Não |- |- |
 
-**Regras:** Não pode ser preechido se o campo [statusSituacaoRua](#9-statussituacaorua) = `false`.
+**Regras:** Não pode ser preenchido se o campo [statusSituacaoRua](#9-statussituacaorua) = `false`.
 
 ### \#7 statusPossuiReferenciaFamiliar
 Marcador que indica se o cidadão possuiu alguma referência familiar.
@@ -431,7 +431,7 @@ Marcador que indica se o cidadão possuiu alguma referência familiar.
 |--- |--- |--- |--- |
 |Boolean |Não |- |- |
 
-**Regras:** Não pode ser preechido se o campo [statusSituacaoRua](#9-statussituacaorua) = `false`.
+**Regras:** Não pode ser preenchido se o campo [statusSituacaoRua](#9-statussituacaorua) = `false`.
 
 ### \#8 statusRecebeBeneficio
 Marcador que indica se o cidadão recebe algum benefício.
@@ -440,7 +440,7 @@ Marcador que indica se o cidadão recebe algum benefício.
 |--- |--- |--- |--- |
 |Boolean |Não |- |- |
 
-**Regras:** Não pode ser preechido se o campo [statusSituacaoRua](#9-statussituacaorua) = `false`.
+**Regras:** Não pode ser preenchido se o campo [statusSituacaoRua](#9-statussituacaorua) = `false`.
 
 ### \#9 statusSituacaoRua
 Marcador que indica se o cidadão está em situação de rua.
@@ -456,7 +456,7 @@ Marcador que indica se o cidadão tem acesso a higiene pessoal.
 |--- |--- |--- |--- |
 |Boolean |Não |- |- |
 
-**Regras:** Não pode ser preechido se o campo [statusSituacaoRua](#9-statussituacaorua) = `false`.
+**Regras:** Não pode ser preenchido se o campo [statusSituacaoRua](#9-statussituacaorua) = `false`.
 
 ### \#11 statusVisitaFamiliarFrequentemente
 Marcador que indica se o cidadão visita algum familiar frequentemente.
@@ -465,7 +465,7 @@ Marcador que indica se o cidadão visita algum familiar frequentemente.
 |--- |--- |--- |--- |
 |Boolean |Não |- |- |
 
-**Regras:** Não pode ser preechido se o campo [statusSituacaoRua](#9-statussituacaorua) = `false`.
+**Regras:** Não pode ser preenchido se o campo [statusSituacaoRua](#9-statussituacaorua) = `false`.
 
 ### \#12 tempoSituacaoRua
 Código do tempo que o cidadão está em situação de rua.
@@ -474,7 +474,7 @@ Código do tempo que o cidadão está em situação de rua.
 |--- |--- |--- |--- |
 |Long |Não |- |- |
 
-**Regras:** Não pode ser preechido se o campo [statusSituacaoRua](#9-statussituacaorua) = `false`.
+**Regras:** Não pode ser preenchido se o campo [statusSituacaoRua](#9-statussituacaorua) = `false`.
 
 **Referência:** [TempoSituacaoDeRua]({% url dicionario %}#temposituacaoderua).
 
@@ -507,7 +507,7 @@ Data de nascimento do cidadão no formato epoch time.
 
 **Regras:** Não pode ser posterior a [dataAtendimento]({% url profissional %}#5-dataatendimento) ou mais anterior que 130 anos a partir da [dataAtendimento]({% url profissional %}#5-dataatendimento).
 
-**Referência:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milisegundos.
+**Referência:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milissegundos.
 
 ### \#5 desconheceNomeMae
 Marcador que indica que o cidadão desconhece o nome da mãe
@@ -517,7 +517,7 @@ Marcador que indica que o cidadão desconhece o nome da mãe
 |Boolean |Não |- |- |
 
 ### \#6 emailCidadao
-Email do cidadão.
+E-mail do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
@@ -753,7 +753,7 @@ Código do motivo da saída do cidadão do cadastro.
 **Referência:** [MotivoSaida]({% url dicionario %}#motivosaida).
 
 ### \#4 ocupacaoCodigoCbo2002
-Código do CBO que representa a ocupaçao do cidadão.
+Código do CBO que representa a ocupação do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
@@ -847,7 +847,7 @@ Marcador que indica se o cidadão possui plano de saúde privado.
 |Boolean |Não |- |- |
 
 ### \#16 statusTemAlgumaDeficiencia
-Marcador que indica se cidadão tem alguma dificiência.
+Marcador que indica se cidadão tem alguma deficiência.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |

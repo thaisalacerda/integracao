@@ -8,7 +8,7 @@ order: 1
 # CBO
 
 ## CBO
-Os CBOs devem ser sempre referênciados através de seu **código**.
+Os CBOs devem ser sempre referenciados através de seu **código**.
 
 |Código 2002	|Nome |
 |--- |--- |

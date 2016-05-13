@@ -5,9 +5,7 @@ id: versao
 order: 1
 ---
 
-# Versão
-
-## Versao
+## Versão
 
 |Coluna	|Tipo	|Obrigatório |Regra	|
 |--- |--- |--- |--- |--- |

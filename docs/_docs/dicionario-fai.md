@@ -36,7 +36,7 @@ Código UUID para identificar a ficha na base de dados nacional.
 |---| --- |---  | --- |
 |String|	Sim|	36|	44|
 
-**Regras:** É recomendado concatenar o CNES na frente do UUID, de modo que os 7 digitos (CNES) + 1 de hífen somados aos 36 (32 caracteres + 4 hífen) do UUID são a limitação de 44 bytes do campo. Formato canônico.
+**Regras:** É recomendado concatenar o CNES na frente do UUID, de modo que os 7 dígitos (CNES) + 1 de hífen somados aos 36 (32 caracteres + 4 hífen) do UUID são a limitação de 44 bytes do campo. Formato canônico.
 
 **Referências:** Para ver a referência sobre o UUID, acesse: [UUID Wikipedia](https://en.wikipedia.org/wiki/Universally_unique_identifier).
 
@@ -123,7 +123,7 @@ Código do tipo de atendimento realizado.
 **Referências:** [TipoDeAtendimento]({% url dicionario %}#tipodeatendimento)
 
 ### \#8	pesoAcompanhamentoNutricional
-Peso do cidadão em Kilogramas.
+Peso do cidadão em Quilogramas.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
@@ -171,7 +171,7 @@ Data da última menstruação da gestante.
 * Não pode ser superior a [dataAtendimento]({% url profissional %}#5-dataatendimento), nem inferior a data de nascimento.
 * Não pode ser preenchido quando [Sexo](#5-sexo) = `0 (masculino)`.
 
-**Referências:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milisegundos.
+**Referências:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milissegundos.
 
 ### \#12	idadeGestacional
 Idade gestacional em semanas.
@@ -321,7 +321,7 @@ Código do exame solicitado ou avaliado.
 
 **Referências:** Para ver a referência da tabela do SIGTAP acesse: [Tabela Unificada SIGTAP](http://sigtap.datasus.gov.br/tabela-unificada/app/sec/procedimento/publicados/consultar)
 
-**Observações**: Sem ponto ou hifen, ex: `0101010010`
+**Observações**: Sem ponto ou hífen, ex: `0101010010`
 
 ### \#2	solicitadoAvaliado
 Código do indicador se o exame foi `Solicitado` e / ou `Avaliado`.
@@ -379,8 +379,7 @@ Código do CID10 registrado no atendimento.
 |---| --- |---  | --- |
 |String|	Condicional|	-|	-|
 
-**Regras:**
-* É Requerido o preenchimento de pelo menos um dos itens de `#1` a `#4`.
+**Regras:** É Requerido o preenchimento de pelo menos um dos itens de `#1` a `#4`.
 
 ## ListaCiapCondicaoAvaliada
 |Código| Descrição|
@@ -423,8 +422,8 @@ Código do CID10 registrado no atendimento.
 |ABEX008|		Hemoglobina glicada|
 |ABEX028|		Hemograma|
 |ABEX009|		LDL|
-|ABEX013|		Retinografia/Fundo de olho com oftamologista|
-|ABEX019|		Sorologia de Sifilis (VDRL)|
+|ABEX013|		Retinografia/Fundo de olho com oftalmologista|
+|ABEX019|		Sorologia de Sífilis (VDRL)|
 |ABEX016|		Sorologia para Dengue|
 |ABEX018|		Sorologia para HIV|
 |ABEX031|		Teste indireto de antiglobulina humana (TIA)|

@@ -16,7 +16,7 @@ Código UUID para identificar a ficha na base de dados nacional.
 |---| --- |---  | --- |
 |String|	Sim| 36|	44|
 
-**Regras:** É recomendado concatenar o CNES na frente do UUID, de modo que os 7 digitos (CNES) + 1 de hífen somados aos 36 (32 caracteres + 4 hífen) do UUID são a limitação de 44 bytes do campo. Formato canônico.
+**Regras:** É recomendado concatenar o CNES na frente do UUID, de modo que os 7 dígitos (CNES) + 1 de hífen somados aos 36 (32 caracteres + 4 hífen) do UUID são a limitação de 44 bytes do campo. Formato canônico.
 
 **Referências:**  [Wikipedia UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier)
 
@@ -82,7 +82,7 @@ Data de nascimento do cidadão no formato epoch time.
 
 **Regras:** Não pode ser posterior a [dataAtendimento]({% url profissional %}#5-dataatendimento) e anterior a 130 anos a partir da [dataAtendimento]({% url profissional %}#5-dataatendimento).
 
-**Refererência**: [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milisegundos..
+**Refererência**: [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milissegundos.
 
 ### \#8	sexoCidadao
 Código do sexo do cidadão.
@@ -151,7 +151,7 @@ Código do marcador que indica se o cidadão é brasileiro, naturalizado ou estr
 **Referências:** [Nacionalidade]({% url dicionario %}#nacionalidade)
 
 ### \#14	emailCidadao
-Email do cidadão.
+E-mail do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |

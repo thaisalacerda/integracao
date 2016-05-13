@@ -51,7 +51,7 @@ Data de nascimento do cidadão no formato epoch time.
 
 **Regras:** Não pode ser posterior a [dataAtendimento]({% url profissional %}#5-dataatendimento) e anterior a 130 anos a partir da [dataAtendimento]({% url profissional %}#5-dataatendimento).
 
-**Referêcia**: [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milisegundos.
+**Referência**: [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milissegundos.
 
 ### \#5 sexo
 Código do sexo do cidadão.
@@ -60,7 +60,7 @@ Código do sexo do cidadão.
 |--- |--- |--- |--- |
 |Long |Sim |- |- |
 
-**Referêcia**: [Sexo]({% url dicionario#sexo %})
+**Referência**: [Sexo]({% url dicionario#sexo %})
 
 ### \#6 localAtendimento
 Código do local onde o atendimento foi realizado.
@@ -69,7 +69,7 @@ Código do local onde o atendimento foi realizado.
 |--- |--- |--- |--- |
 |Long |Sim |- |- |
 
-**Referêcia**: [LocalDeAtendimento]({% url dicionario#localdeatendimento %})
+**Referência**: [LocalDeAtendimento]({% url dicionario#localdeatendimento %})
 
 ### \#7 perguntasQuestionarioCriancasMenoresSeisMeses
 Marcadores referentes aos cidadãos menores de seis meses de idade.
@@ -80,7 +80,7 @@ Marcadores referentes aos cidadãos menores de seis meses de idade.
 
 **Regras:** Requerido se [dataNascimento](#4-datanascimento) < 6 meses a partir da [dataAtendimento]({% url profissional %}#5-dataatendimento).
 
-**Referêcia**: [PerguntaQuestionarioCriancasMenoresSeisMeses](#perguntaquestionariocriancasmenoresseismeses).
+**Referência**: [PerguntaQuestionarioCriancasMenoresSeisMeses](#perguntaquestionariocriancasmenoresseismeses).
 
 Observações: Os campos `#7`, `#8` e `#9` são mutuamente exclusivos, isto é, um e apenas um deles deve não ser nulo.
 
@@ -93,7 +93,7 @@ Marcadores referentes aos cidadãos que tem entre seis e vinte e três meses de 
 
 **Regras:** Requerido se [dataNascimento](#4-datanascimento) >= 6 meses e <= 23 meses a partir da [dataAtendimento]({% url profissional %}#5-dataatendimento).
 
-**Referêcia**: [PerguntaQuestionarioCriancasDeSeisVinteTresMeses](#perguntaquestionariocriancasdeseisvintetresmeses).
+**Referência**: [PerguntaQuestionarioCriancasDeSeisVinteTresMeses](#perguntaquestionariocriancasdeseisvintetresmeses).
 
 Observações: Os campos `#7`, `#8` e `#9` são mutuamente exclusivos, isto é, um e apenas um deles deve não ser nulo.
 
@@ -106,7 +106,7 @@ Marcadores referentes aos cidadãos que tem vinte e quatro meses ou mais.
 
 **Regras:** Requerido se [dataNascimento](#4-datanascimento) >= 24 meses a partir da [dataAtendimento]({% url profissional %}#5-dataatendimento).
 
-**Referêcia**: [PerguntaQuestionarioCriancasComMaisDoisAnos](#perguntaquestionariocriancascommaisdoisanos).
+**Referência**: [PerguntaQuestionarioCriancasComMaisDoisAnos](#perguntaquestionariocriancascommaisdoisanos).
 
 Observações: Os campos `#7`, `#8` e `#9` são mutuamente exclusivos, isto é, um e apenas um deles deve não ser nulo.
 
@@ -117,9 +117,9 @@ Código UUID para identificar a ficha na base de dados nacional.
 |--- |--- |--- |--- |
 |String |Sim |36 |44 |
 
-**Regras:** É recomendado concatenar o CNES na frente do UUID, de modo que os 7 digitos (CNES) + 1 de hífen somados aos 36 (32 caracteres + 4 hífen) do UUID são a limitação de 44 bytes do campo. Formato canônico.
+**Regras:** É recomendado concatenar o CNES na frente do UUID, de modo que os 7 dígitos (CNES) + 1 de hífen somados aos 36 (32 caracteres + 4 hífen) do UUID são a limitação de 44 bytes do campo. Formato canônico.
 
-**Referêcia**: Para ver a referência sobre o UUID, acesse: [UUID Wikipedia](https://en.wikipedia.org/wiki/Universally\_unique\_identifier).
+**Referência**: Para ver a referência sobre o UUID, acesse: [UUID Wikipedia](https://en.wikipedia.org/wiki/Universally\_unique\_identifier).
 
 ### \#11 tpCdsOrigem
 Tipo de origem dos dados do registro.

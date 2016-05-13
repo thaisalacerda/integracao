@@ -16,7 +16,7 @@ Código UUID para identificar a ficha na base de dados nacional.
 |---| --- |---  | --- |
 |String|	Sim|	36|	44|
 
-**Regras:** É recomendado concatenar o CNES na frente do UUID, de modo que os 7 digitos (CNES) + 1 de hífen somados aos 36 (32 caracteres + 4 hífen) do UUID são a limitação de 44 bytes do campo. Formato canônico.
+**Regras:** É recomendado concatenar o CNES na frente do UUID, de modo que os 7 dígitos (CNES) + 1 de hífen somados aos 36 (32 caracteres + 4 hífen) do UUID são a limitação de 44 bytes do campo. Formato canônico.
 
 **Referência:** [UUID Wikipedia](https://en.wikipedia.org/wiki/Universally_unique_identifier)
 
@@ -29,7 +29,7 @@ Data de realização da atividade coletiva.
 
 **Regras:** Não pode ser posterior a data atual.
 
-**Referência:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milisegundos.
+**Referência:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milissegundos.
 
 ### \#3	numParticipantesProgramados
 Previsão da quantidade de participantes para a atividade coletiva.
@@ -67,7 +67,7 @@ Hora de fim de realização da atividade coletiva.
 
 **Regras:** Deve ser posterior a [horaInicio](#5-horainicio).
 
-**Referência:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milisegundos.
+**Referência:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milissegundos.
 
 ### \#7	inep
 Número INEP da instituição.
@@ -88,7 +88,7 @@ CNS do responsável pela atividade coletiva.
 * CNS válido de acordo com o algoritmo.
 * O profissional responsável deve ser um registro da lista de profissionais.
 
-**Referência:** Para ver o algorítmo utilizado, acesse: [Cartão NET Datasus](http://cartaonet.datasus.gov.br/), em "Downloads" baixe o arquivo de rotina de validação Java.
+**Referência:** Para ver o algoritmo utilizado, acesse: [Cartão NET Datasus](http://cartaonet.datasus.gov.br/), em "Downloads" baixe o arquivo de rotina de validação Java.
 
 ### \#9	responsavelCnesUnidade
 Código CNES da unidade do responsável pela atividade coletiva.
@@ -233,7 +233,7 @@ Data de nascimento do cidadão.
 
 **Regras:** 	Não pode ser posterior a [dataAtendimento]({% url profissional %}#5-dataatendimento) e anterior a 130 anos a partir da [dataAtendimento]({% url profissional %}#5-dataatendimento).
 
-**Referências**: [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milisegundos.
+**Referências**: [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milissegundos.
 
 ### \#3	avaliacaoAlterada
 Marcador que indica que a avaliação do cidadão teve um valor diferente dos considerados normais.
