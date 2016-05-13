@@ -127,7 +127,7 @@ Código dos motivos da visita.
 
 * Não pode ser preenchido caso o campo [Desfecho]({% url dicionario %}#desfecho) = 3 `AUSENTE` ou 2 `VISITA_RECUSADA`.
 
-* Se o campo [tipoDeImovel](#11-tipodeimovel) = `02` comércio, `03` terreno baldio, `04` Ponto Estratégico, `05` Escola, `06` Creche ou `12` Estabelecimento religioso, então o valor deste campo só pode ser:
+* Se o campo [tipoDeImovel](#11-tipodeimovel) = `02` comércio, `03` terreno baldio, `04` Ponto Estratégico, `05` Escola, `06` Creche ou `12` Estabelecimento religioso, então as opções selecionadas deste campo só podem ser:
 
 	- `1` Cadastramento / Atualização;
 	- `34` Ação educativa;
