@@ -19,7 +19,7 @@ Profissional que realizou a visita.
 
 **Referência:** {% link profissional %}
 
-### \#2 numeroCartaoSus
+### \#2 cnsCidadao
 CNS do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |

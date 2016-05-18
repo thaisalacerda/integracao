@@ -156,7 +156,7 @@ Informações sobre o profissional e a data do cadastro.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 | ---| --- |---  | --- |
-| unicaLotacao|	Sim|	-|	-|
+| UnicaLotacaoHeader|	Sim|	-|	-|
 
 **Referências:** [headerTransport]({% url profissional %}#headertransport)
 

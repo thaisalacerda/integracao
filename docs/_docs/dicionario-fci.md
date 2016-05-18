@@ -103,7 +103,7 @@ Dados referentes ao profissional e a data do cadastro.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|unicaLotacao |Sim |- |- |
+|UnicaLotacaoHeader |Sim |- |- |
 
 **Referência:** [headerTransport]({% url profissional %}#headertransport).
 

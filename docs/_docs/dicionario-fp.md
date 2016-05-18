@@ -121,7 +121,7 @@ Número do prontuário do cidadão na UBS.
 |--- |--- |--- |--- |
 |String |Não |0 |30 |
 
-### \#2 numCartaoSus
+### \#2 cnsCidadao
 Numero do cartão SUS do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -218,7 +218,7 @@ Observação: É requerido pelo menos um dentre os itens `#8` e `#9`.
 |ABPG010 |Coleta de citopatológico de colo uterino |
 |ABPG011 |Exame do pé diabético |
 |ABPG012 |Exérese / Biópsia / Punção de tumores superficiais de pele |
-|ABPG013 |Fundoscopia (exame de fundo de olho) |
+|ABPG013 |tFundoscopia (exame de fundo de olho) |
 |ABPG014 |Infiltração em cavidade sinovial |
 |ABPG015 |Remoção de corpo estranho da cavidade auditiva e nasal |
 |ABPG016 |Remoção de corpo estranho subcutâneo |
@@ -238,3 +238,4 @@ Observação: É requerido pelo menos um dentre os itens `#8` e `#9`.
 |ABPG030 |Administração de medicamentos via inalação / nebulização |
 |ABPG031 |Administração de medicamentos via tópica |
 |ABPG032 |Administração de penicilina para tratamento de sífilis |
+|ABPG041 |Administração de medicamentos via Subcutânea (SC) |

@@ -1,11 +1,11 @@
 ---
 layout: doc
-title: Ficha de Atendimento Odontológico
+title: Ficha de Atendimento Odontológico Individual
 id: dicionario-fao
 order: 1
 ---
 
-# Ficha de Atendimento Odontológico
+# Ficha de Atendimento Odontológico Individual
 
 ## FichaAtendimentoOdontologicoMaster
 
@@ -62,7 +62,7 @@ Data de nascimento do cidadão.
 
 **Referências:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milissegundos.
 
-### \#2	numCartaoSus
+### \#2	cnsCidadao
 CNS do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -242,7 +242,7 @@ Quantidade de procedimentos realizados.
 |ABPO004|	Aplicação de selante (por dente)|
 |ABPO005|	Aplicação tópica de flúor (individual por sessão)|
 |ABPO006|	Capeamento pulpar|
-|ABPO007|	Cimentação de prótese|
+|ABPO007|	Cimentação de prótese dentária|
 |ABPO008|	Curativo de demora c/ ou s/ preparo biomecânico|
 |ABPG008|	Drenagem de abscesso|
 |ABPO010|	Evidenciação de placa bacteriana|
