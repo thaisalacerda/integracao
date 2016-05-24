@@ -2,7 +2,7 @@
 layout: doc
 title: Ficha de Visita Domiciliar e Territorial
 id: dicionario-fvd
-order: 1
+order: 6
 ---
 
 # Ficha de Visita Domiciliar e Territorial
@@ -82,7 +82,7 @@ Número do cartão SUS do cidadão.
 * Validado pelo algoritmo.
 * Não deve ser preenchido se o campo [tipoDeImovel](#11-tipodeimovel) = `02` comércio, `03` terreno baldio, `04` Ponto Estratégico, `05` Escola, `06` Creche ou `12` Estabelecimento religioso.
 
-**Referência:** Para ver o algoritmo utilizado, acesse: [Cartão Net Datasus](http://cartaonet.datasus.gov.br/), em "Downloads" baixe o arquivo de rotina de validação Java.  
+**Referência:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
 
 ### \#4 dtNascimento
 Data de nascimento do cidadão.

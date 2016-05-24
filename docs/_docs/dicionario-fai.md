@@ -2,7 +2,7 @@
 layout: doc
 title: Ficha de Atendimento Individual
 id: dicionario-fai
-order: 1
+order: 2
 ---
 
 # Ficha de Atendimento Individual
@@ -69,7 +69,7 @@ CNS do cidadão.
 
 **Regras:** CNS válido de acordo com o algoritmo.
 
-**Referências:** Para ver o algoritmo utilizado, acesse: [Cartão Net Datasus](http://cartaonet.datasus.gov.br/), em "Downloads" baixe o arquivo de rotina de validação Java.
+**Referência:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
 
 ### \#3	dataNascimento
 Data de nascimento do cidadão.
@@ -107,7 +107,7 @@ Código do turno em que o atendimento foi realizado.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Não|	-|	-|
+|Long|	Sim|	-|	-|
 
 **Referências:** [Turno]({% url dicionario %}#turno)
 
@@ -127,13 +127,12 @@ Peso do cidadão em Quilogramas.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Double|	Não|	1|	6|
+|Double|	Não|	1|	7|
 
 **Regras:**
 
 * Apenas números e vírgula (`,`).
-* Máximo de 2 números após a vírgula.
-* Se tiver vírgula, tamanho máximo = 7.
+* Máximo de 3 números após a vírgula.
 * Valor mínimo 0,5 e máximo 500.
 
 ### \#9	alturaAcompanhamentoNutricional
@@ -141,13 +140,12 @@ Altura do cidadão em centímetros.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Double|	Não|	2|	4|
+|Double|	Não|	2|	5|
 
 **Regras:**
 
 * Apenas números e vírgula (`,`).
-* Máximo de 2 números após a vírgula.
-* Se tiver vírgula, tamanho máximo = 5.
+* Máximo de 1 número após a vírgula.
 * Valor mínimo 20 e máximo 250.
 
 ### \#10	aleitamentoMaterno
@@ -245,15 +243,6 @@ Marcador referente a vacinação em dia do cidadão.
 |---| --- |---  | --- |
 |Boolean|	Não|	-|	-|
 
-### \#19	pic
-Código das Práticas Integrativas e Complementares.
-
-| Tipo | Obrigatório | Mínimo | Máximo |
-|---| --- |---  | --- |
-|Long|	Não|	-|	-|
-
-**Referências**: [PraticasIntegrativasComplementares]({% url dicionario %}#praticasintegrativascomplementares)
-
 ### \#20	ficouEmObservacao
 Marcador referente se o cidadão ficou em observação no atendimento.
 
@@ -308,6 +297,22 @@ Número de partos que a mulher já teve.
 
 **Regras:** Não pode ser preenchido quando [Sexo](#5-sexo) = `0 (masculino)`.
 
+### \#26	racionalidadeSaude
+Código da racionalidade em saúde utilizada. 
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|---| --- |---  | --- |
+|Long|	Não|	-|	-|
+
+**Referências:**	[racionalidadeSaude]({% url dicionario %}#racionalidadesaude)
+
+### \#27	perimetroCefalicoNutricional
+Perímetro cefálico do cidadão em centímetros.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|---| --- |---  | --- |
+|Double|	Não|	0|	2|
+
 ## OutrosSia
 
 ### \#1	codigoExame
@@ -344,12 +349,12 @@ Código dos CIAPs apresentados na lista.
 **Regras:**
 
 * Não deve conter dois "Problemas / Condições" iguais.
-* É Requerido o preenchimento de pelo menos um dos itens de `#1` a `#4`.
+* É Requerido o preenchimento de pelo menos um dos itens de `#1` a `#5`.
 
 **Referências:** [ListaCiapCondicaoAvaliada](#listaciapcondicaoavaliada)
 
 ### \#2	outroCiap1
-Código do CIAP1 registrado no antedimento.
+Código do CIAP2 registrado no antedimento.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
@@ -358,7 +363,7 @@ Código do CIAP1 registrado no antedimento.
 **Regras:**
 
 * Não pode ser igual a [outroCiap2](#3-outrociap2).
-* É Requerido o preenchimento de pelo menos um dos itens de `#1` a `#4`.
+* É Requerido o preenchimento de pelo menos um dos itens de `#1` a `#5`.
 
 ### \#3	outroCiap2
 Código do CIAP2 registrado no antedimento.
@@ -370,16 +375,25 @@ Código do CIAP2 registrado no antedimento.
 **Regras:**
 
 * Não pode ser igual a [outroCiap1](#2-outrociap1).
-* É Requerido o preenchimento de pelo menos um dos itens de `#1` a `#4`.
+* É Requerido o preenchimento de pelo menos um dos itens de `#1` a `#5`.
 
 ### \#4	cid10
 Código do CID10 registrado no atendimento.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Condicional|	-|	-|
+|String| Condicional| - | - |
 
-**Regras:** É Requerido o preenchimento de pelo menos um dos itens de `#1` a `#4`.
+**Regras:** É Requerido o preenchimento de pelo menos um dos itens de `#1` a `#5`.
+
+### \#5	cid10_2
+Código do CID10 registrado no atendimento.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|---| --- |---  | --- |
+|String| Condicional| - | - |
+
+**Regras:** É Requerido o preenchimento de pelo menos um dos itens de `#1` a `#5`.
 
 ## ListaCiapCondicaoAvaliada
 |Código| Descrição|

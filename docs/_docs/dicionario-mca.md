@@ -2,7 +2,7 @@
 layout: doc
 title: Marcadores de Consumo Alimentar
 id: dicionario-mca
-order: 1
+order: 7
 ---
 
 # Marcadores de Consumo Alimentar
@@ -28,7 +28,7 @@ CNS do cidadão.
 
 **Regras:** CNS válido de acordo com o algoritmo.
 
-**Referência:** Para ver o algoritmo utilizado, acesse: [Cartão Net Datasus](http://cartaonet.datasus.gov.br/). Em "Downloads" baixe o arquivo de rotina de validação Java.  
+**Referência:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
 
 ### \#3 identificacaoUsuario
 Nome do cidadão.

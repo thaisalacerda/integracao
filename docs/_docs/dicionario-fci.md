@@ -2,7 +2,7 @@
 layout: doc
 title: Ficha de Cadastro Individual
 id: dicionario-fci
-order: 1
+order: 0
 ---
 
 # Ficha de Cadastro Individual

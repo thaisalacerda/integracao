@@ -2,7 +2,7 @@
 layout: doc
 title: Ficha de Atendimento Odontológico Individual
 id: dicionario-fao
-order: 1
+order: 3
 ---
 
 # Ficha de Atendimento Odontológico Individual
@@ -71,7 +71,7 @@ CNS do cidadão.
 
 **Regras:** CNS válido de acordo com o algoritmo.
 
-**Referências:** Para ver o algoritmo utilizado, acesse: [Cartão Net Datasus](http://cartaonet.datasus.gov.br/), em "Downloads" baixe o arquivo de rotina de validação Java.
+**Referência:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
 
 ### \#3	numProntuario
 Número do prontuário do cidadão.

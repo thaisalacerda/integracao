@@ -2,7 +2,7 @@
 layout: doc
 title: Ficha de Procedimentos
 id: dicionario-fp
-order: 1
+order: 5
 ---
 
 # Ficha de Procedimentos
@@ -127,6 +127,10 @@ Numero do cartão SUS do cidadão.
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
 |String |Não |15 |15 |
+
+**Regras**: Validado por algoritmo.
+
+**Referência:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
 
 ### \#3 dtNascimento
 Data de nascimento do cidadão no formato epoch time.

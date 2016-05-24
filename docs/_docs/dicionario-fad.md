@@ -2,7 +2,7 @@
 layout: doc
 title: Ficha de Atendimento Domiciliar
 id: dicionario-fad
-order: 1
+order: 9
 ---
 
 # Ficha de Atendimento Domiciliar
@@ -65,7 +65,7 @@ CNS do cidadão que participou da atividade.
 
 **Regras:** Validado pelo algoritmo.
 
-**Referências:** Para ver o algoritmo utilizado, acesse: [Cartão Net Datasus](http://cartaonet.datasus.gov.br/), em "Downloads" baixe o arquivo de rotina de validação Java.  
+**Referência:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
 
 ### \#3	dataNascimento
 Data de nascimento do cidadão.

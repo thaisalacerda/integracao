@@ -2,7 +2,7 @@
 layout: doc
 title: Dicionário de dados
 id: dicionario
-order: 0
+order: 12
 ---
 
 ## AbastecimentoDeAgua
@@ -366,7 +366,7 @@ order: 0
 |8 |	Envelhecimento / Climatério / Andropausa  / Etc|	-|
 |9 |	Escovação dentária supervisionada |	-|
 |10 |	Plantas medicinais / Fitoterapia|	-|
-|11 |	Práticas corporais / Atividade física|	-|
+|11 |	Práticas corporais e Atividade física|	-|
 |12 |	Práticas corporais e mentais em PIC |	-|
 |13 |	Prevenção da violência e promoção da cultura da paz|	-|
 |14 |	Saúde ambiental|	-|
@@ -898,7 +898,7 @@ order: 0
 |1 |	Domicílio|
 |2 |	Comércio|
 |3 | 	Terreno baldio|
-|4 |	Ponto Estratégico (PE: cemitério, borracharia, ferro-velho, depósito de sucata ou materiais de construção, garagem de ônibus ou veículo de grande porte)|
+|4 |	Ponto Estratégico (cemitério, borracharia, ferro-velho, depósito de sucata ou materiais de construção, garagem de ônibus ou veículo de grande porte)|
 |5 |	Escola|
 |6 |	Creche|
 |7 |	Abrigo|
@@ -908,3 +908,57 @@ order: 0
 |11 |	Delegacia|
 |12 |	Estabelecimento religioso|
 |99 |	Outros|
+
+
+## racionalidadeSaude
+|Código|	Descrição|
+|---|---|
+|1 |	Medicina Tradicional Chinesa|
+|2 |	Antroposofia aplicada à saúde|
+|3 | 	Homeopatia|
+|4 |	Fitoterapia|
+|5 |	Ayurveda|
+|6 |	Outra|
+
+
+## testeOlhinho
+|Código|	Descrição|
+|---|---|
+|1 |	Presente bilateral	|
+|2 |	Duvidoso ou ausente |
+
+## exameFundoOlho
+|Código|	Descrição|
+|---|---|
+|3 |	Normal	 |
+|4 |	Alterado |
+
+## testeOrelhinha
+|Código|	Descrição|
+|---|---|
+|5 |	Passou |
+|6 |	Falhou |
+
+## usTransfontanela
+|Código|	Descrição|
+|---|---|
+|7 |	Normal |
+|8 |	Outras alterações |
+|9 |	Sugestivo de infecção congênita |
+|10|	Indeterminado  |
+
+## tomografiaComputadorizada
+|Código|	Descrição|
+|---|---|
+|11 |	Normal |
+|12 |	Outras alterações |
+|13 |	Sugestivo de infecção congênita |
+|14 |	Indeterminado  |
+
+## ressonanciaMagnetica
+|Código|	Descrição|
+|---|---|
+|15 |	Normal |
+|16 |	Outras alterações |
+|17 |	Sugestivo de infecção congênita |
+|18 |	Indeterminado  |

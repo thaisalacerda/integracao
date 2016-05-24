@@ -2,7 +2,7 @@
 layout: doc
 title: Ficha de Avaliação de Elegibilidade
 id: dicionario-fae
-order: 1
+order: 8
 ---
 
 # Ficha de Avaliação de Elegibilidade
@@ -47,7 +47,7 @@ CNS do cidadão.
 
 **Regras:** CNS válido de acordo com o algoritmo.
 
-**Referências**: Para ver o algoritmo utilizado, acesse [Cartão Net Datasus](http://cartaonet.datasus.gov.br/), em "Downloads" baixe o arquivo de rotina de validação Java.
+**Referência:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
 
 ### \#5	nomeCidadao
 Nome do cidadão.

@@ -2,7 +2,7 @@
 layout: doc
 title: Ficha de Atividade Coletiva
 id: dicionario-fac
-order: 1
+order: 4
 ---
 
 # Ficha de Atividade Coletiva
@@ -88,7 +88,7 @@ CNS do responsável pela atividade coletiva.
 * CNS válido de acordo com o algoritmo.
 * O profissional responsável deve ser um registro da lista de profissionais.
 
-**Referência:** Para ver o algoritmo utilizado, acesse: [Cartão NET Datasus](http://cartaonet.datasus.gov.br/), em "Downloads" baixe o arquivo de rotina de validação Java.
+**Referência:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
 
 ### \#9	responsavelCnesUnidade
 Código CNES da unidade do responsável pela atividade coletiva.
@@ -222,7 +222,7 @@ CNS do cidadão que participou da atividade.
 
 **Regras:** CNS válido de acordo com o algoritmo.
 
-**Referência:** Para ver o algoritmo utilizado, acesse: [Cartão NET Datasus](http://cartaonet.datasus.gov.br/), em "Downloads" baixe o arquivo de rotina de validação Java.
+**Referência:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
 
 ### \#2	dataNascimento
 Data de nascimento do cidadão.

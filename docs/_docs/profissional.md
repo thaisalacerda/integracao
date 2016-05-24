@@ -2,7 +2,7 @@
 layout: doc
 title: Profissional
 id: profissional
-order: 1
+order: 11
 ---
 
 # Profissional
@@ -18,7 +18,7 @@ CNS do profissional.
 
 **Regras:**	CNS válido de acordo com o algoritmo.
 
-**Referência:** Para ver o algoritmo utilizado, acesse: [Cartão Net Datasus](http://cartaonet.datasus.gov.br/), em "Downloads" baixe o arquivo de rotina de validação Java.
+**Referência:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
 
 Observações: Esta entidade é utilizada para representar o profissional responsável pelas fichas.
 
@@ -93,7 +93,7 @@ CNS do profissional1.
 
 **Regras:** CNS válido de acordo com o algoritmo.
 
-**Referência:** Para ver o algoritmo utilizado, acesse: [Cartão Net Datasus](http://cartaonet.datasus.gov.br/), em "Downloads" baixe o arquivo de rotina de validação Java.
+**Referência:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
 
 Observações: Esta entidade é utilizada para representar o profissional responsável pela ficha e os outros que o auxiliaram na atividade.
 
@@ -119,7 +119,7 @@ CNS do profissional2.
 
 **Regras:** CNS válido de acordo com o algoritmo.
 
-**Referência:** Para ver o algoritmo utilizado, acesse: [Cartão Net Datasus](http://cartaonet.datasus.gov.br/), em "Downloads" baixe o arquivo de rotina de validação Java.
+**Referência:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
 
 Observações: Esta entidade é utilizada para representar o profissional responsável pela ficha e os outros que o auxiliaram na atividade.
 
@@ -147,7 +147,7 @@ CNS do profissional.
 
 **Regras:** CNS válido de acordo com o algoritmo.
 
-**Referência:** Para ver o algoritmo utilizado, acesse: [Cartão Net Datasus](http://cartaonet.datasus.gov.br/), em "Downloads" baixe o arquivo de rotina de validação Java.  
+**Referência:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
 
 Observações: Esta entidade é utilizada para representar os profissionais que participaram da atividade coletiva
 
@@ -182,7 +182,7 @@ CNS do profissional.
 
 **Regras:** CNS válido de acordo com o algoritmo.
 
-**Referência:** Para ver o algoritmo utilizado, acesse: [Cartão Net Datasus](http://cartaonet.datasus.gov.br/), em "Downloads" baixe o arquivo de rotina de validação Java.  
+**Referência:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
 
 Observações: Esta entidade é utilizada para representar o profissional que realizou uma ação (Cadastro Individual e Cadastro Domiciliar) e a respectiva data.
 
