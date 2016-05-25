@@ -5,7 +5,6 @@ id: dicionario-fai
 order: 2
 ---
 
-# Ficha de Atendimento Individual
 
 ## FichaAtendimentoIndividualMaster
 

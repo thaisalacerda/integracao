@@ -5,7 +5,6 @@ id: dicionario-mca
 order: 7
 ---
 
-# Marcadores de Consumo Alimentar
 
 ## FichaConsumoAlimentar
 
@@ -37,10 +36,7 @@ Nome do cidadão.
 |--- |--- |--- |--- |
 |String |Sim |3 |70 |
 
-**Regras:**
-
-* Ter ao menos duas palavras.
-* Somente texto e apóstrofo (`'`).
+**Regras:** As regras de validação de um nome estão descritas em {% link validar_nome %}.
 
 ### \#4 dataNascimento
 Data de nascimento do cidadão no formato epoch time.

@@ -5,7 +5,6 @@ id: dicionario-fae
 order: 8
 ---
 
-# Ficha de Avaliação de Elegibilidade
 
 ## FichaAvaliacaoElegibilidade
 
@@ -58,9 +57,8 @@ Nome do cidadão.
 
 **Regras:**
 
-* Ter ao menos duas palavras.
-* Somente texto e apóstrofo (`'`).
-*	Opcional caso [conclusaoDestinoElegivel](#23-conclusaodestinoelegivel) for diferente de `1 (admissão própria emad)`.
+* As regras de validação de um nome estão descritas em {% link validar_nome %}.
+* Opcional caso [conclusaoDestinoElegivel](#23-conclusaodestinoelegivel) for diferente de `1 (admissão própria emad)`.
 
 ### \#6	nomeSocialCidadao
 Nome social do cidadão.
@@ -115,8 +113,7 @@ Nome da mãe do cidadão.
 
 **Regras:**
 
-* Ter ao menos duas palavras.
-* Somente texto e apóstrofo (`'`).
+* As regras de validação de um nome estão descritas em {% link validar_nome %}.
 * Não pode ser preenchido se o campo [desconheceNomeMae](#11-desconhecenomemae) = `true`.
 
 ### \#11	desconheceNomeMae

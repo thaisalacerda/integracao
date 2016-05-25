@@ -5,8 +5,6 @@ id: dicionario-fac
 order: 4
 ---
 
-# Ficha de Atividade Coletiva
-
 # FichaAtividadeColetiva
 
 ### \#1	uuidFicha

@@ -5,9 +5,7 @@ id: cbo
 order: 15
 ---
 
-# CBO
 
-## CBO
 Os CBOs devem ser sempre referenciados através de seu **código**.
 
 |Código 2002	|Nome |

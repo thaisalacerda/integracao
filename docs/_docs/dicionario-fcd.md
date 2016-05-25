@@ -5,8 +5,6 @@ id: dicionario-fcd
 order: 1
 ---
 
-# Ficha de Cadastro Domiciliar e Territorial
-
 ## CadastroDomiciliar
 
 ### \#1	animaisNoDomicilio
@@ -199,7 +197,7 @@ Indica o nome do responsável técnico da instituição de permanência.
 |--- |--- |--- |--- |
 |String |Sim | 3 | 70 |
 
-**Regras:** Requerido espaço em branco para indicar o sobrenome.
+**Regras:** As regras de validação de um nome estão descritas em {% link validar_nome %}.
 
 ### \#2 cnsResponsavelTecnico
 Indica o CNS do responsável técnico da instituição de permanência.

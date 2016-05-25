@@ -5,7 +5,6 @@ id: dicionario-fczm
 order: 10
 ---
 
-# Ficha complementar - Síndrome neurológica por Zika / Microcefalia
 
 # FichaComplementar
 

@@ -5,7 +5,6 @@ id: dicionario-fao
 order: 3
 ---
 
-# Ficha de Atendimento Odontológico Individual
 
 ## FichaAtendimentoOdontologicoMaster
 

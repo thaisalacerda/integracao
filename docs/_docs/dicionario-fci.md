@@ -5,8 +5,6 @@ id: dicionario-fci
 order: 0
 ---
 
-# Ficha de Cadastro Individual
-
 ## CadastroIndividual
 
 ### \#1 condicoesDeSaude
@@ -239,7 +237,7 @@ Marcador se o cidadão está gestante.
 **Regras:** Só pode ser preenchido se:
 
 * O campo [sexoCidadao](#16-sexocidadao) = `feminino`
-* O campo [dataNascimentoCidadao](#3-datanascimentocidadao) for mais anterior que 12 anos a partir da [dataAtendimento]({% url profissional %}#5-dataatendimento).
+* O campo [dataNascimentoCidadao](#3-datanascimentocidadao) for mais anterior que 9 anos a partir da [dataAtendimento]({% url profissional %}#5-dataatendimento).
 
 ### \#15 statusEstaAcamado
 Marcador se o cidadão está acamado.
@@ -541,7 +539,7 @@ Nome completo do cidadão.
 |--- |--- |--- |--- |
 |String |Sim |3 |70 |
 
-**Regras:** Requerido espaço em branco para indicar o sobrenome.
+**Regras:** As regras de validação de um nome estão descritas em {% link validar_nome %}.
 
 ### \#9 nomeMaeCidadao
 Nome da mãe do cidadão.
@@ -552,7 +550,7 @@ Nome da mãe do cidadão.
 
 **Regras:**
 
-* Requerido espaço em branco para indicar o sobrenome.
+* As regras de validação de um nome estão descritas em {% link validar_nome %}.
 * Não deve ser preenchido se o campo [desconheceNomeMae](#5-desconhecenomemae) = `true`.
 
 ### \#10 cnsCidadao
@@ -654,7 +652,7 @@ Nome do pai do cidadão.
 
 **Regras:**
 
-* Requerido espaço em branco para indicar o sobrenome.
+* As regras de validação de um nome estão descritas em {% link validar_nome %}.
 * Não deve ser preenchido se o campo [desconheceNomePai](#20-desconhecenomepai) = `true`. Caso contrário, o preenchimento é obrigatório.
 
 ### \#20 desconheceNomePai

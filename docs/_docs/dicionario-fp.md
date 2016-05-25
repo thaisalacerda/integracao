@@ -5,7 +5,6 @@ id: dicionario-fp
 order: 5
 ---
 
-# Ficha de Procedimentos
 
 ## FichaProcedimentoMaster
 
