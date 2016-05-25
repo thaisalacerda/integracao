@@ -5,7 +5,7 @@ id: dicionario-fac
 order: 4
 ---
 
-# FichaAtividadeColetiva
+## FichaAtividadeColetiva
 
 ### \#1	uuidFicha
 Código UUID para identificar a ficha na base de dados nacional.

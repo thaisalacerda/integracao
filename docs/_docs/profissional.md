@@ -5,8 +5,6 @@ id: profissional
 order: 11
 ---
 
-# Profissional
-
 ## headerTransport
 
 ### \#1	profissionalCNS

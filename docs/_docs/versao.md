@@ -5,7 +5,7 @@ id: versao
 order: 19
 ---
 
-## Versão
+**Observação:** Indica a versão do dado a ser transportado. A versão do dado não necessariamente reflete a versão do sistema.
 
 |Coluna	|Tipo	|Obrigatório |Regra	|
 |--- |--- |--- |--- |--- |
@@ -13,4 +13,4 @@ order: 19
 |minor |Integer |Sim |Valor único = 0	|
 |revision |Integer |Sim |Valor único = 0 |
 
-Observação: Indica a versão do dado a ser transportado. A versão do dado não necessariamente reflete a versão do sistema.
+

@@ -5,7 +5,7 @@ id: municipios
 order: 14
 ---
 
-# Municípios
+## Tabela de Municípios
 
 |Nome |Sigla UF | Código IBGE |
 |--- |--- |--- |

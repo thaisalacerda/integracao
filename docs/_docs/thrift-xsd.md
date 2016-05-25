@@ -5,7 +5,6 @@ id: thrift-xsd
 order: 16
 ---
 
-# Thrift x XSD
 
 ## Ficha de Cadastro Individual
 
