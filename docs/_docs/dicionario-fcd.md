@@ -206,6 +206,8 @@ Indica o CNS do responsável técnico da instituição de permanência.
 |--- |--- |--- |--- |
 |String |Sim | 15 | 15 |
 
+**Referência:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
+
 ### \#3 cargoInstituicao
 Indica o cargo do responsável técnico da instituição de permanência.
 
@@ -238,7 +240,9 @@ CNS do responsável familiar.
 |---| --- |---  | --- |
 |String|	Sim|	15|	15|
 
-**Referências:** Para ver o algoritmo utilizado, acesse: [Cartão Net Datasus](http://cartaonet.datasus.gov.br/), em "Downloads" baixe o arquivo de rotina de validação Java.
+**Regras:** Validado por algoritmo.
+
+**Referência:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
 
 ### \#3	numeroMembrosFamilia
 Quantidade de membros do núcleo familiar.

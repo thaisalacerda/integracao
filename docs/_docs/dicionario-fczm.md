@@ -68,7 +68,7 @@ CNS do responsável do cidadão.
 
 **Referência:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
 
-### \#7 dtTesteOlhinho
+### \#7 dataRealizacaoTesteOlhinho
 Data de resultado do "Teste de olhinho (Reflexo vermelho)".
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -77,7 +77,7 @@ Data de resultado do "Teste de olhinho (Reflexo vermelho)".
 
 **Regras:** Não pode ser posterior a [dataAtendimento]({% url profissional %}#5-dataatendimento);
 
-### \#8 coTesteOlhinho
+### \#8 coResultadoTesteOlhinho
 Resultado do "Teste de olhinho (Reflexo vermelho)".
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -86,7 +86,7 @@ Resultado do "Teste de olhinho (Reflexo vermelho)".
 
 **Referência:** [testeOlhinho]({% url dicionario %}#testeolhinho).
 
-### \#9 dtExameFundoOlho
+### \#9 dataRealizacaoExameFundoOlho
 Data de resultado do "Exame de fundo de olho (02.11.06.010-0 - Fundoscopia)".
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -96,7 +96,7 @@ Data de resultado do "Exame de fundo de olho (02.11.06.010-0 - Fundoscopia)".
 **Regras:** Não pode ser posterior a [dataAtendimento]({% url profissional %}#5-dataatendimento);
 
 
-### \#10 coExameFundoOlho
+### \#10 coResultadoExameFundoOlho
 Resultado do "Exame de fundo de olho (02.11.06.010-0 - Fundoscopia)".
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -105,7 +105,7 @@ Resultado do "Exame de fundo de olho (02.11.06.010-0 - Fundoscopia)".
 
 **Referência:** [exameFundoOlho]({% url dicionario %}#examefundoolho).
 
-### \#11 dtTesteOrelinha
+### \#11 dataRealizacaoExameOrelhinha
 Data de resultado do "Teste da orelhinha - PEATE (02.11.07.027-0 - Potencial evocado auditivo para triagem auditiva)".
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -114,7 +114,7 @@ Data de resultado do "Teste da orelhinha - PEATE (02.11.07.027-0 - Potencial evo
 
 **Regras:** Não pode ser posterior a [dataAtendimento]({% url profissional %}#5-dataatendimento);
 
-### \#12 coTesteOrelhinha
+### \#12 coResultadoExameOrelhinha
 Resultado do "Teste da orelhinha - PEATE (02.11.07.027-0 - Potencial evocado auditivo para triagem auditiva)".
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -123,7 +123,7 @@ Resultado do "Teste da orelhinha - PEATE (02.11.07.027-0 - Potencial evocado aud
 
 **Referência:** [testeOrelhinha]({% url dicionario %}#testeorelhinha).
 
-### \#13 dtUSTransfontanela
+### \#13 dataRealizacaoUSTransfontanela
 Data de resultado do exame de imagem "US transfontanela (02.05.02.017-8 - Ultrassonografia transfontanela)".
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -132,7 +132,7 @@ Data de resultado do exame de imagem "US transfontanela (02.05.02.017-8 - Ultras
 
 **Regras:** Não pode ser posterior a [dataAtendimento]({% url profissional %}#5-dataatendimento);
 
-### \#14 coUSTransfontanela
+### \#14 coResultadoUsTransfontanela
 Resultado do exame de imagem "US transfontanela (02.05.02.017-8 - Ultrassonografia transfontanela)".
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -141,7 +141,7 @@ Resultado do exame de imagem "US transfontanela (02.05.02.017-8 - Ultrassonograf
 
 **Referência:** [usTransfontanela]({% url dicionario %}#ustransfontanela).
 
-### \#15 dtTomografiaComputadorizada
+### \#15 dataRealizacaoTomografiaComputadorizada
 Data de resultado do exame de imagem "Tomografia computadorizada (02.06.01.007-9 - Tomografia computadorizada do crânio)".
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -150,7 +150,7 @@ Data de resultado do exame de imagem "Tomografia computadorizada (02.06.01.007-9
 
 **Regras:** Não pode ser posterior a [dataAtendimento]({% url profissional %}#5-dataatendimento);
 
-### \#16 coTomografiaComputadorizada
+### \#16 coResultadoTomografiaComputadorizada
 Resultado do exame de imagem "Tomografia computadorizada (02.06.01.007-9 - Tomografia computadorizada do crânio)".
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -159,7 +159,7 @@ Resultado do exame de imagem "Tomografia computadorizada (02.06.01.007-9 - Tomog
 
 **Referência:** [tomografiaComputadorizada]({% url dicionario %}#tomografiacomputadorizada).
 
-### \#17 dtRessonanciaMagnetica
+### \#17 dataRealizacaoRessonanciaMagnetica
 Data de resultado do exame de imagem "Ressonância magnética (02.07.01.006-4 - Ressonância magnética de crânio)".
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -168,7 +168,7 @@ Data de resultado do exame de imagem "Ressonância magnética (02.07.01.006-4 - 
 
 **Regras:** Não pode ser posterior a [dataAtendimento]({% url profissional %}#5-dataatendimento);
 
-### \#18 coRessonanciaMagnetica
+### \#18 coResultadoRessonanciaMagnetica
 Resultado do exame de imagem "Ressonância magnética (02.07.01.006-4 - Ressonância magnética de crânio)".
 
 | Tipo | Obrigatório | Mínimo | Máximo |

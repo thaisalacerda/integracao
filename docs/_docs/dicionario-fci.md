@@ -562,7 +562,7 @@ CNS do cidadão.
 
 **Regras:** Validado por algoritmo.
 
-**Referência:** Para ver o algoritmo utilizado, acesse: [Cartão Net Datasus](http://cartaonet.datasus.gov.br/), em "Downloads" baixe o arquivo de rotina de validação Java.
+**Referência:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
 
 ### \#11 cnsResponsavelFamiliar
 CNS do responsável do cidadão.
@@ -576,7 +576,7 @@ CNS do responsável do cidadão.
 * Validado por algoritmo.
 * Só pode ser preenchido se o campo [statusEhResponsavel](#17-statusehresponsavel) = `true`.
 
-**Referência:** Para ver o algoritmo utilizado, acesse: [Cartão Net Datasus](http://cartaonet.datasus.gov.br/), em "Downloads" baixe o arquivo de rotina de validação Java.
+**Referência:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
 
 ### \#12 telefoneCelular
 Número de celular do cidadão.
@@ -602,8 +602,9 @@ Código do país de nascimento do cidadão.
 |Long |Conditional |- |- |
 
 **Regras:** 
-* Só pode ser preenchido se o campo [nacionalidadeCidadao](#7-nacionalidadecidadao) for diferente de `1 (Brasileira)`;
-* Se o campo [nacionalidadeCidadao](#7-nacionalidadecidadao) for igual a `3 (Estrangeiro)`, este campo é de preenchimento obrigatório.
+
+* Só pode ser preenchido se o campo [nacionalidadeCidadao](#7-nacionalidadecidadao) for igual a `3 (Estrangeiro)`, sendo de preenchimento obrigatório.
+* Se o campo [nacionalidadeCidadao](#7-nacionalidadecidadao) for igual a `1 (Brasileira)`, este campo deve ser preenchido com `31 (BRASIL)`.
 
 **Referência:** [País]({% url referencias %}#país).
 
