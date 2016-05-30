@@ -15,7 +15,7 @@ Profissionais que realizaram o atendimento
 |---| --- |---  | --- |
 |VariasLotacoesHeader|	Sim|	-|	-|
 
-**Referências:**	[Profissional]({% url profissional %})
+**Referência:** [headerTransport]({% url profissional %}#headertransport).
 
 ### \#2	atendimentosIndividuais
 Registro individualizado dos atendimentos.
@@ -221,8 +221,7 @@ Lista de exames avaliados que são apresentados na ficha.
 |---| --- |---  | --- |
 |List\<String>|	Não|	0|	23|
 
-**Regras:**
-* Não pode conter dois exames iguais.
+**Regras:** Não pode conter dois exames iguais.
 
 **Referências:** [ListaExameSolicitado](#listaexamesolicitado)
 
@@ -392,7 +391,10 @@ Código do CID10 registrado no atendimento.
 |---| --- |---  | --- |
 |String| Condicional| - | - |
 
-**Regras:** É Requerido o preenchimento de pelo menos um dos itens de `#1` a `#5`.
+**Regras:** 
+
+* Não pode ser igual a [cid10](#4-cid10).
+* É Requerido o preenchimento de pelo menos um dos itens de `#1` a `#5`.
 
 ## ListaCiapCondicaoAvaliada
 |Código| Descrição|

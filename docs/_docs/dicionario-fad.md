@@ -34,7 +34,7 @@ Profissional que realizou a visita.
 |---| --- |---  | --- |
 |UnicaLotacaoHeader|	Obrigatório|	-|	-|
 
-**Referências:**	[UnicaLotacaoHeader]({% url profissional %}#unicalotacaoheader)
+**Referência:** [headerTransport]({% url profissional %}#headertransport).
 
 ### \#4	atendimentosDomiciliares
 Lista dos atendimentos realizados pelo profissional.
@@ -114,7 +114,7 @@ Código do tipo de atendimento.
 
 **Regras:** Apenas as opções `7` e `8` são aceitas.
 
-**Referências:**: [TipoDeAtendimento]({% url dicionario %}#tipodeatendimento)
+**Referências:** [TipoDeAtendimento]({% url dicionario %}#tipodeatendimento)
 
 ### \#8	situacoesPresentes
 Marcadores das situações presentes.
@@ -144,7 +144,7 @@ Código dos procedimentos registrados no atendimento disponíveis na ficha.
 |---| --- |---  | --- |
 |List\<String\>|	Não|	0|	21|
 
-**Referências:** [ProcedimentosDaAtençãoDomiciliar](#procedimentos-da-atenção-domiciliar)
+**Referências:** [Procedimentos da Atencao Domiciliar](#procedimentos-da-atencao-domiciliar)
 
 ### \#12	outrosProcedimentos
 Código dos procedimentos SIGTAP registrados no atendimento.
@@ -205,7 +205,7 @@ Marcador que indica se a família irá receber acompanhamento pós-óbito.
 |Paracentese | 23|
 |Medicação  parenteral	|24|
 
-## Procedimentos da Atenção Domiciliar
+## Procedimentos da Atencao Domiciliar
 
 |Nome			|Código|
 |--- |---|

@@ -250,7 +250,7 @@ order: 13
 
 ## UF
 
-|Código DNE	|Nome |
+|Número DNE	|Nome |
 |--- |--- |
 |01 |ACRE |
 |02 |ALAGOAS |
@@ -282,7 +282,7 @@ order: 13
 
 ## Tipo De Logradouro
 
-|Código |Nome |
+|Número DNE |Nome |
 |--- |--- |
 |001 |ACESSO |
 |002 |ADRO |

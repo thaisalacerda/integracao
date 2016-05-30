@@ -16,7 +16,7 @@ Profissional que realizou a visita.
 |--- |--- |--- |--- |
 |UnicaLotacaoHeader |Sim |- |- |
 
-**Referência:** {% link profissional %}
+**Referência:** [headerTransport]({% url profissional %}#headertransport).
 
 ### \#2 cnsCidadao
 CNS do cidadão.
@@ -135,7 +135,7 @@ Identificador da pergunta referente ao questionário para cidadãos menores de s
 |--- |--- |--- |--- |
 |PerguntaCriancasMenoresSeisMesesEnum |Condicional |- |- |
 
-**Regras:** Obrigatório caso a [dataNascimento](4-datanascimento) seja menos que 6 meses anterior à [DataAtendimento](#5-dataatendimento).
+**Regras:** Obrigatório caso a [dataNascimento](#4-datanascimento) seja menos que 6 meses anterior à [dataAtendimento]({% url profissional %}#5-dataatendimento).
 
 **Referência:** [PerguntaCriancasMenoresSeisMesesEnum](#perguntacriancasmenoresseismesesenum).
 
@@ -146,7 +146,7 @@ Resposta referente à pergunta.
 |--- |--- |--- |--- |
 |RespostaUnicaEscolhaEnum |Condicional |- |- |
 
-**Regras:** Obrigatório caso a [dataNascimento](4-datanascimento) seja menos que 6 meses anterior à [DataAtendimento](#5-dataatendimento).
+**Regras:** Obrigatório caso a [dataNascimento](#4-datanascimento) seja menos que 6 meses anterior à [dataAtendimento]({% url profissional %}#5-dataatendimento).
 
 **Referência:** [RespostaUnicaEscolhaEnum](#respostaunicaescolhaenum).
 
@@ -159,7 +159,7 @@ Identificador da pergunta referente ao questionário para cidadãos menores de s
 |--- |--- |--- |--- |
 |PerguntaCriancasDeSeisVinteTresMesesEnum |Condicional |- |- |
 
-**Regras:** Obrigatório caso a [dataNascimento](4-datanascimento) seja menos que 23 meses e mais que 6 meses anterior à [DataAtendimento](#5-dataatendimento).
+**Regras:** Obrigatório caso a [dataNascimento](#4-datanascimento) seja menos que 23 meses e mais que 6 meses anterior à [dataAtendimento]({% url profissional %}#5-dataatendimento).
 
 **Referências:** [PerguntaCriancasDeSeisVinteTresMesesEnum](#perguntacriancasdeseisvintetresmesesenum).
 
@@ -170,7 +170,7 @@ Resposta referente a pergunta.
 |--- |--- |--- |--- |
 |RespostaUnicaEscolhaEnum |Condicional |- |- |
 
-**Regras:** Obrigatório caso a [dataNascimento](4-datanascimento) seja menos que 24 meses e mais que 6 meses anterior à [DataAtendimento](#5-dataatendimento).
+**Regras:** Obrigatório caso a [dataNascimento](#4-datanascimento) seja menos que 24 meses e mais que 6 meses anterior à [dataAtendimento]({% url profissional %}#5-dataatendimento).
 
 **Referências:** [RespostaUnicaEscolhaEnum](#respostaunicaescolhaenum).
 
@@ -183,7 +183,7 @@ Pergunta do questionário de cidadãos que tem vinte e quatro meses ou mais.
 |--- |--- |--- |--- |
 |PerguntaCriancasComMaisDoisAnosEnum | Condicional |- |- |
 
-**Regras:** Obrigatório caso a [dataNascimento](4-datanascimento) seja mais que 24 meses anterior à [DataAtendimento](#5-dataatendimento).
+**Regras:** Obrigatório caso a [dataNascimento](#4-datanascimento) seja mais que 24 meses anterior à [dataAtendimento]({% url profissional %}#5-dataatendimento).
 
 **Referência:** [PerguntaCriancasComMaisDoisAnosEnum](#perguntacriancascommaisdoisanosenum).
 
@@ -194,7 +194,7 @@ Resposta referente a pergunta do registro.
 |--- |--- |--- |--- |
 |RespostaUnicaEscolhaEnum |Condicional |- |- |
 
-**Regras:** Obrigatório caso a [dataNascimento](4-datanascimento) seja mais que 24 meses anterior à [DataAtendimento](#5-dataatendimento).
+**Regras:** Obrigatório caso a [dataNascimento](#4-datanascimento) seja mais que 24 meses anterior à [dataAtendimento]({% url profissional %}#5-dataatendimento).
 
 **Referência:** [RespostaUnicaEscolhaEnum](#respostaunicaescolhaenum).
 

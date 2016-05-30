@@ -35,7 +35,7 @@ Profissional que realizou os procedimentos.
 |--- |--- |--- |--- |
 |UnicaLotacaoHeader |Sim |- |- |
 
-**Referência:** [Profissional]({% url profissional %})
+**Referência:** [headerTransport]({% url profissional %}#headertransport).
 
 ### \#4 atendProcedimentos
 Registro dos procedimentos realizados.

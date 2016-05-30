@@ -12,7 +12,7 @@ Lista de código dos animais no domicílio.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|List\<Long\>|	Condicional| 0|	5|
+|List\<Long\>|	Condicional| 0|	4|
 
 **Regras:**
 
@@ -30,7 +30,7 @@ Condições de moradia do domicílio.
 
 **Regras:**
 
-* Não devem ser preenchidos se o campo [tipoDeImovel](#1-tipodeimovel) = `02` Comércio, `03` Terreno baldio, `04` Ponto Estratégico, `05` Escola, `06` Creche, `12` Estabelecimento Religioso, `99` Outros.
+* Não deve ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = `02` Comércio, `03` Terreno baldio, `04` Ponto Estratégico, `05` Escola, `06` Creche, `12` Estabelecimento Religioso, `99` Outros.
 * Não devem ser preenchidos se o campo [statusTermoRecusaCadastroDomiciliarAtencaoBasica](#9-statustermorecusacadatrodomiciliaratencaobasica) = `true`.
 
 **Referências:** [CondicaoMoradia](#condicaomoradia)
@@ -58,6 +58,8 @@ Lista das famílias que residem no domicílio.
 * Só pode ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = `01` Domicílio.
 * Não pode ser preenchido caso o campo [statusTermoRecusaCadastroDomiciliarAtencaoBasica](#9-statustermorecusacadatrodomiciliaratencaobasica) = `true`.
 
+**Referências:** [FamiliaRow](#familiarow)
+
 ### \#6	fichaAtualizada
 Marcador que indica se a ficha é uma atualização.
 
@@ -76,6 +78,7 @@ Número de animais no domicílio.
 
 **Regras:**
 
+* Só pode ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = `01` Domicílio.
 * Não pode ser preenchido se o campo [stAnimaisNoDomicilio](#8-stanimaisnodomicilio) = `false`.
 * Não pode ser preenchido se o campo [statusTermoRecusaCadastroDomiciliarAtencaoBasica](#9-statustermorecusacadatrodomiciliaratencaobasica) = `true`.
 
@@ -88,6 +91,7 @@ Marcador que indica se existem animais no domicílio.
 
 **Regras:**
 
+* Só pode ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = `01` Domicílio.
 * Não pode ser preenchido se o campo [statusTermoRecusaCadastroDomiciliarAtencaoBasica](#9-statustermorecusacadatrodomiciliaratencaobasica) = `true`.
 
 ### \#9	statusTermoRecusaCadatroDomiciliarAtencaoBasica
@@ -129,16 +133,16 @@ Código UUID para identificar a ficha que deu origem ao cadastro do registro.
 **Referências:** Para ver a referência sobre o UUID, acesse: [UUID Wikipedia](https://en.wikipedia.org/wiki/Universally_unique_identifier).
 
 ### \#13	identificacaoImovel
-Condições de moradia do domicílio.
+Identificação do imóvel.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 | ---| --- |---  | --- |
-| identificacaoImovel	| Condicional	| - |	-	|
+| identificacaoImovel	| Sim	| - |	-	|
 
-**Regras:** Não devem ser preenchidos se o campo [statusTermoRecusaCadastroDomiciliarAtencaoBasica](#9-statustermorecusacadatrodomiciliaratencaobasica) = `true`.
+**Referências:** [identificacaoImovel](#identificacaoimovel)
 
 ### \#14	identificacaoResponsavelTecnico
-Condições de moradia do domicílio.
+Identificação do responsável técnico da instituição de permanência.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 | --- | --- | ---  | --- |
@@ -148,6 +152,8 @@ Condições de moradia do domicílio.
 
 * Só podem ser preenchidos quando o campo [tipoDeImovel](#1-tipodeimovel) = `07` Abrigo, `08` Instituição de longa permanência para idosos, `09` Unidade prisional, `10` Unidade de medida socioeducativa e `11` Delegacia.
 * Não devem ser preenchidos se o campo [statusTermoRecusaCadastroDomiciliarAtencaoBasica](#9-statustermorecusacadatrodomiciliaratencaobasica) = `true`.
+
+**Referências:** [identificacaoResponsavelTecnico](#identificacaoresponsaveltecnico)
 
 ### \#15 headerTransport
 Informações sobre o profissional e a data do cadastro.
@@ -167,7 +173,7 @@ Indica o tipo de imóvel do domicílio.
 |---| --- |---  | --- |
 |Long|	Sim|	-|	-|
 
-**Referências:** [tipoDeImovel]({% url dicionario %}#tipodeimovel).
+**Referências:** [tipoDeImovel]({% url dicionario %}#tipodeimovel)
 
 ### \#2 nomeInstituicaoPermanencia
 Indica o nome da instituição de permanência.
@@ -215,12 +221,14 @@ Indica o cargo do responsável técnico da instituição de permanência.
 |--- |--- |--- |--- |
 |String |Não | 0 | 100 |
 
-### \#4 contatoResponsavelTecnico
+### \#4 telefoneResponsavelTecnico
 Indica o telefone para contato do responsável técnico da instituição de permanência.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|String |Não | 0 | 100 |
+|String |Não | 10 | 11 |
+
+**Regras:** Mínimo 10 dígitos, máximo 11 (DDD + 8 ou 9).
 
 ## FamiliaRow
 
@@ -398,9 +406,9 @@ Microárea na qual o cidadão se encontra.
 |--- |--- |--- |--- |
 |String |Condicional | 2 | 2 |
 
-**Regras:** Não deve ser preenchido se o campo [foraArea](#14-foraarea) = `true`. Caso contrário, o preenchimento é obrigatório.
+**Regras:** Não deve ser preenchido se o campo [stForaArea](#14-stforaarea) = `true`. Caso contrário, o preenchimento é obrigatório.
 
-### \#14 stforaArea
+### \#14 stForaArea
 Marcador que indica que o cidadão está fora da área.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -427,7 +435,6 @@ Código da condição de posse e uso da terra.
 
 **Regras:** 
 
-* Preenchimento obrigatório caso o campo [Localização](#5-localizacao) = `84 (rural)`.
 * Não deve ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = `07` Abrigo, `08` Instituição de longa permanência para idosos, `09` Unidade prisional, `10` Unidade de medida socioeducativa e `11` Delegacia.
 
 **Referências:** [CondicaoDePosseEUsoDaTerra]({% url dicionario %}#condicaodeposseeusodaterra)

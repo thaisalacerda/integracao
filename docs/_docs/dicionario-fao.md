@@ -26,7 +26,7 @@ Profissionais que realizaram o atendimento.
 |---| --- |---  | --- |
 |VariasLotacoesHeader|	Sim|	-|	-|
 
-**Referências:** [Profissional]({% url profissional %})
+**Referência:** [headerTransport]({% url profissional %}#headertransport).
 
 ### \#3	atendimentosOdontologicos
 Registro individualizado dos atendimentos.
@@ -88,7 +88,7 @@ Marcador que indica se o cidadão está gestante.
 |---| --- |---  | --- |
 |Boolean|	Não|	-|	-|
 
-**Regras:** [Sexo](#14-sexo) = `1 (feminino)`.
+**Regras:** Só pode ser preenchido se o campo [Sexo](#14-sexo) = `1 (feminino)`.
 
 ### \#5	necessidadesEspeciais
 Marcador que indica se o cidadão é portador de necessidades especiais.

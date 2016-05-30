@@ -97,7 +97,7 @@ order: 16
 |--- |--- |--- |
 |[ProfissionalCboRowItem]({% url profissional %}#profissionalcborowitem)	|ProfissionalCboRowItemThrift	|v2000profissionalcborowitem.xsd |
 |[VariasLotacoesHeader]({% url profissional %}#variaslotacoesheader)	|VariasLotacoesHeaderThrift	|v2000variaslotacoesheader.xsd |
-|[UnicaLotacaoHeader]({% url profissional %}#unicalotacaoheader)	|UnicaLotacaoHeaderThrift	|v2000unicalotacaoheader.xsd |
+|[headerTransport]({% url profissional %}#headertransport)	|UnicaLotacaoHeaderThrift	|v2000unicalotacaoheader.xsd |
 |[HeaderCdsCadastro]({% url profissional %}#headercdscadastro)	|HeaderCdsCadastroThrift	|v2000headercdscadastro.xsd |
 
 ## Versão

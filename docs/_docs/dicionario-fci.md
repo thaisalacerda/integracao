@@ -186,7 +186,7 @@ Código das doenças renais que o cidadão informou.
 * Requerido preenchimento de pelo menos um item se o campo [statusTemTeveDoencasRins](#22-statustemtevedoencasrins) = `true`.
 * Não deve ser preenchido se o campo [statusTemTeveDoencasRins](#22-statustemtevedoencasrins) = `false`.
 
-**Referência:** [ProblemasRins]({% url dicionario %}#problemasrins).
+**Referência:** [ProblemaRins]({% url dicionario %}#problemarins).
 
 ### \#9 maternidadeDeReferencia
 Nome da maternidade de referência.
@@ -792,6 +792,7 @@ Código da relação de parentesco com o responsável familiar.
 |Long |Não |- |- |
 
 **Regras:** Só pode ser preenchido se o campo [statusEhResponsavel](#17-statusehresponsavel) = `false`.
+
 **Referência:** [RelacaoParentesco]({% url dicionario %}#relacaoparentesco).
 
 ### \#9 situacaoMercadoTrabalhoCidadao
@@ -859,7 +860,7 @@ Código da identidade de gênero informada pelo cidadão.
 |--- |--- |--- |--- |
 |Long |Não |- |- |
 
-**Regras:** Não pode ser preenchido se o campo [statusDesejaInformarIdentidadeGenero](#10-statusdesejainformaridentidadegenero) = `false`.
+**Regras:** Não pode ser preenchido se o campo [statusDesejaInformarIdentidadeGenero](#18-statusdesejainformaridentidadegenero) = `false`.
 
 **Referência:** [identidadeGeneroCidadao]({% url dicionario %}#identidadegenerocidadao).
 
@@ -894,7 +895,7 @@ Código do responsável por crianças de até 9 anos.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|List\<Long\> |Não |- |- |
+|List\<Long\> |Não | 0 | 6 |
 
 **Regras:** Não pode ser preenchido se a [dataNascimentoCidadao](#3-datanascimentocidadao) for anterior ou igual a 10 anos a partir da [dataAtendimento]({% url profissional %}#5-dataatendimento).
 

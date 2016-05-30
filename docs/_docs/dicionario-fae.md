@@ -35,7 +35,7 @@ Profissional que realizou a visita.
 |---| --- |---  | --- |
 |UnicaLotacaoHeader|	Requerido|	-|	-|
 
-**Referências:**	[Profissional]({% url profissional %})
+**Referência:** [headerTransport]({% url profissional %}#headertransport).
 
 ### \#4	numeroCartaoSus
 CNS do cidadão.
@@ -203,7 +203,7 @@ Marcadores de situações presentes.
 |---| --- |---  | --- |
 |List\<Long>|	Não|	1|	24|
 
-**Referências:** [QuestionárioDeSituaçõesPresentes](#questionáriodesituaçõespresentes)
+**Referências:** [Questionario de Situacoes Presentes](#questionario-de-situacoes-presentes)
 
 ### \#20	cid10Principal
 Código do CID10 principal registrado na avaliação.
@@ -256,7 +256,7 @@ Código da conduta adotada caso cidadão seja `Inelegível`.
 
 **Regras:**
 
-* Só pode ser preenchido se [atencaoDomiciliarModalidade](#18-atencaoDomiciliarModalidade) for igual a de `4 (inelegível)`.
+* Só pode ser preenchido se [atencaoDomiciliarModalidade](#18-atencaodomiciliarmodalidade) for igual a de `4 (inelegível)`.
 
 **Referências:** [ConclusaoDestinoInelegivel]({% url dicionario %}#conclusaodestinoinelegivel)
 
@@ -369,7 +369,7 @@ Marcador que indica que o domicílio não possui número.
 |---| --- |---  | --- |
 |Boolean|	Não|	-|	-|
 
-## QuestionárioDeSituaçõesPresentes
+## Questionario de Situacoes Presentes
 |Descrição | Código|
 |--- | ---|
 |Acamado	|1 |
