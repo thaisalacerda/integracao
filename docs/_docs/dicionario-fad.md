@@ -52,7 +52,7 @@ Código do turno onde aconteceu o atendimento.
 |---| --- |---  | --- |
 |Long|	Obrigatório|	-|	-|
 
-**Referências:** [Turno]({% url dicionario %}#turno)
+**Referências:** [Turno]({% url dicionario %}#turno).
 
 ### \#2	cns
 CNS do cidadão que participou da atividade.
@@ -83,7 +83,7 @@ Código do sexo do cidadão.
 |---| --- |---  | --- |
 |Long|	Obrigatório|	-|	-|
 
-**Referências:**	[Sexo]({% url dicionario%}#sexo)
+**Referências:**	[Sexo]({% url dicionario%}#sexo).
 
 ### \#5	localDeAtendimento
 Código do local onde o atendimento foi realizado.
@@ -92,7 +92,7 @@ Código do local onde o atendimento foi realizado.
 |---| --- |---  | --- |
 |Long|	Obrigatório|	-|	-|
 
-**Referências:** [LocalDeAtendimento]({% url dicionario%}#localdeatendimento)
+**Referências:** [LocalDeAtendimento]({% url dicionario%}#localdeatendimento).
 
 ### \#6	atencaoDomiciliarModalidade
 Código da modalidade AD do cidadão atendido.
@@ -103,7 +103,7 @@ Código da modalidade AD do cidadão atendido.
 
 **Regras:** Apenas as opções `1`, `2` e `3` são aceitas.
 
-**Referências:** [ModalidadeAD]({% url dicionario %}#modalidadead)
+**Referências:** [ModalidadeAD]({% url dicionario %}#modalidadead).
 
 ### \#7	tipoAtendimento
 Código do tipo de atendimento.
@@ -114,7 +114,7 @@ Código do tipo de atendimento.
 
 **Regras:** Apenas as opções `7` e `8` são aceitas.
 
-**Referências:** [TipoDeAtendimento]({% url dicionario %}#tipodeatendimento)
+**Referências:** [TipoDeAtendimento]({% url dicionario %}#tipodeatendimento).
 
 ### \#8	situacoesPresentes
 Marcadores das situações presentes.
@@ -167,7 +167,7 @@ Código do desfecho do atendimento do cidadão.
 
 **Regras:**	Não podem conter as opções `7` ou `8`.
 
-**Referências:**	[CondutaDesfecho]({% url dicionario %}#condutadesfecho)
+**Referências:**	[CondutaDesfecho]({% url dicionario %}#condutadesfecho).
 
 ### \#14	statusInicioAcompanhamentoPosObito
 Marcador que indica se a família irá receber acompanhamento pós-óbito.

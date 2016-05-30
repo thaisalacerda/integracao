@@ -37,7 +37,7 @@ Registro individualizado dos atendimentos.
 
 **Regras:** No máximo 13 atendimentos podem ser registrados.
 
-**Referências:** [FichaAtendimentoOdontologicoChild](#fichaatendimentoodontologicochild)
+**Referências:** [FichaAtendimentoOdontologicoChild](#fichaatendimentoodontologicochild).
 
 ### \#4	tpCdsOrigem
 Tipo de origem dos dados do registro.
@@ -106,7 +106,7 @@ Código do local onde o atendimento foi realizado.
 
 **Regras:** Apenas valores de `1` a `10`.
 
-**Referências:** [LocalDeAtendimento]({% url dicionario %}#localdeatendimento)
+**Referências:** [LocalDeAtendimento]({% url dicionario %}#localdeatendimento).
 
 ### \#7	tipoAtendimento
 Código do tipo de atendimento realizado.
@@ -117,7 +117,7 @@ Código do tipo de atendimento realizado.
 
 **Regras:** Apenas valores de `2` a `6`.
 
-**Referências:**	[TipoDeAtendimento]({% url dicionario %}#tipodeatendimento)
+**Referências:**	[TipoDeAtendimento]({% url dicionario %}#tipodeatendimento).
 
 ### \#8	tiposEncamOdonto
 Código das condutas adotadas e possíveis encaminhamentos.
@@ -126,7 +126,7 @@ Código das condutas adotadas e possíveis encaminhamentos.
 |---| --- |---  | --- |
 |List\<Long>|	Sim|	1|	16|
 
-**Referências:** [CondutaEncaminhamentoOdonto]({% url dicionario %}#condutaencaminhamentoodonto)
+**Referências:** [CondutaEncaminhamentoOdonto]({% url dicionario %}#condutaencaminhamentoodonto).
 
 ### \#9	tiposFornecimOdonto
 Código dos materiais fornecidos durante o atendimento.
@@ -135,7 +135,7 @@ Código dos materiais fornecidos durante o atendimento.
 |---| --- |---  | --- |
 |List\<Long>|	Não	|0|	3|
 
-**Referências:** [FornecimentoOdonto]({% url dicionario %}#fornecimentoodonto)
+**Referências:** [FornecimentoOdonto]({% url dicionario %}#fornecimentoodonto).
 
 ### \#10	tiposVigilanciaSaudeBucal
 Código dos marcadores referentes a situação de vigilância em saúde bucal.
@@ -144,7 +144,7 @@ Código dos marcadores referentes a situação de vigilância em saúde bucal.
 |---| --- |---  | --- |
 |List\<Long>|	Sim|	1|	7|
 
-**Referências:** [VigilanciaEmSaudeBucal]({% url dicionario %}#vigilanciaemsaudebucal)
+**Referências:** [VigilanciaEmSaudeBucal]({% url dicionario %}#vigilanciaemsaudebucal).
 
 ### \#11	tiposConsultaOdonto
 Código do tipo de consulta odontológica realizada.
@@ -155,9 +155,9 @@ Código do tipo de consulta odontológica realizada.
 
 **Regras:**
 
-* É Requerido se o [TipoDeAtendimento]({% url dicionario %}#tipodeatendimento) = `2 (consulta agendada)`.
-* Não pode ser preenchido se o [TipoDeAtendimento]({% url dicionario %}#tipodeatendimento) = `4 (escuta inicial ou orientação)`.
-* Se o [TipoDeAtendimento]({% url dicionario %}#tipodeatendimento) = `6 (atendimento de urgência)`, a opção de `2 (consulta de retorno)` não pode ser marcada.
+* É Requerido se o [TipoDeAtendimento]({% url dicionario %}#tipodeatendimento) = `2 (consulta agendada)`;
+* Não pode ser preenchido se o [TipoDeAtendimento]({% url dicionario %}#tipodeatendimento) = `4 (escuta inicial ou orientação)`;
+* Se o [TipoDeAtendimento]({% url dicionario %}#tipodeatendimento) = `6 (atendimento de urgência)`, a opção de `2 (consulta de retorno)` não pode ser marcada;
 * Se [TipoDeAtendimento]({% url dicionario %}#tipodeatendimento) = `5 (consulta no dia)`, o campo é opcional.
 * Aceita apenas um registro.
 
@@ -174,7 +174,7 @@ Código dos procedimentos que são apresentados na ficha.
 
 * Não pode haver procedimentos com o mesmo código.
 
-**Referências:**	[ListaProcedimentosRealizados](#listaprocedimentosrealizados)
+**Referências:**	[ListaProcedimentosRealizados](#listaprocedimentosrealizados).
 
 ### \#13	outrosSiaProcedimentos
 Lista de outros códigos de procedimentos.
@@ -185,10 +185,10 @@ Lista de outros códigos de procedimentos.
 
 **Regras:**
 
-* Não pode conter procedimentos da [ListaProcedimentosRealizados](#listaprocedimentosrealizados).
+* Não pode conter procedimentos da [ListaProcedimentosRealizados](#listaprocedimentosrealizados);
 * Não pode haver procedimentos com o mesmo código.
 
-**Referências:** [ProcedimentoQuantidade](#procedimentoquantidade)
+**Referências:** [ProcedimentoQuantidade](#procedimentoquantidade).
 
 ### \#14	sexo
 Código do sexo do cidadão.
@@ -197,7 +197,7 @@ Código do sexo do cidadão.
 |---| --- |---  | --- |
 |Long|	Sim|	-|	-|
 
-**Referências:** [Sexo]({% url dicionario %}#sexo)
+**Referências:** [Sexo]({% url dicionario %}#sexo).
 
 ### \#15 turno
 Código do turno em que o atendimento foi realizado.
@@ -206,7 +206,7 @@ Código do turno em que o atendimento foi realizado.
 |---| --- |---  | --- |
 |Long|	Não|	-|	-|
 
-**Referências:** [Turno]({% url dicionario %}#turno)
+**Referências:** [Turno]({% url dicionario %}#turno).
 
 ## ProcedimentoQuantidade
 
@@ -228,9 +228,7 @@ Quantidade de procedimentos realizados.
 |---| --- |---  | --- |
 |Integer|	Sim|	0|	2|
 
-**Regras:**
-
-* Valor máximo que pode ser registrado é 99.
+**Regras:** Valor máximo que pode ser registrado é 99.
 
 ## ListaProcedimentosRealizados
 |Código | Descrição |

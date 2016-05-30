@@ -35,7 +35,7 @@ Profissional que realizou a visita.
 |--- |--- |--- |--- |
 |UnicaLotacaoHeader |Sim |- |- |
 
-**Referência:** [headerTransport]({% url profissional %}#headertransport)
+**Referência:** [headerTransport]({% url profissional %}#headertransport).
 
 ### \#4 visitasDomiciliares
 Pelo menos 1 item na lista, no máximo 23.
@@ -66,7 +66,7 @@ Número do prontuário do cidadão na UBS.
 
 **Regras:** 
 
-* Somente letras e números.
+* Somente letras e números;
 * Não deve ser preenchido se o campo [tipoDeImovel](#11-tipodeimovel) = `02` comércio, `03` terreno baldio, `04` Ponto Estratégico, `05` Escola, `06` Creche ou `12` Estabelecimento religioso.
 
 ### \#3 cnsCidadao
@@ -78,7 +78,7 @@ Número do cartão SUS do cidadão.
 
 **Regras:**
 
-* Validado pelo algoritmo.
+* Validado pelo algoritmo;
 * Não deve ser preenchido se o campo [tipoDeImovel](#11-tipodeimovel) = `02` comércio, `03` terreno baldio, `04` Ponto Estratégico, `05` Escola, `06` Creche ou `12` Estabelecimento religioso.
 
 **Referência:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
@@ -92,7 +92,7 @@ Data de nascimento do cidadão.
 
 **Regras:** 
 
-* Não pode ser posterior a [dataAtendimento]({% url profissional %}#5-dataatendimento) e anterior a 130 anos a partir da [dataAtendimento]({% url profissional %}#5-dataatendimento).
+* Não pode ser posterior a [dataAtendimento]({% url profissional %}#5-dataatendimento) e anterior a 130 anos a partir da [dataAtendimento]({% url profissional %}#5-dataatendimento);
 * Não deve ser preenchido se o campo [tipoDeImovel](#11-tipodeimovel) = `02` comércio, `03` terreno baldio, `04` Ponto Estratégico, `05` Escola, `06` Creche ou `12` Estabelecimento religioso.
 
 **Referência:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milissegundos.
@@ -124,7 +124,7 @@ Código dos motivos da visita.
 
 **Regras:**
 
-* Não pode ser preenchido caso o campo [Desfecho]({% url dicionario %}#desfecho) = 3 `AUSENTE` ou 2 `VISITA_RECUSADA`.
+* Não pode ser preenchido caso o campo [Desfecho]({% url dicionario %}#desfecho) = 3 `AUSENTE` ou 2 `VISITA_RECUSADA`;
 
 * Se o campo [tipoDeImovel](#11-tipodeimovel) = `02` comércio, `03` terreno baldio, `04` Ponto Estratégico, `05` Escola, `06` Creche ou `12` Estabelecimento religioso, então as opções selecionadas deste campo só podem ser:
 
@@ -185,9 +185,9 @@ Peso do cidadão em Quilogramas.
 
 **Regras:**
 
-* Apenas números e vírgula (`,`).
-* Máximo de 3 números após a vírgula.
-* Valor mínimo 0,5 e máximo 500.
+* Apenas números e vírgula (`,`);
+* Máximo de 3 números após a vírgula;
+* Valor mínimo 0,5 e máximo 500;
 * Não deve ser preenchido se o campo [tipoDeImovel](#11-tipodeimovel) = `02` comércio, `03` terreno baldio, `04` Ponto Estratégico, `05` Escola, `06` Creche ou `12` Estabelecimento religioso.
 
 ### \#13 alturaAcompanhamentoNutricional
@@ -199,7 +199,7 @@ Altura do cidadão em centímetros.
 
 **Regras:**
 
-* Apenas números e vírgula (`,`).
-* Máximo de 1 número após a vírgula.
-* Valor mínimo 20 e máximo 250.
+* Apenas números e vírgula (`,`);
+* Máximo de 1 número após a vírgula;
+* Valor mínimo 20 e máximo 250;
 * Não deve ser preenchido se o campo [tipoDeImovel](#11-tipodeimovel) = `02` comércio, `03` terreno baldio, `04` Ponto Estratégico, `05` Escola, `06` Creche ou `12` Estabelecimento religioso.

@@ -90,7 +90,7 @@ Código do local onde o atendimento foi realizado.
 
 **Regras:** Apenas valores de `1` a `10`.
 
-**Referências:** [LocalDeAtendimento]({% url dicionario %}#localdeatendimento)
+**Referências:** [LocalDeAtendimento]({% url dicionario %}#localdeatendimento).
 
 ### \#5	sexo
 Código do sexo do cidadão.
@@ -99,7 +99,7 @@ Código do sexo do cidadão.
 |---| --- |---  | --- |
 |Long|	Sim|	-|	-|
 
-**Referências:** [Sexo]({% url dicionario %}#sexo)
+**Referências:** [Sexo]({% url dicionario %}#sexo).
 
 ### \#6	turno
 Código do turno em que o atendimento foi realizado.
@@ -108,7 +108,7 @@ Código do turno em que o atendimento foi realizado.
 |---| --- |---  | --- |
 |Long|	Sim|	-|	-|
 
-**Referências:** [Turno]({% url dicionario %}#turno)
+**Referências:** [Turno]({% url dicionario %}#turno).
 
 ### \#7	tipoAtendimento
 Código do tipo de atendimento realizado.
@@ -117,9 +117,9 @@ Código do tipo de atendimento realizado.
 |---| --- |---  | --- |
 |Long|	Sim|	-|	-|
 
-**Regras:** Apenas valores de `1` a `6`
+**Regras:** Apenas valores de `1` a `6`.
 
-**Referências:** [TipoDeAtendimento]({% url dicionario %}#tipodeatendimento)
+**Referências:** [TipoDeAtendimento]({% url dicionario %}#tipodeatendimento).
 
 ### \#8	pesoAcompanhamentoNutricional
 Peso do cidadão em Quilogramas.
@@ -130,8 +130,8 @@ Peso do cidadão em Quilogramas.
 
 **Regras:**
 
-* Apenas números e vírgula (`,`).
-* Máximo de 3 números após a vírgula.
+* Apenas números e vírgula (`,`);
+* Máximo de 3 números após a vírgula;
 * Valor mínimo 0,5 e máximo 500.
 
 ### \#9	alturaAcompanhamentoNutricional
@@ -143,8 +143,8 @@ Altura do cidadão em centímetros.
 
 **Regras:**
 
-* Apenas números e vírgula (`,`).
-* Máximo de 1 número após a vírgula.
+* Apenas números e vírgula (`,`);
+* Máximo de 1 número após a vírgula;
 * Valor mínimo 20 e máximo 250.
 
 ### \#10	aleitamentoMaterno
@@ -154,7 +154,7 @@ Código do marcador referente ao aleitamento materno.
 |---| --- |---  | --- |
 |Long|	Não|	-|	-|
 
-**Referências:**	[AleitamentoMaterno]({% url dicionario %}#aleitamentomaterno)
+**Referências:**	[AleitamentoMaterno]({% url dicionario %}#aleitamentomaterno).
 
 ### \#11	dumDaGestante
 Data da última menstruação da gestante.
@@ -165,7 +165,7 @@ Data da última menstruação da gestante.
 
 **Regras:**
 
-* Não pode ser superior a [dataAtendimento]({% url profissional %}#5-dataatendimento), nem inferior a data de nascimento.
+* Não pode ser superior a [dataAtendimento]({% url profissional %}#5-dataatendimento), nem inferior a data de nascimento;
 * Não pode ser preenchido quando [Sexo](#5-sexo) = `0 (masculino)`.
 
 **Referências:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milissegundos.
@@ -179,7 +179,7 @@ Idade gestacional em semanas.
 
 **Regras**
 
-* Valor mínimo 1 e máximo 42.
+* Valor mínimo 1 e máximo 42;
 * Não pode ser preenchido quando [Sexo](#5-sexo) = `0 (masculino)`.
 
 ### \#13	atencaoDomiciliarModalidade
@@ -191,7 +191,7 @@ Código do modalidade AD do cidadão atendido.
 
 **Regras:** Apenas valores de `1` a `3`.
 
-**Referências:**	[ModalidadeAD]({% url dicionario %}#modalidadead)
+**Referências:**	[ModalidadeAD]({% url dicionario %}#modalidadead).
 
 ### \#14	problemaCondicaoAvaliada
 Situações de saúde avaliadas no atendimento.
@@ -201,7 +201,7 @@ Situações de saúde avaliadas no atendimento.
 |ProblemaCondicaoAvaliacaoAI|	Sim|	-|	-|
 
 **Referências:**
-[ProblemaCondicaoAvaliacaoAI](#problemacondicaoavaliacaoai)
+[ProblemaCondicaoAvaliacaoAI](#problemacondicaoavaliacaoai).
 
 ### \#15	examesSolicitados
 Lista de exames solicitados que são apresentados na ficha.
@@ -212,7 +212,7 @@ Lista de exames solicitados que são apresentados na ficha.
 
 **Regras:** Não pode conter dois exames iguais.
 
-**Referências:** [ListaExameSolicitado](#listaexamesolicitado)
+**Referências:** [ListaExameSolicitado](#listaexamesolicitado).
 
 ### \#16	examesAvaliados
 Lista de exames avaliados que são apresentados na ficha.
@@ -223,7 +223,7 @@ Lista de exames avaliados que são apresentados na ficha.
 
 **Regras:** Não pode conter dois exames iguais.
 
-**Referências:** [ListaExameSolicitado](#listaexamesolicitado)
+**Referências:** [ListaExameSolicitado](#listaexamesolicitado).
 
 ### \#17	outrosSia
 Lista de outros exames.
@@ -232,7 +232,7 @@ Lista de outros exames.
 |---| --- |---  | --- |
 |List\<OutrosSia>|	Não|	0|	3|
 
-**Referências:** [OutrosSia](#outrossia)
+**Referências:** [OutrosSia](#outrossia).
 
 ### \#18	vacinaEmDia
 Marcador referente a vacinação em dia do cidadão.
@@ -255,7 +255,7 @@ Código das ações realizadas pelo Núcleo de Atenção a Saúde da Família.
 |---| --- |---  | --- |
 |List\<Long>|	Não|	0|	3|
 
-**Referências:** [Nasf]({% url dicionario %}#nasf)
+**Referências:** [Nasf]({% url dicionario %}#nasf).
 
 ### \#22	condutas
 Código das condutas adotadas no atendimento.
@@ -266,7 +266,7 @@ Código das condutas adotadas no atendimento.
 
 **Regras:** Não deve conter duas condutas iguais.
 
-**Referências:** [CondutaEncaminhamento]({% url dicionario %}#condutaencaminhamento)
+**Referências:** [CondutaEncaminhamento]({% url dicionario %}#condutaencaminhamento).
 
 ### \#23	stGravidezPlanejada
 Marcador que indica se a gravidez é planejada.
@@ -302,7 +302,7 @@ Código da racionalidade em saúde utilizada.
 |---| --- |---  | --- |
 |Long|	Não|	-|	-|
 
-**Referências:**	[racionalidadeSaude]({% url dicionario %}#racionalidadesaude)
+**Referências:**	[racionalidadeSaude]({% url dicionario %}#racionalidadesaude).
 
 ### \#27	perimetroCefalicoNutricional
 Perímetro cefálico do cidadão em centímetros.
@@ -322,9 +322,9 @@ Código do exame solicitado ou avaliado.
 
 **Regras:** Deve ser um procedimento com um código válido.
 
-**Referências:** Para ver a referência da tabela do SIGTAP acesse: [Tabela Unificada SIGTAP](http://sigtap.datasus.gov.br/tabela-unificada/app/sec/procedimento/publicados/consultar)
+**Referências:** Para ver a referência da tabela do SIGTAP acesse: [Tabela Unificada SIGTAP](http://sigtap.datasus.gov.br/tabela-unificada/app/sec/procedimento/publicados/consultar).
 
-**Observações**: Sem ponto ou hífen, ex: `0101010010`
+**Observações**: Sem ponto ou hífen, ex: `0101010010`.
 
 ### \#2	solicitadoAvaliado
 Código do indicador se o exame foi `Solicitado` e / ou `Avaliado`.
@@ -333,7 +333,7 @@ Código do indicador se o exame foi `Solicitado` e / ou `Avaliado`.
 |---| --- |---  | --- |
 |List\<String>|	Sim|	-|	-|
 
-**Referências:** [SituacaoExame]({% url dicionario %}#situacaoexame)
+**Referências:** [SituacaoExame]({% url dicionario %}#situacaoexame).
 
 ## ProblemaCondicaoAvaliacaoAI
 
@@ -346,10 +346,10 @@ Código dos CIAPs apresentados na lista.
 
 **Regras:**
 
-* Não deve conter dois "Problemas / Condições" iguais.
+* Não deve conter dois "Problemas / Condições" iguais;
 * É Requerido o preenchimento de pelo menos um dos itens de `#1` a `#5`.
 
-**Referências:** [ListaCiapCondicaoAvaliada](#listaciapcondicaoavaliada)
+**Referências:** [ListaCiapCondicaoAvaliada](#listaciapcondicaoavaliada).
 
 ### \#2	outroCiap1
 Código do CIAP2 registrado no antedimento.
@@ -360,7 +360,7 @@ Código do CIAP2 registrado no antedimento.
 
 **Regras:**
 
-* Não pode ser igual a [outroCiap2](#3-outrociap2).
+* Não pode ser igual a [outroCiap2](#3-outrociap2);
 * É Requerido o preenchimento de pelo menos um dos itens de `#1` a `#5`.
 
 ### \#3	outroCiap2
@@ -372,7 +372,7 @@ Código do CIAP2 registrado no antedimento.
 
 **Regras:**
 
-* Não pode ser igual a [outroCiap1](#2-outrociap1).
+* Não pode ser igual a [outroCiap1](#2-outrociap1);
 * É Requerido o preenchimento de pelo menos um dos itens de `#1` a `#5`.
 
 ### \#4	cid10
@@ -393,7 +393,7 @@ Código do CID10 registrado no atendimento.
 
 **Regras:** 
 
-* Não pode ser igual a [cid10](#4-cid10).
+* Não pode ser igual a [cid10](#4-cid10);
 * É Requerido o preenchimento de pelo menos um dos itens de `#1` a `#5`.
 
 ## ListaCiapCondicaoAvaliada

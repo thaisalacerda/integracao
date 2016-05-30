@@ -16,10 +16,10 @@ Lista de código dos animais no domicílio.
 
 **Regras:**
 
-* Só pode ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = `01` Domicílio.
+* Só pode ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = `01` Domicílio;
 * Não pode ser preenchido se o campo [statusTermoRecusaCadastroDomiciliarAtencaoBasica](#9-statustermorecusacadatrodomiciliaratencaobasica) = `true`.
 
-**Referências:** [AnimalNoDomicilio]({% url dicionario %}#animalnodomicilio)
+**Referências:** [AnimalNoDomicilio]({% url dicionario %}#animalnodomicilio).
 
 ### \#2	condicaoMoradia
 Condições de moradia do domicílio.
@@ -30,10 +30,10 @@ Condições de moradia do domicílio.
 
 **Regras:**
 
-* Não deve ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = `02` Comércio, `03` Terreno baldio, `04` Ponto Estratégico, `05` Escola, `06` Creche, `12` Estabelecimento Religioso, `99` Outros.
+* Não deve ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = `02` Comércio, `03` Terreno baldio, `04` Ponto Estratégico, `05` Escola, `06` Creche, `12` Estabelecimento Religioso, `99` Outros;
 * Não devem ser preenchidos se o campo [statusTermoRecusaCadastroDomiciliarAtencaoBasica](#9-statustermorecusacadatrodomiciliaratencaobasica) = `true`.
 
-**Referências:** [CondicaoMoradia](#condicaomoradia)
+**Referências:** [CondicaoMoradia](#condicaomoradia).
 
 ### \#4	enderecoLocalPermanencia
 Informações sobre o endereço do domicílio.
@@ -44,7 +44,7 @@ Informações sobre o endereço do domicílio.
 
 **Regras:** Preenchimento obrigatório caso o campo [statusTermoRecusaCadastroDomiciliarAtencaoBasica](#9-statustermorecusacadatrodomiciliaratencaobasica) = `false`.
 
-**Referências:** [EnderecoLocalPermanencia](#enderecolocalpermanencia)
+**Referências:** [EnderecoLocalPermanencia](#enderecolocalpermanencia).
 
 ### \#5	familias
 Lista das famílias que residem no domicílio.
@@ -55,10 +55,10 @@ Lista das famílias que residem no domicílio.
 
 **Regras:**
 
-* Só pode ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = `01` Domicílio.
+* Só pode ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = `01` Domicílio;
 * Não pode ser preenchido caso o campo [statusTermoRecusaCadastroDomiciliarAtencaoBasica](#9-statustermorecusacadatrodomiciliaratencaobasica) = `true`.
 
-**Referências:** [FamiliaRow](#familiarow)
+**Referências:** [FamiliaRow](#familiarow).
 
 ### \#6	fichaAtualizada
 Marcador que indica se a ficha é uma atualização.
@@ -78,8 +78,8 @@ Número de animais no domicílio.
 
 **Regras:**
 
-* Só pode ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = `01` Domicílio.
-* Não pode ser preenchido se o campo [stAnimaisNoDomicilio](#8-stanimaisnodomicilio) = `false`.
+* Só pode ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = `01` Domicílio;
+* Não pode ser preenchido se o campo [stAnimaisNoDomicilio](#8-stanimaisnodomicilio) = `false`;
 * Não pode ser preenchido se o campo [statusTermoRecusaCadastroDomiciliarAtencaoBasica](#9-statustermorecusacadatrodomiciliaratencaobasica) = `true`.
 
 ### \#8	stAnimaisNoDomicilio
@@ -91,7 +91,7 @@ Marcador que indica se existem animais no domicílio.
 
 **Regras:**
 
-* Só pode ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = `01` Domicílio.
+* Só pode ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = `01` Domicílio;
 * Não pode ser preenchido se o campo [statusTermoRecusaCadastroDomiciliarAtencaoBasica](#9-statustermorecusacadatrodomiciliaratencaobasica) = `true`.
 
 ### \#9	statusTermoRecusaCadatroDomiciliarAtencaoBasica
@@ -139,7 +139,7 @@ Identificação do imóvel.
 | ---| --- |---  | --- |
 | identificacaoImovel	| Sim	| - |	-	|
 
-**Referências:** [identificacaoImovel](#identificacaoimovel)
+**Referências:** [identificacaoImovel](#identificacaoimovel).
 
 ### \#14	identificacaoResponsavelTecnico
 Identificação do responsável técnico da instituição de permanência.
@@ -150,10 +150,10 @@ Identificação do responsável técnico da instituição de permanência.
 
 **Regras:** 
 
-* Só podem ser preenchidos quando o campo [tipoDeImovel](#1-tipodeimovel) = `07` Abrigo, `08` Instituição de longa permanência para idosos, `09` Unidade prisional, `10` Unidade de medida socioeducativa e `11` Delegacia.
+* Só podem ser preenchidos quando o campo [tipoDeImovel](#1-tipodeimovel) = `07` Abrigo, `08` Instituição de longa permanência para idosos, `09` Unidade prisional, `10` Unidade de medida socioeducativa e `11` Delegacia;
 * Não devem ser preenchidos se o campo [statusTermoRecusaCadastroDomiciliarAtencaoBasica](#9-statustermorecusacadatrodomiciliaratencaobasica) = `true`.
 
-**Referências:** [identificacaoResponsavelTecnico](#identificacaoresponsaveltecnico)
+**Referências:** [identificacaoResponsavelTecnico](#identificacaoresponsaveltecnico).
 
 ### \#15 headerTransport
 Informações sobre o profissional e a data do cadastro.
@@ -162,7 +162,7 @@ Informações sobre o profissional e a data do cadastro.
 | ---| --- |---  | --- |
 | UnicaLotacaoHeader|	Sim|	-|	-|
 
-**Referências:** [headerTransport]({% url profissional %}#headertransport)
+**Referências:** [headerTransport]({% url profissional %}#headertransport).
 
 ## identificacaoImovel
 
@@ -173,7 +173,7 @@ Indica o tipo de imóvel do domicílio.
 |---| --- |---  | --- |
 |Long|	Sim|	-|	-|
 
-**Referências:** [tipoDeImovel]({% url dicionario %}#tipodeimovel)
+**Referências:** [tipoDeImovel]({% url dicionario %}#tipodeimovel).
 
 ### \#2 nomeInstituicaoPermanencia
 Indica o nome da instituição de permanência.
@@ -275,7 +275,7 @@ Código da renda familiar em salários mínimos.
 |---| --- |---  | --- |
 |Long|	Não|	-|	-|
 
-**Referências:** [RendaFamiliar]({% url dicionario %}#rendafamiliar)
+**Referências:** [RendaFamiliar]({% url dicionario %}#rendafamiliar).
 
 ### \#6	resideDesde
 Mês e ano que a família começou a residir no domicílio, no formato epoch time.
@@ -318,7 +318,7 @@ Código IBGE do município.
 |---| --- |---  | --- |
 |String|	Sim|	-|	-|
 
-**Referências:** [Municipios]({% url municipios %})
+**Referências:** [Municipios]({% url municipios %}).
 
 ### \#4	complemento
 Complemento do endereço do domicílio.
@@ -343,7 +343,7 @@ Número do domicílio.
 
 **Regras:**
 
-* Apenas letras e números.
+* Apenas letras e números;
 * Não pode ser preenchido caso [stSemNumero](#11-stsemnumero) = `true`.
 
 ### \#7	numeroDneUf
@@ -353,7 +353,7 @@ Código indexador referente a Unidade Federativa.
 |---| --- |---  | --- |
 |String|	Sim|	-|	-|
 
-**Referências:** [Estados]({% url referencias %}#uf)
+**Referências:** [Estados]({% url referencias %}#uf).
 
 ### \#8	telefoneContato
 Telefone para contato.
@@ -382,7 +382,7 @@ Tipo do logradouro onde está o domicílio.
 
 **Regras:** Deve ser informado o código DNE.
 
-**Referências:** [TipoLogradouro]({% url referencias %}#tipo-de-logradouro)
+**Referências:** [TipoLogradouro]({% url referencias %}#tipo-de-logradouro).
 
 ### \#11	stSemNumero
 Marcador que indica que o domicílio não possui número.
@@ -424,7 +424,7 @@ Código do tipo de abastecimento de água.
 |---| --- |---  | --- |
 |Long|	Não|	-|	-|
 
-**Referências:** [AbastecimentoDeAgua]({% url dicionario %}#abastecimentodeagua)
+**Referências:** [AbastecimentoDeAgua]({% url dicionario %}#abastecimentodeagua).
 
 ### \#2	areaProducaoRural
 Código da condição de posse e uso da terra.
@@ -435,9 +435,9 @@ Código da condição de posse e uso da terra.
 
 **Regras:** 
 
-* Não deve ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = `07` Abrigo, `08` Instituição de longa permanência para idosos, `09` Unidade prisional, `10` Unidade de medida socioeducativa e `11` Delegacia.
+* Não deve ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = `07` Abrigo, `08` Instituição de longa permanência para idosos, `09` Unidade prisional, `10` Unidade de medida socioeducativa e `11` Delegacia;
 
-**Referências:** [CondicaoDePosseEUsoDaTerra]({% url dicionario %}#condicaodeposseeusodaterra)
+**Referências:** [CondicaoDePosseEUsoDaTerra]({% url dicionario %}#condicaodeposseeusodaterra).
 
 ### \#3	destinoLixo
 Código do destino do lixo.
@@ -446,7 +446,7 @@ Código do destino do lixo.
 |---| --- |---  | --- |
 |Long|	Não|	-|	-|
 
-**Referências:** [DestinoDoLixo]({% url dicionario %}#destinodolixo)
+**Referências:** [DestinoDoLixo]({% url dicionario %}#destinodolixo).
 
 ### \#4	formaEscoamentoBanheiro
 Código da forma de escoamento do banheiro ou sanitário.
@@ -455,7 +455,7 @@ Código da forma de escoamento do banheiro ou sanitário.
 |---| --- |---  | --- |
 |Long|	Não|	-|	-|
 
-**Referências:** [FormaDeEscoamentoDoBanheiroOuSanitario]({% url dicionario %}#formadeescoamentodobanheiroousanitario)
+**Referências:** [FormaDeEscoamentoDoBanheiroOuSanitario]({% url dicionario %}#formadeescoamentodobanheiroousanitario).
 
 ### \#5	localizacao
 Código da localização do domicílio.
@@ -464,7 +464,7 @@ Código da localização do domicílio.
 |---| --- |---  | --- |
 |Long|	Sim|	-|	-|
 
-**Referências:** [LocalizacaoDaMoradia]({% url dicionario %}#localizacaodamoradia)
+**Referências:** [LocalizacaoDaMoradia]({% url dicionario %}#localizacaodamoradia).
 
 ### \#6	materialPredominanteParedesExtDomicilio
 Código do tipo de material predominante nas paredes externas do domicílio.
@@ -475,7 +475,7 @@ Código do tipo de material predominante nas paredes externas do domicílio.
 
 **Regras:** Não deve ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = `07` Abrigo, `08` Instituição de longa permanência para idosos, `09` Unidade prisional, `10` Unidade de medida socioeducativa e `11` Delegacia.
 
-**Referências:** [MaterialPredominanteNaConstrucao]({% url dicionario %}#materialpredominantenaconstrucao)
+**Referências:** [MaterialPredominanteNaConstrucao]({% url dicionario %}#materialpredominantenaconstrucao).
 
 ### \#7	nuComodos
 Número de cômodos do domicílio.
@@ -503,7 +503,7 @@ Código da situação de moradia ou de posse da terra.
 
 **Regras:** Não devem ser preenchidos se o campo [tipoDeImovel](#1-tipodeimovel) = `07` Abrigo, `08` Instituição de longa permanência para idosos, `09` Unidade prisional, `10` Unidade de medida socioeducativa e `11` Delegacia.
 
-**Referências:** [SituacaoDeMoradia]({% url dicionario %}#situacaodemoradia)
+**Referências:** [SituacaoDeMoradia]({% url dicionario %}#situacaodemoradia).
 
 ### \#10 stDisponibilidadeEnergiaEletrica
 Marcador que indica se existe disponibilidade de energia elétrica.
@@ -521,7 +521,7 @@ Código do tipo de acesso ao domicílio.
 
 **Regras:** Não deve ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = `07` Abrigo, `08` Instituição de longa permanência para idosos, `09` Unidade prisional, `10` Unidade de medida socioeducativa e `11` Delegacia.
 
-**Referências:** [TipoDeAcessoAoDomicilio]({% url dicionario %}#tipodeacessoaodomicilio)
+**Referências:** [TipoDeAcessoAoDomicilio]({% url dicionario %}#tipodeacessoaodomicilio).
 
 ### \#12 tipoDomicilio
 Código do tipo de domicílio.
@@ -532,7 +532,7 @@ Código do tipo de domicílio.
 
 **Regras:** Não deve ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = `07` Abrigo, `08` Instituição de longa permanência para idosos, `09` Unidade prisional, `10` Unidade de medida socioeducativa e `11` Delegacia.
 
-**Referências:** [TipoDeDomicilio]({% url dicionario %}#tipodedomicilio)
+**Referências:** [TipoDeDomicilio]({% url dicionario %}#tipodedomicilio).
 
 ### \#13 aguaConsumoDomicilio
 Código do tipo do tratamento de água para consumo do domicílio.
@@ -541,4 +541,4 @@ Código do tipo do tratamento de água para consumo do domicílio.
 |---| --- |---  | --- |
 |Long|	Não|	-|	-|
 
-**Referências:** [AguaConsumoDomicilio]({% url dicionario %}#aguaconsumodomicilio)
+**Referências:** [AguaConsumoDomicilio]({% url dicionario %}#aguaconsumodomicilio).

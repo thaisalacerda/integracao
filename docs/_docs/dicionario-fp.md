@@ -198,10 +198,10 @@ Código dos outros procedimentos do SIGTAP ou SISAB.
 
 **Regras:**
 
-* Caracteres maiúsculos e sem espaço em branco.
+* Caracteres maiúsculos e sem espaço em branco;
 * Não repetir procedimentos.
 
-**Referência:** Para ver a referência da tabela do SIGTAP acesse: [Tabela unificada SIGTAP](http://sigtap.datasus.gov.br/tabela-unificada/app/sec/procedimento/publicados/consultar)
+**Referência:** Para ver a referência da tabela do SIGTAP acesse: [Tabela unificada SIGTAP](http://sigtap.datasus.gov.br/tabela-unificada/app/sec/procedimento/publicados/consultar).
 
 Observação: É requerido pelo menos um dentre os itens `#8` e `#9`.
 

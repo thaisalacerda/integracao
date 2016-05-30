@@ -16,7 +16,7 @@ Formulário referente as condições de saúde do cidadão.
 
 **Regras:** Não deve ser preenchido se o campo [statusTermoRecusaCadastroIndividualAtencaoBasica](\#7-statustermorecusacadastroindividualatencaobasica) = `true`.
 
-**Referência:** [CondicoesDeSaude](#condicoesdesaude)
+**Referência:** [CondicoesDeSaude](#condicoesdesaude).
 
 ### \#3 emSituacaoDeRua
 Formulário referente a informações de situação de rua (se o cidadão se encontrar nessa situação).
@@ -47,7 +47,7 @@ Dados que identificam o cidadão.
 
 **Regras:** Opcional se o campo [statusTermoRecusaCadastroIndividualAtencaoBasica](#7-statustermorecusacadastroindividualatencaobasica) = `true`.
 
-**Referência:** [IdentificacaoUsuarioCidadao](#identificacaousuariocidadao)
+**Referência:** [IdentificacaoUsuarioCidadao](#identificacaousuariocidadao).
 
 ### \#6 informacoesSocioDemograficas
 Informações sócio-demográficas fornecidas pelo cidadão.
@@ -83,7 +83,7 @@ Código UUID para identificar a ficha na base de dados nacional.
 
 **Regras:** É recomendado concatenar o CNES na frente do UUID, de modo que os 7 dígitos (CNES) + 1 de hífen somados aos 36 (32 caracteres + 4 hífen) do UUID são a limitação de 44 bytes do campo. Formato canônico.
 
-**Referência:** Para ver a referência sobre o UUID, acesse: [UUID Wikipedia](https://en.wikipedia.org/wiki/Universally_unique_identifier)
+**Referência:** Para ver a referência sobre o UUID, acesse: [UUID Wikipedia](https://en.wikipedia.org/wiki/Universally_unique_identifier).
 
 ### \#10 uuidFichaOriginadora
 Código UUID para identificar a ficha que deu origem ao cadastro do registro.
@@ -94,7 +94,7 @@ Código UUID para identificar a ficha que deu origem ao cadastro do registro.
 
 **Regras:** Se for uma ficha de atualização, deve ser preenchido com o UUID da ficha que deu origem ao registro. Se for a ficha de cadastro, este campo deve ser igual ao campo uuid.
 
-**Referência:** Para ver a referência sobre o UUID, acesse: [UUID Wikipedia](https://en.wikipedia.org/wiki/Universally_unique_identifier)
+**Referência:** Para ver a referência sobre o UUID, acesse: [UUID Wikipedia](https://en.wikipedia.org/wiki/Universally_unique_identifier).
 
 ### \#12 headerTransport
 Dados referentes ao profissional e a data do cadastro.
@@ -155,7 +155,7 @@ Código das doenças cardíacas que o cidadão informou.
 
 **Regras:**
 
-* Requerido preenchimento de pelo menos um item se o campo [statusTeveDoencaCardiaca](#25-statustevedoencacardiaca) = `true`.
+* Requerido preenchimento de pelo menos um item se o campo [statusTeveDoencaCardiaca](#25-statustevedoencacardiaca) = `true`;
 * Não deve ser preenchido se o campo [statusTeveDoencaCardiaca](#25-statustevedoencacardiaca) = `false`.
 
 **Referência:** [DoencaCardiaca]({% url dicionario %}#doencacardiaca).
@@ -169,7 +169,7 @@ Código das doenças respiratórias que o cidadão informou.
 
 **Regras:**
 
-* Requerido preenchimento de pelo menos um item se o campo [statusTemDoencaRespiratoria](#18-statustemdoencarespiratoria) = `true`.
+* Requerido preenchimento de pelo menos um item se o campo [statusTemDoencaRespiratoria](#18-statustemdoencarespiratoria) = `true`;
 *  Não deve ser preenchido o campo [statusTemDoencaRespiratoria](#18-statustemdoencarespiratoria) = `false`.
 
 **Referência:** [DoencaRespiratoria]({% url dicionario %}#doencarespiratoria).
@@ -183,7 +183,7 @@ Código das doenças renais que o cidadão informou.
 
 **Regras:**
 
-* Requerido preenchimento de pelo menos um item se o campo [statusTemTeveDoencasRins](#22-statustemtevedoencasrins) = `true`.
+* Requerido preenchimento de pelo menos um item se o campo [statusTemTeveDoencasRins](#22-statustemtevedoencasrins) = `true`;
 * Não deve ser preenchido se o campo [statusTemTeveDoencasRins](#22-statustemtevedoencasrins) = `false`.
 
 **Referência:** [ProblemaRins]({% url dicionario %}#problemarins).
@@ -236,7 +236,7 @@ Marcador se o cidadão está gestante.
 
 **Regras:** Só pode ser preenchido se:
 
-* O campo [sexoCidadao](#16-sexocidadao) = `feminino`
+* O campo [sexoCidadao](#16-sexocidadao) = `feminino`;
 * O campo [dataNascimentoCidadao](#3-datanascimentocidadao) for mais anterior que 9 anos a partir da [dataAtendimento]({% url profissional %}#5-dataatendimento).
 
 ### \#15 statusEstaAcamado
@@ -362,7 +362,7 @@ Grau de parentesco do familiar que frequenta.
 
 **Regras:**
 
-* Não pode ser preenchido se o campo [statusSituacaoRua](#9-statussituacaorua) = `false`.
+* Não pode ser preenchido se o campo [statusSituacaoRua](#9-statussituacaorua) = `false`;
 * Não pode ser preenchido se o campo [statusVisitaFamiliarFrequentemente](#11-statusvisitafamiliarfrequentemente) = `false`.
 
 ### \#2 higienePessoalSituacaoRua
@@ -374,7 +374,7 @@ Código das condições de higiene que o cidadão tem acesso.
 
 **Regras:**
 
-* Não pode ser preenchido se o campo [statusSituacaoRua](#9-statussituacaorua) = `false`.
+* Não pode ser preenchido se o campo [statusSituacaoRua](#9-statussituacaorua) = `false`;
 * Requerido preenchimento de pelo menos um item se o campo [statusTemAcessoHigienePessoalSituacaoRua](#10-statustemacessohigienepessoalsituacaorua) = `true`.
 
 **Referência:** [AcessoHigiene]({% url dicionario %}#acessohigiene).
@@ -399,7 +399,7 @@ Nome de outra instituição que acompanha o cidadão.
 
 **Regras:**
 
-* Não pode ser preenchido se o campo [statusSituacaoRua](#9-statussituacaorua) = `false`.
+* Não pode ser preenchido se o campo [statusSituacaoRua](#9-statussituacaorua) = `false`;
 * Não pode ser preenchido se o campo [statusAcompanhadoPorOutraInstituição](#6-statusacompanhadoporoutrainstituicao) = `false`.
 
 ### \#5 quantidadeAlimentacoesAoDiaSituacaoRua
@@ -550,7 +550,7 @@ Nome da mãe do cidadão.
 
 **Regras:**
 
-* As regras de validação de um nome estão descritas em {% link validar_nome %}.
+* As regras de validação de um nome estão descritas em {% link validar_nome %};
 * Não deve ser preenchido se o campo [desconheceNomeMae](#5-desconhecenomemae) = `true`.
 
 ### \#10 cnsCidadao
@@ -573,7 +573,7 @@ CNS do responsável do cidadão.
 
 **Regras:**
 
-* Validado por algoritmo.
+* Validado por algoritmo;
 * Só pode ser preenchido se o campo [statusEhResponsavel](#17-statusehresponsavel) = `true`.
 
 **Referência:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
@@ -603,7 +603,7 @@ Código do país de nascimento do cidadão.
 
 **Regras:** 
 
-* Só pode ser preenchido se o campo [nacionalidadeCidadao](#7-nacionalidadecidadao) for igual a `3 (Estrangeiro)`, sendo de preenchimento obrigatório.
+* Só pode ser preenchido se o campo [nacionalidadeCidadao](#7-nacionalidadecidadao) for igual a `3 (Estrangeiro)`, sendo de preenchimento obrigatório;
 * Se o campo [nacionalidadeCidadao](#7-nacionalidadecidadao) for igual a `1 (Brasileira)`, este campo deve ser preenchido com `31 (BRASIL)`.
 
 **Referência:** [País]({% url referencias %}#país).
@@ -653,7 +653,7 @@ Nome do pai do cidadão.
 
 **Regras:**
 
-* As regras de validação de um nome estão descritas em {% link validar_nome %}.
+* As regras de validação de um nome estão descritas em {% link validar_nome %};
 * Não deve ser preenchido se o campo [desconheceNomePai](#20-desconhecenomepai) = `true`. Caso contrário, o preenchimento é obrigatório.
 
 ### \#20 desconheceNomePai
@@ -728,7 +728,7 @@ Código das deficiências que o cidadão possui.
 
 **Regras:**
 
-* Requerido preenchimento de pelo menos um item se o campo [statusTemAlgumaDeficiencia](#16-statustemalgumadeficiencia) = `true`.
+* Requerido preenchimento de pelo menos um item se o campo [statusTemAlgumaDeficiencia](#16-statustemalgumadeficiencia) = `true`;
 * Não deve ser preenchido se o campo [statusTemAlgumaDeficiencia](#16-statustemalgumadeficiencia) = `false`.
 
 **Referência:** [DeficienciaCidadao]({% url dicionario %}#deficienciacidadao).

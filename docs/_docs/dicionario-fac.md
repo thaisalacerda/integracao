@@ -16,7 +16,7 @@ Código UUID para identificar a ficha na base de dados nacional.
 
 **Regras:** É recomendado concatenar o CNES na frente do UUID, de modo que os 7 dígitos (CNES) + 1 de hífen somados aos 36 (32 caracteres + 4 hífen) do UUID são a limitação de 44 bytes do campo. Formato canônico.
 
-**Referência:** [UUID Wikipedia](https://en.wikipedia.org/wiki/Universally_unique_identifier)
+**Referência:** [UUID Wikipedia](https://en.wikipedia.org/wiki/Universally_unique_identifier).
 
 ### \#2	dtAtividadeColetiva
 Data de realização da atividade coletiva.
@@ -129,7 +129,7 @@ Lista dos profissionais que participaram da atividade.
 
 **Regras:** Entre 1 e 99 registros.
 
-**Referência:**	[ProfissionalCboRowItem]({% url profissional %}#profissionalcborowitem)
+**Referência:**	[ProfissionalCboRowItem]({% url profissional %}#profissionalcborowitem).
 
 ### \#14 atividadeTipo
 Código do tipo da atividade que será realizada.
@@ -138,7 +138,7 @@ Código do tipo da atividade que será realizada.
 |---| --- |---  | --- |
 |Long|	Obrigatório |	-|	-|
 
-**Referências**: [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva)
+**Referências**: [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva).
 
 ### \#15 temasParaReuniao
 Temas para reunião.
@@ -149,10 +149,10 @@ Temas para reunião.
 
 **Regras:**
 
-* É Requerido se [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva) for `1`, `2` ou `3`.
+* É Requerido se [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva) for `1`, `2` ou `3`;
 * Não pode ser preenchido se [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva) for `4`, `5`, `6` ou `7`.
 
-**Referência:** [TemasParaReuniao]({% url dicionario %}#temasparareuniao)
+**Referência:** [TemasParaReuniao]({% url dicionario %}#temasparareuniao).
 
 ### \#16	publicoAlvo
 Código do público alvo da atividade.
@@ -163,10 +163,10 @@ Código do público alvo da atividade.
 
 **Regras:**
 
-* É Requerido se [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva) for `4`, `5`, `6` ou `7`.
+* É Requerido se [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva) for `4`, `5`, `6` ou `7`;
 * Não pode ser preenchido se [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva) for `1`, `2` ou `3`.
 
-**Referência:** [PublicoAlvo]({% url dicionario %}#publicoalvo)
+**Referência:** [PublicoAlvo]({% url dicionario %}#publicoalvo).
 
 ### \#17	praticasTemasParaSaude
 Código das práticas ou temas abordados na atividade.
@@ -177,10 +177,10 @@ Código das práticas ou temas abordados na atividade.
 
 **Regras:**
 
-* É Requerido se [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva) for `4`, `5`, `6` ou `7`.
+* É Requerido se [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva) for `4`, `5`, `6` ou `7`;
 * Não pode ser preenchido se [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva) for `1`, `2` ou `3`.
 
-**Referências**:	[PraticasTemasParaSaude]({% url dicionario %}#praticastemasparasaude)
+**Referências**:	[PraticasTemasParaSaude]({% url dicionario %}#praticastemasparasaude).
 
 ### \#18	participantes
 Cidadãos que participaram da atividade coletiva.
@@ -189,7 +189,7 @@ Cidadãos que participaram da atividade coletiva.
 |---| --- |---  | --- |
 |List\<ParticipanteRowItem\>|	Não|	0|33|
 
-**Referência:** [ParticipanteRowItem](#participanterowitem)
+**Referência:** [ParticipanteRowItem](#participanterowitem).
 
 ### \#19	tbCdsOrigem
 Tipo de origem dos dados do registro.
@@ -207,7 +207,7 @@ Código IBGE do município.
 |---| --- |---  | --- |
 |String|	Sim|	-|	-|
 
-**Referências**: {% link municipios %}
+**Referências**: {% link municipios %}.
 
 ## ParticipanteRowItem
 
@@ -249,9 +249,9 @@ Peso do cidadão em Kg.
 
 **Regras:**
 
-* Apenas números e vírgula (`,`).
-* Máximo de 3 números após a vírgula.
-* Se tiver vírgula, tamanho máximo = 7.
+* Apenas números e vírgula (`,`);
+* Máximo de 3 números após a vírgula;
+* Se tiver vírgula, tamanho máximo = 7;
 * Valor mínimo = 0,5 e máximo = 500.
 
 ### \#5	altura
@@ -263,9 +263,9 @@ Altura do cidadão em cm.
 
 **Regras:**
 
-* Apenas números e vírgula (`,`).
-* Máximo de 3 números após a vírgula.
-* Se tiver vírgula, tamanho máximo = 5.
+* Apenas números e vírgula (`,`);
+* Máximo de 3 números após a vírgula;
+* Se tiver vírgula, tamanho máximo = 5;
 * Valor mínimo 20 e máximo 250.
 
 ### \#6	cessouHabitoFumar

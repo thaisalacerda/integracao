@@ -17,7 +17,7 @@ Código UUID para identificar a ficha na base de dados nacional.
 
 **Regras:** É recomendado concatenar o CNES na frente do UUID, de modo que os 7 dígitos (CNES) + 1 de hífen somados aos 36 (32 caracteres + 4 hífen) do UUID são a limitação de 44 bytes do campo. Formato canônico.
 
-**Referências:**  [Wikipedia UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier)
+**Referências:**  [Wikipedia UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier).
 
 ### \#2	tpCdsOrigem
 Tipo de origem dos dados do registro.
@@ -57,7 +57,7 @@ Nome do cidadão.
 
 **Regras:**
 
-* As regras de validação de um nome estão descritas em {% link validar_nome %}.
+* As regras de validação de um nome estão descritas em {% link validar_nome %};
 * Opcional caso [conclusaoDestinoElegivel](#23-conclusaodestinoelegivel) for diferente de `1 (admissão própria emad)`.
 
 ### \#6	nomeSocialCidadao
@@ -67,9 +67,7 @@ Nome social do cidadão.
 |---| --- |---  | --- |
 |String|	Não|	0|	70|
 
-**Regras:**
-
-* Somente texto e apóstrofo (`'`).
+**Regras:** Somente texto e apóstrofo (`'`).
 
 ### \#7	dataNascimentoCidadao
 Data de nascimento do cidadão no formato epoch time.
@@ -89,7 +87,7 @@ Código do sexo do cidadão.
 |---| --- |---  | --- |
 |Long|	Requerido|	-|	-|
 
-**Referências:** [Sexo]({% url dicionario %}#sexo)
+**Referências:** [Sexo]({% url dicionario %}#sexo).
 
 ### \#9	racaCorCidadao
 Código da raça / cor do cidadão.
@@ -102,7 +100,7 @@ Código da raça / cor do cidadão.
 
 *	Opcional caso [conclusaoDestinoElegivel](#23-conclusaodestinoelegivel) for diferente de `1 (admissão própria emad)`.
 
-**Referências:** [RacaCor]({% url dicionario %}#racacor)
+**Referências:** [RacaCor]({% url dicionario %}#racacor).
 
 ### \#10	nomeMaeCidadao
 Nome da mãe do cidadão.
@@ -113,7 +111,7 @@ Nome da mãe do cidadão.
 
 **Regras:**
 
-* As regras de validação de um nome estão descritas em {% link validar_nome %}.
+* As regras de validação de um nome estão descritas em {% link validar_nome %};
 * Não pode ser preenchido se o campo [desconheceNomeMae](#11-desconhecenomemae) = `true`.
 
 ### \#11	desconheceNomeMae
@@ -132,7 +130,7 @@ Código IBGE do município.
 
 **Regras:** Não pode ser preenchido se [codigoNacionalidade](#13-codigonacionalidade) for diferente de `1 (brasileiro)`.
 
-**Referências:** [Municípios]({% url municipios %})
+**Referências:** [Municípios]({% url municipios %}).
 
 ### \#13	codigoNacionalidade
 Código do marcador que indica se o cidadão é brasileiro, naturalizado ou estrangeiro.
@@ -145,7 +143,7 @@ Código do marcador que indica se o cidadão é brasileiro, naturalizado ou estr
 
 *	Opcional caso [conclusaoDestinoElegivel](#23-conclusaodestinoelegivel) for diferente de `1 (admissão própria emad)`.
 
-**Referências:** [Nacionalidade]({% url dicionario %}#nacionalidade)
+**Referências:** [Nacionalidade]({% url dicionario %}#nacionalidade).
 
 ### \#14	emailCidadao
 E-mail do cidadão.
@@ -172,11 +170,9 @@ Informações sobre o endereço do domicílio
 |---| --- |---  | --- |
 |EnderecoLocalPermanencia|	Condicional |	-|	-|
 
-**Regras:**
+**Regras:**	Opcional caso [conclusaoDestinoElegivel](#23-conclusaodestinoelegivel) for diferente de `1 (admissão própria emad)`.
 
-*	Opcional caso [conclusaoDestinoElegivel](#23-conclusaodestinoelegivel) for diferente de `1 (admissão própria emad)`.
-
-**Referências:**	[EnderecoLocalPermanencia](#enderecolocalpermanencia)
+**Referências:**	[EnderecoLocalPermanencia](#enderecolocalpermanencia).
 
 ### \#17	atencaoDomiciliarOrigem
 Código do local de atendimento de origem do cidadão.
@@ -185,7 +181,7 @@ Código do local de atendimento de origem do cidadão.
 |---| --- |---  | --- |
 |Long|	Requerido|	-|	-|
 
-**Referências:** [AtencaoDomiciliarOrigem]({% url dicionario %}#atencaodomiciliarorigem)
+**Referências:** [AtencaoDomiciliarOrigem]({% url dicionario %}#atencaodomiciliarorigem).
 
 ### \#18	atencaoDomiciliarModalidade
 Código das opções de modalidade, indica se o cidadão é elegível ou inelegível.
@@ -194,7 +190,7 @@ Código das opções de modalidade, indica se o cidadão é elegível ou ineleg�
 |---| --- |---  | --- |
 |Long|	Sim |	-|	-|
 
-**Referências:** [ModalidadeAD]({% url dicionario %}#modalidadead)
+**Referências:** [ModalidadeAD]({% url dicionario %}#modalidadead).
 
 ### \#19	situacoesPresentes
 Marcadores de situações presentes.
@@ -203,7 +199,7 @@ Marcadores de situações presentes.
 |---| --- |---  | --- |
 |List\<Long>|	Não|	1|	24|
 
-**Referências:** [Questionario de Situacoes Presentes](#questionario-de-situacoes-presentes)
+**Referências:** [Questionario de Situacoes Presentes](#questionario-de-situacoes-presentes).
 
 ### \#20	cid10Principal
 Código do CID10 principal registrado na avaliação.
@@ -239,11 +235,9 @@ Código da conduta adotada caso cidadão seja `Elegível`.
 |---| --- |---  | --- |
 |Long|	Condicional| -|-|
 
-**Regras:**
+**Regras:** Só pode ser preenchido se [atencaoDomiciliarModalidade](#18-atencaodomiciliarmodalidade) for diferente de `4 (inelegível)`.
 
-* Só pode ser preenchido se [atencaoDomiciliarModalidade](#18-atencaodomiciliarmodalidade) for diferente de `4 (inelegível)`.
-
-**Referências:** [ConclusaoDestinoElegivel]({% url dicionario %}#conclusaodestinoelegivel)
+**Referências:** [ConclusaoDestinoElegivel]({% url dicionario %}#conclusaodestinoelegivel).
 
 Observações: Os campos `#23` e `#24` são mutuamente exclusivos.
 
@@ -258,7 +252,7 @@ Código da conduta adotada caso cidadão seja `Inelegível`.
 
 * Só pode ser preenchido se [atencaoDomiciliarModalidade](#18-atencaodomiciliarmodalidade) for igual a de `4 (inelegível)`.
 
-**Referências:** [ConclusaoDestinoInelegivel]({% url dicionario %}#conclusaodestinoinelegivel)
+**Referências:** [ConclusaoDestinoInelegivel]({% url dicionario %}#conclusaodestinoinelegivel).
 
 Observações: Os campos `#23` e `#24` são mutuamente exclusivos.
 
@@ -269,7 +263,7 @@ Código da relação de parentesco do cuidador com o cidadão em atenção domic
 |---| --- |---  | --- |
 |Long|	Não|	-|	-|
 
-**Referências:** [CuidadorCidadao]({% url dicionario %}#cuidadorcidadao)
+**Referências:** [CuidadorCidadao]({% url dicionario %}#cuidadorcidadao).
 
 ## EnderecoLocalPermanencia
 
@@ -296,7 +290,7 @@ Código IBGE do município.
 |---| --- |---  | --- |
 |String|	Sim|	-|	-|
 
-**Referências:** [Municipios]({% url municipios %})
+**Referências:** [Municipios]({% url municipios %}).
 
 ### \#4	complemento
 Complemento do endereço do domicílio.
@@ -321,7 +315,7 @@ Número do domicílio.
 
 **Regras:**
 
-* Apenas letras e números.
+* Apenas letras e números;
 * Não pode ser preenchido caso [stSemNumero](#11-stsemnumero) = `true`.
 
 ### \#7	numeroDneUf
@@ -331,7 +325,7 @@ Código indexador referente a Unidade Federativa.
 |---| --- |---  | --- |
 |String|	Requerido|	-|	-|
 
-**Referências:**	[Estados]({% url referencias %}#uf)
+**Referências:**	[Estados]({% url referencias %}#uf).
 
 ### \#8	telReferencial
 Telefone de referência.
@@ -340,7 +334,7 @@ Telefone de referência.
 |---| --- |---  | --- |
 |String|	Não|	10|	11|
 
-Observações: Mínimo 10 dígitos, máximo 11 (DDD + 8 ou 9)
+Observações: Mínimo 10 dígitos, máximo 11 (DDD + 8 ou 9).
 
 ### \#9	telResidencial
 Telefone residencial.
@@ -349,7 +343,7 @@ Telefone residencial.
 |---| --- |---  | --- |
 |String| Não|	10|	11|
 
-Observações: Mínimo 10 dígitos, máximo 11 (DDD + 8 ou 9)
+Observações: Mínimo 10 dígitos, máximo 11 (DDD + 8 ou 9).
 
 ### \#10	tipoLogradouroNumeroDne
 Código do tipo do logradouro onde está o domicílio.
@@ -360,7 +354,7 @@ Código do tipo do logradouro onde está o domicílio.
 
 **Regras:** Deve ser informado o código DNE.
 
-**Referências:** [TipoLogradouro]({% url referencias %}#tipo-de-logradouro)
+**Referências:** [TipoLogradouro]({% url referencias %}#tipo-de-logradouro).
 
 ### \#11	stSemNumero
 Marcador que indica que o domicílio não possui número.

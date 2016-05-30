@@ -27,7 +27,7 @@ Código do CBO do profissional.
 |--- |--- |--- |--- |
 |String |Sim |- |- |
 
-**Referência:** {% link cbo %}
+**Referência:** {% link cbo %}.
 
 Observações: Esta entidade é utilizada para representar o profissional responsável pelas fichas.
 
@@ -67,7 +67,7 @@ Código IBGE do município.
 |--- |--- |--- |--- |
 |String |Sim |- |- |
 
-**Referência:** {% link municipios %}
+**Referência:** {% link municipios %}..
 
 Observações: Esta entidade é utilizada para representar o profissional responsável pelas fichas.
 
@@ -104,7 +104,7 @@ Código do CBO do profissional1.
 
 **Regras:** Deve ser preenchido somente se profissionalCNS1 estiver preenchido.
 
-**Referência:** {% link cbo %}
+**Referência:** {% link cbo %}.
 
 Observações: Esta entidade é utilizada para representar o profissional responsável pela ficha e os outros que o auxiliaram na atividade.
 
@@ -130,7 +130,7 @@ Código do CBO do profissional2.
 
 **Regras:** Deve ser preenchido somente se profissionalCNS2 estiver preenchido.
 
-**Referência:** {% link cbo %}
+**Referência:** {% link cbo %}.
 
 Observações: Esta entidade é utilizada para representar o profissional responsável pela ficha e os outros que o auxiliaram na atividade.
 
@@ -156,7 +156,7 @@ Código CBO do profissional.
 |--- |--- |--- |--- |
 |String |Sim |- |- |
 
-**Referência:** {% link cbo %}
+**Referência:** {% link cbo %}.
 
 Observações: Esta entidade é utilizada para representar os profissionais que participaram da atividade coletiva.
 
@@ -191,7 +191,7 @@ Código IBGE do município.
 |--- |--- |--- |--- |
 |String |Sim |- |- |
 
-**Referência:** {% link municipios %}
+**Referência:** {% link municipios %}.
 
 Observações: Esta entidade é utilizada para representar o profissional que realizou uma ação (Cadastro Individual e Cadastro Domiciliar) e a respectiva data.
 

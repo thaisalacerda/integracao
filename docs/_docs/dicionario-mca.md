@@ -56,7 +56,7 @@ Código do sexo do cidadão.
 |--- |--- |--- |--- |
 |Long |Sim |- |- |
 
-**Referência**: [Sexo]({% url dicionario#sexo %})
+**Referência**: [Sexo]({% url dicionario#sexo %}).
 
 ### \#6 localAtendimento
 Código do local onde o atendimento foi realizado.
@@ -65,7 +65,7 @@ Código do local onde o atendimento foi realizado.
 |--- |--- |--- |--- |
 |Long |Sim |- |- |
 
-**Referência**: [LocalDeAtendimento]({% url dicionario#localdeatendimento %})
+**Referência**: [LocalDeAtendimento]({% url dicionario#localdeatendimento %}).
 
 ### \#7 perguntasQuestionarioCriancasMenoresSeisMeses
 Marcadores referentes aos cidadãos menores de seis meses de idade.
@@ -209,7 +209,7 @@ Resposta referente à pergunta do registro acima.
 
 **Regras:**
 
-* Deve respeitar as regras das respostas referentes à pergunta .
+* Deve respeitar as regras das respostas referentes à pergunta;
 * Pode ser preenchido somente se a pergunta for 12L.
 
 **Referência:** [RespostaMultiplaEscolhaEnum](#respostamultiplaescolhaenum).
