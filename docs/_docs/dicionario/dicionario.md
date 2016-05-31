@@ -341,18 +341,6 @@ order: 12
 |40 |	Doação popular|	-|
 |41 |	Outros|	-|
 
-## PraticasIntegrativasComplementares
-|Código|	Descrição|	Observações|
-|---|---|---|
-|1 |	Medicina tradicional chinesa|	-|
-|2 |	Antroposofia aplicado a saúde|	-|
-|3 |	Homeopatia|	-|
-|4 |	Fitoterapia|	-|
-|5 |	Termalismo / Crenoterapia|	-|
-|6 |	Práticas corporais e mentais em PICS|	-|
-|7 |	Técnicas manuais em PICS|	-|
-|8 |	Outros|	-|
-
 ## PraticasTemasParaSaude
 |Código|	Descrição|	Observações|
 |---|---|---|
