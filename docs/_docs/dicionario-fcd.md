@@ -31,7 +31,7 @@ Condições de moradia do domicílio.
 **Regras:**
 
 * Não deve ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = `02` Comércio, `03` Terreno baldio, `04` Ponto Estratégico, `05` Escola, `06` Creche, `12` Estabelecimento Religioso, `99` Outros;
-* Não devem ser preenchidos se o campo [statusTermoRecusaCadastroDomiciliarAtencaoBasica](#9-statustermorecusacadatrodomiciliaratencaobasica) = `true`.
+* Não deve ser preenchido se o campo [statusTermoRecusaCadastroDomiciliarAtencaoBasica](#9-statustermorecusacadatrodomiciliaratencaobasica) = `true`.
 
 **Referências:** [CondicaoMoradia](#condicaomoradia).
 
@@ -162,7 +162,7 @@ Informações sobre o profissional e a data do cadastro.
 | ---| --- |---  | --- |
 | UnicaLotacaoHeader|	Sim|	-|	-|
 
-**Referências:** [headerTransport]({% url profissional %}#headertransport).
+**Referência:** [UnicaLotacaoHeader]({% url headerTransport %}#unicalotacaoheader).
 
 ## identificacaoImovel
 

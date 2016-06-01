@@ -129,7 +129,7 @@ Lista dos profissionais que participaram da atividade.
 
 **Regras:** Entre 1 e 99 registros.
 
-**Referência:**	[ProfissionalCboRowItem]({% url profissional %}#profissionalcborowitem).
+**Referência:**	[ProfissionalCboRowItem]({% url headerTransport %}#profissionalcborowitem).
 
 ### \#14 atividadeTipo
 Código do tipo da atividade que será realizada.
@@ -229,7 +229,7 @@ Data de nascimento do cidadão.
 |---| --- |---  | --- |
 |	Long|	Não|	-|	-|
 
-**Regras:** 	Não pode ser posterior a [dataAtendimento]({% url profissional %}#5-dataatendimento) e anterior a 130 anos a partir da [dataAtendimento]({% url profissional %}#5-dataatendimento).
+**Regras:** 	Não pode ser posterior a [dataAtendimento]({% url headerTransport %}#5-dataatendimento) e anterior a 130 anos a partir da [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
 
 **Referências**: [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milissegundos.
 

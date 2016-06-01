@@ -1,11 +1,11 @@
 ---
 layout: doc
-title: Profissional
-id: profissional
+title: Cabeçalho (headerTransport)
+id: headerTransport
 order: 11
 ---
 
-## headerTransport
+## UnicaLotacaoHeader
 
 ### \#1	profissionalCNS
 CNS do profissional.
@@ -159,67 +159,3 @@ Código CBO do profissional.
 **Referência:** {% link cbo %}.
 
 Observações: Esta entidade é utilizada para representar os profissionais que participaram da atividade coletiva.
-
-## HeaderCdsCadastro
-
-### \#1 cnesUnidadeSaude
-CNES da unidade de saúde que o profissional está lotado.
-
-| Tipo | Obrigatório | Mínimo | Máximo |
-|--- |--- |--- |--- |
-|String |Sim |7 |7 |
-
-Observações: Esta entidade é utilizada para representar o profissional que realizou uma ação (Cadastro Individual e Cadastro Domiciliar) e a respectiva data.
-
-### \#2 cnsProfissional
-CNS do profissional.
-
-| Tipo | Obrigatório | Mínimo | Máximo |
-|--- |--- |--- |--- |
-|String |Sim |15 |15 |
-
-**Regras:** CNS válido de acordo com o algoritmo.
-
-**Referência:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
-
-Observações: Esta entidade é utilizada para representar o profissional que realizou uma ação (Cadastro Individual e Cadastro Domiciliar) e a respectiva data.
-
-### \#3 codigoIbgeMunicipio
-Código IBGE do município.
-
-| Tipo | Obrigatório | Mínimo | Máximo |
-|--- |--- |--- |--- |
-|String |Sim |- |- |
-
-**Referência:** {% link municipios %}.
-
-Observações: Esta entidade é utilizada para representar o profissional que realizou uma ação (Cadastro Individual e Cadastro Domiciliar) e a respectiva data.
-
-### \#4 dataAtendimento
-Data em que está sendo realizada a ação.
-
-| Tipo | Obrigatório | Mínimo | Máximo |
-|--- |--- |--- |--- |
-|Long |Sim |- |- |
-
-**Referência:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milissegundos.
-
-Observações: Esta entidade é utilizada para representar o profissional que realizou uma ação (Cadastro Individual e Cadastro Domiciliar) e a respectiva data.
-
-### \#5 ineEquipe
-Código do INE da equipe do profissional.
-
-| Tipo | Obrigatório | Mínimo | Máximo |
-|--- |--- |--- |--- |
-|String |Não |10 |10 |
-
-Observações: Esta entidade é utilizada para representar o profissional que realizou uma ação (Cadastro Individual e Cadastro Domiciliar) e a respectiva data.
-
-### \#6 microarea
-Microárea onde está sendo realizada a ação.
-
-| Tipo | Obrigatório | Mínimo | Máximo |
-|--- |--- |--- |--- |
-|Long |Não |0 |2 |
-
-Observações: Esta entidade é utilizada para representar o profissional que realizou uma ação (Cadastro Individual e Cadastro Domiciliar) e a respectiva data.

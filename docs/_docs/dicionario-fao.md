@@ -26,14 +26,14 @@ Profissionais que realizaram o atendimento.
 |---| --- |---  | --- |
 |VariasLotacoesHeader|	Sim|	-|	-|
 
-**Referência:** [headerTransport]({% url profissional %}#headertransport).
+**Referência:** [VariasLotacoesHeader]({% url headerTransport %}#variaslotacoesheader).
 
 ### \#3	atendimentosOdontologicos
 Registro individualizado dos atendimentos.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|List\<FichaAtendimentoOdontologicoChild>|	Sim|	1|	13|
+|List\<FichaAtendimentoOdontologicoChild>|	Sim|-|-|
 
 **Regras:** No máximo 13 atendimentos podem ser registrados.
 
@@ -57,7 +57,7 @@ Data de nascimento do cidadão.
 |---| --- |---  | --- |
 |Long|	Sim|	-|	-|
 
-**Regras:** Não pode ser posterior a [dataAtendimento]({% url profissional %}#5-dataatendimento) e anterior a 130 anos a partir da [dataAtendimento]({% url profissional %}#5-dataatendimento).
+**Regras:** Não pode ser posterior a [dataAtendimento]({% url headerTransport %}#5-dataatendimento) e anterior a 130 anos a partir da [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
 
 **Referências:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milissegundos.
 
@@ -172,9 +172,10 @@ Código dos procedimentos que são apresentados na ficha.
 
 **Regras:**
 
-* Não pode haver procedimentos com o mesmo código.
+* Não podem haver procedimentos com o mesmo código.
+* Somente os procedimentos **AB** listados em [ListaProcedimentosRealizados](#listaprocedimentosrealizados) podem ser adicionados. Verificar o procedimento AB correspondente ao procedimento SIGTAP desejado.
 
-**Referências:**	[ListaProcedimentosRealizados](#listaprocedimentosrealizados).
+**Referências:** [ProcedimentoQuantidade](#procedimentoquantidade).
 
 ### \#13	outrosSiaProcedimentos
 Lista de outros códigos de procedimentos.
@@ -186,9 +187,12 @@ Lista de outros códigos de procedimentos.
 **Regras:**
 
 * Não pode conter procedimentos da [ListaProcedimentosRealizados](#listaprocedimentosrealizados);
-* Não pode haver procedimentos com o mesmo código.
+* Não podem haver procedimentos com o mesmo código.
 
-**Referências:** [ProcedimentoQuantidade](#procedimentoquantidade).
+**Referências:** 
+
+- [ProcedimentoQuantidade](#procedimentoquantidade).
+- Para ver a referência da tabela do SIGTAP acesse: [Tabela Unificada SIGTAP](http://sigtap.datasus.gov.br/tabela-unificada/app/sec/procedimento/publicados/consultar).
 
 ### \#14	sexo
 Código do sexo do cidadão.
@@ -204,7 +208,7 @@ Código do turno em que o atendimento foi realizado.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Não|	-|	-|
+|Long|	Sim|	-|	-|
 
 **Referências:** [Turno]({% url dicionario %}#turno).
 
@@ -219,8 +223,6 @@ Código do procedimento no MS.
 
 **Regras:** Deve ser um procedimento com um código válido.
 
-**Referências:** Para ver a referência da tabela do SIGTAP acesse: [Tabela Unificada SIGTAP](http://sigtap.datasus.gov.br/tabela-unificada/app/sec/procedimento/publicados/consultar).
-
 ### \#2	quantidade
 Quantidade de procedimentos realizados.
 
@@ -231,20 +233,20 @@ Quantidade de procedimentos realizados.
 **Regras:** Valor máximo que pode ser registrado é 99.
 
 ## ListaProcedimentosRealizados
-|Código | Descrição |
-|---|---|
-|ABPO001|	Acesso a polpa dentária e medicação (por dente)|
-|ABPO002|	Adaptação de Prótese Dentária|
-|ABPO003|	Aplicação de cariostático (por dente)|
-|ABPO004|	Aplicação de selante (por dente)|
-|ABPO005|	Aplicação tópica de flúor (individual por sessão)|
-|ABPO006|	Capeamento pulpar|
-|ABPO007|	Cimentação de prótese dentária|
-|ABPO008|	Curativo de demora c/ ou s/ preparo biomecânico|
-|ABPG008|	Drenagem de abscesso|
-|ABPO010|	Evidenciação de placa bacteriana|
-|ABPO011|	Exodontia de dente decíduo|
-|ABPO012|	Exodontia de dente permanente|
+|Código SIGTAP| Descrição SIGTAP | Código AB correspondente |
+|---|---|---|---|
+|03.07.02.001-0 | Acesso a polpa dentária e medicação (por dente) |ABPO001|
+|03.07.04.014-3 | Adaptação de Prótese Dentária | ABPO002 |
+|01.01.02.005-8 | Aplicação de cariostático (por dente)| ABPO003 |
+|01.01.02.006-6 | Aplicação de selante (por dente)| ABPO004|
+|01.01.02.007-4 | Aplicação tópica de flúor (individual por sessão)| ABPO005|
+|03.07.01.001-5 | Capeamento pulpar | ABPO006|
+|03.07.04.013-5 | Cimentação de prótese dentária|ABPO007|	
+|03.07.02.002-9 | Curativo de demora c/ ou s/ preparo biomecânico|ABPO008|	
+|04.01.01.003-1 | Drenagem de abscesso|ABPG008| 
+|01.01.02.008-2 | Evidenciação de placa bacteriana|ABPO010|
+|04.14.02.012-0 | Exodontia de dente decíduo|ABPO011|
+|04.14.02.013-8 | Exodontia de dente permanente|ABPO012|
 |ABPO013|	Instalação de prótese dentária|
 |ABPO014|	Moldagem dento-gengival p/ construção de prótese dentária|
 |ABPO015|	Orientação de Higiene Bucal|

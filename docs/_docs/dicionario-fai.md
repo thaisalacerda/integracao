@@ -15,7 +15,7 @@ Profissionais que realizaram o atendimento
 |---| --- |---  | --- |
 |VariasLotacoesHeader|	Sim|	-|	-|
 
-**Referência:** [headerTransport]({% url profissional %}#headertransport).
+**Referência:** [VariasLotacoesHeader]({% url headerTransport %}#variaslotacoesheader).
 
 ### \#2	atendimentosIndividuais
 Registro individualizado dos atendimentos.
@@ -77,7 +77,7 @@ Data de nascimento do cidadão.
 |---| --- |---  | --- |
 |Long|	Sim|	-|	-|
 
-**Regras:** Não pode ser posterior a [dataAtendimento]({% url profissional %}#5-dataatendimento) e anterior a 130 anos a partir da [dataAtendimento]({% url profissional %}#5-dataatendimento).
+**Regras:** Não pode ser posterior a [dataAtendimento]({% url headerTransport %}#5-dataatendimento) e anterior a 130 anos a partir da [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
 
 **Refererência**: [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milisegundos.
 
@@ -165,7 +165,7 @@ Data da última menstruação da gestante.
 
 **Regras:**
 
-* Não pode ser superior a [dataAtendimento]({% url profissional %}#5-dataatendimento), nem inferior a data de nascimento;
+* Não pode ser superior a [dataAtendimento]({% url headerTransport %}#5-dataatendimento), nem inferior a data de nascimento;
 * Não pode ser preenchido quando [Sexo](#5-sexo) = `0 (masculino)`.
 
 **Referências:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milissegundos.

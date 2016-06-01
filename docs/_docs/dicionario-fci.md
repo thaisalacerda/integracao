@@ -103,7 +103,7 @@ Dados referentes ao profissional e a data do cadastro.
 |--- |--- |--- |--- |
 |UnicaLotacaoHeader |Sim |- |- |
 
-**Referência:** [headerTransport]({% url profissional %}#headertransport).
+**Referência:** [UnicaLotacaoHeader]({% url headerTransport %}#unicalotacaoheader).
 
 ## CondicoesDeSaude
 
@@ -237,7 +237,7 @@ Marcador se o cidadão está gestante.
 **Regras:** Só pode ser preenchido se:
 
 * O campo [sexoCidadao](#16-sexocidadao) = `feminino`;
-* O campo [dataNascimentoCidadao](#3-datanascimentocidadao) for mais anterior que 9 anos a partir da [dataAtendimento]({% url profissional %}#5-dataatendimento).
+* O campo [dataNascimentoCidadao](#3-datanascimentocidadao) for mais anterior que 9 anos a partir da [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
 
 ### \#15 statusEstaAcamado
 Marcador se o cidadão está acamado.
@@ -503,7 +503,7 @@ Data de nascimento do cidadão no formato epoch time.
 |--- |--- |--- |--- |
 |Long |Sim |- |- |
 
-**Regras:** Não pode ser posterior a [dataAtendimento]({% url profissional %}#5-dataatendimento) ou mais anterior que 130 anos a partir da [dataAtendimento]({% url profissional %}#5-dataatendimento).
+**Regras:** Não pode ser posterior a [dataAtendimento]({% url headerTransport %}#5-dataatendimento) ou mais anterior que 130 anos a partir da [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
 
 **Referência:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milissegundos.
 
@@ -673,7 +673,7 @@ Data de naturalização do cidadão no formato epoch time.
 **Regras:**
 
 * Só deve ser preenchido se o campo [nacionalidadeCidadao](#7-nacionalidadecidadao) = `2`. Neste caso, é de preenchimento obrigatório;
-* Não pode ser posterior a [dataAtendimento]({% url profissional %}#5-dataatendimento);
+* Não pode ser posterior a [dataAtendimento]({% url headerTransport %}#5-dataatendimento);
 * Não pode ser anterior a [dataNascimentoCidadao](#3-datanascimentocidadao).
 
 ### \#22 portariaNaturalizacao
@@ -695,7 +695,7 @@ Data em que o cidadão entrou no Brasil.
 **Regras:**
 
 * Só deve ser preenchido se o campo [nacionalidadeCidadao](#7-nacionalidadecidadao) = `3`. Neste caso o preenchimento é obrigatório;
-* Não pode ser posterior a [dataAtendimento]({% url profissional %}#5-dataatendimento);
+* Não pode ser posterior a [dataAtendimento]({% url headerTransport %}#5-dataatendimento);
 * Não pode ser anterior a [dataNascimentoCidadao](#3-datanascimentocidadao).
 
 ### \#24 microarea
@@ -897,6 +897,6 @@ Código do responsável por crianças de até 9 anos.
 |--- |--- |--- |--- |
 |List\<Long\> |Não | 0 | 6 |
 
-**Regras:** Não pode ser preenchido se a [dataNascimentoCidadao](#3-datanascimentocidadao) for anterior ou igual a 10 anos a partir da [dataAtendimento]({% url profissional %}#5-dataatendimento).
+**Regras:** Não pode ser preenchido se a [dataNascimentoCidadao](#3-datanascimentocidadao) for anterior ou igual a 10 anos a partir da [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
 
 **Referência:** [ResponsavelCrianca]({% url dicionario %}#responsavelcrianca).

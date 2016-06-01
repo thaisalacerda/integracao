@@ -34,7 +34,7 @@ Profissional que realizou a visita.
 |---| --- |---  | --- |
 |UnicaLotacaoHeader|	Obrigatório|	-|	-|
 
-**Referência:** [headerTransport]({% url profissional %}#headertransport).
+**Referência:** [UnicaLotacaoHeader]({% url headerTransport %}#unicalotacaoheader).
 
 ### \#4	atendimentosDomiciliares
 Lista dos atendimentos realizados pelo profissional.
@@ -72,7 +72,7 @@ Data de nascimento do cidadão.
 |---| --- |---  | --- |
 |Long|	Obrigatório|	-|	-|
 
-**Regras:** Não pode ser posterior a [dataAtendimento]({% url profissional%}#5-dataatendimento) e anterior a 130 anos a partir da [dataAtendimento]({% url profissional%}#5-dataatendimento).
+**Regras:** Não pode ser posterior a [dataAtendimento]({% url headerTransport %}#5-dataatendimento) e anterior a 130 anos a partir da [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
 
 **Referencias:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milissegundos.
 

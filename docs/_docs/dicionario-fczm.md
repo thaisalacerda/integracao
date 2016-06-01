@@ -15,7 +15,7 @@ Dados referentes ao profissional e a data do cadastro.
 |--- |--- |--- |--- |
 |UnicaLotacaoHeader |Sim |- |- |
 
-**Referência:** [headerTransport]({% url profissional %}#headertransport).
+**Referência:** [UnicaLotacaoHeader]({% url headerTransport %}#unicalotacaoheader).
 
 ### \#2	uuidFicha
 Código UUID para identificar a ficha na base de dados nacional.
@@ -75,7 +75,7 @@ Data de resultado do "Teste de olhinho (Reflexo vermelho)".
 |--- |--- |--- |--- |
 |Long |Condicional |- |- |
 
-**Regras:** Não pode ser posterior a [dataAtendimento]({% url profissional %}#5-dataatendimento).
+**Regras:** Não pode ser posterior a [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
 
 ### \#8 coResultadoTesteOlhinho
 Resultado do "Teste de olhinho (Reflexo vermelho)".
@@ -93,7 +93,7 @@ Data de resultado do "Exame de fundo de olho (02.11.06.010-0 - Fundoscopia)".
 |--- |--- |--- |--- |
 |Long |Condicional |- |- |
 
-**Regras:** Não pode ser posterior a [dataAtendimento]({% url profissional %}#5-dataatendimento).
+**Regras:** Não pode ser posterior a [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
 
 
 ### \#10 coResultadoExameFundoOlho
@@ -112,7 +112,7 @@ Data de resultado do "Teste da orelhinha - PEATE (02.11.07.027-0 - Potencial evo
 |--- |--- |--- |--- |
 |Long |Condicional |- |- |
 
-**Regras:** Não pode ser posterior a [dataAtendimento]({% url profissional %}#5-dataatendimento).
+**Regras:** Não pode ser posterior a [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
 
 ### \#12 coResultadoExameOrelhinha
 Resultado do "Teste da orelhinha - PEATE (02.11.07.027-0 - Potencial evocado auditivo para triagem auditiva)".
@@ -130,7 +130,7 @@ Data de resultado do exame de imagem "US transfontanela (02.05.02.017-8 - Ultras
 |--- |--- |--- |--- |
 |Long |Condicional |- |- |
 
-**Regras:** Não pode ser posterior a [dataAtendimento]({% url profissional %}#5-dataatendimento).
+**Regras:** Não pode ser posterior a [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
 
 ### \#14 coResultadoUsTransfontanela
 Resultado do exame de imagem "US transfontanela (02.05.02.017-8 - Ultrassonografia transfontanela)".
@@ -148,7 +148,7 @@ Data de resultado do exame de imagem "Tomografia computadorizada (02.06.01.007-9
 |--- |--- |--- |--- |
 |Long |Condicional |- |- |
 
-**Regras:** Não pode ser posterior a [dataAtendimento]({% url profissional %}#5-dataatendimento).
+**Regras:** Não pode ser posterior a [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
 
 ### \#16 coResultadoTomografiaComputadorizada
 Resultado do exame de imagem "Tomografia computadorizada (02.06.01.007-9 - Tomografia computadorizada do crânio)".
@@ -166,7 +166,7 @@ Data de resultado do exame de imagem "Ressonância magnética (02.07.01.006-4 - 
 |--- |--- |--- |--- |
 |Long |Condicional |- |- |
 
-**Regras:** Não pode ser posterior a [dataAtendimento]({% url profissional %}#5-dataatendimento).
+**Regras:** Não pode ser posterior a [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
 
 ### \#18 coResultadoRessonanciaMagnetica
 Resultado do exame de imagem "Ressonância magnética (02.07.01.006-4 - Ressonância magnética de crânio)".

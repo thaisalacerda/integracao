@@ -588,9 +588,9 @@ order: 12
 ## Turno
 |Código|	Descrição|	Observações|
 |---|---|---|
-|1 |	Matutino|	-|
-|2 |	Vespertino|	-|
-|3 |	Noturno|	-|
+|1 |	Manhã|	-|
+|2 |	Tarde|	-|
+|3 |	Noite|	-|
 
 ## VigilanciaEmSaudeBucal
 |Código|	Descrição|	Observações|

@@ -35,7 +35,7 @@ Profissional que realizou a visita.
 |--- |--- |--- |--- |
 |UnicaLotacaoHeader |Sim |- |- |
 
-**Referência:** [headerTransport]({% url profissional %}#headertransport).
+**Referência:** [UnicaLotacaoHeader]({% url headerTransport %}#unicalotacaoheader).
 
 ### \#4 visitasDomiciliares
 Pelo menos 1 item na lista, no máximo 23.
@@ -53,7 +53,7 @@ Código do turno onde aconteceu o atendimento.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Long |Não |- |- |
+|Long |Sim |- |- |
 
 **Referência:** [Turno]({% url dicionario %}#turno).
 
@@ -80,6 +80,7 @@ Número do cartão SUS do cidadão.
 
 * Validado pelo algoritmo;
 * Não deve ser preenchido se o campo [tipoDeImovel](#11-tipodeimovel) = `02` comércio, `03` terreno baldio, `04` Ponto Estratégico, `05` Escola, `06` Creche ou `12` Estabelecimento religioso.
+* Para visita periódica ou visita domiciliar para controle vetorial preencher este campo com o CNS do responsável familiar.
 
 **Referência:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
 
@@ -92,7 +93,7 @@ Data de nascimento do cidadão.
 
 **Regras:** 
 
-* Não pode ser posterior a [dataAtendimento]({% url profissional %}#5-dataatendimento) e anterior a 130 anos a partir da [dataAtendimento]({% url profissional %}#5-dataatendimento);
+* Não pode ser posterior a [dataAtendimento]({% url headerTransport %}#5-dataatendimento) e anterior a 130 anos a partir da [dataAtendimento]({% url headerTransport %}#5-dataatendimento);
 * Não deve ser preenchido se o campo [tipoDeImovel](#11-tipodeimovel) = `02` comércio, `03` terreno baldio, `04` Ponto Estratégico, `05` Escola, `06` Creche ou `12` Estabelecimento religioso.
 
 **Referência:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milissegundos.
@@ -120,7 +121,7 @@ Código dos motivos da visita.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|List\<Long\> |Condicional |- |- |
+|List\<Long\> |Condicional |0 |36 |
 
 **Regras:**
 

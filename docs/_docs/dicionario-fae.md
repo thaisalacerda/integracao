@@ -35,7 +35,7 @@ Profissional que realizou a visita.
 |---| --- |---  | --- |
 |UnicaLotacaoHeader|	Requerido|	-|	-|
 
-**Referência:** [headerTransport]({% url profissional %}#headertransport).
+**Referência:** [UnicaLotacaoHeader]({% url headerTransport %}#unicalotacaoheader).
 
 ### \#4	numeroCartaoSus
 CNS do cidadão.
@@ -76,7 +76,7 @@ Data de nascimento do cidadão no formato epoch time.
 |---| --- |---  | --- |
 |Long|	Requerido|	-|	-|
 
-**Regras:** Não pode ser posterior a [dataAtendimento]({% url profissional %}#5-dataatendimento) e anterior a 130 anos a partir da [dataAtendimento]({% url profissional %}#5-dataatendimento).
+**Regras:** Não pode ser posterior a [dataAtendimento]({% url headerTransport %}#5-dataatendimento) e anterior a 130 anos a partir da [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
 
 **Refererência**: [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milissegundos.
 
