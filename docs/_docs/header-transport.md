@@ -67,7 +67,7 @@ Código IBGE do município.
 |--- |--- |--- |--- |
 |String |Sim |- |- |
 
-**Referência:** {% link municipios %}..
+**Referência:** {% link municipios %}.
 
 Observações: Esta entidade é utilizada para representar o profissional responsável pelas fichas.
 
@@ -81,6 +81,8 @@ Profissional responsável pela ação.
 |UnicaLotacaoHeader |Sim |- |- |
 
 Observações: Esta entidade é utilizada para representar o profissional responsável pela ficha e os outros que o auxiliaram na atividade.
+
+**Referências:** [UnicaLotacaoHeader](#unicalotacaoheader).
 
 ### \#2 profissionalCNS1
 CNS do profissional1.
@@ -108,31 +110,27 @@ Código do CBO do profissional1.
 
 Observações: Esta entidade é utilizada para representar o profissional responsável pela ficha e os outros que o auxiliaram na atividade.
 
-### \#4 profissionalCNS2
-CNS do profissional2.
+------------------------------------------
+
+### \#3 cnes
+Código do CNES da unidade de saúde que o profissional está lotado.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|String |Sim |15 |15 |
+|String |Sim |7 |7 |
 
-**Regras:** CNS válido de acordo com o algoritmo.
+Observações: Esta entidade é utilizada para representar o profissional responsável pelas fichas.
 
-**Referência:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
-
-Observações: Esta entidade é utilizada para representar o profissional responsável pela ficha e os outros que o auxiliaram na atividade.
-
-### \#5 cboCodigo\_2002\_2
-Código do CBO do profissional2.
+### \#4 ine
+Código INE da equipe do profissional.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|String |Sim |- |- |
+|String |Não |10 |10 |
 
-**Regras:** Deve ser preenchido somente se profissionalCNS2 estiver preenchido.
+Observações: Esta entidade é utilizada para representar o profissional responsável pelas fichas.
 
-**Referência:** {% link cbo %}.
-
-Observações: Esta entidade é utilizada para representar o profissional responsável pela ficha e os outros que o auxiliaram na atividade.
+-------------------------------------------
 
 ## ProfissionalCboRowItem
 

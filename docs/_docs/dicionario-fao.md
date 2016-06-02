@@ -35,8 +35,6 @@ Registro individualizado dos atendimentos.
 |---| --- |---  | --- |
 |List\<FichaAtendimentoOdontologicoChild>|	Sim|-|-|
 
-**Regras:** No máximo 13 atendimentos podem ser registrados.
-
 **Referências:** [FichaAtendimentoOdontologicoChild](#fichaatendimentoodontologicochild).
 
 ### \#4	tpCdsOrigem
@@ -182,7 +180,7 @@ Lista de outros códigos de procedimentos.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|List\<ProcedimentoQuantidade>|	Não|	0|	24|
+|List\<ProcedimentoQuantidade>|	Não|	-|	-|
 
 **Regras:**
 
@@ -221,7 +219,13 @@ Código do procedimento no MS.
 |---| --- |---  | --- |
 |String|	Sim|	-|	-|
 
-**Regras:** Deve ser um procedimento com um código válido.
+**Regras:** 
+
+- Deve ser um procedimento com um código válido;
+
+- Quando a lista partir da estrutura [procedimentosRealizados](#12-procedimentosrealizados), somente os procedimentos **AB** listados em [ListaProcedimentosRealizados](#listaprocedimentosrealizados) podem ser adicionados. Verificar o procedimento AB correspondente ao procedimento SIGTAP desejado;
+
+- Quando a lista partir da estrutura [outrosSiaProcedimentos](#13-outrossiaprocedimentos), ela não pode conter procedimentos da [ListaProcedimentosRealizados](#listaprocedimentosrealizados).
 
 ### \#2	quantidade
 Quantidade de procedimentos realizados.
@@ -233,32 +237,32 @@ Quantidade de procedimentos realizados.
 **Regras:** Valor máximo que pode ser registrado é 99.
 
 ## ListaProcedimentosRealizados
-|Código SIGTAP| Descrição SIGTAP | Código AB correspondente |
+|Código SIGTAP| Descrição AB | Código AB correspondente |
 |---|---|---|---|
-|03.07.02.001-0 | Acesso a polpa dentária e medicação (por dente) |ABPO001|
+|03.07.02.001-0 | Acesso a polpa dentária e medicação (por dente) | ABPO001 |
 |03.07.04.014-3 | Adaptação de Prótese Dentária | ABPO002 |
 |01.01.02.005-8 | Aplicação de cariostático (por dente)| ABPO003 |
-|01.01.02.006-6 | Aplicação de selante (por dente)| ABPO004|
-|01.01.02.007-4 | Aplicação tópica de flúor (individual por sessão)| ABPO005|
-|03.07.01.001-5 | Capeamento pulpar | ABPO006|
-|03.07.04.013-5 | Cimentação de prótese dentária|ABPO007|	
-|03.07.02.002-9 | Curativo de demora c/ ou s/ preparo biomecânico|ABPO008|	
-|04.01.01.003-1 | Drenagem de abscesso|ABPG008| 
-|01.01.02.008-2 | Evidenciação de placa bacteriana|ABPO010|
-|04.14.02.012-0 | Exodontia de dente decíduo|ABPO011|
-|04.14.02.013-8 | Exodontia de dente permanente|ABPO012|
-|ABPO013|	Instalação de prótese dentária|
-|ABPO014|	Moldagem dento-gengival p/ construção de prótese dentária|
-|ABPO015|	Orientação de Higiene Bucal|
-|ABPO016|	Profilaxia / Remoção de placa bacteriana|
-|ABPO017|	Pulpotomia dentária|
-|ABPO018|	Radiografia Periapical / Interproximal|
-|ABPO019|	Raspagem alisamento e polimento supragengivais (por sextante)|
-|ABPO020|	Raspagem alisamento subgengivais (por sextante)|
-|ABPO021|	Restauração de dente decíduo|
-|ABPO022|	Restauração de dente permanente anterior|
-|ABPO023|	Restauração de dente permanente posterior|
-|ABPG018|	Retirada de pontos de cirurgias básicas (por paciente)|
-|ABPO025|	Selamento provisório de cavidade dentária|
-|ABPO026|	Tratamento de alveolite|
-|ABPO027|	Ulotomia / Ulectomia|
+|01.01.02.006-6 | Aplicação de selante (por dente) | ABPO004 |
+|01.01.02.007-4 | Aplicação tópica de flúor (individual por sessão) | ABPO005 |
+|03.07.01.001-5 | Capeamento pulpar | ABPO006 |
+|03.07.04.013-5 | Cimentação de prótese dentária | ABPO007 |	
+|03.07.02.002-9 | Curativo de demora c/ ou s/ preparo biomecânico | ABPO008 |	
+|04.01.01.003-1 | Drenagem de abscesso |ABPO009 | 
+|01.01.02.008-2 | Evidenciação de placa bacteriana | ABPO010 |
+|04.14.02.012-0 | Exodontia de dente decíduo | ABPO011 |
+|04.14.02.013-8 | Exodontia de dente permanente | ABPO012 |
+|03.07.04.016-0 | Instalação de prótese dentária | ABPO013 |
+|03.07.04.007-0 | Moldagem dento-gengival p/ construção de prótese dentária | ABPO014 |
+|       -       | Orientação de Higiene Bucal | ABPO015 |
+|03.07.03.004-0 | Profilaxia / Remoção de placa bacteriana | ABPO016 |
+|03.07.02.007-0 | Pulpotomia dentária | ABPO017 |
+|02.04.01.018-7 | Radiografia Periapical / Interproximal| ABPO018 |
+|03.07.03.005-9 | Raspagem alisamento e polimento supragengivais (por sextante)| ABPO019 |
+|03.07.03.002-4 | Raspagem alisamento subgengivais (por sextante)| ABPO020 |
+|03.07.01.002-3 | Restauração de dente decíduo | ABPO021 |
+|03.07.01.003-1 | Restauração de dente permanente anterior | ABPO022 |
+|03.07.01.004-0 | Restauração de dente permanente posterior | ABPO023 |
+|03.01.10.015-2 | Retirada de pontos de cirurgias básicas (por paciente) | ABPG018 |
+|01.01.02.009-0 | Selamento provisório de cavidade dentária | ABPO025 |
+|04.14.02.038-3 | Tratamento de alveolite | ABPO026 |
+|04.14.02.040-5 | Ulotomia / Ulectomia | ABPO027 |

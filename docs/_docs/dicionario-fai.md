@@ -22,7 +22,7 @@ Registro individualizado dos atendimentos.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|List\<FichaAtendimentoIndividualChild>|	Sim	|1	|13|
+|List\<FichaAtendimentoIndividualChild>|	Sim	|-	|-|
 
 **Regras:** No máximo 13 atendimentos podem ser registrados.
 
@@ -230,7 +230,7 @@ Lista de outros exames.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|List\<OutrosSia>|	Não|	0|	3|
+|List\<OutrosSia>|	Não|	-|	-|
 
 **Referências:** [OutrosSia](#outrossia).
 
@@ -300,7 +300,7 @@ Código da racionalidade em saúde utilizada.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Não|	-|	-|
+|List\<Long>|	Não|	0|	6|
 
 **Referências:**	[racionalidadeSaude]({% url dicionario %}#racionalidadesaude).
 
@@ -309,7 +309,13 @@ Perímetro cefálico do cidadão em centímetros.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Double|	Não|	0|	2|
+|Double|	Não|	0|	6|
+
+**Regras:**
+
+* Apenas números e vírgula (`,`);
+* Máximo de 2 números após a vírgula;
+* Valor mínimo 10 e máximo 200.
 
 ## OutrosSia
 
@@ -331,7 +337,7 @@ Código do indicador se o exame foi `Solicitado` e / ou `Avaliado`.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|List\<String>|	Sim|	-|	-|
+|List\<String>|	Sim|	1|	2|
 
 **Referências:** [SituacaoExame]({% url dicionario %}#situacaoexame).
 
@@ -382,7 +388,11 @@ Código do CID10 registrado no atendimento.
 |---| --- |---  | --- |
 |String| Condicional| - | - |
 
-**Regras:** É Requerido o preenchimento de pelo menos um dos itens de `#1` a `#5`.
+**Regras:** 
+
+- Não pode ser igual a [cid10_2](#5-cid10_2);
+- É Requerido o preenchimento de pelo menos um dos itens de `#1` a `#5`.
+
 
 ### \#5	cid10_2
 Código do CID10 registrado no atendimento.

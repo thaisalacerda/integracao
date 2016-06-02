@@ -158,6 +158,8 @@ Código do local onde o atendimento foi realizado.
 |--- |--- |--- |--- |
 |Long |Sim |- |- |
 
+**Regras:** Apenas valores de `1` a `10`.
+
 **Referência:** [LocalDeAtendimento]({% url dicionario %}#localdeatendimento).
 
 ### \#6 turno
@@ -165,7 +167,7 @@ Código do turno onde aconteceu o atendimento.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Long |Não |- |- |
+|Long |Sim |- |- |
 
 **Referência:** [Turno]({% url dicionario %}#turno).
 
@@ -181,7 +183,7 @@ Lista dos códigos dos procedimentos que são registrados na ficha de procedimen
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|List\<String\> |Condicional |0 |23 |
+|List\<String\> |Condicional |0 |33 |
 
 **Regras:** Caracteres maiúsculos e sem espaço em branco.
 
@@ -194,7 +196,7 @@ Código dos outros procedimentos do SIGTAP ou SISAB.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|List\<String\> |Condicional | 0 | 6 |
+|List\<String\> |Condicional | - | - |
 
 **Regras:**
 
