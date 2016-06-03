@@ -73,7 +73,7 @@ Observações: Esta entidade é utilizada para representar o profissional respon
 
 ## VariasLotacoesHeader
 
-### \#1 lotacaoForm
+### \#1 lotacaoFormPrincipal
 Profissional responsável pela ação.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -84,53 +84,17 @@ Observações: Esta entidade é utilizada para representar o profissional respon
 
 **Referências:** [UnicaLotacaoHeader](#unicalotacaoheader).
 
-### \#2 profissionalCNS1
-CNS do profissional1.
+### \#6 lotacaoFormAtendimentoCompartilhado
+Profissional responsável pela ação.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|String |Não |15 |15 |
+|UnicaLotacaoHeader |Não |- |- |
 
-**Regras:** CNS válido de acordo com o algoritmo.
+Observações: Esta entidade é utilizada para representar o profissional que auxiliou o profissional responsável na atividade.
 
-**Referência:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
+**Referências:** [UnicaLotacaoHeader](#unicalotacaoheader).
 
-Observações: Esta entidade é utilizada para representar o profissional responsável pela ficha e os outros que o auxiliaram na atividade.
-
-### \#3 cboCodigo\_2002\_1
-Código do CBO do profissional1.
-
-| Tipo | Obrigatório | Mínimo | Máximo |
-|--- |--- |--- |--- |
-|String |Não |- |- |
-
-**Regras:** Deve ser preenchido somente se profissionalCNS1 estiver preenchido.
-
-**Referência:** {% link cbo %}.
-
-Observações: Esta entidade é utilizada para representar o profissional responsável pela ficha e os outros que o auxiliaram na atividade.
-
-------------------------------------------
-
-### \#3 cnes
-Código do CNES da unidade de saúde que o profissional está lotado.
-
-| Tipo | Obrigatório | Mínimo | Máximo |
-|--- |--- |--- |--- |
-|String |Sim |7 |7 |
-
-Observações: Esta entidade é utilizada para representar o profissional responsável pelas fichas.
-
-### \#4 ine
-Código INE da equipe do profissional.
-
-| Tipo | Obrigatório | Mínimo | Máximo |
-|--- |--- |--- |--- |
-|String |Não |10 |10 |
-
-Observações: Esta entidade é utilizada para representar o profissional responsável pelas fichas.
-
--------------------------------------------
 
 ## ProfissionalCboRowItem
 

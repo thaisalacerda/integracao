@@ -29,7 +29,7 @@ CNS do cidadão.
 
 **Referência:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
 
-### \#3 identificacaoUsuario
+### \#3 nomeCidadao
 Nome do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |

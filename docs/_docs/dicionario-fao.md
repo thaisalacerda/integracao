@@ -149,14 +149,14 @@ Código do tipo de consulta odontológica realizada.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|List\<Long>|	Condicional |	-	|-|
+|List\<Long>|	Condicional |	0	|1|
 
 **Regras:**
 
-* É Requerido se o [TipoDeAtendimento]({% url dicionario %}#tipodeatendimento) = `2 (consulta agendada)`;
+* É de preenchimento obrigatório se o [TipoDeAtendimento]({% url dicionario %}#tipodeatendimento) = `2 (consulta agendada)`;
 * Não pode ser preenchido se o [TipoDeAtendimento]({% url dicionario %}#tipodeatendimento) = `4 (escuta inicial ou orientação)`;
 * Se o [TipoDeAtendimento]({% url dicionario %}#tipodeatendimento) = `6 (atendimento de urgência)`, a opção de `2 (consulta de retorno)` não pode ser marcada;
-* Se [TipoDeAtendimento]({% url dicionario %}#tipodeatendimento) = `5 (consulta no dia)`, o campo é opcional.
+* Se [TipoDeAtendimento]({% url dicionario %}#tipodeatendimento) = `5 (consulta no dia)`, o campo é opcional;
 * Aceita apenas um registro.
 
 **Referências:** [TipoDeConsultaOdonto]({% url dicionario %}#tipodeconsultaodonto)
@@ -212,7 +212,7 @@ Código do turno em que o atendimento foi realizado.
 
 ## ProcedimentoQuantidade
 
-### \#1	coMsProcedimento
+### \#1	codigoProcedimento
 Código do procedimento no MS.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -253,7 +253,7 @@ Quantidade de procedimentos realizados.
 |04.14.02.013-8 | Exodontia de dente permanente | ABPO012 |
 |03.07.04.016-0 | Instalação de prótese dentária | ABPO013 |
 |03.07.04.007-0 | Moldagem dento-gengival p/ construção de prótese dentária | ABPO014 |
-|       -       | Orientação de Higiene Bucal | ABPO015 |
+|Não possui     | Orientação de Higiene Bucal | ABPO015 |
 |03.07.03.004-0 | Profilaxia / Remoção de placa bacteriana | ABPO016 |
 |03.07.02.007-0 | Pulpotomia dentária | ABPO017 |
 |02.04.01.018-7 | Radiografia Periapical / Interproximal| ABPO018 |

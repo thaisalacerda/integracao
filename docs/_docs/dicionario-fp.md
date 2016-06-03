@@ -185,7 +185,10 @@ Lista dos códigos dos procedimentos que são registrados na ficha de procedimen
 |--- |--- |--- |--- |
 |List\<String\> |Condicional |0 |33 |
 
-**Regras:** Caracteres maiúsculos e sem espaço em branco.
+**Regras:** 
+
+- Caracteres maiúsculos e sem espaço em branco.
+- Preencher apenas com o código **AB** do procedimento.
 
 **Referência:** [Procedimentos da Ficha](#procedimentos-da-ficha).
 
@@ -209,38 +212,38 @@ Observação: É requerido pelo menos um dentre os itens `#8` e `#9`.
 
 ## Procedimentos da Ficha
 
-|Código |	Descrição|
-|--- |--- |
-|ABPG001 |Acupuntura com inserção de agulhas |
-|ABPG002 |Administração de vitamina A |
-|ABPG003 |Cateterismo vesical de alívio |
-|ABPG004 |Cauterização química de pequenas lesões |
-|ABPG005 |Cirurgia de unha (cantoplastia) |
-|ABPG006 |Cuidado de estomas |
-|ABPG007 |Curativo especial |
-|ABPG008 |Drenagem de abscesso |
-|ABEX004 |Eletrocardiograma |
-|ABPG010 |Coleta de citopatológico de colo uterino |
-|ABPG011 |Exame do pé diabético |
-|ABPG012 |Exérese / Biópsia / Punção de tumores superficiais de pele |
-|ABPG013 |Fundoscopia (exame de fundo de olho) |
-|ABPG014 |Infiltração em cavidade sinovial |
-|ABPG015 |Remoção de corpo estranho da cavidade auditiva e nasal |
-|ABPG016 |Remoção de corpo estranho subcutâneo |
-|ABPG017 |Retirada de cerume |
-|ABPG018 |Retirada de pontos de cirurgias |
-|ABPG019 |Sutura simples |
-|ABPG020 |Triagem oftalmológica |
-|ABPG021 |Tamponamento de epistaxe |
-|ABPG022 |Teste rápido de gravidez |
-|ABPG040 |Teste rápido para dosagem de proteinúria |
-|ABPG024 |Teste rápido para HIV |
-|ABPG025 |Teste rápido para hepatite C |
-|ABPG026 |Teste rápido para sífilis |
-|ABPG027 |Administração de medicamentos via oral |
-|ABPG028 |Administração de medicamentos via intramuscular |
-|ABPG029 |Administração de medicamentos via endovenosa |
-|ABPG030 |Administração de medicamentos via inalação / nebulização |
-|ABPG031 |Administração de medicamentos via tópica |
-|ABPG032 |Administração de penicilina para tratamento de sífilis |
-|ABPG041 |Administração de medicamentos via Subcutânea (SC) |
+|Código SIGTAP| Descrição AB | Código AB correspondente |
+|--- |--- |--- |
+|03.09.05.002-2|Acupuntura com inserção de agulhas |ABPG001 |
+|01.01.04.005-9|Administração de vitamina A |ABPG002 |
+|03.01.10.004-7|Cateterismo vesical de alívio |ABPG003 |
+|03.03.08.001-9|Cauterização química de pequenas lesões |ABPG004 |
+|04.01.02.017-7|Cirurgia de unha (cantoplastia) |ABPG005 |
+|03.01.10.006-3|Cuidado de estomas |ABPG006 |
+|Não possui    |Curativo especial |ABPG007 |
+|04.01.01.003-1|Drenagem de abscesso |ABPG008 |
+|02.11.02.003-6|Eletrocardiograma |ABEX004 |
+|02.01.02.003-3|Coleta de citopatológico de colo uterino |ABPG010 |
+|03.01.04.009-5|Exame do pé diabético |ABPG011 |
+|04.01.01.007-4|Exérese / Biópsia / Punção de tumores superficiais de pele |ABPG012 |
+|02.11.06.010-0|Fundoscopia (exame de fundo de olho) |ABPG013 |
+|03.03.09.003-0|Infiltração em cavidade sinovial |ABPG014 |
+|04.04.01.030-0|Remoção de corpo estranho da cavidade auditiva e nasal |ABPG015 |
+|04.01.01.011-2|Remoção de corpo estranho subcutâneo |ABPG016 |
+|Não possui    |Retirada de cerume |ABPG017 |
+|03.01.10.015-2|Retirada de pontos de cirurgias |ABPG018 |
+|04.01.01.006-6|Sutura simples |ABPG019 |
+|02.11.06.027-5|Triagem oftalmológica |ABPG020 |
+|04.04.01.034-2|Tamponamento de epistaxe |ABPG021 |
+|02.14.01.006-6|Teste rápido de gravidez |ABPG022 |
+|Não possui    |Teste rápido para dosagem de proteinúria |ABPG040 |
+|02.14.01.005-8|Teste rápido para HIV |ABPG024 |
+|02.14.01.009-0|Teste rápido para hepatite C |ABPG025 |
+|02.14.01.007-4|Teste rápido para sífilis |ABPG026 |
+|Não possui    |Administração de medicamentos via oral |ABPG027 |
+|Não possui    |Administração de medicamentos via intramuscular |ABPG028 |
+|Não possui    |Administração de medicamentos via endovenosa |ABPG029 |
+|03.01.10.010-1|Administração de medicamentos via inalação / nebulização |ABPG030 |
+|Não possui    |Administração de medicamentos via tópica |ABPG031 |
+|Não possui    |Administração de penicilina para tratamento de sífilis |ABPG032 |
+|Não possui    |Administração de medicamentos via Subcutânea (SC) |ABPG041 |
