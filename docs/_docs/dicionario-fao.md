@@ -247,7 +247,7 @@ Quantidade de procedimentos realizados.
 |03.07.01.001-5 | Capeamento pulpar | ABPO006 |
 |03.07.04.013-5 | Cimentação de prótese dentária | ABPO007 |	
 |03.07.02.002-9 | Curativo de demora c/ ou s/ preparo biomecânico | ABPO008 |	
-|04.01.01.003-1 | Drenagem de abscesso |ABPO009 | 
+|04.01.01.003-1 | Drenagem de abscesso |ABPG008 | 
 |01.01.02.008-2 | Evidenciação de placa bacteriana | ABPO010 |
 |04.14.02.012-0 | Exodontia de dente decíduo | ABPO011 |
 |04.14.02.013-8 | Exodontia de dente permanente | ABPO012 |
