@@ -74,24 +74,26 @@ Observações: Esta entidade é utilizada para representar o profissional respon
 ## VariasLotacoesHeader
 
 ### \#1 lotacaoFormPrincipal
-Profissional responsável pela ação.
+Profissional responsável pelo atendimento.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
 |UnicaLotacaoHeader |Sim |- |- |
 
-Observações: Esta entidade é utilizada para representar o profissional responsável pela ficha e os outros que o auxiliaram na atividade.
+Observações: Esta entidade é utilizada para representar o profissional responsável pela ficha.
 
 **Referências:** [UnicaLotacaoHeader](#unicalotacaoheader).
 
 ### \#6 lotacaoFormAtendimentoCompartilhado
-Profissional responsável pela ação.
+Profissional auxiliar no atendimento.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
 |UnicaLotacaoHeader |Não |- |- |
 
-Observações: Esta entidade é utilizada para representar o profissional que auxiliou o profissional responsável na atividade.
+**Regras:** Não devem ser preenchidos os campos [dataAtendimento](#5-dataatendimento) e [codigoIbgeMunicipio](#6-codigoibgemunicipio).
+
+Observações: Esta entidade é utilizada para representar um profissional que auxiliou o profissional responsável pela ficha.
 
 **Referências:** [UnicaLotacaoHeader](#unicalotacaoheader).
 

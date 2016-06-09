@@ -24,8 +24,6 @@ Registro individualizado dos atendimentos.
 |---| --- |---  | --- |
 |List\<FichaAtendimentoIndividualChild>|	Sim	|-	|-|
 
-**Regras:** No máximo 13 atendimentos podem ser registrados.
-
 **Referências:** [FichaAtendimentoIndividualChild](#fichaatendimentoindividualchild).
 
 ### \#3	uuidFicha
@@ -215,7 +213,7 @@ Lista de exames solicitados que são apresentados na ficha.
 - Não pode conter dois exames iguais;
 - Preencher apenas com o código **AB** do exame.
 
-**Referências:** [ListaExameSolicitado](#listaexamesolicitado).
+**Referências:** [ListaExames](#listaexames).
 
 ### \#16	examesAvaliados
 Lista de exames avaliados que são apresentados na ficha.
@@ -229,7 +227,7 @@ Lista de exames avaliados que são apresentados na ficha.
 - Não pode conter dois exames iguais;
 - Preencher apenas com o código **AB** do exame.
 
-**Referências:** [ListaExameSolicitado](#listaexamesolicitado).
+**Referências:** [ListaExames](#listaexames).
 
 ### \#17	outrosSia
 Lista de outros exames.
@@ -439,7 +437,7 @@ Código do CID10 registrado no atendimento.
 |P16|Usuário de álcool|ABP012|
 |P19|Usuário de outras drogas|ABP013|
 
-## ListaExameSolicitado
+## ListaExames
 |Código SIGTAP| Descrição AB | Código AB correspondente |
 |---|---|---|
 |02.02.01.029-5|Colesterol total|ABEX002|
