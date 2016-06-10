@@ -91,7 +91,7 @@ Profissional auxiliar no atendimento.
 |--- |--- |--- |--- |
 |UnicaLotacaoHeader |Não |- |- |
 
-**Regras:** Não devem ser preenchidos os campos [dataAtendimento](#5-dataatendimento) e [codigoIbgeMunicipio](#6-codigoibgemunicipio).
+**Regras:** Desconsiderar os campos [dataAtendimento](#5-dataatendimento) e [codigoIbgeMunicipio](#6-codigoibgemunicipio).
 
 Observações: Esta entidade é utilizada para representar um profissional que auxiliou o profissional responsável pela ficha.
 
