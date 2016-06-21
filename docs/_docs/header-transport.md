@@ -14,7 +14,7 @@ CNS do profissional.
 |--- |--- |--- |--- |
 |String |Sim |15 |15 |
 
-**Regras:**	CNS válido de acordo com o algoritmo.
+**Regras:**	CNS validado de acordo com o algoritmo.
 
 **Referência:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
 
@@ -96,30 +96,3 @@ Profissional auxiliar no atendimento.
 Observações: Esta entidade é utilizada para representar um profissional que auxiliou o profissional responsável pela ficha.
 
 **Referências:** [UnicaLotacaoHeader](#unicalotacaoheader).
-
-
-## ProfissionalCboRowItem
-
-### \#1 cns
-CNS do profissional.
-
-| Tipo | Obrigatório | Mínimo | Máximo |
-|--- |--- |--- |--- |
-|String |Sim |15 |15 |
-
-**Regras:** CNS válido de acordo com o algoritmo.
-
-**Referência:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
-
-Observações: Esta entidade é utilizada para representar os profissionais que participaram da atividade coletiva
-
-### \#2 codigoCbo2002
-Código CBO do profissional.
-
-| Tipo | Obrigatório | Mínimo | Máximo |
-|--- |--- |--- |--- |
-|String |Sim |- |- |
-
-**Referência:** {% link cbo %}.
-
-Observações: Esta entidade é utilizada para representar os profissionais que participaram da atividade coletiva.

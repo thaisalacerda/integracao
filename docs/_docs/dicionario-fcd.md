@@ -17,7 +17,7 @@ Lista de código dos animais no domicílio.
 **Regras:**
 
 * Só pode ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = `01` Domicílio;
-* Não pode ser preenchido se o campo [statusTermoRecusaCadastroDomiciliarAtencaoBasica](#9-statustermorecusacadatrodomiciliaratencaobasica) = `true`.
+* Não pode ser preenchido se o campo [statusTermoRecusa](#8-statustermorecusa) = `true`.
 
 **Referências:** [AnimalNoDomicilio]({% url dicionario %}#animalnodomicilio).
 
@@ -31,36 +31,36 @@ Condições de moradia do domicílio.
 **Regras:**
 
 * Não deve ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = `02` Comércio, `03` Terreno baldio, `04` Ponto Estratégico, `05` Escola, `06` Creche, `12` Estabelecimento Religioso, `99` Outros;
-* Não deve ser preenchido se o campo [statusTermoRecusaCadastroDomiciliarAtencaoBasica](#9-statustermorecusacadatrodomiciliaratencaobasica) = `true`.
+* Não deve ser preenchido se o campo [statusTermoRecusa](#8-statustermorecusa) = `true`.
 
 **Referências:** [CondicaoMoradia](#condicaomoradia).
 
-### \#4	enderecoLocalPermanencia
+### \#3	enderecoLocalPermanencia
 Informações sobre o endereço do domicílio.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 | ---| --- |---  | --- |
 | EnderecoLocalPermanencia|	Condicional |  - | -|
 
-**Regras:** Preenchimento obrigatório caso o campo [statusTermoRecusaCadastroDomiciliarAtencaoBasica](#9-statustermorecusacadatrodomiciliaratencaobasica) = `false`.
+**Regras:** Preenchimento obrigatório caso o campo [statusTermoRecusa](#8-statustermorecusa) = `false`.
 
 **Referências:** [EnderecoLocalPermanencia](#enderecolocalpermanencia).
 
-### \#5	familias
+### \#4	familias
 Lista das famílias que residem no domicílio.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|List\<FamiliaRow>| Condicional| 	0|	4|
+|List\<FamiliaRow>| Condicional| -|	-|
 
 **Regras:**
 
 * Só pode ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = `01` Domicílio;
-* Não pode ser preenchido caso o campo [statusTermoRecusaCadastroDomiciliarAtencaoBasica](#9-statustermorecusacadatrodomiciliaratencaobasica) = `true`.
+* Não pode ser preenchido caso o campo [statusTermoRecusa](#8-statustermorecusa) = `true`.
 
 **Referências:** [FamiliaRow](#familiarow).
 
-### \#6	fichaAtualizada
+### \#5	fichaAtualizada
 Marcador que indica se a ficha é uma atualização.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -69,7 +69,7 @@ Marcador que indica se a ficha é uma atualização.
 
 **Observação:** Caso seja uma ficha de atualização, o campo [uuidFichaOriginadora](#12-uuidfichaoriginadora) deve ser preenchido com o UUID da ficha que deu origem ao registro.
 
-### \#7	quantosAnimaisNoDomicilio
+### \#6	quantosAnimaisNoDomicilio
 Número de animais no domicílio.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -79,10 +79,10 @@ Número de animais no domicílio.
 **Regras:**
 
 * Só pode ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = `01` Domicílio;
-* Não pode ser preenchido se o campo [stAnimaisNoDomicilio](#8-stanimaisnodomicilio) = `false`;
-* Não pode ser preenchido se o campo [statusTermoRecusaCadastroDomiciliarAtencaoBasica](#9-statustermorecusacadatrodomiciliaratencaobasica) = `true`.
+* Não pode ser preenchido se o campo [stAnimaisNoDomicilio](#7-stanimaisnodomicilio) = `false`;
+* Não pode ser preenchido se o campo [statusTermoRecusa](#8-statustermorecusa) = `true`.
 
-### \#8	stAnimaisNoDomicilio
+### \#7	stAnimaisNoDomicilio
 Marcador que indica se existem animais no domicílio.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -92,16 +92,16 @@ Marcador que indica se existem animais no domicílio.
 **Regras:**
 
 * Só pode ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = `01` Domicílio;
-* Não pode ser preenchido se o campo [statusTermoRecusaCadastroDomiciliarAtencaoBasica](#9-statustermorecusacadatrodomiciliaratencaobasica) = `true`.
+* Não pode ser preenchido se o campo [statusTermoRecusa](#8-statustermorecusa) = `true`.
 
-### \#9	statusTermoRecusaCadatroDomiciliarAtencaoBasica
+### \#8	statusTermoRecusa
 Marcador que indica se o termo de recusa de cadastro do domicílio foi selecionado.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
 |Boolean|	Não|	-|	-|
 
-### \#10	tpCdsOrigem
+### \#9	tpCdsOrigem
 Tipo de origem dos dados do registro.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -110,7 +110,7 @@ Tipo de origem dos dados do registro.
 
 **Regras:** Utilizar valor 3 (sistemas terceiros).
 
-### \#11	uuid
+### \#10	uuid
 Código UUID para identificar a ficha na base de dados nacional.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -121,7 +121,7 @@ Código UUID para identificar a ficha na base de dados nacional.
 
 **Referências:** Para ver a referência sobre o UUID, acesse: [UUID Wikipedia](https://en.wikipedia.org/wiki/Universally_unique_identifier).
 
-### \#12	uuidFichaOriginadora
+### \#11	uuidFichaOriginadora
 Código UUID para identificar a ficha que deu origem ao cadastro do registro.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -132,7 +132,7 @@ Código UUID para identificar a ficha que deu origem ao cadastro do registro.
 
 **Referências:** Para ver a referência sobre o UUID, acesse: [UUID Wikipedia](https://en.wikipedia.org/wiki/Universally_unique_identifier).
 
-### \#13	identificacaoImovel
+### \#12	identificacaoImovel
 Identificação do imóvel.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -141,7 +141,7 @@ Identificação do imóvel.
 
 **Referências:** [identificacaoImovel](#identificacaoimovel).
 
-### \#14	identificacaoResponsavelTecnico
+### \#13	identificacaoResponsavelTecnico
 Identificação do responsável técnico da instituição de permanência.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -151,11 +151,11 @@ Identificação do responsável técnico da instituição de permanência.
 **Regras:** 
 
 * Só podem ser preenchidos quando o campo [tipoDeImovel](#1-tipodeimovel) = `07` Abrigo, `08` Instituição de longa permanência para idosos, `09` Unidade prisional, `10` Unidade de medida socioeducativa e `11` Delegacia;
-* Não devem ser preenchidos se o campo [statusTermoRecusaCadastroDomiciliarAtencaoBasica](#9-statustermorecusacadatrodomiciliaratencaobasica) = `true`.
+* Não devem ser preenchidos se o campo [statusTermoRecusa](#8-statustermorecusa) = `true`.
 
 **Referências:** [identificacaoResponsavelTecnico](#identificacaoresponsaveltecnico).
 
-### \#15 headerTransport
+### \#14 headerTransport
 Informações sobre o profissional e a data do cadastro.
 
 | Tipo | Obrigatório | Mínimo | Máximo |

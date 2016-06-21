@@ -41,7 +41,7 @@ Lista dos atendimentos realizados pelo profissional.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|List\<FichaAtendimentoDomiciliarChild\>|	Obrigatório|	1|	13|
+|List\<FichaAtendimentoDomiciliarChild\>|	Obrigatório|	-|	-|
 
 ## FichaAtendimentoDomiciliarChild
 
@@ -142,7 +142,7 @@ Código dos procedimentos registrados no atendimento disponíveis na ficha.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|List\<String\>|	Não|	0|	21|
+|List\<String\>|	Não|	0|	20|
 
 **Referências:** [Procedimentos da Atencao Domiciliar](#procedimentos-da-atencao-domiciliar)
 
@@ -151,7 +151,7 @@ Código dos procedimentos SIGTAP registrados no atendimento.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|List\<String\>|	Não	|0|	4|
+|List\<String\>|	Não	|-|	-|
 
 **Regras:**
 
@@ -229,4 +229,3 @@ Marcador que indica se a família irá receber acompanhamento pós-óbito.
 |Terapia fonoaudiológica individual			|0301070113|
 |Tratamento de traumatismos de localização especificada / não especificada			|0308010019|
 |Tratamento em reabilitação			|0303190019|
-|Visita domiciliar pós-óbito			|0301050104|

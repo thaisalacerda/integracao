@@ -64,7 +64,7 @@ CNS do cidadão.
 |---| --- |---  | --- |
 |String|	Não|	15|	15|
 
-**Regras:** CNS válido de acordo com o algoritmo.
+**Regras:** CNS validado de acordo com o algoritmo.
 
 **Referência:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
 
@@ -120,7 +120,7 @@ Código do tipo de atendimento realizado.
 **Referências:** [TipoDeAtendimento]({% url dicionario %}#tipodeatendimento).
 
 ### \#8	pesoAcompanhamentoNutricional
-Peso do cidadão em Quilogramas.
+Peso do cidadão em quilogramas.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
@@ -245,14 +245,14 @@ Marcador referente a vacinação em dia do cidadão.
 |---| --- |---  | --- |
 |Boolean|	Não|	-|	-|
 
-### \#20	ficouEmObservacao
+### \#19	ficouEmObservacao
 Marcador referente se o cidadão ficou em observação no atendimento.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
 |Boolean|	Não|	-|	-|
 
-### \#21	nasfs
+### \#20	nasfs
 Código das ações realizadas pelo Núcleo de Atenção a Saúde da Família.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -261,7 +261,7 @@ Código das ações realizadas pelo Núcleo de Atenção a Saúde da Família.
 
 **Referências:** [Nasf]({% url dicionario %}#nasf).
 
-### \#22	condutas
+### \#21	condutas
 Código das condutas adotadas no atendimento.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -272,7 +272,7 @@ Código das condutas adotadas no atendimento.
 
 **Referências:** [CondutaEncaminhamento]({% url dicionario %}#condutaencaminhamento).
 
-### \#23	stGravidezPlanejada
+### \#22	stGravidezPlanejada
 Marcador que indica se a gravidez é planejada.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -281,7 +281,7 @@ Marcador que indica se a gravidez é planejada.
 
 **Regras:** Não pode ser preenchido quando [Sexo](#5-sexo) = `0 (masculino)`.
 
-### \#24	nuGestasPrevias
+### \#23	nuGestasPrevias
 Número de gestações prévias.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -290,7 +290,7 @@ Número de gestações prévias.
 
 **Regras:** Não pode ser preenchido quando [Sexo](#5-sexo) = `0 (masculino)`.
 
-### \#25	nuPartos
+### \#24	nuPartos
 Número de partos que a mulher já teve.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -299,7 +299,7 @@ Número de partos que a mulher já teve.
 
 **Regras:** Não pode ser preenchido quando [Sexo](#5-sexo) = `0 (masculino)`.
 
-### \#26	racionalidadeSaude
+### \#25	racionalidadeSaude
 Código da racionalidade em saúde utilizada. 
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -308,7 +308,7 @@ Código da racionalidade em saúde utilizada.
 
 **Referências:**	[racionalidadeSaude]({% url dicionario %}#racionalidadesaude).
 
-### \#27	perimetroCefalicoNutricional
+### \#26	perimetroCefalico
 Perímetro cefálico do cidadão em centímetros.
 
 | Tipo | Obrigatório | Mínimo | Máximo |

@@ -38,7 +38,7 @@ Profissional que realizou a visita.
 **Referência:** [UnicaLotacaoHeader]({% url headerTransport %}#unicalotacaoheader).
 
 ### \#4 visitasDomiciliares
-Pelo menos 1 item na lista, no máximo 23.
+Lista de Fichas de Visita Domiciliar e Territorial.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |

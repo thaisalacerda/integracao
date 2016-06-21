@@ -344,34 +344,36 @@ order: 12
 ## PraticasTemasParaSaude
 |Código|	Descrição|	Observações|
 |---|---|---|
-|1 |	Alimentação saudável|	-|
-|2 |	Aplicação tópica de flúor|	-|
-|3 |	Saúde ocular|	-|
-|4 |	Autocuidado de pessoas com doenças crônicas |	-|
-|5 |	Cidadania e direitos humanos|	-|
-|6 |	Saúde do trabalhador|	-|
-|7 |	Dependência química / tabaco / álcool / outras drogas |	-|
-|8 |	Envelhecimento / Climatério / Andropausa  / Etc|	-|
-|9 |	Escovação dentária supervisionada |	-|
+|29 |	Ações de combate ao *Aedes aegypti*| TEMAS PARA SAÚDE|
+|19 |	Agravos negligenciados|	-|
+|1  |	Alimentação saudável|	-|
+|4  |	Autocuidado de pessoas com doenças crônicas |	-|
+|5  |	Cidadania e direitos humanos|	-|
+|7  |	Dependência química / tabaco / álcool / outras drogas |	-|
+|8  |	Envelhecimento / Climatério / Andropausa  / Etc|	-|
 |10 |	Plantas medicinais / Fitoterapia|	-|
-|11 |	Práticas corporais e Atividade física|	-|
-|12 |	Práticas corporais e mentais em PIC |	-|
 |13 |	Prevenção da violência e promoção da cultura da paz|	-|
 |14 |	Saúde ambiental|	-|
 |15 |	Saúde bucal|	-|
+|6  |	Saúde do trabalhador|	-|
 |16 |	Saúde mental|	-|
 |17 |	Saúde sexual e reprodutiva|	-|
 |18 |	Semana saúde na escola|	-|
-|19 |	Agravos negligenciados|	-|
-|20 |	Antropometria|	-|
-|21 |	Outros|	-|
-|22 |	Saúde auditiva |	-|
+|31 |	Outros |	-|
+|20 |	Antropometria|	PRÁTICAS EM SAÚDE|
+|2  |	Aplicação tópica de flúor|	-|
 |23 |	Desenvolvimento da linguagem |	-|
+|9  |	Escovação dental supervisionada |	-|
+|11 |	Práticas corporais e Atividade física|	-|
+|25 |	Programa Nacional de Controle do Tabagismo 1|	-|
+|26 |	Programa Nacional de Controle do Tabagismo 2|	-|
+|27 |	Programa Nacional de Controle do Tabagismo 3|	-|
+|28 |	Programa Nacional de Controle do Tabagismo 4|	-|
+|22 |	Saúde auditiva |	-|
+|3  |	Saúde ocular|	-|
 |24 |	Verificação da situação vacinal|	-|
-|25 |	PNCT 1|	-|
-|26 |	PNCT 2|	-|
-|27 |	PNCT 3|	-|
-|28 |	PNCT 4|	-|
+|32 |	Outras |	-|
+|30 |	Outro procedimento coletivo|	-|
 
 ## ProblemaRins
 |Código|	Descrição|	Observações|
@@ -932,22 +934,22 @@ order: 12
 |Código|	Descrição|
 |---|---|
 |7 |	Normal |
-|8 |	Outras alterações |
-|9 |	Sugestivo de infecção congênita |
+|8 |	Sugestivo de infecção congênita |
+|9 |	Outras alterações |
 |10|	Indeterminado  |
 
 ## tomografiaComputadorizada
 |Código|	Descrição|
 |---|---|
 |11 |	Normal |
-|12 |	Outras alterações |
-|13 |	Sugestivo de infecção congênita |
+|12 |	Sugestivo de infecção congênita |
+|13 |	Outras alterações |
 |14 |	Indeterminado  |
 
 ## ressonanciaMagnetica
 |Código|	Descrição|
 |---|---|
 |15 |	Normal |
-|16 |	Outras alterações |
-|17 |	Sugestivo de infecção congênita |
+|16 |	Sugestivo de infecção congênita |
+|17 |	Outras alterações |
 |18 |	Indeterminado  |

@@ -42,7 +42,7 @@ Registro dos procedimentos realizados.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|List\<FichaProcedimentoChild\> |Condicional |1 |23 |
+|List\<FichaProcedimentoChild\> |Condicional |- |- |
 
 **Referência:** [FichaProcedimentoChild](#fichaprocedimentochild).
 

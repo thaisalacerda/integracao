@@ -66,7 +66,7 @@ CNS do cidadão.
 |---| --- |---  | --- |
 |String|	Não|	15|	15|
 
-**Regras:** CNS válido de acordo com o algoritmo.
+**Regras:** CNS validado de acordo com o algoritmo.
 
 **Referência:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
 
