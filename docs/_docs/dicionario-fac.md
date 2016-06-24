@@ -43,7 +43,7 @@ Número de participantes da atividade.
 |---| --- |---  | --- |
 |Integer|	Não|	0|	3|
 
-**Regras:** 
+**Regras:**
 
 - Valores entre 0 e 999;
 - Deve ser maior ou igual a quantidade de participantes inseridos em [participantes](#11-participantes).
@@ -55,14 +55,17 @@ Número de avaliações alteradas.
 |---| --- |---  | --- |
 |Integer|	Não|	0|	3|
 
-**Regras:**	Valores entre 0 e 999.
+**Regras:**	
+
+- Valores entre 0 e 999.
+- O valor do campo deve ser igual ao número de participantes que tiveram o campo [avaliacaoAlterada](#3-avaliacaoalterada) = `true`.
 
 ### \#6 profissionais
 Lista dos profissionais que participaram da atividade.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|List\<ProfissionalCboRowItem\> |Sim |-	|- |
+|List\<ProfissionalCboRowItem\> |Não |-	|- |
 
 **Referência:**	[ProfissionalCboRowItem](#profissionalcborowitem).
 
@@ -116,7 +119,7 @@ Código das práticas ou temas abordados na atividade.
 * É obrigatório preencher com pelo menos um item do grupo `TEMAS PARA SAÚDE` se [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva) = `5`;
 * É obrigatório preencher com pelo menos um item do grupo `PRÁTICAS EM SAÚDE` se [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva) = `6`;
 * Não pode ser preenchido se [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva) = `1`, `2` ou `3`;
-* Os itens `02 - Aplicação tópica de flúor` e `04 - Escovação dental supervisionada` só podem ser utilizados se [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva) = `6`.
+* Os itens `2 - Aplicação tópica de flúor` e `9 - Escovação dental supervisionada` só podem ser utilizados se [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva) = `6`.
 
 
 **Referências:**	[PraticasTemasParaSaude]({% url dicionario %}#praticastemasparasaude).
@@ -128,7 +131,7 @@ Cidadãos que participaram da atividade coletiva.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|List\<ParticipanteRowItem\>|	Não|	-|-|
+|List\<ParticipanteRowItem\>|	Condicional|	-|-|
 
 **Regras:** É de preenchimento obrigatório se [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva) for `5` ou `6`.
 
@@ -183,14 +186,17 @@ Dados referentes ao profissional responsável e a data do cadastro.
 
 ## ParticipanteRowItem
 
-### \#1	cns
+### \#1	cnsParticipante
 CNS do cidadão que participou da atividade.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Sim|	15|	15|
+|String|	Condicional|	15|	15|
 
-**Regras:** CNS validado de acordo com o algoritmo.
+**Regras:** 
+
+- CNS validado de acordo com o algoritmo.
+- É de preenchimento obrigatório se [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva) for `5` ou `6`.
 
 **Referência:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
 
@@ -199,7 +205,7 @@ Data de nascimento do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|	Long|	Não|	-|	-|
+|	Long|	Sim|	-|	-|
 
 **Regras:** 	Não pode ser posterior a [dataAtendimento]({% url headerTransport %}#5-dataatendimento) e anterior a 130 anos a partir da [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
 
@@ -247,7 +253,7 @@ Marcação se o cidadão cessou o hábito de fumar.
 
 **Regras:** Não deve ser preenchido se o campo [praticasTemasParaSaude](#10-praticastemasparasaude) for diferente de `25`, `26`, `27` ou `28` (referentes ao PNCT).
 
-### \#7	abadonouGrupo
+### \#7	abandonouGrupo
 Marcação se o cidadão abandonou o grupo de tabagismo.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -261,12 +267,12 @@ Sexo do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|	Long|	Não|	-|	-|
+|	Long|	Sim|	-|	-|
 
 
 ## ProfissionalCboRowItem
 
-### \#1 cns
+### \#1 cnsProfissional
 CNS do profissional.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
