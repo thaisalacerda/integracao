@@ -55,7 +55,7 @@ Lista das famílias que residem no domicílio.
 
 **Regras:**
 
-* Só pode ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = `01` Domicílio;
+* Se o campo [tipoDeImovel](#1-tipodeimovel) for diferente de `01` Domicílio, todas as famílias cadastradas devem ter o campo [stMudanca](#7-stmudanca) = `true`;
 * Não pode ser preenchido caso o campo [statusTermoRecusa](#8-statustermorecusa) = `true`.
 
 **Referências:** [FamiliaRow](#familiarow).

@@ -41,20 +41,18 @@ order: 12
 ## AtencaoDomiciliarOrigem
 |Código|	Descrição|	Observações|
 |---|---|---|
-|1 | UBS	|-|
-|6 | Outros	|-|
-|11 |	Hospital|	-|
-|12 |	Unidade pronto atendimento	|-|
+|1  | Atenção Básica	|-|
+|11 |	Internação hospitalar|	-|
+|12 |	Urgência e emergência	|-|
 |13 |	CACON / UNACON	|-|
-|14 |	Urgência / Emergência hospital SOS	|-|
-|15 |	Hospital SOS demais setores	|-|
+|6  | Outros	|-|
 
 ## ConclusaoDestinoElegivel
 |Código|	Descrição|	Observações|
 |---|---|---|
-|1 |	Admissão própria EMAD	|-|
+|1 |	Admissão na própria EMAD	|-|
 |2 |	Encaminhado para outra EMAD	|-|
-|3 |	Encaminhado para atenção básica	|-|
+|3 |	Encaminhado para a Atenção Básica (AD1)	|-|
 |4 |	Outro encaminhamento	|-|
 
 ## ConclusaoDestinoInelegivel
@@ -230,8 +228,8 @@ order: 12
 |7 |	Polo (academia da saúde)	|-|
 |8 |	Instituição / Abrigo	|-|
 |9 |	Unidade prisional ou congêneres	|-|
-|10 | Unidade socioeducativa	|-|
-|11 | Hospital |	Utilizado apenas na ficha de atendimento domiciliar |
+|10 |   Unidade socioeducativa	|-|
+|11 |   Hospital |	Utilizado apenas na ficha de atendimento domiciliar |
 |12 |	Unidade de pronto atendimento | Utilizado apenas na ficha de atendimento domiciliar |
 |13 |	CACON / UNACON| Utilizado apenas na ficha de atendimento domiciliar |
 |14 |	Hospital SOS Urgência / Emergência| Utilizado apenas na ficha de atendimento domiciliar |

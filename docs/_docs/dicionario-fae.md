@@ -28,16 +28,7 @@ Tipo de origem dos dados do registro.
 
 **Observação**: Utilizar valor 3 (sistemas terceiros).
 
-### \#3	headerTransport
-Profissional que realizou a visita.
-
-| Tipo | Obrigatório | Mínimo | Máximo |
-|---| --- |---  | --- |
-|UnicaLotacaoHeader|	Requerido|	-|	-|
-
-**Referência:** [UnicaLotacaoHeader]({% url headerTransport %}#unicalotacaoheader).
-
-### \#4	numeroCartaoSus
+### \#3	cnsCidadao
 CNS do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -48,7 +39,7 @@ CNS do cidadão.
 
 **Referência:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
 
-### \#5	nomeCidadao
+### \#4	nomeCidadao
 Nome do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -58,9 +49,9 @@ Nome do cidadão.
 **Regras:**
 
 * As regras de validação de um nome estão descritas em {% link validar_nome %};
-* Opcional caso [conclusaoDestinoElegivel](#23-conclusaodestinoelegivel) for diferente de `1 (admissão própria emad)`.
+* É de preenchimento obrigatório caso [conclusaoDestinoElegivel](#22-conclusaodestinoelegivel) = `1 (Admissão na própria EMAD)` e [atencaoDomiciliarModalidade](#17-atencaodomiciliarmodalidade) = `1 (AD1)`, `2 (AD2)` e `3 (AD3)`.
 
-### \#6	nomeSocialCidadao
+### \#5	nomeSocialCidadao
 Nome social do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -69,7 +60,7 @@ Nome social do cidadão.
 
 **Regras:** Somente texto e apóstrofo (`'`).
 
-### \#7	dataNascimentoCidadao
+### \#6	dataNascimentoCidadao
 Data de nascimento do cidadão no formato epoch time.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -80,7 +71,7 @@ Data de nascimento do cidadão no formato epoch time.
 
 **Refererência**: [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milissegundos.
 
-### \#8	sexoCidadao
+### \#7	sexoCidadao
 Código do sexo do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -89,20 +80,18 @@ Código do sexo do cidadão.
 
 **Referências:** [Sexo]({% url dicionario %}#sexo).
 
-### \#9	racaCorCidadao
+### \#8	racaCorCidadao
 Código da raça / cor do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
 |Long|	Condicional	|-|	-|
 
-**Regras:**
-
-*	Opcional caso [conclusaoDestinoElegivel](#23-conclusaodestinoelegivel) for diferente de `1 (admissão própria emad)`.
+**Regras:** É de preenchimento obrigatório caso [conclusaoDestinoElegivel](#22-conclusaodestinoelegivel) = `1 (Admissão na própria EMAD)` e [atencaoDomiciliarModalidade](#17-atencaodomiciliarmodalidade) = `1 (AD1)`, `2 (AD2)` e `3 (AD3)`.
 
 **Referências:** [RacaCor]({% url dicionario %}#racacor).
 
-### \#10	nomeMaeCidadao
+### \#9	nomeMaeCidadao
 Nome da mãe do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -112,49 +101,48 @@ Nome da mãe do cidadão.
 **Regras:**
 
 * As regras de validação de um nome estão descritas em {% link validar_nome %};
-* Não pode ser preenchido se o campo [desconheceNomeMae](#11-desconhecenomemae) = `true`.
+* Não pode ser preenchido se o campo [desconheceNomeMae](#10-desconhecenomemae) = `true`;
+* É de preenchimento obrigatório caso [conclusaoDestinoElegivel](#22-conclusaodestinoelegivel) = `1 (Admissão na própria EMAD)` e [atencaoDomiciliarModalidade](#17-atencaodomiciliarmodalidade) = `1 (AD1)`, `2 (AD2)` e `3 (AD3)`.
 
-### \#11	desconheceNomeMae
+### \#10	desconheceNomeMae
 Marcador que indica que o cidadão desconhece o nome da mãe.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
 |Boolean|	Não|	-|	-|
 
-### \#12	codigoIbgeMunicipioNascimento
-Código IBGE do município.
+### \#11	codigoIbgeMunicipioNascimento
+Código IBGE do município de nascimento do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Não|	-|	-|
+|String|	Condicional|	-|	-|
 
-**Regras:** Não pode ser preenchido se [codigoNacionalidade](#13-codigonacionalidade) for diferente de `1 (brasileiro)`.
+**Regras:** Só pode ser preenchido se [nacionalidadeCidadao](#12-nacionalidadecidadao) = `1 (brasileiro)`. Neste caso é de preenchimento obrigatório.
 
 **Referências:** [Municípios]({% url municipios %}).
 
-### \#13	codigoNacionalidade
+### \#12	nacionalidadeCidadao
 Código do marcador que indica se o cidadão é brasileiro, naturalizado ou estrangeiro.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
 |Long|	Condicional| 	-|	-|
 
-**Regras:**
-
-*	Opcional caso [conclusaoDestinoElegivel](#23-conclusaodestinoelegivel) for diferente de `1 (admissão própria emad)`.
+**Regras:**	É de preenchimento obrigatório caso [conclusaoDestinoElegivel](#22-conclusaodestinoelegivel) = `1 (Admissão na própria EMAD)` e [atencaoDomiciliarModalidade](#17-atencaodomiciliarmodalidade) = `1 (AD1)`, `2 (AD2)` e `3 (AD3)`.
 
 **Referências:** [Nacionalidade]({% url dicionario %}#nacionalidade).
 
-### \#14	emailCidadao
+### \#13	emailCidadao
 E-mail do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Não|	6|	255	|
+|String|	Não|	6|	100	|
 
 **Regras:** Requerido seguir o padrão `endereco@domínio.extensão`.
 
-### \#15	numeroNisPisPasep
+### \#14	numeroNisPisPasep
 Número do PIS/PASEP do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -163,27 +151,27 @@ Número do PIS/PASEP do cidadão.
 
 **Regras:** Apenas números.
 
-### \#16	endereco
-Informações sobre o endereço do domicílio
+### \#15	endereco
+Informações sobre o endereço do domicílio.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
 |EnderecoLocalPermanencia|	Condicional |	-|	-|
 
-**Regras:**	Opcional caso [conclusaoDestinoElegivel](#23-conclusaodestinoelegivel) for diferente de `1 (admissão própria emad)`.
+**Regras:**	É de preenchimento obrigatório caso [conclusaoDestinoElegivel](#22-conclusaodestinoelegivel) = `1 (Admissão na própria EMAD)` e [atencaoDomiciliarModalidade](#17-atencaodomiciliarmodalidade) = `1 (AD1)`, `2 (AD2)` e `3 (AD3)`.
 
 **Referências:**	[EnderecoLocalPermanencia](#enderecolocalpermanencia).
 
-### \#17	atencaoDomiciliarOrigem
+### \#16	atencaoDomiciliarOrigem
 Código do local de atendimento de origem do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Requerido|	-|	-|
+|Long|	Sim|	-|	-|
 
 **Referências:** [AtencaoDomiciliarOrigem]({% url dicionario %}#atencaodomiciliarorigem).
 
-### \#18	atencaoDomiciliarModalidade
+### \#17	atencaoDomiciliarModalidade
 Código das opções de modalidade, indica se o cidadão é elegível ou inelegível.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -192,56 +180,56 @@ Código das opções de modalidade, indica se o cidadão é elegível ou ineleg�
 
 **Referências:** [ModalidadeAD]({% url dicionario %}#modalidadead).
 
-### \#19	situacoesPresentes
-Marcadores de situações presentes.
+### \#18	condicoesAvaliadas
+Condições avaliadas do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
 |List\<Long>|	Não|	1|	24|
 
-**Referências:** [Questionario de Situacoes Presentes](#questionario-de-situacoes-presentes).
+**Referências:** [Condições Avaliadas](#condi-es-avaliadas).
 
-### \#20	cid10Principal
+### \#19	cid10Principal
 Código do CID10 principal registrado na avaliação.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Requerido|	-|	-|
+|String|	Sim|	-|	-|
 
-**Regras:** Não pode ser igual ao [CID10Segundo](#21-cid10segundo) nem [CID10Terceiro](#22-cid10terceiro).
+**Regras:** Não pode ser igual ao [cid10SecundarioUm](#20-cid10secundarioum) nem [cid10SecundarioDois](#21-cid10secundariodois).
 
-### \#21	cid10Segundo
-Código do CID10 registrado na avaliação.
-
-| Tipo | Obrigatório | Mínimo | Máximo |
-|---| --- |---  | --- |
-|String|	Não|	-|	-|
-
-**Regras:** Não pode ser igual ao [CID10Principal](#20-cid10principal) nem [CID10Terceiro](#22-cid10terceiro).
-
-### \#22	cid10Terceiro
-Código do CID10 registrado na avaliação.
+### \#20	cid10SecundarioUm
+Código do CID10 secundário registrado na avaliação.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
 |String|	Não|	-|	-|
 
-**Regras:** Não pode ser igual ao [CID10Principal](#20-cid10principal) nem [CID10Segundo](#21-cid10segundo).
+**Regras:** Não pode ser igual ao [CID10Principal](#19-cid10principal) nem [cid10SecundarioDois](#21-cid10secundariodois).
 
-### \#23	conclusaoDestinoElegivel
+### \#21	cid10SecundarioDois
+Código do CID10 secundário registrado na avaliação.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|---| --- |---  | --- |
+|String|	Não|	-|	-|
+
+**Regras:** Não pode ser igual ao [CID10Principal](#19-cid10principal) nem [cid10SecundarioUm](#20-cid10secundarioum).
+
+### \#22	conclusaoDestinoElegivel
 Código da conduta adotada caso cidadão seja `Elegível`.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
 |Long|	Condicional| -|-|
 
-**Regras:** Só pode ser preenchido se [atencaoDomiciliarModalidade](#18-atencaodomiciliarmodalidade) for diferente de `4 (inelegível)`.
+**Regras:** Só pode ser preenchido se [atencaoDomiciliarModalidade](#17-atencaodomiciliarmodalidade) for diferente de `4 (inelegível)`.
 
 **Referências:** [ConclusaoDestinoElegivel]({% url dicionario %}#conclusaodestinoelegivel).
 
-Observações: Os campos `#23` e `#24` são mutuamente exclusivos.
+Observações: Os campos `#22` e `#23` são mutuamente exclusivos.
 
-### \#24	conclusaoDestinoInelegivel
+### \#23	conclusaoDestinoInelegivel
 Código da conduta adotada caso cidadão seja `Inelegível`.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -250,13 +238,13 @@ Código da conduta adotada caso cidadão seja `Inelegível`.
 
 **Regras:**
 
-* Só pode ser preenchido se [atencaoDomiciliarModalidade](#18-atencaodomiciliarmodalidade) for igual a de `4 (inelegível)`.
+* Só pode ser preenchido se [atencaoDomiciliarModalidade](#17-atencaodomiciliarmodalidade) for igual a `4 (Inelegível)`.
 
 **Referências:** [ConclusaoDestinoInelegivel]({% url dicionario %}#conclusaodestinoinelegivel).
 
-Observações: Os campos `#23` e `#24` são mutuamente exclusivos.
+Observações: Os campos `#22` e `#23` são mutuamente exclusivos.
 
-### \#25	cuidadorCidadao
+### \#24	cuidadorCidadao
 Código da relação de parentesco do cuidador com o cidadão em atenção domiciliar.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -265,6 +253,118 @@ Código da relação de parentesco do cuidador com o cidadão em atenção domic
 
 **Referências:** [CuidadorCidadao]({% url dicionario %}#cuidadorcidadao).
 
+### \#25	turno
+Código do turno em que o atendimento foi realizado.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|---| --- |---  | --- |
+|Long|	Sim|	-|	-|
+
+**Referências:** [Turno]({% url dicionario %}#turno).
+
+### \#26	headerTransport
+Profissional que realizou a visita.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|---| --- |---  | --- |
+|VariasLotacoesHeader|	Sim|	-|	-|
+
+**Referência:** [VariasLotacoesHeader]({% url headerTransport %}#variaslotacoesheader).
+
+### \#27 nomePaiCidadao
+Nome do pai do cidadão.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|--- |--- |--- |--- |
+|String |Condicional |3 |70 |
+
+**Regras:**
+
+* As regras de validação de um nome estão descritas em {% link validar_nome %};
+* Não deve ser preenchido se o campo [desconheceNomePai](#28-desconhecenomepai) = `true`;
+* É de preenchimento obrigatório caso [conclusaoDestinoElegivel](#22-conclusaodestinoelegivel) = `1 (Admissão na própria EMAD)` e [atencaoDomiciliarModalidade](#17-atencaodomiciliarmodalidade) = `1 (AD1)`, `2 (AD2)` e `3 (AD3)`.
+
+### \#28 desconheceNomePai
+Marcador que indica que o cidadão desconhece o nome do pai.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|--- |--- |--- |--- |
+|Boolean |Não |- |- |
+
+### \#29 dtNaturalizacao
+Data de naturalização do cidadão no formato epoch time.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|--- |--- |--- |--- |
+|Long |Condicional |- |- |
+
+**Regras:**
+
+* Só deve ser preenchido se o campo [nacionalidadeCidadao](#12-nacionalidadecidadao) = `2`. Neste caso, é de preenchimento obrigatório;
+* Não pode ser posterior a [dataAtendimento]({% url headerTransport %}#5-dataatendimento);
+* Não pode ser anterior a [dataNascimentoCidadao](#6-datanascimentocidadao).
+
+### \#30 portariaNaturalizacao
+Portaria de naturalização do cidadão.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|--- |--- |--- |--- |
+|String |Condicional |0 |16 |
+
+**Regras:** Só deve ser preenchido se o campo [nacionalidadeCidadao](#12-nacionalidadecidadao) = `2`. Neste caso o preenchimento é obrigatório.
+
+### \#31 dtEntradaBrasil
+Data em que o cidadão entrou no Brasil. 
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|--- |--- |--- |--- |
+|Long |Condicional |- |- |
+
+**Regras:**
+
+* Só deve ser preenchido se o campo [nacionalidadeCidadao](#12-nacionalidadecidadao) = `3`. Neste caso o preenchimento é obrigatório;
+* Não pode ser posterior a [dataAtendimento]({% url headerTransport %}#5-dataatendimento);
+* Não pode ser anterior a [dataNascimentoCidadao](#6-datanascimentocidadao).
+
+### \#32 paisNascimento
+Código do país de nascimento do cidadão.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|--- |--- |--- |--- |
+|Long |Condicional |- |- |
+
+**Regras:** 
+
+* Só pode ser preenchido se o campo [nacionalidadeCidadao](#12-nacionalidadecidadao) = `3 (Estrangeiro)`. Neste caso o preenchimento é obrigatório;
+* Se o campo [nacionalidadeCidadao](#12-nacionalidadecidadao) for igual a `1 (Brasileira)`, este campo deve ser preenchido com `31 (BRASIL)`.
+
+**Referência:** [País]({% url referencias %}#país).
+
+## \#33 etnia
+Etnia do cidadão.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|--- |--- |--- |--- |
+|Long |Condicional |-|- |
+
+**Regras:** Só deve ser preenchido se o campo [racaCorCidadao](#8-racacorcidadao) = `5`. Neste caso o preenchimento é obrigatório.
+
+**Referência:** [etnia]({% url dicionario %}#etnia).
+
+### \#34 cnsCuidador
+CNS do cuidador.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|---| --- |---  | --- |
+|String	|Não	|15	|15 |
+
+**Regras:** 
+
+- CNS validado de acordo com o algoritmo;
+- Não pode ser preenchido se o campo [cuidadorCidadao](#24-cuidadorcidadao) = `1`.
+
+**Referência:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
+
 ## EnderecoLocalPermanencia
 
 ### \#1	bairro
@@ -272,7 +372,9 @@ Bairro onde está localizado o domicílio.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Requerido|	0|	72|
+|String|	Condicional|	0|	72|
+
+**Regras:** É de preenchimento obrigatório caso [conclusaoDestinoElegivel](#22-conclusaodestinoelegivel) = `1 (Admissão na própria EMAD)` e [atencaoDomiciliarModalidade](#17-atencaodomiciliarmodalidade) = `1 (AD1)`, `2 (AD2)` e `3 (AD3)`.
 
 ### \#2	cep
 CEP do logradouro do domicílio.
@@ -288,7 +390,9 @@ Código IBGE do município.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Sim|	-|	-|
+|String|	Condicional|	-|	-|
+
+Regras: É de preenchimento obrigatório caso [conclusaoDestinoElegivel](#22-conclusaodestinoelegivel) = `1 (Admissão na própria EMAD)` e [atencaoDomiciliarModalidade](#17-atencaodomiciliarmodalidade) = `1 (AD1)`, `2 (AD2)` e `3 (AD3)`.
 
 **Referências:** [Municipios]({% url municipios %}).
 
@@ -304,31 +408,36 @@ Nome do logradouro.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Requerido|	0|	72|
+|String|	Condicional|	0|	72|
+
+**Regras:** É de preenchimento obrigatório caso [conclusaoDestinoElegivel](#22-conclusaodestinoelegivel) = `1 (Admissão na própria EMAD)` e [atencaoDomiciliarModalidade](#17-atencaodomiciliarmodalidade) = `1 (AD1)`, `2 (AD2)` e `3 (AD3)`.
 
 ### \#6	numero
 Número do domicílio.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Requerido|	1|	10|
+|String|	Condicional|	1|	10|
 
 **Regras:**
 
 * Apenas letras e números;
 * Não pode ser preenchido caso [stSemNumero](#11-stsemnumero) = `true`.
+* É de preenchimento obrigatório caso [conclusaoDestinoElegivel](#22-conclusaodestinoelegivel) = `1 (Admissão na própria EMAD)` e [atencaoDomiciliarModalidade](#17-atencaodomiciliarmodalidade) = `1 (AD1)`, `2 (AD2)` e `3 (AD3)`.
 
 ### \#7	numeroDneUf
 Código indexador referente a Unidade Federativa.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Requerido|	-|	-|
+|String|	Condicional|	-|	-|
+
+**Regras:** É de preenchimento obrigatório caso [conclusaoDestinoElegivel](#22-conclusaodestinoelegivel) = `1 (Admissão na própria EMAD)` e [atencaoDomiciliarModalidade](#17-atencaodomiciliarmodalidade) = `1 (AD1)`, `2 (AD2)` e `3 (AD3)`.
 
 **Referências:**	[Estados]({% url referencias %}#uf).
 
 ### \#8	telReferencial
-Telefone de referência.
+Telefone para contato.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
@@ -350,9 +459,12 @@ Código do tipo do logradouro onde está o domicílio.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Requerido|	-|	-|
+|String|	Condicional|	-|	-|
 
-**Regras:** Deve ser informado o código DNE.
+**Regras:** 
+
+- Deve ser informado o código DNE.
+- É de preenchimento obrigatório caso [conclusaoDestinoElegivel](#22-conclusaodestinoelegivel) = `1 (Admissão na própria EMAD)` e [atencaoDomiciliarModalidade](#17-atencaodomiciliarmodalidade) = `1 (AD1)`, `2 (AD2)` e `3 (AD3)`.
 
 **Referências:** [TipoLogradouro]({% url referencias %}#tipo-de-logradouro).
 
@@ -363,7 +475,14 @@ Marcador que indica que o domicílio não possui número.
 |---| --- |---  | --- |
 |Boolean|	Não|	-|	-|
 
-## Questionario de Situacoes Presentes
+### \#12	pontoReferencia
+Indica um ponto de referência para o domicílio do cidadão.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|---| --- |---  | --- |
+|String |	Não|	0|	40|
+
+## Condições Avaliadas
 |Descrição | Código|
 |--- | ---|
 |Acamado	|1 |
