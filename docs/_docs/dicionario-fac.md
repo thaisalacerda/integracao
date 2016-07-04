@@ -46,7 +46,7 @@ Número de participantes da atividade.
 **Regras:**
 
 - Valores entre 0 e 999;
-- Deve ser maior ou igual a quantidade de participantes inseridos em [participantes](#11-participantes).
+- Deve ser maior ou igual a quantidade de participantes inseridos em [participantes](#10-participantes).
 
 ### \#5	numAvaliacoesAlteradas
 Número de avaliações alteradas.
@@ -87,8 +87,8 @@ Temas para reunião.
 
 **Regras:**
 
-* É de preenchimento obrigatório se [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva) for `1`, `2` ou `3`;
-* Não pode ser preenchido se [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva) for `4`, `5`, `6` ou `7`.
+* É de preenchimento obrigatório se [atividadeTipo](#7-atividadetipo) for `1`, `2` ou `3`;
+* Não pode ser preenchido se [atividadeTipo](#7-atividadetipo) for `4`, `5`, `6` ou `7`.
 
 **Referência:** [TemasParaReuniao]({% url dicionario %}#temasparareuniao).
 
@@ -101,43 +101,23 @@ Código do público alvo da atividade.
 
 **Regras:**
 
-* É de preenchimento obrigatório se [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva) for `4`, `5`, `6` ou `7`;
-* Não pode ser preenchido se [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva) for `1`, `2` ou `3`.
+* É de preenchimento obrigatório se [atividadeTipo](#7-atividadetipo) for `4`, `5`, `6` ou `7`;
+* Não pode ser preenchido se [atividadeTipo](#7-atividadetipo) for `1`, `2` ou `3`.
 
 **Referência:** [PublicoAlvo]({% url dicionario %}#publicoalvo).
 
-### \#10	praticasTemasParaSaude
-Código das práticas ou temas abordados na atividade.
-
-| Tipo | Obrigatório | Mínimo | Máximo |
-|---| --- |---  | --- |
-|List\<Long\>|	Condicional| 	0|	30|
-
-**Regras:**
-
-* É obrigatório preencher apenas com os itens do grupo `TEMAS PARA SAÚDE` se [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva) = `4` ou `7`;
-* É obrigatório preencher com pelo menos um item do grupo `TEMAS PARA SAÚDE` se [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva) = `5`;
-* É obrigatório preencher com pelo menos um item do grupo `PRÁTICAS EM SAÚDE` se [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva) = `6`;
-* Não pode ser preenchido se [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva) = `1`, `2` ou `3`;
-* Os itens `2 - Aplicação tópica de flúor` e `9 - Escovação dental supervisionada` só podem ser utilizados se [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva) = `6`.
-
-
-**Referências:**	[PraticasTemasParaSaude]({% url dicionario %}#praticastemasparasaude).
-
-**Observações:** Os grupos `TEMAS PARA SAÚDE` e `PRÁTICAS EM SAÚDE` estão separados através da coluna "Observações" da tabela apresentada nas referências.
-
-### \#11	participantes
+### \#10	participantes
 Cidadãos que participaram da atividade coletiva.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
 |List\<ParticipanteRowItem\>|	Condicional|	-|-|
 
-**Regras:** É de preenchimento obrigatório se [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva) for `5` ou `6`.
+**Regras:** É de preenchimento obrigatório se [atividadeTipo](#7-atividadetipo) for `5` ou `6`.
 
 **Referência:** [ParticipanteRowItem](#participanterowitem).
 
-### \#12	tbCdsOrigem
+### \#11	tbCdsOrigem
 Tipo de origem dos dados do registro.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -146,7 +126,7 @@ Tipo de origem dos dados do registro.
 
 **Observações**: Utilizar valor 3 (sistemas terceiros).
 
-### \#13	cnesLocalAtividade
+### \#12	cnesLocalAtividade
 CNES do local de atividade.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -156,25 +136,25 @@ CNES do local de atividade.
 **Regras:** Preencher somente um dos itens `2`, `3` ou `13`.
 
 
-### \#14	procedimento
+### \#13	procedimento
 Código do SIGTAP do procedimento coletivo realizado.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
 |String|	Não|	-|	-|
 
-**Regras:** Só pode ser preenchido se o campo [praticasTemasParaSaude](#10-praticastemasparasaude) possui o valor `30`.
+**Regras:** Só pode ser preenchido se o campo [praticasEmSaude](#17-praticasemsaude) possui o valor `30`.
 
 **Referencias:** [OutroProcedimentoColetivo](#outroprocedimentocoletivo).
 
-### \#15	turno
+### \#14	turno
 Turno de realização da atividade.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
 |Long|	Sim|	-|	-|
 
-### \#16 headerTransport
+### \#15 headerTransport
 Dados referentes ao profissional responsável e a data do cadastro.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -183,6 +163,34 @@ Dados referentes ao profissional responsável e a data do cadastro.
 
 **Referência:** [UnicaLotacaoHeader]({% url headerTransport %}#unicalotacaoheader).
 
+### \#16	temasParaSaude
+Códigos dos temas para saúde abordados na atividade.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|---| --- |---  | --- |
+|List\<Long\>|	Condicional| 	0|	16|
+
+**Regras:**
+
+* Não pode ser preenchido se [atividadeTipo](#7-atividadetipo) = `1`, `2` ou `3`;
+* É de preenchimento obrigatório se [atividadeTipo](#7-atividadetipo) = `4`, `5` ou `7`;
+
+**Referências:** [PraticasTemasParaSaude]({% url dicionario %}#praticastemasparasaude).
+
+### \#17	praticasEmSaude
+Códigos das práticas em saúde abordadas na atividade.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|---| --- |---  | --- |
+|List\<Long\>|	Condicional| 	0|	14|
+
+**Regras:**
+
+* Não pode ser preenchido se [atividadeTipo](#7-atividadetipo) = `1`, `2`, `3`, `4` ou `7`;
+* É de preenchimento obrigatório se [atividadeTipo](#7-atividadetipo) = `6`;
+* Os itens `2 - Aplicação tópica de flúor` e `9 - Escovação dental supervisionada` só podem ser utilizados se [atividadeTipo](#7-atividadetipo) = `6`.
+
+**Referências:** [PraticasTemasParaSaude]({% url dicionario %}#praticastemasparasaude).
 
 ## ParticipanteRowItem
 
@@ -196,7 +204,7 @@ CNS do cidadão que participou da atividade.
 **Regras:** 
 
 - CNS validado de acordo com o algoritmo.
-- É de preenchimento obrigatório se [TipoAtividadeColetiva]({% url dicionario %}#tipoatividadecoletiva) for `5` ou `6`.
+- É de preenchimento obrigatório se [atividadeTipo](#7-atividadetipo) for `5` ou `6`.
 
 **Referência:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
 
@@ -251,7 +259,7 @@ Marcação se o cidadão cessou o hábito de fumar.
 |---| --- |---  | --- |
 |Boolean|	Não|	-|	-|
 
-**Regras:** Não deve ser preenchido se o campo [praticasTemasParaSaude](#10-praticastemasparasaude) for diferente de `25`, `26`, `27` ou `28` (referentes ao PNCT).
+**Regras:** Não deve ser preenchido se o campo [praticasEmSaude](#17-praticasemsaude) for diferente de `25`, `26`, `27` ou `28` (referentes ao PNCT).
 
 ### \#7	abandonouGrupo
 Marcação se o cidadão abandonou o grupo de tabagismo.
@@ -260,7 +268,7 @@ Marcação se o cidadão abandonou o grupo de tabagismo.
 |---| --- |---  | --- |
 |Boolean|	Não|	-|	-|
 
-**Regras:** Não deve ser preenchido se o campo [praticasTemasParaSaude](#10-praticastemasparasaude) for diferente de `25`, `26`, `27` ou `28` (referentes ao PNCT).
+**Regras:** Não deve ser preenchido se o campo [praticasEmSaude](#17-praticasemsaude) for diferente de `25`, `26`, `27` ou `28` (referentes ao PNCT).
 
 ## \#8	sexo
 Sexo do cidadão.
