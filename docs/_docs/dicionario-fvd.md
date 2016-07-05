@@ -95,10 +95,10 @@ Data de nascimento do cidadão.
 
 * Não pode ser posterior a [dataAtendimento]({% url headerTransport %}#5-dataatendimento) e anterior a 130 anos a partir da [dataAtendimento]({% url headerTransport %}#5-dataatendimento);
 * Não deve ser preenchido se o campo [tipoDeImovel](#11-tipodeimovel) = `02` comércio, `03` terreno baldio, `04` Ponto Estratégico, `05` Escola, `06` Creche ou `12` Estabelecimento religioso.
-* É de preenchimento obrigatório somente se [tipoDeImovel](#11-tipodeimovel) = `01 Domicílio`, `07 Abrigo`, `08 Instituição de longa permanência para idosos`, `09 Unidade prisional`, `10 Unidade de medida sócio educativa`, `11 Delegacia` ou `99 Outros` **e** pelo menos uma das condições a seguir seja obedecida:
+* É de preenchimento obrigatório somente se [tipoDeImovel](#11-tipodeimovel) = `01` Domicílio, `07` Abrigo, `08` Instituição de longa permanência para idosos, `09` Unidade prisional, `10` Unidade de medida sócio educativa, `11` Delegacia ou `99` Outros **e** pelo menos uma das condições a seguir seja obedecida:
 	
 	- Campo [motivosVisita](#7-motivosvisita) possuir qualquer opção dos grupos `#BUSCA_ATIVA` ou `#ACOMPANHAMENTO` inserida;
-	- Campo [motivosVisita](#7-motivosvisita) possuir pelo menos uma das opções `25	Egresso de internação` ou `31 Orientação / Prevenção` inseridas;
+	- Campo [motivosVisita](#7-motivosvisita) possuir pelo menos uma das opções `25`	Egresso de internação ou `31` Orientação / Prevenção inseridas;
 	- Pelo menos um dos campos [pesoAcompanhamentoNutricional](#12-pesoacompanhamentonutricional) e [alturaAcompanhamentoNutricional](#13-alturaacompanhamentonutricional) for preenchido.
 
 **Referências:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milissegundos.
@@ -113,10 +113,10 @@ Código do sexo do cidadão.
 **Regras:**
 
 * Não deve ser preenchido se o campo [tipoDeImovel](#11-tipodeimovel) = `02` comércio, `03` terreno baldio, `04` Ponto Estratégico, `05` Escola, `06` Creche ou `12` Estabelecimento religioso.
-* É de preenchimento obrigatório somente se [tipoDeImovel](#11-tipodeimovel) = `01 Domicílio`, `07 Abrigo`, `08 Instituição de longa permanência para idosos`, `09 Unidade prisional`, `10 Unidade de medida sócio educativa`, `11 Delegacia` ou `99 Outros` **e** pelo menos uma das condições a seguir seja obedecida:
+* É de preenchimento obrigatório somente se [tipoDeImovel](#11-tipodeimovel) =`01` Domicílio, `07` Abrigo, `08` Instituição de longa permanência para idosos, `09` Unidade prisional, `10` Unidade de medida sócio educativa, `11` Delegacia ou `99` Outros **e** pelo menos uma das condições a seguir seja obedecida:
 	
 	- Campo [motivosVisita](#7-motivosvisita) possuir qualquer opção dos grupos `#BUSCA_ATIVA` ou `#ACOMPANHAMENTO` inserida;
-	- Campo [motivosVisita](#7-motivosvisita) possuir pelo menos uma das opções `25	Egresso de internação` ou `31 Orientação / Prevenção` inseridas;
+	- Campo [motivosVisita](#7-motivosvisita) possuir pelo menos uma das opções `25` Egresso de internação ou `31` Orientação / Prevenção inseridas;
 	- Pelo menos um dos campos [pesoAcompanhamentoNutricional](#12-pesoacompanhamentonutricional) e [alturaAcompanhamentoNutricional](#13-alturaacompanhamentonutricional) estiver preenchido.
 
 
