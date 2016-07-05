@@ -38,7 +38,7 @@ order: 12
 |130 |	Pássaro	|-|
 |132 |	Outros|	-|
 
-## AtencaoDomiciliarOrigem
+## AtencaoDomiciliarProcedencia
 |Código|	Descrição|	Observações|
 |---|---|---|
 |1  | Atenção Básica	|-|

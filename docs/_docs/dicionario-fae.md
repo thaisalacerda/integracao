@@ -162,14 +162,14 @@ Informações sobre o endereço do domicílio.
 
 **Referências:**	[EnderecoLocalPermanencia](#enderecolocalpermanencia).
 
-### \#16	atencaoDomiciliarOrigem
+### \#16	atencaoDomiciliarProcedencia
 Código do local de atendimento de origem do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
 |Long|	Sim|	-|	-|
 
-**Referências:** [AtencaoDomiciliarOrigem]({% url dicionario %}#atencaodomiciliarorigem).
+**Referências:** [AtencaoDomiciliarProcedencia]({% url dicionario %}#atencaodomiciliarprocedencia).
 
 ### \#17	atencaoDomiciliarModalidade
 Código das opções de modalidade, indica se o cidadão é elegível ou inelegível.
