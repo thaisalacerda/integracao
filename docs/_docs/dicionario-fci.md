@@ -16,7 +16,7 @@ Formulário referente as condições de saúde do cidadão.
 
 **Regras:** Não deve ser preenchido se o campo [statusTermoRecusaCadastroIndividualAtencaoBasica](\#6-statustermorecusacadastroindividualatencaobasica) = `true`.
 
-**Referência:** [CondicoesDeSaude](#condicoesdesaude).
+**Referências:** [CondicoesDeSaude](#condicoesdesaude).
 
 ### \#2 emSituacaoDeRua
 Formulário referente a informações de situação de rua (se o cidadão se encontrar nessa situação).
@@ -27,7 +27,7 @@ Formulário referente a informações de situação de rua (se o cidadão se enc
 
 **Regras:** Não deve ser preenchido se o campo [statusTermoRecusaCadastroIndividualAtencaoBasica](#6-statustermorecusacadastroindividualatencaobasica) = `true`.
 
-**Referência:** [EmSituacaoDeRua](#emsituacaoderua).
+**Referências:** [EmSituacaoDeRua](#emsituacaoderua).
 
 ### \#3 fichaAtualizada
 Marcador que indica se a ficha é uma atualização.
@@ -47,7 +47,7 @@ Dados que identificam o cidadão.
 
 **Regras:** Opcional se o campo [statusTermoRecusaCadastroIndividualAtencaoBasica](#6-statustermorecusacadastroindividualatencaobasica) = `true`.
 
-**Referência:** [IdentificacaoUsuarioCidadao](#identificacaousuariocidadao).
+**Referências:** [IdentificacaoUsuarioCidadao](#identificacaousuariocidadao).
 
 ### \#5 informacoesSocioDemograficas
 Informações sócio-demográficas fornecidas pelo cidadão.
@@ -83,7 +83,7 @@ Código UUID para identificar a ficha na base de dados nacional.
 
 **Regras:** É recomendado concatenar o CNES na frente do UUID, de modo que os 7 dígitos (CNES) + 1 de hífen somados aos 36 (32 caracteres + 4 hífen) do UUID são a limitação de 44 bytes do campo. Formato canônico.
 
-**Referência:** Para ver a referência sobre o UUID, acesse: [UUID Wikipedia](https://en.wikipedia.org/wiki/Universally_unique_identifier).
+**Referências:** Para ver a referência sobre o UUID, acesse: [UUID Wikipedia](https://en.wikipedia.org/wiki/Universally_unique_identifier).
 
 ### \#9 uuidFichaOriginadora
 Código UUID para identificar a ficha que deu origem ao cadastro do registro.
@@ -94,7 +94,7 @@ Código UUID para identificar a ficha que deu origem ao cadastro do registro.
 
 **Regras:** Se for uma ficha de atualização, deve ser preenchido com o UUID da ficha que deu origem ao registro. Se for a ficha de cadastro, este campo deve ser igual ao campo uuid.
 
-**Referência:** Para ver a referência sobre o UUID, acesse: [UUID Wikipedia](https://en.wikipedia.org/wiki/Universally_unique_identifier).
+**Referências:** Para ver a referência sobre o UUID, acesse: [UUID Wikipedia](https://en.wikipedia.org/wiki/Universally_unique_identifier).
 
 ### \#10 headerTransport
 Dados referentes ao profissional e a data do cadastro.
@@ -103,7 +103,7 @@ Dados referentes ao profissional e a data do cadastro.
 |--- |--- |--- |--- |
 |UnicaLotacaoHeader |Sim |- |- |
 
-**Referência:** [UnicaLotacaoHeader]({% url headerTransport %}#unicalotacaoheader).
+**Referências:** [UnicaLotacaoHeader]({% url headerTransport %}#unicalotacaoheader).
 
 ## CondicoesDeSaude
 
@@ -158,7 +158,7 @@ Código das doenças cardíacas que o cidadão informou.
 * Requerido preenchimento de pelo menos um item se o campo [statusTeveDoencaCardiaca](#25-statustevedoencacardiaca) = `true`;
 * Não deve ser preenchido se o campo [statusTeveDoencaCardiaca](#25-statustevedoencacardiaca) = `false`.
 
-**Referência:** [DoencaCardiaca]({% url dicionario %}#doencacardiaca).
+**Referências:** [DoencaCardiaca]({% url dicionario %}#doencacardiaca).
 
 ### \#7 doencaRespiratoria
 Código das doenças respiratórias que o cidadão informou.
@@ -172,7 +172,7 @@ Código das doenças respiratórias que o cidadão informou.
 * Requerido preenchimento de pelo menos um item se o campo [statusTemDoencaRespiratoria](#18-statustemdoencarespiratoria) = `true`;
 *  Não deve ser preenchido o campo [statusTemDoencaRespiratoria](#18-statustemdoencarespiratoria) = `false`.
 
-**Referência:** [DoencaRespiratoria]({% url dicionario %}#doencarespiratoria).
+**Referências:** [DoencaRespiratoria]({% url dicionario %}#doencarespiratoria).
 
 ### \#8 doencaRins
 Código das doenças renais que o cidadão informou.
@@ -186,7 +186,7 @@ Código das doenças renais que o cidadão informou.
 * Requerido preenchimento de pelo menos um item se o campo [statusTemTeveDoencasRins](#22-statustemtevedoencasrins) = `true`;
 * Não deve ser preenchido se o campo [statusTemTeveDoencasRins](#22-statustemtevedoencasrins) = `false`.
 
-**Referência:** [ProblemaRins]({% url dicionario %}#problemarins).
+**Referências:** [ProblemaRins]({% url dicionario %}#problemarins).
 
 ### \#9 maternidadeDeReferencia
 Nome da maternidade de referência.
@@ -204,7 +204,7 @@ Código da situação referente ao peso corporal.
 |--- |--- |--- |--- |
 |Long |Não |- |- |
 
-**Referência:** [ConsideracaoPeso]({% url dicionario %}#consideracaopeso).
+**Referências:** [ConsideracaoPeso]({% url dicionario %}#consideracaopeso).
 
 ### \#11 statusEhDependenteAlcool
 Marcador se o cidadão é dependente de álcool.
@@ -377,7 +377,7 @@ Código das condições de higiene que o cidadão tem acesso.
 * Não pode ser preenchido se o campo [statusSituacaoRua](#9-statussituacaorua) = `false`;
 * Requerido preenchimento de pelo menos um item se o campo [statusTemAcessoHigienePessoalSituacaoRua](#10-statustemacessohigienepessoalsituacaorua) = `true`.
 
-**Referência:** [AcessoHigiene]({% url dicionario %}#acessohigiene).
+**Referências:** [AcessoHigiene]({% url dicionario %}#acessohigiene).
 
 ### \#3 origemAlimentoSituacaoRua
 Código da origem da alimentação do cidadão em situação de rua.
@@ -388,7 +388,7 @@ Código da origem da alimentação do cidadão em situação de rua.
 
 **Regras:** Não pode ser preenchido se o campo [statusSituacaoRua](#9-statussituacaorua) = `false`.
 
-**Referência:** [OrigemAlimentacao]({% url dicionario %}#origemalimentacao).
+**Referências:** [OrigemAlimentacao]({% url dicionario %}#origemalimentacao).
 
 ### \#4 outraInstituicaoQueAcompanha
 Nome de outra instituição que acompanha o cidadão.
@@ -411,7 +411,7 @@ Código da quantidade de vezes que o cidadão se alimenta por dia.
 
 **Regras:** Não pode ser preenchido se o campo [statusSituacaoRua](#9-statussituacaorua) = `false`.
 
-**Referência:** [QuantasVezesAlimentacao]({% url dicionario %}#quantasvezesalimentacao).
+**Referências:** [QuantasVezesAlimentacao]({% url dicionario %}#quantasvezesalimentacao).
 
 ### \#6 statusAcompanhadoPorOutraInstituicao
 Marcador que indica se o cidadão é acompanhado por outra instituição.
@@ -474,7 +474,7 @@ Código do tempo que o cidadão está em situação de rua.
 
 **Regras:** Não pode ser preenchido se o campo [statusSituacaoRua](#9-statussituacaorua) = `false`.
 
-**Referência:** [TempoSituacaoDeRua]({% url dicionario %}#temposituacaoderua).
+**Referências:** [TempoSituacaoDeRua]({% url dicionario %}#temposituacaoderua).
 
 ## IdentificacaoUsuarioCidadao
 
@@ -485,6 +485,8 @@ Nome social do cidadão.
 |--- |--- |--- |--- |
 |String |Não |0 |70 |
 
+**Regras:** Somente texto e apóstrofo (`'`).
+
 ### \#2 codigoIbgeMunicipioNascimento
 Código IBGE do município.
 
@@ -492,9 +494,9 @@ Código IBGE do município.
 |--- |--- |--- |--- |
 |String |Condicional |7 |7 |
 
-**Regras:** Só pode ser preenchido se o campo [nacionalidadeCidadao](#6-nacionalidadecidadao) = `1` (Brasileiro). 
+**Regras:** Só pode ser preenchido se o campo [nacionalidadeCidadao](#6-nacionalidadecidadao) = `1` (Brasileiro). Neste caso é de preenchimento obrigatório.
 
-**Referência:** [Municipios]({% url municipios %}).
+**Referências:** [Municipios]({% url municipios %}).
 
 ### \#3 dataNascimentoCidadao
 Data de nascimento do cidadão no formato epoch time.
@@ -505,7 +507,7 @@ Data de nascimento do cidadão no formato epoch time.
 
 **Regras:** Não pode ser posterior a [dataAtendimento]({% url headerTransport %}#5-dataatendimento) ou mais anterior que 130 anos a partir da [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
 
-**Referência:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milissegundos.
+**Referências:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milissegundos.
 
 ### \#4 desconheceNomeMae
 Marcador que indica que o cidadão desconhece o nome da mãe
@@ -530,7 +532,7 @@ Código do marcador que indica se o cidadão é brasileiro, naturalizado ou estr
 |--- |--- |--- |--- |
 |Long |Sim |- |- |
 
-**Referência:** [Nacionalidade]({% url dicionario %}#nacionalidade).
+**Referências:** [Nacionalidade]({% url dicionario %}#nacionalidade).
 
 ### \#7 nomeCidadao
 Nome completo do cidadão.
@@ -562,7 +564,7 @@ CNS do cidadão.
 
 **Regras:** Validado por algoritmo.
 
-**Referência:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
+**Referências:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
 
 ### \#10 cnsResponsavelFamiliar
 CNS do responsável do cidadão.
@@ -576,7 +578,7 @@ CNS do responsável do cidadão.
 * Validado por algoritmo;
 * Só pode ser preenchido se o campo [statusEhResponsavel](#16-statusehresponsavel) = `true`.
 
-**Referência:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
+**Referências:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
 
 ### \#11 telefoneCelular
 Número de celular do cidadão.
@@ -594,6 +596,8 @@ Número do PIS/PASEP do cidadão.
 |--- |--- |--- |--- |
 |String |Não |11 |11 |
 
+**Regras:** Apenas números.
+
 ### \#13 paisNascimento
 Código do país de nascimento do cidadão.
 
@@ -603,10 +607,10 @@ Código do país de nascimento do cidadão.
 
 **Regras:** 
 
-* Só pode ser preenchido se o campo [nacionalidadeCidadao](#6-nacionalidadecidadao) for igual a `3 (Estrangeiro)`, sendo de preenchimento obrigatório;
+* Só pode ser preenchido se o campo [nacionalidadeCidadao](#6-nacionalidadecidadao) = `3 (Estrangeiro)`. Neste caso o preenchimento é obrigatório;
 * Se o campo [nacionalidadeCidadao](#6-nacionalidadecidadao) for igual a `1 (Brasileira)`, este campo deve ser preenchido com `31 (BRASIL)`.
 
-**Referência:** [País]({% url referencias %}#país).
+**Referências:** [País]({% url referencias %}#país).
 
 ### \#14 racaCorCidadao
 Código da raça / cor do cidadão.
@@ -615,7 +619,7 @@ Código da raça / cor do cidadão.
 |--- |--- |--- |--- |
 |Long |Sim |- |- |
 
-**Referência:** [RacaCor]({% url dicionario %}#racacor).
+**Referências:** [RacaCor]({% url dicionario %}#racacor).
 
 ### \#15 sexoCidadao
 Código do sexo do cidadão.
@@ -624,7 +628,7 @@ Código do sexo do cidadão.
 |--- |--- |--- |--- |
 |Long |Sim |- |- |
 
-**Referência:** [Sexo]({% url dicionario %}#sexo).
+**Referências:** [Sexo]({% url dicionario %}#sexo).
 
 ### \#16 statusEhResponsavel
 Marcador que indica se o cidadão é responsável familiar.
@@ -642,7 +646,7 @@ Etnia do cidadão.
 
 **Regras:** Só deve ser preenchido se o campo [racaCorCidadao](#14-racacorcidadao) = `5`. Neste caso o preenchimento é obrigatório.
 
-**Referência:** [etnia]({% url dicionario %}#etnia).
+**Referências:** [etnia]({% url dicionario %}#etnia).
 
 ### \#18 nomePaiCidadao
 Nome do pai do cidadão.
@@ -731,7 +735,7 @@ Código das deficiências que o cidadão possui.
 * Requerido preenchimento de pelo menos um item se o campo [statusTemAlgumaDeficiencia](#15-statustemalgumadeficiencia) = `true`;
 * Não deve ser preenchido se o campo [statusTemAlgumaDeficiencia](#15-statustemalgumadeficiencia) = `false`.
 
-**Referência:** [DeficienciaCidadao]({% url dicionario %}#deficienciacidadao).
+**Referências:** [DeficienciaCidadao]({% url dicionario %}#deficienciacidadao).
 
 ### \#2 grauInstrucaoCidadao
 Código do curso mais elevado que o cidadão frequenta ou frequentou.
@@ -740,7 +744,7 @@ Código do curso mais elevado que o cidadão frequenta ou frequentou.
 |--- |--- |--- |--- |
 |Long |Não |- |- |
 
-**Referência:** [CursoMaisElevado]({% url dicionario %}#cursomaiselevado).
+**Referências:** [CursoMaisElevado]({% url dicionario %}#cursomaiselevado).
 
 ### \#3 motivoSaidaCidadao
 Código do motivo da saída do cidadão do cadastro.
@@ -749,7 +753,7 @@ Código do motivo da saída do cidadão do cadastro.
 |--- |--- |--- |--- |
 |Long |Não |- |- |
 
-**Referência:** [MotivoSaida]({% url dicionario %}#motivosaida).
+**Referências:** [MotivoSaida]({% url dicionario %}#motivosaida).
 
 ### \#4 ocupacaoCodigoCbo2002
 Código do CBO que representa a ocupação do cidadão.
@@ -762,7 +766,7 @@ Código do CBO que representa a ocupação do cidadão.
 
 * Deve ser um código de CBO válido.
 
-**Referência:** [CBO]({% url cbo %}).
+**Referências:** [CBO]({% url cbo %}).
 
 ### \#5 orientacaoSexualCidadao
 Código da orientação sexual informada pelo cidadão.  
@@ -773,7 +777,7 @@ Código da orientação sexual informada pelo cidadão.
 
 **Regras:** Não pode ser preenchido se o campo [statusDesejaInformarOrientacaoSexual](#9-statusdesejainformarorientacaosexual) = `false`.
 
-**Referência:** [OrientacaoSexual]({% url dicionario %}#orientacaosexual).
+**Referências:** [OrientacaoSexual]({% url dicionario %}#orientacaosexual).
 
 ### \#6 povoComunidadeTradicional
 Nome da comunidade tradicional que o cidadão frequenta.
@@ -793,7 +797,7 @@ Código da relação de parentesco com o responsável familiar.
 
 **Regras:** Só pode ser preenchido se o campo [statusEhResponsavel](#16-statusehresponsavel) = `false`.
 
-**Referência:** [RelacaoParentesco]({% url dicionario %}#relacaoparentesco).
+**Referências:** [RelacaoParentesco]({% url dicionario %}#relacaoparentesco).
 
 ### \#8 situacaoMercadoTrabalhoCidadao
 Código da situação do cidadão no mercado de trabalho.
@@ -802,7 +806,7 @@ Código da situação do cidadão no mercado de trabalho.
 |--- |--- |--- |--- |
 |Long |Não |- |- |
 
-**Referência:** [SituacaoMercadoTrabalho]({% url dicionario %}#situacaomercadotrabalho).
+**Referências:** [SituacaoMercadoTrabalho]({% url dicionario %}#situacaomercadotrabalho).
 
 ### \#9 statusDesejaInformarOrientacaoSexual
 Marcador que indica se o cidadão deseja informar sua orientação sexual.
@@ -862,7 +866,7 @@ Código da identidade de gênero informada pelo cidadão.
 
 **Regras:** Não pode ser preenchido se o campo [statusDesejaInformarIdentidadeGenero](#17-statusdesejainformaridentidadegenero) = `false`.
 
-**Referência:** [identidadeGeneroCidadao]({% url dicionario %}#identidadegenerocidadao).
+**Referências:** [identidadeGeneroCidadao]({% url dicionario %}#identidadegenerocidadao).
 
 ### \#17 statusDesejaInformarIdentidadeGenero
 
@@ -899,4 +903,4 @@ Código do responsável por crianças de até 9 anos.
 
 **Regras:** Não pode ser preenchido se a [dataNascimentoCidadao](#3-datanascimentocidadao) for anterior ou igual a 10 anos a partir da [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
 
-**Referência:** [ResponsavelCrianca]({% url dicionario %}#responsavelcrianca).
+**Referências:** [ResponsavelCrianca]({% url dicionario %}#responsavelcrianca).

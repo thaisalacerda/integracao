@@ -16,7 +16,7 @@ CNS do profissional.
 
 **Regras:**	CNS validado de acordo com o algoritmo.
 
-**Referência:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
+**Referências:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
 
 Observações: Esta entidade é utilizada para representar o profissional responsável pelas fichas.
 
@@ -27,7 +27,7 @@ Código do CBO do profissional.
 |--- |--- |--- |--- |
 |String |Sim |- |- |
 
-**Referência:** {% link cbo %}.
+**Referências:** {% link cbo %}.
 
 Observações: Esta entidade é utilizada para representar o profissional responsável pelas fichas.
 
@@ -56,7 +56,7 @@ Data em que está sendo realizada a ação.
 |--- |--- |--- |--- |
 |Long |Sim |- |- |
 
-**Referência:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milissegundos.
+**Referências:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milissegundos.
 
 Observações: Esta entidade é utilizada para representar o profissional responsável pelas fichas.
 
@@ -67,7 +67,7 @@ Código IBGE do município.
 |--- |--- |--- |--- |
 |String |Sim |- |- |
 
-**Referência:** {% link municipios %}.
+**Referências:** {% link municipios %}.
 
 Observações: Esta entidade é utilizada para representar o profissional responsável pelas fichas.
 

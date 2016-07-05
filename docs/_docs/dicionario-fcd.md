@@ -162,7 +162,7 @@ Informações sobre o profissional e a data do cadastro.
 | ---| --- |---  | --- |
 | UnicaLotacaoHeader|	Sim|	-|	-|
 
-**Referência:** [UnicaLotacaoHeader]({% url headerTransport %}#unicalotacaoheader).
+**Referências:** [UnicaLotacaoHeader]({% url headerTransport %}#unicalotacaoheader).
 
 ## identificacaoImovel
 
@@ -212,7 +212,7 @@ Indica o CNS do responsável técnico da instituição de permanência.
 |--- |--- |--- |--- |
 |String |Sim | 15 | 15 |
 
-**Referência:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
+**Referências:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
 
 ### \#3 cargoInstituicao
 Indica o cargo do responsável técnico da instituição de permanência.
@@ -250,7 +250,7 @@ CNS do responsável familiar.
 
 **Regras:** Validado por algoritmo.
 
-**Referência:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
+**Referências:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
 
 ### \#3	numeroMembrosFamilia
 Quantidade de membros do núcleo familiar.

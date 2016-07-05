@@ -16,7 +16,7 @@ Profissional que realizou a visita.
 |--- |--- |--- |--- |
 |UnicaLotacaoHeader |Sim |- |- |
 
-**Referência:** [UnicaLotacaoHeader]({% url headerTransport %}#unicalotacaoheader).
+**Referências:** [UnicaLotacaoHeader]({% url headerTransport %}#unicalotacaoheader).
 
 ### \#2 cnsCidadao
 CNS do cidadão.
@@ -27,7 +27,7 @@ CNS do cidadão.
 
 **Regras:** CNS validado de acordo com o algoritmo.
 
-**Referência:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
+**Referências:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
 
 ### \#3 nomeCidadao
 Nome do cidadão.
@@ -139,7 +139,7 @@ Identificador da pergunta referente ao questionário para cidadãos menores de s
 
 **Regras:** Obrigatório caso a [dataNascimento](#4-datanascimento) seja menos que 6 meses anterior à [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
 
-**Referência:** [PerguntaCriancasMenoresSeisMesesEnum](#perguntacriancasmenoresseismesesenum).
+**Referências:** [PerguntaCriancasMenoresSeisMesesEnum](#perguntacriancasmenoresseismesesenum).
 
 ### \#2	respostaUnicaEscolha
 Resposta referente à pergunta.
@@ -150,7 +150,7 @@ Resposta referente à pergunta.
 
 **Regras:** Obrigatório caso a [dataNascimento](#4-datanascimento) seja menos que 6 meses anterior à [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
 
-**Referência:** [RespostaUnicaEscolhaEnum](#respostaunicaescolhaenum).
+**Referências:** [RespostaUnicaEscolhaEnum](#respostaunicaescolhaenum).
 
 ## PerguntaQuestionarioCriancasDeSeisVinteTresMeses
 
@@ -187,7 +187,7 @@ Pergunta do questionário de cidadãos que tem vinte e quatro meses ou mais.
 
 **Regras:** Obrigatório caso a [dataNascimento](#4-datanascimento) seja mais que 24 meses anterior à [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
 
-**Referência:** [PerguntaCriancasComMaisDoisAnosEnum](#perguntacriancascommaisdoisanosenum).
+**Referências:** [PerguntaCriancasComMaisDoisAnosEnum](#perguntacriancascommaisdoisanosenum).
 
 ### \#2	respostaUnicaEscolha
 Resposta referente a pergunta do registro.
@@ -198,7 +198,7 @@ Resposta referente a pergunta do registro.
 
 **Regras:** Obrigatório caso a [dataNascimento](#4-datanascimento) seja mais que 24 meses anterior à [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
 
-**Referência:** [RespostaUnicaEscolhaEnum](#respostaunicaescolhaenum).
+**Referências:** [RespostaUnicaEscolhaEnum](#respostaunicaescolhaenum).
 
 Observações: Os campos `#2` e `#3` são mutuamente exclusivos, isto é, um e apenas um deles deve não ser nulo.
 
@@ -214,7 +214,7 @@ Resposta referente à pergunta do registro acima.
 * Deve respeitar as regras das respostas referentes à pergunta;
 * Pode ser preenchido somente se a pergunta for 12L.
 
-**Referência:** [RespostaMultiplaEscolhaEnum](#respostamultiplaescolhaenum).
+**Referências:** [RespostaMultiplaEscolhaEnum](#respostamultiplaescolhaenum).
 
 Observações: Os campos `#2` e `#3` são mutuamente exclusivos, isto é, um e apenas um deles deve não ser nulo.
 

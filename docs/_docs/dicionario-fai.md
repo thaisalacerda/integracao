@@ -15,7 +15,7 @@ Profissionais que realizaram o atendimento
 |---| --- |---  | --- |
 |VariasLotacoesHeader|	Sim|	-|	-|
 
-**Referência:** [VariasLotacoesHeader]({% url headerTransport %}#variaslotacoesheader).
+**Referências:** [VariasLotacoesHeader]({% url headerTransport %}#variaslotacoesheader).
 
 ### \#2	atendimentosIndividuais
 Registro individualizado dos atendimentos.
@@ -66,7 +66,7 @@ CNS do cidadão.
 
 **Regras:** CNS validado de acordo com o algoritmo.
 
-**Referência:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
+**Referências:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
 
 ### \#3	dataNascimento
 Data de nascimento do cidadão.

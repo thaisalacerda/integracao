@@ -24,7 +24,7 @@ Tipo de origem dos dados do registro.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Integer|	Requerido|	1|	1|
+|Integer|	Sim|	1|	1|
 
 **Observação**: Utilizar valor 3 (sistemas terceiros).
 
@@ -33,11 +33,11 @@ CNS do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String	|Requerido	|15	|15 |
+|String	|Sim	|15	|15 |
 
 **Regras:** CNS validado de acordo com o algoritmo.
 
-**Referência:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
+**Referências:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
 
 ### \#4	nomeCidadao
 Nome do cidadão.
@@ -49,7 +49,7 @@ Nome do cidadão.
 **Regras:**
 
 * As regras de validação de um nome estão descritas em {% link validar_nome %};
-* É de preenchimento obrigatório caso [conclusaoDestinoElegivel](#22-conclusaodestinoelegivel) = `1 (Admissão na própria EMAD)` e [atencaoDomiciliarModalidade](#17-atencaodomiciliarmodalidade) = `1 (AD1)`, `2 (AD2)` e `3 (AD3)`.
+* É de preenchimento obrigatório caso [conclusaoDestinoElegivel](#22-conclusaodestinoelegivel) = `1 (Admissão na própria EMAD)` e [atencaoDomiciliarModalidade](#17-atencaodomiciliarmodalidade) = `1 (AD1)`, `2 (AD2)` ou `3 (AD3)`.
 
 ### \#5	nomeSocialCidadao
 Nome social do cidadão.
@@ -65,7 +65,7 @@ Data de nascimento do cidadão no formato epoch time.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Requerido|	-|	-|
+|Long|	Sim|	-|	-|
 
 **Regras:** Não pode ser posterior a [dataAtendimento]({% url headerTransport %}#5-dataatendimento) e anterior a 130 anos a partir da [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
 
@@ -76,7 +76,7 @@ Código do sexo do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Requerido|	-|	-|
+|Long|	Sim|	-|	-|
 
 **Referências:** [Sexo]({% url dicionario %}#sexo).
 
@@ -87,7 +87,7 @@ Código da raça / cor do cidadão.
 |---| --- |---  | --- |
 |Long|	Condicional	|-|	-|
 
-**Regras:** É de preenchimento obrigatório caso [conclusaoDestinoElegivel](#22-conclusaodestinoelegivel) = `1 (Admissão na própria EMAD)` e [atencaoDomiciliarModalidade](#17-atencaodomiciliarmodalidade) = `1 (AD1)`, `2 (AD2)` e `3 (AD3)`.
+**Regras:** É de preenchimento obrigatório caso [conclusaoDestinoElegivel](#22-conclusaodestinoelegivel) = `1 (Admissão na própria EMAD)` e [atencaoDomiciliarModalidade](#17-atencaodomiciliarmodalidade) = `1 (AD1)`, `2 (AD2)` ou `3 (AD3)`.
 
 **Referências:** [RacaCor]({% url dicionario %}#racacor).
 
@@ -102,7 +102,7 @@ Nome da mãe do cidadão.
 
 * As regras de validação de um nome estão descritas em {% link validar_nome %};
 * Não pode ser preenchido se o campo [desconheceNomeMae](#10-desconhecenomemae) = `true`;
-* É de preenchimento obrigatório caso [conclusaoDestinoElegivel](#22-conclusaodestinoelegivel) = `1 (Admissão na própria EMAD)` e [atencaoDomiciliarModalidade](#17-atencaodomiciliarmodalidade) = `1 (AD1)`, `2 (AD2)` e `3 (AD3)`.
+* É de preenchimento obrigatório caso [conclusaoDestinoElegivel](#22-conclusaodestinoelegivel) = `1 (Admissão na própria EMAD)` e [atencaoDomiciliarModalidade](#17-atencaodomiciliarmodalidade) = `1 (AD1)`, `2 (AD2)` ou `3 (AD3)`.
 
 ### \#10	desconheceNomeMae
 Marcador que indica que o cidadão desconhece o nome da mãe.
@@ -116,7 +116,7 @@ Código IBGE do município de nascimento do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Condicional|	-|	-|
+|String|	Condicional|	7|	7|
 
 **Regras:** Só pode ser preenchido se [nacionalidadeCidadao](#12-nacionalidadecidadao) = `1 (brasileiro)`. Neste caso é de preenchimento obrigatório.
 
@@ -129,7 +129,7 @@ Código do marcador que indica se o cidadão é brasileiro, naturalizado ou estr
 |---| --- |---  | --- |
 |Long|	Condicional| 	-|	-|
 
-**Regras:**	É de preenchimento obrigatório caso [conclusaoDestinoElegivel](#22-conclusaodestinoelegivel) = `1 (Admissão na própria EMAD)` e [atencaoDomiciliarModalidade](#17-atencaodomiciliarmodalidade) = `1 (AD1)`, `2 (AD2)` e `3 (AD3)`.
+**Regras:**	É de preenchimento obrigatório caso [conclusaoDestinoElegivel](#22-conclusaodestinoelegivel) = `1 (Admissão na própria EMAD)` e [atencaoDomiciliarModalidade](#17-atencaodomiciliarmodalidade) = `1 (AD1)`, `2 (AD2)` ou `3 (AD3)`.
 
 **Referências:** [Nacionalidade]({% url dicionario %}#nacionalidade).
 
@@ -158,7 +158,7 @@ Informações sobre o endereço do domicílio.
 |---| --- |---  | --- |
 |EnderecoLocalPermanencia|	Condicional |	-|	-|
 
-**Regras:**	É de preenchimento obrigatório caso [conclusaoDestinoElegivel](#22-conclusaodestinoelegivel) = `1 (Admissão na própria EMAD)` e [atencaoDomiciliarModalidade](#17-atencaodomiciliarmodalidade) = `1 (AD1)`, `2 (AD2)` e `3 (AD3)`.
+**Regras:**	É de preenchimento obrigatório caso [conclusaoDestinoElegivel](#22-conclusaodestinoelegivel) = `1 (Admissão na própria EMAD)` e [atencaoDomiciliarModalidade](#17-atencaodomiciliarmodalidade) = `1 (AD1)`, `2 (AD2)` ou `3 (AD3)`.
 
 **Referências:**	[EnderecoLocalPermanencia](#enderecolocalpermanencia).
 
@@ -269,7 +269,7 @@ Profissional que realizou a visita.
 |---| --- |---  | --- |
 |VariasLotacoesHeader|	Sim|	-|	-|
 
-**Referência:** [VariasLotacoesHeader]({% url headerTransport %}#variaslotacoesheader).
+**Referências:** [VariasLotacoesHeader]({% url headerTransport %}#variaslotacoesheader).
 
 ### \#27 nomePaiCidadao
 Nome do pai do cidadão.
@@ -282,7 +282,7 @@ Nome do pai do cidadão.
 
 * As regras de validação de um nome estão descritas em {% link validar_nome %};
 * Não deve ser preenchido se o campo [desconheceNomePai](#28-desconhecenomepai) = `true`;
-* É de preenchimento obrigatório caso [conclusaoDestinoElegivel](#22-conclusaodestinoelegivel) = `1 (Admissão na própria EMAD)` e [atencaoDomiciliarModalidade](#17-atencaodomiciliarmodalidade) = `1 (AD1)`, `2 (AD2)` e `3 (AD3)`.
+* É de preenchimento obrigatório caso [conclusaoDestinoElegivel](#22-conclusaodestinoelegivel) = `1 (Admissão na própria EMAD)` e [atencaoDomiciliarModalidade](#17-atencaodomiciliarmodalidade) = `1 (AD1)`, `2 (AD2)` ou `3 (AD3)`.
 
 ### \#28 desconheceNomePai
 Marcador que indica que o cidadão desconhece o nome do pai.
@@ -338,7 +338,7 @@ Código do país de nascimento do cidadão.
 * Só pode ser preenchido se o campo [nacionalidadeCidadao](#12-nacionalidadecidadao) = `3 (Estrangeiro)`. Neste caso o preenchimento é obrigatório;
 * Se o campo [nacionalidadeCidadao](#12-nacionalidadecidadao) for igual a `1 (Brasileira)`, este campo deve ser preenchido com `31 (BRASIL)`.
 
-**Referência:** [País]({% url referencias %}#país).
+**Referências:** [País]({% url referencias %}#país).
 
 ## \#33 etnia
 Etnia do cidadão.
@@ -349,7 +349,7 @@ Etnia do cidadão.
 
 **Regras:** Só deve ser preenchido se o campo [racaCorCidadao](#8-racacorcidadao) = `5`. Neste caso o preenchimento é obrigatório.
 
-**Referência:** [etnia]({% url dicionario %}#etnia).
+**Referências:** [etnia]({% url dicionario %}#etnia).
 
 ### \#34 cnsCuidador
 CNS do cuidador.
@@ -363,7 +363,7 @@ CNS do cuidador.
 - CNS validado de acordo com o algoritmo;
 - Não pode ser preenchido se o campo [cuidadorCidadao](#24-cuidadorcidadao) = `1`.
 
-**Referência:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
+**Referências:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
 
 ## EnderecoLocalPermanencia
 
@@ -374,7 +374,7 @@ Bairro onde está localizado o domicílio.
 |---| --- |---  | --- |
 |String|	Condicional|	0|	72|
 
-**Regras:** É de preenchimento obrigatório caso [conclusaoDestinoElegivel](#22-conclusaodestinoelegivel) = `1 (Admissão na própria EMAD)` e [atencaoDomiciliarModalidade](#17-atencaodomiciliarmodalidade) = `1 (AD1)`, `2 (AD2)` e `3 (AD3)`.
+**Regras:** É de preenchimento obrigatório caso [conclusaoDestinoElegivel](#22-conclusaodestinoelegivel) = `1 (Admissão na própria EMAD)` e [atencaoDomiciliarModalidade](#17-atencaodomiciliarmodalidade) = `1 (AD1)`, `2 (AD2)` ou `3 (AD3)`.
 
 ### \#2	cep
 CEP do logradouro do domicílio.
@@ -392,7 +392,7 @@ Código IBGE do município.
 |---| --- |---  | --- |
 |String|	Condicional|	-|	-|
 
-Regras: É de preenchimento obrigatório caso [conclusaoDestinoElegivel](#22-conclusaodestinoelegivel) = `1 (Admissão na própria EMAD)` e [atencaoDomiciliarModalidade](#17-atencaodomiciliarmodalidade) = `1 (AD1)`, `2 (AD2)` e `3 (AD3)`.
+Regras: É de preenchimento obrigatório caso [conclusaoDestinoElegivel](#22-conclusaodestinoelegivel) = `1 (Admissão na própria EMAD)` e [atencaoDomiciliarModalidade](#17-atencaodomiciliarmodalidade) = `1 (AD1)`, `2 (AD2)` ou `3 (AD3)`.
 
 **Referências:** [Municipios]({% url municipios %}).
 
@@ -410,7 +410,7 @@ Nome do logradouro.
 |---| --- |---  | --- |
 |String|	Condicional|	0|	72|
 
-**Regras:** É de preenchimento obrigatório caso [conclusaoDestinoElegivel](#22-conclusaodestinoelegivel) = `1 (Admissão na própria EMAD)` e [atencaoDomiciliarModalidade](#17-atencaodomiciliarmodalidade) = `1 (AD1)`, `2 (AD2)` e `3 (AD3)`.
+**Regras:** É de preenchimento obrigatório caso [conclusaoDestinoElegivel](#22-conclusaodestinoelegivel) = `1 (Admissão na própria EMAD)` e [atencaoDomiciliarModalidade](#17-atencaodomiciliarmodalidade) = `1 (AD1)`, `2 (AD2)` ou `3 (AD3)`.
 
 ### \#6	numero
 Número do domicílio.
@@ -423,7 +423,7 @@ Número do domicílio.
 
 * Apenas letras e números;
 * Não pode ser preenchido caso [stSemNumero](#11-stsemnumero) = `true`.
-* É de preenchimento obrigatório caso [conclusaoDestinoElegivel](#22-conclusaodestinoelegivel) = `1 (Admissão na própria EMAD)` e [atencaoDomiciliarModalidade](#17-atencaodomiciliarmodalidade) = `1 (AD1)`, `2 (AD2)` e `3 (AD3)`.
+* É de preenchimento obrigatório caso [conclusaoDestinoElegivel](#22-conclusaodestinoelegivel) = `1 (Admissão na própria EMAD)` e [atencaoDomiciliarModalidade](#17-atencaodomiciliarmodalidade) = `1 (AD1)`, `2 (AD2)` ou `3 (AD3)`.
 
 ### \#7	numeroDneUf
 Código indexador referente a Unidade Federativa.
@@ -432,11 +432,11 @@ Código indexador referente a Unidade Federativa.
 |---| --- |---  | --- |
 |String|	Condicional|	-|	-|
 
-**Regras:** É de preenchimento obrigatório caso [conclusaoDestinoElegivel](#22-conclusaodestinoelegivel) = `1 (Admissão na própria EMAD)` e [atencaoDomiciliarModalidade](#17-atencaodomiciliarmodalidade) = `1 (AD1)`, `2 (AD2)` e `3 (AD3)`.
+**Regras:** É de preenchimento obrigatório caso [conclusaoDestinoElegivel](#22-conclusaodestinoelegivel) = `1 (Admissão na própria EMAD)` e [atencaoDomiciliarModalidade](#17-atencaodomiciliarmodalidade) = `1 (AD1)`, `2 (AD2)` ou `3 (AD3)`.
 
 **Referências:**	[Estados]({% url referencias %}#uf).
 
-### \#8	telReferencial
+### \#8	telefoneContato
 Telefone para contato.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -445,7 +445,7 @@ Telefone para contato.
 
 Observações: Mínimo 10 dígitos, máximo 11 (DDD + 8 ou 9).
 
-### \#9	telResidencial
+### \#9	telefoneResidencia
 Telefone residencial.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -463,8 +463,8 @@ Código do tipo do logradouro onde está o domicílio.
 
 **Regras:** 
 
-- Deve ser informado o código DNE.
-- É de preenchimento obrigatório caso [conclusaoDestinoElegivel](#22-conclusaodestinoelegivel) = `1 (Admissão na própria EMAD)` e [atencaoDomiciliarModalidade](#17-atencaodomiciliarmodalidade) = `1 (AD1)`, `2 (AD2)` e `3 (AD3)`.
+* Deve ser informado o código DNE.
+* É de preenchimento obrigatório caso [conclusaoDestinoElegivel](#22-conclusaodestinoelegivel) = `1 (Admissão na própria EMAD)` e [atencaoDomiciliarModalidade](#17-atencaodomiciliarmodalidade) = `1 (AD1)`, `2 (AD2)` ou `3 (AD3)`.
 
 **Referências:** [TipoLogradouro]({% url referencias %}#tipo-de-logradouro).
 

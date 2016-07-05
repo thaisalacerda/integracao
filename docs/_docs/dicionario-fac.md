@@ -16,7 +16,7 @@ Código UUID para identificar a ficha na base de dados nacional.
 
 **Regras:** É recomendado concatenar o CNES na frente do UUID, de modo que os 7 dígitos (CNES) + 1 de hífen somados aos 36 (32 caracteres + 4 hífen) do UUID são a limitação de 44 bytes do campo. Formato canônico.
 
-**Referência:** [UUID Wikipedia](https://en.wikipedia.org/wiki/Universally_unique_identifier).
+**Referências:** [UUID Wikipedia](https://en.wikipedia.org/wiki/Universally_unique_identifier).
 
 ### \#2	outraLocalidade
 Descrição do local onde é realizada a atividade coletiva.
@@ -67,7 +67,7 @@ Lista dos profissionais que participaram da atividade.
 |---| --- |---  | --- |
 |List\<ProfissionalCboRowItem\> |Não |-	|- |
 
-**Referência:**	[ProfissionalCboRowItem](#profissionalcborowitem).
+**Referências:**	[ProfissionalCboRowItem](#profissionalcborowitem).
 
 ### \#7 atividadeTipo
 Código do tipo da atividade que será realizada.
@@ -90,7 +90,7 @@ Temas para reunião.
 * É de preenchimento obrigatório se [atividadeTipo](#7-atividadetipo) for `1`, `2` ou `3`;
 * Não pode ser preenchido se [atividadeTipo](#7-atividadetipo) for `4`, `5`, `6` ou `7`.
 
-**Referência:** [TemasParaReuniao]({% url dicionario %}#temasparareuniao).
+**Referências:** [TemasParaReuniao]({% url dicionario %}#temasparareuniao).
 
 ### \#9	publicoAlvo
 Código do público alvo da atividade.
@@ -104,7 +104,7 @@ Código do público alvo da atividade.
 * É de preenchimento obrigatório se [atividadeTipo](#7-atividadetipo) for `4`, `5`, `6` ou `7`;
 * Não pode ser preenchido se [atividadeTipo](#7-atividadetipo) for `1`, `2` ou `3`.
 
-**Referência:** [PublicoAlvo]({% url dicionario %}#publicoalvo).
+**Referências:** [PublicoAlvo]({% url dicionario %}#publicoalvo).
 
 ### \#10	participantes
 Cidadãos que participaram da atividade coletiva.
@@ -115,7 +115,7 @@ Cidadãos que participaram da atividade coletiva.
 
 **Regras:** É de preenchimento obrigatório se [atividadeTipo](#7-atividadetipo) for `5` ou `6`.
 
-**Referência:** [ParticipanteRowItem](#participanterowitem).
+**Referências:** [ParticipanteRowItem](#participanterowitem).
 
 ### \#11	tbCdsOrigem
 Tipo de origem dos dados do registro.
@@ -145,7 +145,7 @@ Código do SIGTAP do procedimento coletivo realizado.
 
 **Regras:** Só pode ser preenchido se o campo [praticasEmSaude](#17-praticasemsaude) possui o valor `30`.
 
-**Referencias:** [OutroProcedimentoColetivo](#outroprocedimentocoletivo).
+**Referências:** [OutroProcedimentoColetivo](#outroprocedimentocoletivo).
 
 ### \#14	turno
 Turno de realização da atividade.
@@ -161,7 +161,7 @@ Dados referentes ao profissional responsável e a data do cadastro.
 |--- |--- |--- |--- |
 |UnicaLotacaoHeader |Sim |- |- |
 
-**Referência:** [UnicaLotacaoHeader]({% url headerTransport %}#unicalotacaoheader).
+**Referências:** [UnicaLotacaoHeader]({% url headerTransport %}#unicalotacaoheader).
 
 ### \#16	temasParaSaude
 Códigos dos temas para saúde abordados na atividade.
@@ -206,7 +206,7 @@ CNS do cidadão que participou da atividade.
 - CNS validado de acordo com o algoritmo.
 - É de preenchimento obrigatório se [atividadeTipo](#7-atividadetipo) for `5` ou `6`.
 
-**Referência:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
+**Referências:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
 
 ### \#2	dataNascimento
 Data de nascimento do cidadão.
@@ -289,7 +289,7 @@ CNS do profissional.
 
 **Regras:** CNS validado de acordo com o algoritmo.
 
-**Referência:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
+**Referências:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
 
 Observações: Esta entidade é utilizada para representar os profissionais que participaram da atividade coletiva
 
@@ -300,7 +300,7 @@ Código CBO do profissional.
 |--- |--- |--- |--- |
 |String |Sim |- |- |
 
-**Referência:** {% link cbo %}.
+**Referências:** {% link cbo %}.
 
 Observações: Esta entidade é utilizada para representar os profissionais que participaram da atividade coletiva.
 

@@ -17,7 +17,7 @@ Código UUID para identificar a ficha na base de dados nacional.
 
 **Regras:** É recomendado concatenar o CNES na frente do UUID, de modo que os 7 dígitos (CNES) + 1 de hífen somados aos 36 (32 caracteres + 4 hífen) do UUID são a limitação de 44 bytes do campo. Formato canônico.
 
-**Referência:** Para ver a referência sobre o UUID, acesse [UUID Wikipedia](https://en.wikipedia.org/wiki/Universally_unique_identifier).
+**Referências:** Para ver a referência sobre o UUID, acesse [UUID Wikipedia](https://en.wikipedia.org/wiki/Universally_unique_identifier).
 
 ### \#2 tpCdsOrigem
 Tipo de origem dos dados do registro.
@@ -35,7 +35,7 @@ Profissional que realizou a visita.
 |--- |--- |--- |--- |
 |UnicaLotacaoHeader |Sim |- |- |
 
-**Referência:** [UnicaLotacaoHeader]({% url headerTransport %}#unicalotacaoheader).
+**Referências:** [UnicaLotacaoHeader]({% url headerTransport %}#unicalotacaoheader).
 
 ### \#4 visitasDomiciliares
 Lista de Fichas de Visita Domiciliar e Territorial.
@@ -44,7 +44,7 @@ Lista de Fichas de Visita Domiciliar e Territorial.
 |--- |--- |--- |--- |
 |List\<FichaVisitaDomiciliarChild\> |Sim |- |- |
 
-**Referência:** [FichaVisitaDomiciliarChild](#fichavisitadomiciliarchild).
+**Referências:** [FichaVisitaDomiciliarChild](#fichavisitadomiciliarchild).
 
 ## FichaVisitaDomiciliarChild
 
@@ -55,7 +55,7 @@ Código do turno onde aconteceu o atendimento.
 |--- |--- |--- |--- |
 |Long |Sim |- |- |
 
-**Referência:** [Turno]({% url dicionario %}#turno).
+**Referências:** [Turno]({% url dicionario %}#turno).
 
 ### \#2 numProntuario
 Número do prontuário do cidadão na UBS.
@@ -82,7 +82,7 @@ Número do cartão SUS do cidadão.
 * Não deve ser preenchido se o campo [tipoDeImovel](#11-tipodeimovel) = `02` comércio, `03` terreno baldio, `04` Ponto Estratégico, `05` Escola, `06` Creche ou `12` Estabelecimento religioso.
 * Para visita periódica ou visita domiciliar para controle vetorial preencher este campo com o CNS do responsável familiar.
 
-**Referência:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
+**Referências:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
 
 ### \#4 dtNascimento
 Data de nascimento do cidadão.
@@ -96,7 +96,7 @@ Data de nascimento do cidadão.
 * Não pode ser posterior a [dataAtendimento]({% url headerTransport %}#5-dataatendimento) e anterior a 130 anos a partir da [dataAtendimento]({% url headerTransport %}#5-dataatendimento);
 * Não deve ser preenchido se o campo [tipoDeImovel](#11-tipodeimovel) = `02` comércio, `03` terreno baldio, `04` Ponto Estratégico, `05` Escola, `06` Creche ou `12` Estabelecimento religioso.
 
-**Referência:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milissegundos.
+**Referências:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milissegundos.
 
 ### \#5 sexo
 Código do sexo do cidadão.
@@ -107,7 +107,7 @@ Código do sexo do cidadão.
 
 **Regras:** Não deve ser preenchido se o campo [tipoDeImovel](#11-tipodeimovel) = `02` comércio, `03` terreno baldio, `04` Ponto Estratégico, `05` Escola, `06` Creche ou `12` Estabelecimento religioso.
 
-**Referência:** [Sexo]({% url dicionario %}#sexo).
+**Referências:** [Sexo]({% url dicionario %}#sexo).
 
 ### \#6 statusVisitaCompartilhadaOutroProfissional
 Marcador que indica se a visita foi compartilhada com outro profissional.
@@ -138,7 +138,7 @@ Código dos motivos da visita.
 	- `31` Orientação / Prevenção;
 	- `28` Outros.
 
-**Referência:** [MotivoVisita]({% url dicionario %}#motivovisita).
+**Referências:** [MotivoVisita]({% url dicionario %}#motivovisita).
 
 ### \#8 desfecho
 Código dos resultados da ação de visita.
@@ -147,7 +147,7 @@ Código dos resultados da ação de visita.
 |--- |--- |--- |--- |
 |Long |Sim |- |- |
 
-**Referência:** [Desfecho]({% url dicionario#desfecho %}).
+**Referências:** [Desfecho]({% url dicionario#desfecho %}).
 
 ### \#9 microarea
 

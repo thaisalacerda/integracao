@@ -15,7 +15,7 @@ Dados referentes ao profissional e a data do cadastro.
 |--- |--- |--- |--- |
 |UnicaLotacaoHeader |Sim |- |- |
 
-**Referência:** [UnicaLotacaoHeader]({% url headerTransport %}#unicalotacaoheader).
+**Referências:** [UnicaLotacaoHeader]({% url headerTransport %}#unicalotacaoheader).
 
 ### \#2	uuidFicha
 Código UUID para identificar a ficha na base de dados nacional.
@@ -26,7 +26,7 @@ Código UUID para identificar a ficha na base de dados nacional.
 
 **Regras:** É recomendado concatenar o CNES na frente do UUID, de modo que os 7 dígitos (CNES) + 1 de hífen somados aos 36 (32 caracteres + 4 hífen) do UUID são a limitação de 44 bytes do campo. Formato canônico.
 
-**Referência:** [UUID Wikipedia](https://en.wikipedia.org/wiki/Universally_unique_identifier).
+**Referências:** [UUID Wikipedia](https://en.wikipedia.org/wiki/Universally_unique_identifier).
 
 ### \#3	tpCdsOrigem
 Tipo de origem dos dados do registro.
@@ -55,7 +55,7 @@ CNS do cidadão.
 
 **Regras:** Validado por algoritmo.
 
-**Referência:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
+**Referências:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
 
 ### \#6 cnsResponsavelFamiliar
 CNS do responsável do cidadão.
@@ -66,7 +66,7 @@ CNS do responsável do cidadão.
 
 **Regras:** Validado por algoritmo.
 
-**Referência:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
+**Referências:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
 
 ### \#7 dataRealizacaoTesteOlhinho
 Data de realização do "Teste de olhinho (Reflexo vermelho)".
@@ -92,7 +92,7 @@ Resultado do "Teste de olhinho (Reflexo vermelho)".
 - É obrigatório o preenchimento de pelo menos um destes campos: `8`, `10`, `12`, `14`, `16` e `18`.
 - Se este campo for preenchido, o campo [dataRealizacaoTesteOlhinho](#7-datarealizacaotesteolhinho) é obrigatório.
 
-**Referência:** [testeOlhinho]({% url dicionario %}#testeolhinho).
+**Referências:** [testeOlhinho]({% url dicionario %}#testeolhinho).
 
 ### \#9 dataRealizacaoExameFundoOlho
 Data de realização do "Exame de fundo de olho (02.11.06.010-0 - Fundoscopia)".
@@ -119,7 +119,7 @@ Resultado do "Exame de fundo de olho (02.11.06.010-0 - Fundoscopia)".
 - É obrigatório o preenchimento de pelo menos um destes campos: `8`, `10`, `12`, `14`, `16` e `18`.
 - Se este campo for preenchido, o campo [dataRealizacaoExameFundoOlho](#9-datarealizacaoexamefundoolho) é obrigatório.
 
-**Referência:** [exameFundoOlho]({% url dicionario %}#examefundoolho).
+**Referências:** [exameFundoOlho]({% url dicionario %}#examefundoolho).
 
 ### \#11 dataRealizacaoTesteOrelhinha
 Data de realização do "Teste da orelhinha - PEATE (02.11.07.027-0 - Potencial evocado auditivo para triagem auditiva)".
@@ -145,7 +145,7 @@ Resultado do "Teste da orelhinha - PEATE (02.11.07.027-0 - Potencial evocado aud
 - É obrigatório o preenchimento de pelo menos um destes campos: `8`, `10`, `12`, `14`, `16` e `18`.
 - Se este campo for preenchido, o campo [dataRealizacaoTesteOrelhinha](#11-datarealizacaotesteorelhinha) é obrigatório.
 
-**Referência:** [testeOrelhinha]({% url dicionario %}#testeorelhinha).
+**Referências:** [testeOrelhinha]({% url dicionario %}#testeorelhinha).
 
 ### \#13 dataRealizacaoUSTransfontanela
 Data de realização do exame de imagem "US transfontanela (02.05.02.017-8 - Ultrassonografia transfontanela)".
@@ -171,7 +171,7 @@ Resultado do exame de imagem "US transfontanela (02.05.02.017-8 - Ultrassonograf
 - É obrigatório o preenchimento de pelo menos um destes campos: `8`, `10`, `12`, `14`, `16` e `18`.
 - Se este campo for preenchido, o campo [dataRealizacaoUSTransfontanela](#13-datarealizacaoustransfontanela) é obrigatório.
 
-**Referência:** [usTransfontanela]({% url dicionario %}#ustransfontanela).
+**Referências:** [usTransfontanela]({% url dicionario %}#ustransfontanela).
 
 ### \#15 dataRealizacaoTomografiaComputadorizada
 Data de realização do exame de imagem "Tomografia computadorizada (02.06.01.007-9 - Tomografia computadorizada do crânio)".
@@ -197,7 +197,7 @@ Resultado do exame de imagem "Tomografia computadorizada (02.06.01.007-9 - Tomog
 - É obrigatório o preenchimento de pelo menos um destes campos: `8`, `10`, `12`, `14`, `16` e `18`.
 - Se este campo for preenchido, o campo [dataRealizacaoTomografiaComputadorizada](#15-datarealizacaotomografiacomputadorizada) é obrigatório.
 
-**Referência:** [tomografiaComputadorizada]({% url dicionario %}#tomografiacomputadorizada).
+**Referências:** [tomografiaComputadorizada]({% url dicionario %}#tomografiacomputadorizada).
 
 ### \#17 dataRealizacaoRessonanciaMagnetica
 Data de realização do exame de imagem "Ressonância magnética (02.07.01.006-4 - Ressonância magnética de crânio)".
@@ -223,5 +223,5 @@ Resultado do exame de imagem "Ressonância magnética (02.07.01.006-4 - Ressonâ
 - É obrigatório o preenchimento de pelo menos um destes campos: `8`, `10`, `12`, `14`, `16` e `18`.
 - Se este campo for preenchido, o campo [dataRealizacaoRessonanciaMagnetica](#17-datarealizacaoressonanciamagnetica) é obrigatório.
 
-**Referência:** [ressonanciaMagnetica]({% url dicionario %}#ressonanciamagnetica).
+**Referências:** [ressonanciaMagnetica]({% url dicionario %}#ressonanciamagnetica).
 

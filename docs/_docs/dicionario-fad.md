@@ -34,7 +34,7 @@ Profissional que realizou a visita.
 |---| --- |---  | --- |
 |UnicaLotacaoHeader|	Obrigatório|	-|	-|
 
-**Referência:** [UnicaLotacaoHeader]({% url headerTransport %}#unicalotacaoheader).
+**Referências:** [UnicaLotacaoHeader]({% url headerTransport %}#unicalotacaoheader).
 
 ### \#4	atendimentosDomiciliares
 Lista dos atendimentos realizados pelo profissional.
@@ -63,7 +63,7 @@ CNS do cidadão que participou da atividade.
 
 **Regras:** Validado pelo algoritmo.
 
-**Referência:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
+**Referências:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
 
 ### \#3	dataNascimento
 Data de nascimento do cidadão.
