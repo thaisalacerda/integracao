@@ -65,7 +65,7 @@ Código IBGE do município.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|String |Sim |- |- |
+|String |Sim |7 |7 |
 
 **Referências:** {% link municipios %}.
 

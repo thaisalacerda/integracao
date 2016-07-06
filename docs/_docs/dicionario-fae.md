@@ -390,7 +390,7 @@ Código IBGE do município.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Condicional|	-|	-|
+|String|	Condicional|	7|	7|
 
 Regras: É de preenchimento obrigatório caso [conclusaoDestinoElegivel](#22-conclusaodestinoelegivel) = `1 (Admissão na própria EMAD)` e [atencaoDomiciliarModalidade](#17-atencaodomiciliarmodalidade) = `1 (AD1)`, `2 (AD2)` ou `3 (AD3)`.
 

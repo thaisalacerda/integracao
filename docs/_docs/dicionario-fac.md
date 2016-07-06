@@ -25,7 +25,7 @@ Descrição do local onde é realizada a atividade coletiva.
 |---| --- |---  | --- |
 |String|	Não|	0|	250|
 
-**Regras:** Preencher somente um dos itens `2`, `3` ou `13`.
+**Regras:** Preencher somente um dos itens `2`, `3` ou `12`.
 
 ### \#3	inep
 Número INEP da instituição.
@@ -34,7 +34,7 @@ Número INEP da instituição.
 |---| --- |---  | --- |
 |Long|	Não|	0|	8|
 
-**Regras:** Preencher somente um dos itens `2`, `3` ou `13`.
+**Regras:** Preencher somente um dos itens `2`, `3` ou `12`.
 
 ### \#4	numParticipantes
 Número de participantes da atividade.
@@ -133,7 +133,7 @@ CNES do local de atividade.
 |---| --- |---  | --- |
 |String|	Não|	-|	-|
 
-**Regras:** Preencher somente um dos itens `2`, `3` ou `13`.
+**Regras:** Preencher somente um dos itens `2`, `3` ou `12`.
 
 
 ### \#13	procedimento
@@ -277,6 +277,7 @@ Sexo do cidadão.
 |---| --- |---  | --- |
 |	Long|	Sim|	-|	-|
 
+**Referências:** [Sexo]({% url dicionario %}#sexo).
 
 ## ProfissionalCboRowItem
 
