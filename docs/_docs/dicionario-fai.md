@@ -115,7 +115,7 @@ Código do tipo de atendimento realizado.
 |---| --- |---  | --- |
 |Long|	Sim|	-|	-|
 
-**Regras:** Apenas valores de `1` a `6`.
+**Regras:** Apenas as opções `1`, `2`, `4`, `5` ou `6` são aceitas.
 
 **Referências:** [TipoDeAtendimento]({% url dicionario %}#tipodeatendimento).
 
@@ -444,7 +444,7 @@ Código do CID10 registrado no atendimento.
 |02.02.01.031-7|Creatinina|ABEX003|
 |02.02.05.001-7|EAS / EQU|ABEX027|
 |02.11.02.003-6|Eletrocardiograma|ABEX004|
-|??????????????|Eletroforese de Hemoglobina|ABEX030|
+|02.02.02.035-5|Eletroforese de Hemoglobina|ABEX030|
 |02.11.08.005-5|Espirometria|ABEX005|
 |02.02.08.011-0|Exame de escarro|ABEX006|
 |02.02.01.047-3|Glicemia|ABEX026|

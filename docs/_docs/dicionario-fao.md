@@ -113,16 +113,22 @@ Código do tipo de atendimento realizado.
 |---| --- |---  | --- |
 |Long|	Sim|	-|	-|
 
-**Regras:** Apenas valores de `2` a `6`.
+**Regras:** Apenas as opções `2`, `4`, `5` ou `6` são aceitas.
 
-**Referências:**	[TipoDeAtendimento]({% url dicionario %}#tipodeatendimento).
+**Referências:** [TipoDeAtendimento]({% url dicionario %}#tipodeatendimento).
 
 ### \#8	tiposEncamOdonto
 Código das condutas adotadas e possíveis encaminhamentos.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|List\<Long>|	Sim|	1|	16|
+|List\<Long>|	Sim|	1|	17|
+
+**Regras:** 
+
+* A opção `15 - Tratamento concluído` só pode ser selecionada se no campo [tiposConsultaOdonto](#11-tiposconsultaodonto) for selecionada uma das opções `1 - Primeira consulta odontológica programática` ou `2 - Consulta de retorno em odontologia`.
+* A opção `17 - Alta do episódio` não pode ser selecionada se no campo [tiposConsultaOdonto](#11-tiposconsultaodonto) for selecionada uma das opções `1 - Primeira consulta odontológica programática` ou `2 - Consulta de retorno em odontologia`.
+
 
 **Referências:** [CondutaEncaminhamentoOdonto]({% url dicionario %}#condutaencaminhamentoodonto).
 

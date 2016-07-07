@@ -73,34 +73,35 @@ order: 12
 |104 |	Posseiro	|-|
 |105 |	Arrendatário(a)	|-|
 |106 |	Comodatário(a)	|-|
-|107 | Beneficiário(a) do banco da terra	|-|
+|107 |  Beneficiário(a) do banco da terra	|-|
 |108 |	Não se aplica	|-|
 
 ## CondutaDesfecho
 |Código|	Descrição|	Observações|
 |---|---|---|
-|3 |	Alta administrativa da AD|	-|
-|1 |	Alta clínica da AD|	-|
-|2 |	Encaminhamento para Atenção Básica (AD1)|	-|
-|4 |	Urgência / Emergência|	-|
-|5 |	Internação hospitalar|	-|
-|6 |	Saída por óbito / final de acompanhamento pós-óbito|	-|
+|7 |	Permanência| -|
+|3 |	Alta administrativa|	-|
+|1 |	Alta clínica|	-|
+|6 |	Óbito|	-|
+|2 |	Atenção Básica (AD1)|	#ENCAMINHAMENTO|
+|4 |	Serviço de urgência e emergência|	-|
+|5 |	Serviço de internação hospitalar|	-|
 
 ## CondutaEncaminhamento
 |Código|	Descrição|	Observações|
 |---|---|---|
 |1 |	Retorno para consulta agendada |	-|
 |2 |	Retorno para cuidado continuado / programado |	-|
-|12 | Agendamento para grupos |	-|
+|12|    Agendamento para grupos |	-|
 |3 |	Agendamento para NASF |	-|
 |9 |	Alta do episódio |	-|
-|11 | Encaminhamento interno no dia |	-|
+|11|    Encaminhamento interno no dia |	#ENCAMINHAMENTO|
 |4 |	Encaminhamento para serviço especializado |	-|
 |5 |	Encaminhamento para CAPS |	-|
 |6 |	Encaminhamento para internação hospitalar |	-|
 |7 |	Encaminhamento para urgência |	-|
 |8 |	Encaminhamento para serviço de atenção domiciliar |	-|
-|10 | Encaminhamento intersetorial |	-|
+|10|    Encaminhamento intersetorial |	-|
 
 ## CondutaEncaminhamentoOdonto
 |Código|	Descrição|	Observações|
@@ -110,6 +111,7 @@ order: 12
 |13 |	Agendamento para NASF|	-|
 |14 |	Agendamento para grupos|	-|
 |15 |	Tratamento concluído|	-|
+|17 |	Alta do episódio|	-|
 |1 |	Atendimento à pacientes com necessidades especiais|	-|
 |2 |	Cirurgia BMF|	-|
 |3 |	Endodontia|	-|
@@ -229,11 +231,9 @@ order: 12
 |8 |	Instituição / Abrigo	|-|
 |9 |	Unidade prisional ou congêneres	|-|
 |10 |   Unidade socioeducativa	|-|
-|11 |   Hospital |	Utilizado apenas na ficha de atendimento domiciliar |
-|12 |	Unidade de pronto atendimento | Utilizado apenas na ficha de atendimento domiciliar |
-|13 |	CACON / UNACON| Utilizado apenas na ficha de atendimento domiciliar |
-|14 |	Hospital SOS Urgência / Emergência| Utilizado apenas na ficha de atendimento domiciliar |
-|15 |	Hospital SOS demais setores| Utilizado apenas na ficha de atendimento domiciliar |
+|11 |   Hospital |	Utilizado apenas na Ficha de Atendimento Domiciliar |
+|12 |	Unidade de pronto atendimento | Utilizado apenas na Ficha de Atendimento Domiciliar |
+|13 |	CACON / UNACON| Utilizado apenas na Ficha de Atendimento Domiciliar |
 
 ## LocalizacaoDaMoradia
 |Código|	Descrição|	Observações|
@@ -259,7 +259,7 @@ order: 12
 |1 |	AD 1|	-|
 |2 |	AD 2|	-|
 |3 |	AD 3|	-|
-|4 |	Inelegível |	Utilizado apenas na ficha de avaliação de elegibilidade|
+|4 |	Inelegível |	Utilizado apenas na Ficha de Avaliação de Elegibilidade|
 
 ## MotivoSaida
 |Código|	Descrição|	Observações|
@@ -339,10 +339,10 @@ order: 12
 |40 |	Doação popular|	-|
 |41 |	Outros|	-|
 
-## PraticasTemasParaSaude
+## TemasParaSaude
 |Código|	Descrição|	Observações|
 |---|---|---|
-|29 |	Ações de combate ao *Aedes aegypti*| TEMAS PARA SAÚDE|
+|29 |	Ações de combate ao *Aedes aegypti*| -|
 |19 |	Agravos negligenciados|	-|
 |1  |	Alimentação saudável|	-|
 |4  |	Autocuidado de pessoas com doenças crônicas |	-|
@@ -358,7 +358,11 @@ order: 12
 |17 |	Saúde sexual e reprodutiva|	-|
 |18 |	Semana saúde na escola|	-|
 |31 |	Outros |	-|
-|20 |	Antropometria|	PRÁTICAS EM SAÚDE|
+
+## PraticasEmSaude
+|Código|	Descrição|	Observações|
+|---|---|---|
+|20 |	Antropometria|	-|
 |2  |	Aplicação tópica de flúor|	-|
 |23 |	Desenvolvimento da linguagem |	-|
 |9  |	Escovação dental supervisionada |	-|
@@ -536,7 +540,6 @@ order: 12
 |6 |	Ficha de Atividade Coletiva	|-|
 |7 |	Ficha de Procedimentos	|-|
 |8 |	Ficha de Visita Domiciliar e Territorial |-|
-| - |	-	| - |
 |10 |	Ficha de Atendimento Domiciliar	|-|
 |11 |	Ficha de Avaliação de Elegibilidade|	-|
 |12 |	Marcadores de Consumo Alimentar	|-|
@@ -558,15 +561,16 @@ order: 12
 |4 |	Escuta inicial / Orientação | 	-|
 |5 |	Consulta no dia|	-|
 |6 |	Atendimento de urgência|	-|
-|7 |	Atendimento programado|	Utilizados apenas nas fichas de atendimento domiciliar |
-|8 |	Atendimento não programado| Utilizados apenas nas fichas de atendimento domiciliar |
+|7 |	Atendimento programado|	Utilizado apenas nas Fichas de Atendimento Domiciliar |
+|8 |	Atendimento não programado| Utilizado apenas nas Fichas de Atendimento Domiciliar |
+|9 | 	Visita domiciliar pós-óbito| Utilizado apenas nas Fichas de Atendimento Domiciliar |
 
 ## TipoDeConsultaOdonto
 |Código|	Descrição|	Observações|
 |---|---|---|
-|1 |	Primeira consulta odontológica programática|	-|
-|2 |	Consulta de retorno|	-|
-|4 | Consulta de manutenção|	-|
+|1 |	Primeira consulta odontológica programática |	-|
+|2 |	Consulta de retorno em odontologia |	-|
+|4 | 	Consulta de manutenção em odontologia |	-|
 
 ## TipoDeDomicilio
 |Código|	Descrição|	Observações|

@@ -143,7 +143,7 @@ Código do SIGTAP do procedimento coletivo realizado.
 |---| --- |---  | --- |
 |String|	Não|	-|	-|
 
-**Regras:** Só pode ser preenchido se o campo [praticasEmSaude](#17-praticasemsaude) possui o valor `30`.
+**Regras:** Só pode ser preenchido se o campo [praticasEmSaude](#17-praticasemsaude) possuir o valor `30`.
 
 **Referências:** [OutroProcedimentoColetivo](#outroprocedimentocoletivo).
 
@@ -175,7 +175,7 @@ Códigos dos temas para saúde abordados na atividade.
 * Não pode ser preenchido se [atividadeTipo](#7-atividadetipo) = `1`, `2` ou `3`;
 * É de preenchimento obrigatório se [atividadeTipo](#7-atividadetipo) = `4`, `5` ou `7`;
 
-**Referências:** [PraticasTemasParaSaude]({% url dicionario %}#praticastemasparasaude).
+**Referências:** [TemasParaSaude]({% url dicionario %}#temasparasaude).
 
 ### \#17	praticasEmSaude
 Códigos das práticas em saúde abordadas na atividade.
@@ -190,7 +190,7 @@ Códigos das práticas em saúde abordadas na atividade.
 * É de preenchimento obrigatório se [atividadeTipo](#7-atividadetipo) = `6`;
 * Os itens `2 - Aplicação tópica de flúor` e `9 - Escovação dental supervisionada` só podem ser utilizados se [atividadeTipo](#7-atividadetipo) = `6`.
 
-**Referências:** [PraticasTemasParaSaude]({% url dicionario %}#praticastemasparasaude).
+**Referências:** [PraticasEmSaude]({% url dicionario %}#praticasemsaude).
 
 ## ParticipanteRowItem
 

@@ -58,7 +58,6 @@ Data em que está sendo realizada a ação.
 
 **Referências:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milissegundos.
 
-Observações: Esta entidade é utilizada para representar o profissional responsável pelas fichas.
 
 ### \#6 codigoIbgeMunicipio
 Código IBGE do município.
@@ -69,7 +68,42 @@ Código IBGE do município.
 
 **Referências:** {% link municipios %}.
 
-Observações: Esta entidade é utilizada para representar o profissional responsável pelas fichas.
+## LotacaoHeaderThrift
+
+### \#1	profissionalCNS
+CNS do profissional.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|--- |--- |--- |--- |
+|String |Sim |15 |15 |
+
+**Regras:**	CNS validado de acordo com o algoritmo.
+
+**Referências:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
+
+### \#2	cboCodigo_2002
+Código do CBO do profissional.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|--- |--- |--- |--- |
+|String |Sim |- |- |
+
+**Referências:** {% link cbo %}.
+
+### \#3 cnes
+Código do CNES da unidade de saúde que o profissional está lotado.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|--- |--- |--- |--- |
+|String |Sim |7 |7 |
+
+### \#4 ine
+Código INE da equipe do profissional.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|--- |--- |--- |--- |
+|String |Não |10 |10 |
+
 
 ## VariasLotacoesHeader
 
@@ -78,21 +112,37 @@ Profissional responsável pelo atendimento.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|UnicaLotacaoHeader |Sim |- |- |
+|LotacaoHeaderThrift |Sim |- |- |
 
 Observações: Esta entidade é utilizada para representar o profissional responsável pela ficha.
 
-**Referências:** [UnicaLotacaoHeader](#unicalotacaoheader).
+**Referências:** [LotacaoHeaderThrift](#lotacaoheaderthrift).
 
-### \#6 lotacaoFormAtendimentoCompartilhado
+### \#2 lotacaoFormAtendimentoCompartilhado
 Profissional auxiliar no atendimento.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|UnicaLotacaoHeader |Não |- |- |
-
-**Regras:** Desconsiderar os campos [dataAtendimento](#5-dataatendimento) e [codigoIbgeMunicipio](#6-codigoibgemunicipio).
+|LotacaoHeaderThrift |Não |- |- |
 
 Observações: Esta entidade é utilizada para representar um profissional que auxiliou o profissional responsável pela ficha.
 
-**Referências:** [UnicaLotacaoHeader](#unicalotacaoheader).
+**Referências:** [LotacaoHeaderThrift](#lotacaoheaderthrift).
+
+### \#3 dataAtendimento
+Data em que está sendo realizada a ação.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|--- |--- |--- |--- |
+|Long |Sim |- |- |
+
+**Referências:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milissegundos.
+
+### \#4 codigoIbgeMunicipio
+Código IBGE do município.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|--- |--- |--- |--- |
+|String |Sim |7 |7 |
+
+**Referências:** {% link municipios %}.
