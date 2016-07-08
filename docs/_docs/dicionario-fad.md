@@ -34,6 +34,8 @@ Lista dos atendimentos realizados pelo profissional.
 |---| --- |---  | --- |
 |List\<FichaAtendimentoDomiciliarChild\>|	Sim|	-|	-|
 
+**Referências:** [FichaAtendimentoDomiciliarChild](#fichaatendimentodomiciliarchild).
+
 ### \#4	headerTransport
 Profissionais que realizaram o atendimento.
 
@@ -54,8 +56,8 @@ Código do turno onde aconteceu o atendimento.
 
 **Referências:** [Turno]({% url dicionario %}#turno).
 
-### \#2	cns
-CNS do cidadão que participou da atividade.
+### \#2	cnsCidadao
+CNS do cidadão que recebeu atendimento.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
@@ -164,8 +166,11 @@ Código dos procedimentos SIGTAP registrados no atendimento.
 
 **Regras:**
 
-* Não podem ser iguais aos procedimentos inseridos no campo [procedimentos](#11-procedimentos).
-* Não pode conter procedimentos duplicados.
+* Só é permitido inserir procedimentos cujo grupo é igual a `01` - Ações de promoção e prevenção em saúde, `02` - Procedimentos com finalidade diagnóstica, `03` - Procedimentos clínicos ou `04` - Procedimentos cirúrgicos.
+* Não podem ser iguais aos procedimentos da tabela [Procedimentos da Atenção Domiciliar](#procedimentos-da-aten-o-domiciliar) e nem ao procedimento `0301050104 - Visita domiciliar pós-óbito`.
+* Não podem haver procedimentos com o mesmo código.
+
+Observação: Inserir o código do procedimento sem ponto ou hífen, ex: `0201010010`.
 
 ### \#13	condutaDesfecho
 Código do desfecho do atendimento do cidadão.

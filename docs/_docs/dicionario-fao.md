@@ -227,11 +227,13 @@ Código do procedimento no MS.
 
 **Regras:** 
 
-- Deve ser um procedimento com um código válido;
-
 - Quando a lista partir da estrutura [procedimentosRealizados](#12-procedimentosrealizados), somente os procedimentos **AB** listados em [ListaProcedimentosRealizados](#listaprocedimentosrealizados) podem ser adicionados. Verificar o procedimento AB correspondente ao procedimento SIGTAP desejado;
+- Quando a lista partir da estrutura [outrosSiaProcedimentos](#13-outrossiaprocedimentos), ela não pode conter procedimentos da [ListaProcedimentosRealizados](#listaprocedimentosrealizados) e só podem ser inseridos procedimentos cujo grupo é igual a `01` - Ações de promoção e prevenção em saúde, `02` - Procedimentos com finalidade diagnóstica, `03` - Procedimentos clínicos ou `04` - Procedimentos cirúrgicos.
 
-- Quando a lista partir da estrutura [outrosSiaProcedimentos](#13-outrossiaprocedimentos), ela não pode conter procedimentos da [ListaProcedimentosRealizados](#listaprocedimentosrealizados).
+Observações: 
+
+- Inserir o código do procedimento SIGTAP sem ponto ou hífen, ex: `0201010010`.
+- Inserir o código do procedimento AB em caracteres maiúsculos, sem espaços.
 
 ### \#2	quantidade
 Quantidade de procedimentos realizados.

@@ -215,6 +215,8 @@ Lista de exames solicitados que são apresentados na ficha.
 
 **Referências:** [ListaExames](#listaexames).
 
+Observação: Inserir o código do procedimento AB em caracteres maiúsculos, sem espaços.
+
 ### \#16	examesAvaliados
 Lista de exames avaliados que são apresentados na ficha.
 
@@ -229,12 +231,20 @@ Lista de exames avaliados que são apresentados na ficha.
 
 **Referências:** [ListaExames](#listaexames).
 
+Observação: Inserir o código do procedimento AB em caracteres maiúsculos, sem espaços.
+
 ### \#17	outrosSia
 Lista de outros exames.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
 |List\<OutrosSia>|	Não|	-|	-|
+
+**Regras:** 
+
+* Só é possível inserir exames cujo grupo é igual a `02` - Procedimentos com finalidade diagnóstica. 
+* Não podem conter procedimentos que estejam presentes na tabela [ListaExames](#listaexames). 
+* Não podem haver procedimentos com o mesmo código.
 
 **Referências:** [OutrosSia](#outrossia).
 
@@ -330,11 +340,14 @@ Código do exame solicitado ou avaliado.
 |---| --- |---  | --- |
 |String|	Sim|	-|	-|
 
-**Regras:** Deve ser um procedimento com um código válido.
+**Regras:** 
+
+* Só é possível inserir exames cujo grupo é igual a `02` - Procedimentos com finalidade diagnóstica. 
+* Não inserir procedimentos que estejam presentes na tabela [ListaExames](#listaexames). 
 
 **Referências:** Para ver a referência da tabela do SIGTAP acesse: [Tabela Unificada SIGTAP](http://sigtap.datasus.gov.br/tabela-unificada/app/sec/procedimento/publicados/consultar).
 
-**Observações**: Sem ponto ou hífen, ex: `0101010010`.
+Observação: Inserir o código do procedimento sem ponto ou hífen, ex: `0201010010`.
 
 ### \#2	solicitadoAvaliado
 Código do indicador se o exame foi `Solicitado` e / ou `Avaliado`.
@@ -361,6 +374,8 @@ Código dos CIAPs apresentados na lista.
 * É Requerido o preenchimento de pelo menos um dos itens de `#1` a `#5`.
 
 **Referências:** [ListaCiapCondicaoAvaliada](#listaciapcondicaoavaliada).
+
+Observação: Inserir o código em caracteres maiúsculos, sem espaços.
 
 ### \#2	outroCiap1
 Código do CIAP2 registrado no antedimento.

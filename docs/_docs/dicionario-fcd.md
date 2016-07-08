@@ -81,6 +81,7 @@ Número de animais no domicílio.
 * Só pode ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = `01` Domicílio;
 * Não pode ser preenchido se o campo [stAnimaisNoDomicilio](#7-stanimaisnodomicilio) = `false`;
 * Não pode ser preenchido se o campo [statusTermoRecusa](#8-statustermorecusa) = `true`.
+* Deve ser maior ou igual ao número de opções selecionadas no campo [animaisNoDomicilio](#1-animaisnodomicilio).
 
 ### \#7	stAnimaisNoDomicilio
 Marcador que indica se existem animais no domicílio.
@@ -492,6 +493,11 @@ Número de moradores do domicílio.
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
 |String|	Não|	0|	4|
+
+**Regras:** 
+
+- Não pode ser menor que o número de [familias](#4-familias) cadastradas.
+- Não pode ser menor que o somatório dos valores preenchidos no campo [numeroMembrosFamilia](#3-numeromembrosfamilia). 
 
 ### \#9 situacaoMoradiaPosseTerra
 Código da situação de moradia ou de posse da terra.

@@ -187,12 +187,12 @@ Lista dos códigos dos procedimentos que são registrados na ficha de procedimen
 
 **Regras:** 
 
-- Caracteres maiúsculos e sem espaço em branco.
 - Preencher apenas com o código **AB** do procedimento.
+- É requerido pelo menos um dentre os itens `#8` e `#9`.
 
 **Referências:** [Procedimentos da Ficha](#procedimentos-da-ficha).
 
-Observação: É requerido pelo menos um dentre os itens `#8` e `#9`.
+Observação: Inserir o código do procedimento AB em caracteres maiúsculos, sem espaços.
 
 ### \#9 outrosSiaProcedimentos
 Código dos outros procedimentos do SIGTAP ou SISAB.
@@ -203,12 +203,14 @@ Código dos outros procedimentos do SIGTAP ou SISAB.
 
 **Regras:**
 
-* Caracteres maiúsculos e sem espaço em branco;
-* Não repetir procedimentos.
+* Só é permitido inserir procedimentos cujo grupo é igual a `01` - Ações de promoção e prevenção em saúde, `02` - Procedimentos com finalidade diagnóstica, `03` - Procedimentos clínicos ou `04` - Procedimentos cirúrgicos.
+* Não podem haver procedimentos que estão na tabela [Procedimentos da Ficha](#procedimentos-da-ficha).
+* Não podem haver procedimentos com o mesmo código.
+* É requerido pelo menos um dentre os itens `#8` e `#9`.
 
 **Referências:** Para ver a referência da tabela do SIGTAP acesse: [Tabela unificada SIGTAP](http://sigtap.datasus.gov.br/tabela-unificada/app/sec/procedimento/publicados/consultar).
 
-Observação: É requerido pelo menos um dentre os itens `#8` e `#9`.
+Observação: Inserir o código do procedimento sem ponto ou hífen, ex: `0201010010`. 
 
 ## Procedimentos da Ficha
 
