@@ -242,10 +242,10 @@ Observação: Inserir o código do procedimento sem ponto ou hífen, ex: `020101
 |02.14.01.005-8|Teste rápido para HIV |ABPG024 |
 |02.14.01.009-0|Teste rápido para hepatite C |ABPG025 |
 |02.14.01.007-4|Teste rápido para sífilis |ABPG026 |
-|Não possui    |Administração de medicamentos via oral |ABPG027 |
-|Não possui    |Administração de medicamentos via intramuscular |ABPG028 |
-|Não possui    |Administração de medicamentos via endovenosa |ABPG029 |
-|03.01.10.010-1|Administração de medicamentos via inalação / nebulização |ABPG030 |
-|Não possui    |Administração de medicamentos via tópica |ABPG031 |
-|Não possui    |Administração de penicilina para tratamento de sífilis |ABPG032 |
+|Não possui    |Administração de medicamentos via Oral |ABPG027 |
+|Não possui    |Administração de medicamentos via Intramuscular |ABPG028 |
+|Não possui    |Administração de medicamentos via Endovenosa |ABPG029 |
+|03.01.10.010-1|Administração de medicamentos via Inalação / Nebulização |ABPG030 |
+|Não possui    |Administração de medicamentos via Tópica |ABPG031 |
+|Não possui    |Administração de Penicilina para tratamento de sífilis |ABPG032 |
 |Não possui    |Administração de medicamentos via Subcutânea (SC) |ABPG041 |
