@@ -68,7 +68,7 @@ Código IBGE do município.
 
 **Referências:** {% link municipios %}.
 
-## LotacaoHeaderThrift
+## LotacaoHeader
 
 ### \#1	profissionalCNS
 CNS do profissional.
@@ -112,22 +112,22 @@ Profissional responsável pelo atendimento.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|LotacaoHeaderThrift |Sim |- |- |
+|LotacaoHeader |Sim |- |- |
 
 Observações: Esta entidade é utilizada para representar o profissional responsável pela ficha.
 
-**Referências:** [LotacaoHeaderThrift](#lotacaoheaderthrift).
+**Referências:** [LotacaoHeader](#lotacaoheader).
 
 ### \#2 lotacaoFormAtendimentoCompartilhado
 Profissional auxiliar no atendimento.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|LotacaoHeaderThrift |Não |- |- |
+|LotacaoHeader |Não |- |- |
 
 Observações: Esta entidade é utilizada para representar um profissional que auxiliou o profissional responsável pela ficha.
 
-**Referências:** [LotacaoHeaderThrift](#lotacaoheaderthrift).
+**Referências:** [LotacaoHeader](#lotacaoheader).
 
 ### \#3 dataAtendimento
 Data em que está sendo realizada a ação.

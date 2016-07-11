@@ -10,7 +10,7 @@ order: 19
 |Coluna	|Tipo	|Obrigatório |Regra	|
 |--- |--- |--- |--- |--- |
 |major |Integer |Sim |Valor único = 2 |
-|minor |Integer |Sim |Valor único = 0	|
+|minor |Integer |Sim |Valor único = 1	|
 |revision |Integer |Sim |Valor único = 0 |
 
 

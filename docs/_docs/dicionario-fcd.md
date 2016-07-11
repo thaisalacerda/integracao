@@ -138,23 +138,23 @@ Identificação do imóvel.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 | ---| --- |---  | --- |
-| identificacaoImovel	| Sim	| - |	-	|
+| IdentificacaoImovel	| Sim	| - |	-	|
 
-**Referências:** [identificacaoImovel](#identificacaoimovel).
+**Referências:** [IdentificacaoImovel](#identificacaoimovel).
 
 ### \#13	identificacaoResponsavelTecnico
 Identificação do responsável técnico da instituição de permanência.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 | --- | --- | ---  | --- |
-| identificacaoResponsavelTecnico	| Condicional	| - | - |
+| IdentificacaoResponsavelTecnico	| Condicional	| - | - |
 
 **Regras:** 
 
 * Só podem ser preenchidos quando o campo [tipoDeImovel](#1-tipodeimovel) = `07` Abrigo, `08` Instituição de longa permanência para idosos, `09` Unidade prisional, `10` Unidade de medida socioeducativa e `11` Delegacia;
 * Não devem ser preenchidos se o campo [statusTermoRecusa](#8-statustermorecusa) = `true`.
 
-**Referências:** [identificacaoResponsavelTecnico](#identificacaoresponsaveltecnico).
+**Referências:** [IdentificacaoResponsavelTecnico](#identificacaoresponsaveltecnico).
 
 ### \#14 headerTransport
 Informações sobre o profissional e a data do cadastro.
@@ -165,7 +165,7 @@ Informações sobre o profissional e a data do cadastro.
 
 **Referências:** [UnicaLotacaoHeader]({% url headerTransport %}#unicalotacaoheader).
 
-## identificacaoImovel
+## IdentificacaoImovel
 
 ### \#1 tipoDeImovel
 Indica o tipo de imóvel do domicílio.
@@ -195,7 +195,7 @@ Marcador que indica se existem outros profissional de saúde vinculados à insti
 
 **Regras:** Só pode ser preenchido quando o campo [tipoDeImovel](#1-tipodeimovel) = `07` Abrigo, `08` Instituição de longa permanência para idosos, `09` Unidade prisional, `10` Unidade de medida socioeducativa e `11` Delegacia.
 
-## identificacaoResponsavelTecnico
+## IdentificacaoResponsavelTecnico
 
 ### \#1 nomeResponsavelTecnico
 Indica o nome do responsável técnico da instituição de permanência.
