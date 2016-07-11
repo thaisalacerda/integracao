@@ -215,7 +215,7 @@ Lista de exames solicitados que são apresentados na ficha.
 
 **Referências:** [ListaExames](#listaexames).
 
-Observação: Inserir o código do procedimento AB em caracteres maiúsculos, sem espaços.
+Observação: Inserir o código do exame AB em caracteres maiúsculos, sem espaços.
 
 ### \#16	examesAvaliados
 Lista de exames avaliados que são apresentados na ficha.
@@ -231,7 +231,7 @@ Lista de exames avaliados que são apresentados na ficha.
 
 **Referências:** [ListaExames](#listaexames).
 
-Observação: Inserir o código do procedimento AB em caracteres maiúsculos, sem espaços.
+Observação: Inserir o código do exame AB em caracteres maiúsculos, sem espaços.
 
 ### \#17	outrosSia
 Lista de outros exames.
@@ -243,8 +243,8 @@ Lista de outros exames.
 **Regras:** 
 
 * Só é possível inserir exames cujo grupo é igual a `02` - Procedimentos com finalidade diagnóstica. 
-* Não podem conter procedimentos que estejam presentes na tabela [ListaExames](#listaexames). 
-* Não podem haver procedimentos com o mesmo código.
+* Não podem conter exames que estejam presentes na tabela [ListaExames](#listaexames). 
+* Não podem haver exames com o mesmo código.
 
 **Referências:** [OutrosSia](#outrossia).
 
@@ -343,11 +343,11 @@ Código do exame solicitado ou avaliado.
 **Regras:** 
 
 * Só é possível inserir exames cujo grupo é igual a `02` - Procedimentos com finalidade diagnóstica. 
-* Não inserir procedimentos que estejam presentes na tabela [ListaExames](#listaexames). 
+* Não inserir exames que estejam presentes na tabela [ListaExames](#listaexames). 
 
 **Referências:** Para ver a referência da tabela do SIGTAP acesse: [Tabela Unificada SIGTAP](http://sigtap.datasus.gov.br/tabela-unificada/app/sec/procedimento/publicados/consultar).
 
-Observação: Inserir o código do procedimento sem ponto ou hífen, ex: `0201010010`.
+Observação: Inserir o código do exame sem ponto ou hífen, ex: `0201010010`.
 
 ### \#2	solicitadoAvaliado
 Código do indicador se o exame foi `Solicitado` e / ou `Avaliado`.
