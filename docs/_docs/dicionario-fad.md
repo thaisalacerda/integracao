@@ -212,12 +212,12 @@ Código do desfecho do atendimento do cidadão.
 
 ## Procedimentos da Atenção Domiciliar
 
-|Nome			|Código|
+|Nome			|Código SIGTAP *|
 |--- |---|
 |Acompanhamento de paciente em reabilitação em comunicação alternativa			|0301070024|
 |Antibioticoterapia parenteral			|0301050082|
 |Atendimento / Acompanhamento de paciente em reabilitação do desenvolvimento neuropsicomotor			|0301070075|
-|Atendimento fisioterapêutico paciente com transtorno respiratório sem complicações sistêmicas			|0302040021|
+|Atendimento fisioterapêutico em paciente com transtorno respiratório sem complicações sistêmicas			|0302040021|
 |Atendimento médico com finalidade de atestar óbito			|0301050090|
 |Atendimento / Acompanhamento em reabilitação nas múltiplas deficiências			|0301070067|
 |Cateterismo vesical de alívio			|0301100047|
@@ -234,3 +234,5 @@ Código do desfecho do atendimento do cidadão.
 |Terapia fonoaudiológica individual			|0301070113|
 |Tratamento de traumatismos de localização especificada / não especificada			|0308010019|
 |Tratamento em reabilitação			|0303190019|
+
+_* Procedimentos pertencentes a competência **07/2016** do SIGTAP._

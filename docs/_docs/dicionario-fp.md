@@ -214,7 +214,7 @@ Observação: Inserir o código do procedimento sem ponto ou hífen, ex: `020101
 
 ## Procedimentos da Ficha
 
-|Código SIGTAP| Descrição AB | Código AB correspondente |
+|Código SIGTAP *| Descrição AB | Código AB correspondente |
 |--- |--- |--- |
 |03.09.05.002-2|Acupuntura com inserção de agulhas |ABPG001 |
 |01.01.04.005-9|Administração de vitamina A |ABPG002 |
@@ -249,3 +249,5 @@ Observação: Inserir o código do procedimento sem ponto ou hífen, ex: `020101
 |Não possui    |Administração de medicamentos via Tópica |ABPG031 |
 |Não possui    |Administração de Penicilina para tratamento de sífilis |ABPG032 |
 |Não possui    |Administração de medicamentos via Subcutânea (SC) |ABPG041 |
+
+_* Procedimentos pertencentes a competência **07/2016** do SIGTAP._

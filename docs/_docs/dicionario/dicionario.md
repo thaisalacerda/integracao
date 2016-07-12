@@ -82,7 +82,7 @@ order: 12
 |7 |	Permanência| -|
 |3 |	Alta administrativa|	-|
 |1 |	Alta clínica|	-|
-|6 |	Óbito|	-|
+|9 |	Óbito|	-|
 |2 |	Atenção Básica (AD1)|	#ENCAMINHAMENTO|
 |4 |	Serviço de urgência e emergência|	-|
 |5 |	Serviço de internação hospitalar|	-|
@@ -325,10 +325,10 @@ order: 12
 ## OrientacaoSexual
 |Código| Descrição|	Observações|
 |---|---|---|
-|5 |	Heterossexual|	-|
-|148 |	Homossexual (gay / lésbica)|	-|
-|8 |	Bissexual|	-|
-|11 |	Outro|	-|
+|148 |	Heterossexual|	-|
+|153 |	Homossexual (gay / lésbica)|	-|
+|154 |	Bissexual|	-|
+|155 |	Outro|	-|
 
 ## OrigemAlimentacao
 |Código|	Descrição|	Observações|
@@ -357,7 +357,7 @@ order: 12
 |16 |	Saúde mental|	-|
 |17 |	Saúde sexual e reprodutiva|	-|
 |18 |	Semana saúde na escola|	-|
-|31 |	Outros |	-|
+|21 |	Outros |	-|
 
 ## PraticasEmSaude
 |Código|	Descrição|	Observações|
@@ -374,7 +374,7 @@ order: 12
 |22 |	Saúde auditiva |	-|
 |3  |	Saúde ocular|	-|
 |24 |	Verificação da situação vacinal|	-|
-|32 |	Outras |	-|
+|12 |	Outras |	-|
 |30 |	Outro procedimento coletivo|	-|
 
 ## ProblemaRins
@@ -613,7 +613,7 @@ order: 12
 |---|---|---|
 |149 |	Homem transsexual|	-|
 |150 |	Mulher transsexual|	-|
-|9 | Travesti|	-|
+|156 |  Travesti|	-|
 |151 |	Outro|	-|
 
 ## etnia

@@ -307,7 +307,7 @@ Observações: Esta entidade é utilizada para representar os profissionais que 
 
 ## OutroProcedimentoColetivo
 
-|Código do SIGTAP|	Descrição|
+|Código SIGTAP *|	Descrição|
 |--- |---|
 |01.01.01.004-4 | PRÁTICAS CORPORAIS EM MEDICINA TRADICIONAL CHINESA
 |01.01.02.008-2 | EVIDENCIAÇÃO DE PLACA BACTERIANA
@@ -316,3 +316,5 @@ Observações: Esta entidade é utilizada para representar os profissionais que 
 |01.01.01.007-9 | IOGA
 |01.01.01.008-7 | OFICINA DE MASSAGEM/AUTO-MASSAGEM
 |01.01.02.002-3 | AÇÃO COLETIVA DE BOCHECHO FLUORADO
+
+_* Procedimentos pertencentes a competência **07/2016** do SIGTAP._

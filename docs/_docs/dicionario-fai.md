@@ -453,7 +453,7 @@ Código do CID10 registrado no atendimento.
 |P19|Usuário de outras drogas|ABP013|
 
 ## ListaExames
-|Código SIGTAP| Descrição AB | Código AB correspondente |
+|Código SIGTAP * | Descrição AB | Código AB correspondente |
 |---|---|---|
 |02.02.01.029-5|Colesterol total|ABEX002|
 |02.02.01.031-7|Creatinina|ABEX003|
@@ -478,3 +478,6 @@ Código do CID10 registrado no atendimento.
 |02.02.11.005-2|Teste do pezinho|ABEX021|
 |02.05.02.014-3|Ultrassonografia obstétrica|ABEX024|
 |02.02.08.008-0|Urocultura|ABEX029|
+
+
+_* Procedimentos pertencentes a competência **07/2016** do SIGTAP._

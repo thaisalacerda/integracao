@@ -245,7 +245,7 @@ Quantidade de procedimentos realizados.
 **Regras:** Valor máximo que pode ser registrado é 99.
 
 ## ListaProcedimentosRealizados
-|Código SIGTAP| Descrição AB | Código AB correspondente |
+|Código SIGTAP *| Descrição AB | Código AB correspondente |
 |---|---|---|---|
 |03.07.02.001-0 | Acesso a polpa dentária e medicação (por dente) | ABPO001 |
 |03.07.04.014-3 | Adaptação de Prótese Dentária | ABPO002 |
@@ -274,3 +274,5 @@ Quantidade de procedimentos realizados.
 |01.01.02.009-0 | Selamento provisório de cavidade dentária | ABPO025 |
 |04.14.02.038-3 | Tratamento de alveolite | ABPO026 |
 |04.14.02.040-5 | Ulotomia / Ulectomia | ABPO027 |
+
+_* Procedimentos pertencentes a competência **07/2016** do SIGTAP._
