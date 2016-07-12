@@ -212,27 +212,27 @@ Código do desfecho do atendimento do cidadão.
 
 ## Procedimentos da Atenção Domiciliar
 
-|Nome			|Código SIGTAP *|
+Código SIGTAP *| Descrição |
 |--- |---|
-|Acompanhamento de paciente em reabilitação em comunicação alternativa			|0301070024|
-|Antibioticoterapia parenteral			|0301050082|
-|Atendimento / Acompanhamento de paciente em reabilitação do desenvolvimento neuropsicomotor			|0301070075|
-|Atendimento fisioterapêutico em paciente com transtorno respiratório sem complicações sistêmicas			|0302040021|
-|Atendimento médico com finalidade de atestar óbito			|0301050090|
-|Atendimento / Acompanhamento em reabilitação nas múltiplas deficiências			|0301070067|
-|Cateterismo vesical de alívio			|0301100047|
-|Cateterismo vesical de demora			|0301100055|
-|Coleta de material para exame laboratorial			|0201020041|
-|Cuidados com estomas			|0301100063|
-|Cuidados com traqueostomia			|0301100071|
-|Enema			|0301100098|
-|Oxigenoterapia			|0301100144|
-|Retirada de pontos de cirurgias básicas (por paciente)			|0301100152|
-|Sondagem gástrica			|0301100179|
-|Terapia de reidratação oral			|0301100187|
-|Terapia de reidratação parenteral			|0301050120|
-|Terapia fonoaudiológica individual			|0301070113|
-|Tratamento de traumatismos de localização especificada / não especificada			|0308010019|
-|Tratamento em reabilitação			|0303190019|
+|0301070024| Acompanhamento de paciente em reabilitação em comunicação alternativa|
+|0301050082|Antibioticoterapia parenteral|
+|0301070075|Atendimento / Acompanhamento de paciente em reabilitação do desenvolvimento neuropsicomotor|
+|0302040021|Atendimento fisioterapêutico em paciente com transtorno respiratório sem complicações sistêmicas|
+|0301050090|Atendimento médico com finalidade de atestar óbito|
+|0301070067|Atendimento / Acompanhamento em reabilitação nas múltiplas deficiências|
+|0301100047|Cateterismo vesical de alívio|
+|0301100055|Cateterismo vesical de demora|
+|0201020041|Coleta de material para exame laboratorial|
+|0301100063|Cuidados com estomas|
+|0301100071|Cuidados com traqueostomia|
+|0301100098|Enema|
+|0301100144|Oxigenoterapia|
+|0301100152|Retirada de pontos de cirurgias básicas (por paciente)|
+|0301100179|Sondagem gástrica|
+|0301100187|Terapia de reidratação oral|
+|0301050120|Terapia de reidratação parenteral|
+|0301070113|Terapia fonoaudiológica individual|
+|0308010019|Tratamento de traumatismos de localização especificada / não especificada|
+|0303190019|Tratamento em reabilitação|
 
 _* Procedimentos pertencentes a competência **07/2016** do SIGTAP._
