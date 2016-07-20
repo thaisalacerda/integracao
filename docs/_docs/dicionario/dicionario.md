@@ -41,11 +41,12 @@ order: 12
 ## AtencaoDomiciliarProcedencia
 |Código|	Descrição|	Observações|
 |---|---|---|
-|1  | Atenção Básica	|-|
+|1  | 	Atenção Básica	|-|
 |11 |	Internação hospitalar|	-|
 |12 |	Urgência e emergência	|-|
 |13 |	CACON / UNACON	|-|
-|6  | Outros	|-|
+|16 |	Iniciativa do paciente ou terceiros	|-|
+|6  | 	Outros	|-|
 
 ## ConclusaoDestinoElegivel
 |Código|	Descrição|	Observações|
