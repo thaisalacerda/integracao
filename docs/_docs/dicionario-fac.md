@@ -316,5 +316,7 @@ Observações: Esta entidade é utilizada para representar os profissionais que 
 |01.01.01.007-9 | IOGA
 |01.01.01.008-7 | OFICINA DE MASSAGEM/AUTO-MASSAGEM
 |01.01.02.002-3 | AÇÃO COLETIVA DE BOCHECHO FLUORADO
+|01.01.02.004-0 | AÇÃO COLETIVA DE EXAME BUCAL COM FINALIDADE EPIDEMIOLÓGICA
+
 
 _* Procedimentos pertencentes a competência **07/2016** do SIGTAP._
