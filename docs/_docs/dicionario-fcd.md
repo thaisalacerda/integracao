@@ -16,7 +16,7 @@ Lista de código dos animais no domicílio.
 
 **Regras:**
 
-* Só pode ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = `01` Domicílio;
+* Só pode ser preenchido se o campo [tipoDeImovel](#12-tipodeimovel) = `01` Domicílio;
 * Não pode ser preenchido se o campo [statusTermoRecusa](#8-statustermorecusa) = `true`.
 
 **Referências:** [AnimalNoDomicilio]({% url dicionario %}#animalnodomicilio).
@@ -30,7 +30,7 @@ Condições de moradia do domicílio.
 
 **Regras:**
 
-* Não deve ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = `02` Comércio, `03` Terreno baldio, `04` Ponto Estratégico, `05` Escola, `06` Creche, `12` Estabelecimento Religioso, `99` Outros;
+* Não deve ser preenchido se o campo [tipoDeImovel](#12-tipodeimovel) = `02` Comércio, `03` Terreno baldio, `04` Ponto Estratégico, `05` Escola, `06` Creche, `12` Estabelecimento Religioso ou `99` Outros;
 * Não deve ser preenchido se o campo [statusTermoRecusa](#8-statustermorecusa) = `true`.
 
 **Referências:** [CondicaoMoradia](#condicaomoradia).
@@ -55,7 +55,7 @@ Lista das famílias que residem no domicílio.
 
 **Regras:**
 
-* Se o campo [tipoDeImovel](#1-tipodeimovel) for diferente de `01` Domicílio, todas as famílias cadastradas devem ter o campo [stMudanca](#7-stmudanca) = `true`;
+* Se o campo [tipoDeImovel](#12-tipodeimovel) for diferente de `01` Domicílio, todas as famílias cadastradas devem ter o campo [stMudanca](#7-stmudanca) = `true`;
 * Não pode ser preenchido caso o campo [statusTermoRecusa](#8-statustermorecusa) = `true`.
 
 **Referências:** [FamiliaRow](#familiarow).
@@ -78,7 +78,7 @@ Número de animais no domicílio.
 
 **Regras:**
 
-* Só pode ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = `01` Domicílio;
+* Só pode ser preenchido se o campo [tipoDeImovel](#12-tipodeimovel) = `01` Domicílio;
 * Não pode ser preenchido se o campo [stAnimaisNoDomicilio](#7-stanimaisnodomicilio) = `false`;
 * Não pode ser preenchido se o campo [statusTermoRecusa](#8-statustermorecusa) = `true`.
 * Deve ser maior ou igual ao número de opções selecionadas no campo [animaisNoDomicilio](#1-animaisnodomicilio).
@@ -92,7 +92,7 @@ Marcador que indica se existem animais no domicílio.
 
 **Regras:**
 
-* Só pode ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = `01` Domicílio;
+* Só pode ser preenchido se o campo [tipoDeImovel](#12-tipodeimovel) = `01` Domicílio;
 * Não pode ser preenchido se o campo [statusTermoRecusa](#8-statustermorecusa) = `true`.
 
 ### \#8	statusTermoRecusa
@@ -133,28 +133,28 @@ Código UUID para identificar a ficha que deu origem ao cadastro do registro.
 
 **Referências:** Para ver a referência sobre o UUID, acesse: [UUID Wikipedia](https://en.wikipedia.org/wiki/Universally_unique_identifier).
 
-### \#12	identificacaoImovel
-Identificação do imóvel.
+### \#12 tipoDeImovel
+Indica o tipo de imóvel do domicílio.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
-| ---| --- |---  | --- |
-| IdentificacaoImovel	| Sim	| - |	-	|
+|---| --- |---  | --- |
+|Long|	Sim|	-|	-|
 
-**Referências:** [IdentificacaoImovel](#identificacaoimovel).
+**Referências:** [tipoDeImovel]({% url dicionario %}#tipodeimovel).
 
-### \#13	identificacaoResponsavelTecnico
-Identificação do responsável técnico da instituição de permanência.
+### \#13	instituicaoPermanencia
+Informações referentes a instituição de permanência.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 | --- | --- | ---  | --- |
-| IdentificacaoResponsavelTecnico	| Condicional	| - | - |
+| InstituicaoPermanencia	| Não	| - | - |
 
 **Regras:** 
 
-* Só podem ser preenchidos quando o campo [tipoDeImovel](#1-tipodeimovel) = `07` Abrigo, `08` Instituição de longa permanência para idosos, `09` Unidade prisional, `10` Unidade de medida socioeducativa e `11` Delegacia;
-* Não devem ser preenchidos se o campo [statusTermoRecusa](#8-statustermorecusa) = `true`.
+* Só pode ser preenchido quando o campo [tipoDeImovel](#12-tipodeimovel) = `07` Abrigo, `08` Instituição de longa permanência para idosos, `09` Unidade prisional, `10` Unidade de medida socioeducativa ou `11` Delegacia;
+* Não deve ser preenchido se o campo [statusTermoRecusa](#8-statustermorecusa) = `true`.
 
-**Referências:** [IdentificacaoResponsavelTecnico](#identificacaoresponsaveltecnico).
+**Referências:** [InstituicaoPermanencia](#instituicaopermanencia).
 
 ### \#14 headerTransport
 Informações sobre o profissional e a data do cadastro.
@@ -164,135 +164,6 @@ Informações sobre o profissional e a data do cadastro.
 | UnicaLotacaoHeader|	Sim|	-|	-|
 
 **Referências:** [UnicaLotacaoHeader]({% url headerTransport %}#unicalotacaoheader).
-
-## IdentificacaoImovel
-
-### \#1 tipoDeImovel
-Indica o tipo de imóvel do domicílio.
-
-| Tipo | Obrigatório | Mínimo | Máximo |
-|---| --- |---  | --- |
-|Long|	Sim|	-|	-|
-
-**Referências:** [tipoDeImovel]({% url dicionario %}#tipodeimovel).
-
-### \#2 nomeInstituicaoPermanencia
-Indica o nome da instituição de permanência.
-
-| Tipo | Obrigatório | Mínimo | Máximo |
-|--- |--- |--- |--- |
-|String |Condicional | 0 | 100 |
-
-**Regras:** Só pode ser preenchido quando o campo [tipoDeImovel](#1-tipodeimovel) = `07` Abrigo, `08` Instituição de longa permanência para idosos, `09` Unidade prisional, `10` Unidade de medida socioeducativa e `11` Delegacia.
-
-### \#3 stOutrosProfissionaisVinculados
-
-Marcador que indica se existem outros profissional de saúde vinculados à instituição (não inclui profissionais da rede pública de saúde).
-
-| Tipo | Obrigatório | Mínimo | Máximo |
-|--- |--- |--- |--- |
-|Boolean |Não |- |- |
-
-**Regras:** Só pode ser preenchido quando o campo [tipoDeImovel](#1-tipodeimovel) = `07` Abrigo, `08` Instituição de longa permanência para idosos, `09` Unidade prisional, `10` Unidade de medida socioeducativa e `11` Delegacia.
-
-## IdentificacaoResponsavelTecnico
-
-### \#1 nomeResponsavelTecnico
-Indica o nome do responsável técnico da instituição de permanência.
-
-| Tipo | Obrigatório | Mínimo | Máximo |
-|--- |--- |--- |--- |
-|String |Sim | 3 | 70 |
-
-**Regras:** As regras de validação de um nome estão descritas em {% link validar_nome %}.
-
-### \#2 cnsResponsavelTecnico
-Indica o CNS do responsável técnico da instituição de permanência.
-
-| Tipo | Obrigatório | Mínimo | Máximo |
-|--- |--- |--- |--- |
-|String |Sim | 15 | 15 |
-
-**Referências:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
-
-### \#3 cargoInstituicao
-Indica o cargo do responsável técnico da instituição de permanência.
-
-| Tipo | Obrigatório | Mínimo | Máximo |
-|--- |--- |--- |--- |
-|String |Não | 0 | 100 |
-
-### \#4 telefoneResponsavelTecnico
-Indica o telefone para contato do responsável técnico da instituição de permanência.
-
-| Tipo | Obrigatório | Mínimo | Máximo |
-|--- |--- |--- |--- |
-|String |Não | 10 | 11 |
-
-**Regras:** Mínimo 10 dígitos, máximo 11 (DDD + 8 ou 9).
-
-## FamiliaRow
-
-### \#1	dataNascimentoResponsavel
-Data de nascimento, no formato epoch time, do cidadão responsável pela família.
-
-| Tipo | Obrigatório | Mínimo | Máximo |
-|---| --- |---  | --- |
-|Long|	Não|	-|	-|
-
-**Referências:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milissegundos.
-
-### \#2	numeroCnsResponsavel
-CNS do responsável familiar.
-
-| Tipo | Obrigatório | Mínimo | Máximo |
-|---| --- |---  | --- |
-|String|	Sim|	15|	15|
-
-**Regras:** Validado por algoritmo.
-
-**Referências:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
-
-### \#3	numeroMembrosFamilia
-Quantidade de membros do núcleo familiar.
-
-| Tipo | Obrigatório | Mínimo | Máximo |
-|---| --- |---  | --- |
-|Interger|	Não|	0|	2|
-
-### \#4	numeroProntuario
-Código do prontuário familiar na UBS.
-
-| Tipo | Obrigatório | Mínimo | Máximo |
-|---| --- |---  | --- |
-|String|	Não|	0|	30|
-
-**Regras:** Apenas letras e números.
-
-### \#5	rendaFamiliar
-Código da renda familiar em salários mínimos.
-
-| Tipo | Obrigatório | Mínimo | Máximo |
-|---| --- |---  | --- |
-|Long|	Não|	-|	-|
-
-**Referências:** [RendaFamiliar]({% url dicionario %}#rendafamiliar).
-
-### \#6	resideDesde
-Mês e ano que a família começou a residir no domicílio, no formato epoch time.
-
-| Tipo | Obrigatório | Mínimo | Máximo |
-|---| --- |---  | --- |
-|Long|	Não|	-|	-|
-
-**Referências:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milissegundos.
-
-### \#7	stMudanca
-Marcador que indica se a familia mudou-se.
-
-| Tipo | Obrigatório | Mínimo | Máximo |
-|---| --- |---  | --- |
-|Boolean|	Não|	-|	-|
 
 ## EnderecoLocalPermanencia
 
@@ -436,7 +307,7 @@ Código da condição de posse e uso da terra.
 
 **Regras:** 
 
-* Não deve ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = `07` Abrigo, `08` Instituição de longa permanência para idosos, `09` Unidade prisional, `10` Unidade de medida socioeducativa e `11` Delegacia;
+* Não deve ser preenchido se o campo [tipoDeImovel](#12-tipodeimovel) = `07` Abrigo, `08` Instituição de longa permanência para idosos, `09` Unidade prisional, `10` Unidade de medida socioeducativa ou `11` Delegacia;
 
 **Referências:** [CondicaoDePosseEUsoDaTerra]({% url dicionario %}#condicaodeposseeusodaterra).
 
@@ -474,7 +345,7 @@ Código do tipo de material predominante nas paredes externas do domicílio.
 |---| --- |---  | --- |
 |Long|	Não|	-|	-|
 
-**Regras:** Não deve ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = `07` Abrigo, `08` Instituição de longa permanência para idosos, `09` Unidade prisional, `10` Unidade de medida socioeducativa e `11` Delegacia.
+**Regras:** Não deve ser preenchido se o campo [tipoDeImovel](#12-tipodeimovel) = `07` Abrigo, `08` Instituição de longa permanência para idosos, `09` Unidade prisional, `10` Unidade de medida socioeducativa ou `11` Delegacia.
 
 **Referências:** [MaterialPredominanteNaConstrucao]({% url dicionario %}#materialpredominantenaconstrucao).
 
@@ -485,7 +356,7 @@ Número de cômodos do domicílio.
 |---| --- |---  | --- |
 |String|	Não|	0|	2|
 
-**Regras:** Não deve ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = `07` Abrigo, `08` Instituição de longa permanência para idosos, `09` Unidade prisional, `10` Unidade de medida socioeducativa e `11` Delegacia.
+**Regras:** Não deve ser preenchido se o campo [tipoDeImovel](#12-tipodeimovel) = `07` Abrigo, `08` Instituição de longa permanência para idosos, `09` Unidade prisional, `10` Unidade de medida socioeducativa ou `11` Delegacia.
 
 ### \#8	nuMoradores
 Número de moradores do domicílio.
@@ -507,7 +378,7 @@ Código da situação de moradia ou de posse da terra.
 |Long|	Sim|	-|	-|
 
 
-**Regras:** Não devem ser preenchidos se o campo [tipoDeImovel](#1-tipodeimovel) = `07` Abrigo, `08` Instituição de longa permanência para idosos, `09` Unidade prisional, `10` Unidade de medida socioeducativa e `11` Delegacia.
+**Regras:** Não devem ser preenchidos se o campo [tipoDeImovel](#12-tipodeimovel) = `07` Abrigo, `08` Instituição de longa permanência para idosos, `09` Unidade prisional, `10` Unidade de medida socioeducativa ou `11` Delegacia.
 
 **Referências:** [SituacaoDeMoradia]({% url dicionario %}#situacaodemoradia).
 
@@ -525,7 +396,7 @@ Código do tipo de acesso ao domicílio.
 |---| --- |---  | --- |
 |Long|	Não|	-|	-|
 
-**Regras:** Não deve ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = `07` Abrigo, `08` Instituição de longa permanência para idosos, `09` Unidade prisional, `10` Unidade de medida socioeducativa e `11` Delegacia.
+**Regras:** Não deve ser preenchido se o campo [tipoDeImovel](#12-tipodeimovel) = `07` Abrigo, `08` Instituição de longa permanência para idosos, `09` Unidade prisional, `10` Unidade de medida socioeducativa ou `11` Delegacia.
 
 **Referências:** [TipoDeAcessoAoDomicilio]({% url dicionario %}#tipodeacessoaodomicilio).
 
@@ -536,7 +407,7 @@ Código do tipo de domicílio.
 |---| --- |---  | --- |
 |Long|	Não|	-|	-|
 
-**Regras:** Não deve ser preenchido se o campo [tipoDeImovel](#1-tipodeimovel) = `07` Abrigo, `08` Instituição de longa permanência para idosos, `09` Unidade prisional, `10` Unidade de medida socioeducativa e `11` Delegacia.
+**Regras:** Não deve ser preenchido se o campo [tipoDeImovel](#12-tipodeimovel) = `07` Abrigo, `08` Instituição de longa permanência para idosos, `09` Unidade prisional, `10` Unidade de medida socioeducativa ou `11` Delegacia.
 
 **Referências:** [TipoDeDomicilio]({% url dicionario %}#tipodedomicilio).
 
@@ -548,3 +419,116 @@ Código do tipo do tratamento de água para consumo do domicílio.
 |Long|	Não|	-|	-|
 
 **Referências:** [AguaConsumoDomicilio]({% url dicionario %}#aguaconsumodomicilio).
+
+## FamiliaRow
+
+### \#1	dataNascimentoResponsavel
+Data de nascimento, no formato epoch time, do cidadão responsável pela família.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|---| --- |---  | --- |
+|Long|	Não|	-|	-|
+
+**Referências:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milissegundos.
+
+### \#2	numeroCnsResponsavel
+CNS do responsável familiar.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|---| --- |---  | --- |
+|String|	Sim|	15|	15|
+
+**Regras:** Validado por algoritmo.
+
+**Referências:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
+
+### \#3	numeroMembrosFamilia
+Quantidade de membros do núcleo familiar.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|---| --- |---  | --- |
+|Interger|	Não|	0|	2|
+
+### \#4	numeroProntuario
+Código do prontuário familiar na UBS.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|---| --- |---  | --- |
+|String|	Não|	0|	30|
+
+**Regras:** Apenas letras e números.
+
+### \#5	rendaFamiliar
+Código da renda familiar em salários mínimos.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|---| --- |---  | --- |
+|Long|	Não|	-|	-|
+
+**Referências:** [RendaFamiliar]({% url dicionario %}#rendafamiliar).
+
+### \#6	resideDesde
+Mês e ano que a família começou a residir no domicílio, no formato epoch time.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|---| --- |---  | --- |
+|Long|	Não|	-|	-|
+
+**Referências:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milissegundos.
+
+### \#7	stMudanca
+Marcador que indica se a familia mudou-se.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|---| --- |---  | --- |
+|Boolean|	Não|	-|	-|
+
+## InstituicaoPermanencia
+
+### \#1 nomeInstituicaoPermanencia
+Indica o nome da instituição de permanência.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|--- |--- |--- |--- |
+|String |Não | 0 | 100 |
+
+### \#2 stOutrosProfissionaisVinculados
+Marcador que indica se existem outros profissional de saúde vinculados à instituição (não inclui profissionais da rede pública de saúde).
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|--- |--- |--- |--- |
+|Boolean |Não |- |- |
+
+### \#3 nomeResponsavelTecnico
+Indica o nome do responsável técnico da instituição de permanência.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|--- |--- |--- |--- |
+|String |Sim | 3 | 70 |
+
+**Regras:** As regras de validação de um nome estão descritas em {% link validar_nome %}.
+
+### \#4 cnsResponsavelTecnico
+Indica o CNS do responsável técnico da instituição de permanência.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|--- |--- |--- |--- |
+|String |Não | 15 | 15 |
+
+**Referências:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
+
+### \#5 cargoInstituicao
+Indica o cargo do responsável técnico da instituição de permanência.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|--- |--- |--- |--- |
+|String |Não | 0 | 100 |
+
+### \#6 telefoneResponsavelTecnico
+Indica o telefone para contato do responsável técnico da instituição de permanência.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|--- |--- |--- |--- |
+|String |Não | 10 | 11 |
+
+**Regras:** Mínimo 10 dígitos, máximo 11 (DDD + 8 ou 9).
