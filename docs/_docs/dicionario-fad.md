@@ -32,7 +32,7 @@ Lista dos atendimentos realizados pelo profissional.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|List\<FichaAtendimentoDomiciliarChild\>|	Sim|	-|	-|
+|List\<FichaAtendimentoDomiciliarChild\>|	Sim|	0|	99|
 
 **Referências:** [FichaAtendimentoDomiciliarChild](#fichaatendimentodomiciliarchild).
 

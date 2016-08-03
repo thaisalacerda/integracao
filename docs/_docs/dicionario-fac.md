@@ -154,6 +154,8 @@ Turno de realização da atividade.
 |---| --- |---  | --- |
 |Long|	Sim|	-|	-|
 
+**Referências:** [Turno]({% url dicionario %}#turno).
+
 ### \#15 headerTransport
 Dados referentes ao profissional responsável e a data do cadastro.
 

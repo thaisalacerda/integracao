@@ -58,6 +58,8 @@ Informações sócio-demográficas fornecidas pelo cidadão.
 
 **Regras:** Não deve ser preenchido se o campo [statusTermoRecusaCadastroIndividualAtencaoBasica](#6-statustermorecusacadastroindividualatencaobasica) = `true`.
 
+**Referências:** [InformacoesSocioDemograficas](#informacoessociodemograficas)
+
 ### \#6 statusTermoRecusaCadastroIndividualAtencaoBasica
 Marcador que indica se o termo de recusa foi assinalado.
 
@@ -780,7 +782,7 @@ Código da orientação sexual informada pelo cidadão.
 **Referências:** [OrientacaoSexual]({% url dicionario %}#orientacaosexual).
 
 ### \#6 povoComunidadeTradicional
-Nome da comunidade tradicional que o cidadão frequenta.
+Nome da comunidade tradicional que o cidadão pertence.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |

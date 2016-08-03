@@ -33,7 +33,7 @@ Registro individualizado dos atendimentos.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|List\<FichaAtendimentoOdontologicoChild>|	Sim|-|-|
+|List\<FichaAtendimentoOdontologicoChild>|	Sim|0|99|
 
 **Referências:** [FichaAtendimentoOdontologicoChild](#fichaatendimentoodontologicochild).
 
@@ -242,7 +242,7 @@ Quantidade de procedimentos realizados.
 |---| --- |---  | --- |
 |Integer|	Sim|	0|	2|
 
-**Regras:** Valor máximo que pode ser registrado é 99.
+**Regras:** O valor mínimo que pode ser registrado é 1 e o valor máximo é 99.
 
 ## ListaProcedimentosRealizados
 |Código SIGTAP *| Descrição AB | Código AB correspondente |

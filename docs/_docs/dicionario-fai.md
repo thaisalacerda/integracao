@@ -22,7 +22,7 @@ Registro individualizado dos atendimentos.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|List\<FichaAtendimentoIndividualChild>|	Sim	|-	|-|
+|List\<FichaAtendimentoIndividualChild>|	Sim	|0	|99|
 
 **Referências:** [FichaAtendimentoIndividualChild](#fichaatendimentoindividualchild).
 
@@ -314,7 +314,7 @@ Código da racionalidade em saúde utilizada.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|List\<Long>|	Não|	0|	6|
+|List\<Long>|	Não|	0|	1|
 
 **Referências:**	[racionalidadeSaude]({% url dicionario %}#racionalidadesaude).
 
@@ -387,6 +387,7 @@ Código do CIAP2 registrado no antedimento.
 **Regras:**
 
 * Não pode ser igual a [outroCiap2](#3-outrociap2);
+* Não pode conter nenhum dos item listados em [ListaCiapCondicaoAvaliada](#listaciapcondicaoavaliada);
 * É Requerido o preenchimento de pelo menos um dos itens de `#1` a `#5`.
 
 ### \#3	outroCiap2
@@ -399,6 +400,7 @@ Código do CIAP2 registrado no antedimento.
 **Regras:**
 
 * Não pode ser igual a [outroCiap1](#2-outrociap1);
+* Não pode conter nenhum dos item listados em [ListaCiapCondicaoAvaliada](#listaciapcondicaoavaliada);
 * É Requerido o preenchimento de pelo menos um dos itens de `#1` a `#5`.
 
 ### \#4	cid10
@@ -438,7 +440,7 @@ Código do CID10 registrado no atendimento.
 |A78|Hanseníase|ABP018|
 |K86|Hipertensão Arterial|ABP005|
 |T82|Obesidade|ABP007|
-|W78|Pré-natal|ABP001|
+|W78|Pré-natal|ABP001| 
 |A98|Puericultura|ABP004|
 |W18|Puerpério (até 42 dias)|ABP002|
 |Não possui|Rastreamento de Câncer de mama|ABP023|

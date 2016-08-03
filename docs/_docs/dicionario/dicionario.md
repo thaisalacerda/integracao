@@ -113,7 +113,7 @@ order: 12
 |14 |	Agendamento para grupos|	-|
 |15 |	Tratamento concluído|	-|
 |17 |	Alta do episódio|	-|
-|1 |	Atendimento à pacientes com necessidades especiais|	-|
+|1 |	Atendimento à pacientes com necessidades especiais|	ENCAMINHAMENTO |
 |2 |	Cirurgia BMF|	-|
 |3 |	Endodontia|	-|
 |4 |	Estomatologia|	-|

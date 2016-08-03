@@ -80,7 +80,8 @@ Número de animais no domicílio.
 
 * Só pode ser preenchido se o campo [tipoDeImovel](#12-tipodeimovel) = `01` Domicílio;
 * Não pode ser preenchido se o campo [stAnimaisNoDomicilio](#7-stanimaisnodomicilio) = `false`;
-* Não pode ser preenchido se o campo [statusTermoRecusa](#8-statustermorecusa) = `true`.
+* Não pode ser preenchido se o campo [statusTermoRecusa](#8-statustermorecusa) = `true`;
+* Não pode ser preenchido com o valor "0" (zero);
 * Deve ser maior ou igual ao número de opções selecionadas no campo [animaisNoDomicilio](#1-animaisnodomicilio).
 
 ### \#7	stAnimaisNoDomicilio
@@ -116,9 +117,9 @@ Código UUID para identificar a ficha na base de dados nacional.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Sim|	3|	44|
+|String|	Sim|	36|	44|
 
-**Regras:** É recomendado concatenar o CNES na frente do UUID, de modo que os 7 dígitos (CNES) + 1 de hífen somados aos 3 (32 caracteres + 4 hífen) do UUID são a limitação de 44 bytes do campo. Formato canônico.
+**Regras:** É recomendado concatenar o CNES na frente do UUID, de modo que os 7 dígitos (CNES) + 1 de hífen somados aos 36 (32 caracteres + 4 hífen) do UUID são a limitação de 44 bytes do campo. Formato canônico.
 
 **Referências:** Para ver a referência sobre o UUID, acesse: [UUID Wikipedia](https://en.wikipedia.org/wiki/Universally_unique_identifier).
 
@@ -127,7 +128,7 @@ Código UUID para identificar a ficha que deu origem ao cadastro do registro.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Sim|	3|	44|
+|String|	Sim|	36|	44|
 
 **Regras:** Se for uma ficha de atualização, deve ser preenchido com o UUID da ficha que deu origem ao registro. Se for uma ficha de cadastro, este campo deve ser igual ao campo [UUID](#11-uuid).
 
@@ -447,7 +448,9 @@ Quantidade de membros do núcleo familiar.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Interger|	Não|	0|	2|
+|Integer|	Não|	0|	2|
+
+**Regras:** Não pode ser preenchido com o valor "0" (zero).
 
 ### \#4	numeroProntuario
 Código do prontuário familiar na UBS.

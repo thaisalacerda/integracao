@@ -42,7 +42,7 @@ Lista de Fichas de Visita Domiciliar e Territorial.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|List\<FichaVisitaDomiciliarChild\> |Sim |- |- |
+|List\<FichaVisitaDomiciliarChild\> |Sim |0 |99 |
 
 **Referências:** [FichaVisitaDomiciliarChild](#fichavisitadomiciliarchild).
 
