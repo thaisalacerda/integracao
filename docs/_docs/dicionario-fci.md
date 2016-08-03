@@ -209,14 +209,14 @@ Código da situação referente ao peso corporal.
 **Referências:** [ConsideracaoPeso]({% url dicionario %}#consideracaopeso).
 
 ### \#11 statusEhDependenteAlcool
-Marcador se o cidadão é dependente de álcool.
+Marcador se o cidadão faz uso de álcool.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
 |Boolean |Não |- |- |
 
 ### \#12 statusEhDependenteOutrasDrogas
-Marcador se o cidadão é dependente de outras drogas.
+Marcador se o cidadão faz uso de outras drogas.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
@@ -230,7 +230,7 @@ Marcador se o cidadão é fumante.
 |Boolean |Não |- |- |
 
 ### \#14 statusEhGestante
-Marcador se o cidadão está gestante.
+Marcador se a cidadã está gestante.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
@@ -578,7 +578,7 @@ CNS do responsável do cidadão.
 **Regras:**
 
 * Validado por algoritmo;
-* Só pode ser preenchido se o campo [statusEhResponsavel](#16-statusehresponsavel) = `true`.
+* Só pode ser preenchido se o campo [statusEhResponsavel](#16-statusehresponsavel) = `false`.
 
 **Referências:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
 
@@ -592,7 +592,7 @@ Número de celular do cidadão.
 **Regras:** Apenas números.
 
 ### \#12 numeroNisPisPasep
-Número do PIS/PASEP do cidadão.
+Número do NIS (PIS / PASEP) do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
@@ -605,7 +605,7 @@ Código do país de nascimento do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Long |Conditional |- |- |
+|Long |Condicional |- |- |
 
 **Regras:** 
 
