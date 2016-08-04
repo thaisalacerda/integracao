@@ -41,7 +41,7 @@ Número de participantes da atividade.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Integer|	Não|	0|	3|
+|Integer|	Sim|	0|	3|
 
 **Regras:**
 
