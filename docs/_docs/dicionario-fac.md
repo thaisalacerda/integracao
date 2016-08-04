@@ -45,7 +45,7 @@ Número de participantes da atividade.
 
 **Regras:**
 
-- Valores entre 0 e 999;
+- Valores entre 1 e 999;
 - Deve ser maior ou igual a quantidade de participantes inseridos em [participantes](#10-participantes).
 
 ### \#5	numAvaliacoesAlteradas
