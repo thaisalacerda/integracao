@@ -1,8 +1,6 @@
-﻿# Dicionário de dados
+﻿# Layout e-SUS de Dados e Interface (LEDI) versão 2.1
 
-## Este documento é o Dicionário de Dados com a descrição dos atributos das classes da biblioteca Thrift e do XSD do e-SUS AB para o envio de informações para o SISAB.
+###Este documento descreve os atributos utilizados no **LEDI** versão 2.1.
 
-O e-SUS AB fornece dois tipos de dados para o envio de informações para o centralizador nacional. São disponibilizados os seguintes formatos:
-
-* XML
-* THRIFT
+* O **LEDI** é uma camada abstrata que especifica as informações e seus formatos, que são aceitos no envio de dados de sistemas próprios para o e-SUS AB (PEC).
+* O **LEDI** pode ser implementado utilizando-se [XML](https://pt.wikipedia.org/wiki/XML) ou [Apache Thrift](https://en.wikipedia.org/wiki/Apache_Thrift).
