@@ -98,7 +98,16 @@ Código UUID para identificar a ficha que deu origem ao cadastro do registro.
 
 **Referências:** Para ver a referência sobre o UUID, acesse: [UUID Wikipedia](https://en.wikipedia.org/wiki/Universally_unique_identifier).
 
-### \#10 headerTransport
+### \#10 SaidaCidadaoCadastro
+Dados referentes ao profissional e a data do cadastro.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|--- |--- |--- |--- |
+|saidaCidadaoCadastro |Não |- |- |
+
+**Referências:** [SaidaCidadaoCadastro](#saidacidadaocadastro).
+
+### \#11 headerTransport
 Dados referentes ao profissional e a data do cadastro.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -748,16 +757,7 @@ Código do curso mais elevado que o cidadão frequenta ou frequentou.
 
 **Referências:** [CursoMaisElevado]({% url dicionario %}#cursomaiselevado).
 
-### \#3 motivoSaidaCidadao
-Código do motivo da saída do cidadão do cadastro.
-
-| Tipo | Obrigatório | Mínimo | Máximo |
-|--- |--- |--- |--- |
-|Long |Não |- |- |
-
-**Referências:** [MotivoSaida]({% url dicionario %}#motivosaida).
-
-### \#4 ocupacaoCodigoCbo2002
+### \#3 ocupacaoCodigoCbo2002
 Código do CBO que representa a ocupação do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -770,7 +770,7 @@ Código do CBO que representa a ocupação do cidadão.
 
 **Referências:** [CBO]({% url cbo %}).
 
-### \#5 orientacaoSexualCidadao
+### \#4 orientacaoSexualCidadao
 Código da orientação sexual informada pelo cidadão.  
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -781,7 +781,7 @@ Código da orientação sexual informada pelo cidadão.
 
 **Referências:** [OrientacaoSexual]({% url dicionario %}#orientacaosexual).
 
-### \#6 povoComunidadeTradicional
+### \#5 povoComunidadeTradicional
 Nome da comunidade tradicional que o cidadão pertence.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -790,7 +790,7 @@ Nome da comunidade tradicional que o cidadão pertence.
 
 **Regras:** Não deve ser preenchido se o campo [statusMembroPovoComunidadeTradicional](#12-statusmembropovocomunidadetradicional) = `false`.
 
-### \#7 relacaoParentescoCidadao
+### \#6 relacaoParentescoCidadao
 Código da relação de parentesco com o responsável familiar.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -801,7 +801,7 @@ Código da relação de parentesco com o responsável familiar.
 
 **Referências:** [RelacaoParentesco]({% url dicionario %}#relacaoparentesco).
 
-### \#8 situacaoMercadoTrabalhoCidadao
+### \#7 situacaoMercadoTrabalhoCidadao
 Código da situação do cidadão no mercado de trabalho.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -810,56 +810,56 @@ Código da situação do cidadão no mercado de trabalho.
 
 **Referências:** [SituacaoMercadoTrabalho]({% url dicionario %}#situacaomercadotrabalho).
 
-### \#9 statusDesejaInformarOrientacaoSexual
+### \#8 statusDesejaInformarOrientacaoSexual
 Marcador que indica se o cidadão deseja informar sua orientação sexual.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
 |Boolean |Não |- |- |
 
-### \#10 statusFrequentaBenzedeira
+### \#9 statusFrequentaBenzedeira
 Marcador que indica se o cidadão frequenta cuidador tradicional.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
 |Boolean |Não |- |- |
 
-### \#11 statusFrequentaEscola
+### \#10 statusFrequentaEscola
 Marcador que indica se o cidadão frequenta escola ou creche.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
 |Boolean |Sim |- |- |
 
-### \#12 statusMembroPovoComunidadeTradicional
+### \#11 statusMembroPovoComunidadeTradicional
 Marcador que indica se o cidadão é membro de um povo ou comunidade tradicional.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
 |Boolean |Não |- |- |
 
-### \#13 statusParticipaGrupoComunitario
+### \#12 statusParticipaGrupoComunitario
 Marcador que indica se o cidadão participa de algum grupo comunitário.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
 |Boolean |Não |- |- |
 
-### \#14 statusPossuiPlanoSaudePrivado
+### \#13 statusPossuiPlanoSaudePrivado
 Marcador que indica se o cidadão possui plano de saúde privado.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
 |Boolean |Não |- |- |
 
-### \#15 statusTemAlgumaDeficiencia
+### \#14 statusTemAlgumaDeficiencia
 Marcador que indica se cidadão tem alguma deficiência.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
 |Boolean |Sim |- |- |
 
-### \#16 identidadeGeneroCidadao
+### \#15 identidadeGeneroCidadao
 Código da identidade de gênero informada pelo cidadão.  
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -870,7 +870,7 @@ Código da identidade de gênero informada pelo cidadão.
 
 **Referências:** [identidadeGeneroCidadao]({% url dicionario %}#identidadegenerocidadao).
 
-### \#17 statusDesejaInformarIdentidadeGenero
+### \#16 statusDesejaInformarIdentidadeGenero
 
 Marcador que indica se o cidadão deseja informar sua identidade de gênero.
 
@@ -878,25 +878,7 @@ Marcador que indica se o cidadão deseja informar sua identidade de gênero.
 |--- |--- |--- |--- |
 |Boolean |Não |- |- |
 
-### \#18 dataObito
-Data de óbito do cidadão no formato epoch time.
-
-| Tipo | Obrigatório | Mínimo | Máximo |
-|--- |--- |--- |--- |
-|Long |Condicional |- |- |
-
-**Regras:** Só pode ser preenchido se o campo [motivoSaidaCidadao](#3-motivosaidacidadao) = `135`. Neste caso o preenchimento é obrigatório.
-
-### \#19 numeroDO
-Data de óbito do cidadão no formato epoch time.
-
-| Tipo | Obrigatório | Mínimo | Máximo |
-|--- |--- |--- |--- |
-|String |Não |9 |9 |
-
-**Regras:** Só pode ser preenchido se o campo [motivoSaidaCidadao](#3-motivosaidacidadao) = `135`.
-
-### \#20 responsavelPorCrianca
+### \#17 responsavelPorCrianca
 Código do responsável por crianças de até 9 anos.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -906,3 +888,32 @@ Código do responsável por crianças de até 9 anos.
 **Regras:** Não pode ser preenchido se a [dataNascimentoCidadao](#3-datanascimentocidadao) for anterior ou igual a 10 anos a partir da [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
 
 **Referências:** [ResponsavelCrianca]({% url dicionario %}#responsavelcrianca).
+
+## SaidaCidadaoCadastro
+
+### \#1 motivoSaidaCidadao
+Código do motivo da saída do cidadão do cadastro.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|--- |--- |--- |--- |
+|Long |Não |- |- |
+
+**Referências:** [MotivoSaida]({% url dicionario %}#motivosaida).
+
+### \#2 dataObito
+Data de óbito do cidadão no formato epoch time.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|--- |--- |--- |--- |
+|Long |Condicional |- |- |
+
+**Regras:** Só pode ser preenchido se o campo [motivoSaidaCidadao](#1-motivosaidacidadao) = `135`. Neste caso o preenchimento é obrigatório.
+
+### \#3 numeroDO
+Data de óbito do cidadão no formato epoch time.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|--- |--- |--- |--- |
+|String |Não |9 |9 |
+
+**Regras:** Só pode ser preenchido se o campo [motivoSaidaCidadao](#1-motivosaidacidadao) = `135`.
