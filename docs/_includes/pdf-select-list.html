@@ -2,7 +2,7 @@
   <ul>
     {% for item in include.nav %}
 
-      <li id="item-{{ item.id }}">
+      <li id="item-{{ item.id }}" data-url="{{ item.url }}">
         <label>
           <input type="checkbox" value="{{ item.id }}" checked="checked"> {{ item.title }}
           <small>

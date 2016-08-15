@@ -1,5 +1,3 @@
-/* Site structure */
-
 .sidebar {
   float: left;
   width: 25%;
@@ -25,17 +23,5 @@
     @include media-query(800px) {
       margin-top: 0 !important;
     }
-  }
-}
-
-.content {
-  float: left;
-  width: 75%;
-  padding-left: 50px;
-
-  @include media-query(800px) {
-    float: none;
-    width: 100%;
-    padding: 0;
   }
 }

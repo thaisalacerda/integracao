@@ -1,0 +1,70 @@
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $font-weight-normal;
+}
+
+.post-content {
+  margin-bottom: $spacing-unit;
+
+  h1 {
+    font-size: $base-header-size;
+    font-weight: $font-weight-medium;
+
+    @include media-query($medium-device) {
+      font-size: $base-header-size - 2px;
+    }
+  }
+
+  h2 {
+    font-size: $base-header-size - 4px;
+
+    @include media-query($medium-device) {
+      font-size: $base-header-size - 6px;
+    }
+  }
+
+  h3 {
+    font-size: $base-header-size - 6px;
+
+    @include media-query($medium-device) {
+      font-size: $base-header-size - 8px;
+    }
+  }
+
+  h4 {
+    font-size: $base-header-size - 8px;
+
+    @include media-query($medium-device) {
+      font-size: $base-header-size - 10px;
+    }
+  }
+
+  h5 {
+    font-size: $base-header-size - 10px;
+
+    @include media-query($medium-device) {
+      font-size: $base-header-size - 12px;
+    }
+  }
+
+  h6 {
+    font-size: $base-header-size - 12px;
+
+    @include media-query($medium-device) {
+      font-size: $base-header-size - 14px;
+    }
+  }
+}
+
+/**
+Fix for anchor links with sticky header
+From http://nicolasgallagher.com/jump-links-and-viewport-positioning/
+*/
+
+h1[id]::before, h2[id]::before, h3[id]::before, h4[id]::before, h5[id]::before,
+h6[id]::before, a[name]::before {
+  z-index: -1;
+  display: block;
+  height: 70px;
+  margin: -70px 0 0;
+  content: '';
+}

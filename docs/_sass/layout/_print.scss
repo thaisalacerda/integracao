@@ -1,0 +1,151 @@
+$print-font-size: 9pt !important;
+
+@media print {
+  @page {
+    margin: .75in .5in;
+    size: a4;
+
+    @top-right {
+      padding-top: 10mm;
+      content: url('../img/bridge-logo-sm.png');
+    }
+
+    @bottom-center {
+      content: url('../img/print-footer.png');
+      border-top: 1px solid #ddd;
+    }
+
+    @bottom-left {
+      content: '';
+      border-top: 1px solid #ddd;
+    }
+
+    @bottom-right {
+      font-size: 8pt;
+      content: counter(page) '/' counter(pages);
+      border-top: 1px solid #ddd;
+    }
+  }
+
+  @page :first {
+    @top-right {
+      content: none;
+    }
+    @bottom-center {
+      content: none;
+      border-top: 0;
+    }
+    @bottom-left {
+      content: none;
+      border-top: 0;
+    }
+    @bottom-right {
+      content: none;
+      border-top: 0;
+    }
+  }
+
+  *, *:before, *:after {
+    font-size: $print-font-size;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  body {
+    margin: 0;
+    background: #fff;
+  }
+
+  .wrapper {
+    margin: 0;
+    padding: 0;
+  }
+
+  a, a:visited {
+    text-decoration: underline;
+  }
+
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  table {
+    page-break-inside: auto;
+  }
+
+  tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tfoot {
+    display: table-footer-group;
+  }
+
+  .pdf img {
+    max-width: 100% !important;
+    max-height: 700px !important;
+    page-break-inside: avoid;
+  }
+
+  p, h1, h2, h3, h4, h5, h6 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+  }
+
+  .post-title {
+    font-size: 22pt !important;
+  }
+
+  h1 {
+    font-size: 20pt !important;
+  }
+
+  h2 {
+    font-size: 17pt !important;
+  }
+
+  h3 {
+    font-size: 14pt !important;
+  }
+
+  h4, h5, h6 {
+    font-size: 12pt !important;
+  }
+
+  .site-header, .post-meta, .sidebar, .breadcrumb, .breadcrumb-placeholder {
+    display: none;
+  }
+
+  .content {
+    float: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .pdf-separator {
+    visibility: hidden;
+  }
+
+  .pdf.shown {
+    page-break-after: always;
+  }
+
+  .pdf.shown:last-of-type {
+    page-break-after: avoid;
+  }
+
+  .visible-print {
+    display: block !important;
+  }
+}

@@ -5,106 +5,143 @@ icon: icon-pdf
 ---
 
 <div class="pdf-select">
-  <a class="pull-right btn" href="javascript: window.print()">Imprimir / Gerar PDF</a>
+  <a class="pull-right btn" href="javascript: generate()">Imprimir / Gerar PDF</a>
   <h2>Selecione as páginas que deseja incluir</h2>
 
   {% include pdf-select-list.html nav=site.data.navigation %}
 
+  <h2>Informações de capa</h2>
+  <input id="input-titulo-documento" class="input" type="text" placeholder="Título do documento" />
+
   <br>
-  <a class="btn primary block large" href="javascript: window.print()">Imprimir / Gerar PDF</a>
+  <a class="btn primary block large" href="javascript: generate()">Imprimir / Gerar PDF</a>
 </div>
 
-{% include pdf-content.html nav=site.data.navigation %}
+<div class="pdf-content">
+  <div class="capa hidden">
+    <div class="capa-center">
+      <img src="{{ '/img/bridge-logo-lg.png' | prepend: site.baseurl }}" />
+      <h1 id="target-titulo-documento">Título do documento</h1>
+    </div>
+
+    <div class="capa-bottom">
+      <p>Florianópolis</p>
+      <p id="target-date-documento">00 de abril de 3000</p>
+    </div>
+  </div>
+
+  {% include pdf-content.html nav=site.data.navigation %}
+</div>
 
 <script type="text/javascript">
+  var $checkboxes = $('.pdf-select input[type=checkbox]');
 
-  /**
-   * Percorre todos os checkboxes a partir do seletor especificado, executando
-   * a callback function para cada checkbox
-   * @param callback(element, index):
-   *    element - O NodeElement do checkbox atual
-   *    index   - O índice atual
-   */
-  function traverse(selector, callback) {
-    if (selector.startsWith('#')) {
-      // Caso o seletor seja um id, adiciona caracter de escape em '.', para
-      // que este não seja considerado como parte de um seletor de classe
-      // Exemplo: #item-rf-cds.06_edicao_exclusao => #item-rf-cds\.06_edicao_exclusao
-      selector = selector.replace(/\./g, "\\\.");
+  $(document).ready(function() {
+    // Aplicamos o filtro de checkboxes caso venha de uma URL: pdf.html?include={id}
+    var search = window.location.search;
+    var include = search.split('include')[1];
+
+    if (include !== undefined) {
+      include = include.split('=')[1];
+      hideAll();
+      checkByUrl(include);
     }
-    var el = document.querySelector(selector);
-    var chbxs = el.querySelectorAll("input");
-    for(var i = 0; i < chbxs.length; i++) {
-      callback(chbxs[i], i);
-    }
-  }
+  });
 
   /**
-   * Percorre todos os checkboxes a partir da raiz
+   * Mostra/esconde as páginas correspondentes ao clicar nos checkboxes
    */
-  function traverseRoot(callback) {
-    traverse(".pdf-select", callback);
-  }
+  $checkboxes.on('change', function(e) {
+    var checkbox = e.target;
+    var id = checkbox.value;
+    var checked = checkbox.checked;
+
+    // Não utilizamos o seletor '#' pois IDs podem ter caracteres especiais
+    // Exemplo: RF-REC.recebimento_por_lote
+    var seletor = '[id="'+id+'"]';
+
+    $(seletor)
+      .toggleClass('shown', checked)
+      .toggleClass('hidden', !checked);
+  });
 
   /**
-   * Lança um 'change' event no elemento especificado
+   * Desmarca todos os checkboxes e esconde todas as páginas.
    */
-  function triggerChange(el) {
-    var event = document.createEvent('HTMLEvents');
-    event.initEvent('change', true, false);
-    el.dispatchEvent(event);
+  function hideAll() {
+    $checkboxes
+      .prop('checked', false)
+      .trigger('change');
   }
 
   /**
-   * Desmarca todos os checkboxes
-   */
-  function dismarkAll() {
-    traverseRoot(function(el, index) {
-      el.checked = false;
-      triggerChange(el);
-    });
-  }
-
-  /**
-   * Marca/Desmarca o checkbox do item com id especificado e todos os seus filhos
+   * Marca/Desmarca o checkbox do item com id especificado e todos os seus
+   * filhos, mostrando ou escondendo as páginas correspondentes
    */
   function checkById(id, check) {
     if (check === undefined) {
       check = true;
     }
 
-    traverse("#item-" + id, function(el, index) {
-      el.checked = check;
-      triggerChange(el);
-    });
+    $('#item-' + id).find('input[type=checkbox]')
+      .prop('checked', check)
+      .trigger('change');
   }
 
   /**
-   * Adicionamos o evento para mostrar/ocultar o conteúdo
-   * ao marcar/desmarcar o checkbox correspondente
+   * Marca o checkbox do item com url especificado e todos os seus filhos,
+   * mostrando as páginas correspondentes
    */
-  traverseRoot(function(el, index) {
-    el.addEventListener("change", function() {
-      var pdfId = el.value;
-      var contentDiv = document.getElementById(pdfId);
-      contentDiv.classList.remove('shown');
-      contentDiv.classList.remove('hidden');
-      if (el.checked) {
-        contentDiv.classList.add('shown');
-      } else {
-        contentDiv.classList.add('hidden');
-      }
-    });
-  });
-
-  // Aplicamos o filtro de checkboxes caso venha de uma URL: pdf.html?include={id}
-  var search = window.location.search;
-  var include = search.split('include')[1];
-
-  if (include != undefined) {
-    include = include.split('=')[1];
-    dismarkAll();
-    checkById(include);
+  function checkByUrl(url) {
+    $('.pdf-select [data-url="' + url + '"]').find('input[type=checkbox]')
+      .prop('checked', true)
+      .trigger('change');
   }
 
+  var monthNames = [
+    "Janeiro",
+    "Fevereiro",
+    "Março",
+    "Abril",
+    "Maio",
+    "Junho",
+    "Julho",
+    "Agosto",
+    "Setembro",
+    "Outubro",
+    "Novembro",
+    "Dezembro"
+  ];
+
+  /**
+   * Gera o PDF conforme regras definidas na página.
+   */
+  function generate() {
+    var titulo = $('#input-titulo-documento').val();
+    if (titulo.length !== 0) {
+      $('.capa').addClass('visible-print');
+      $('#target-titulo-documento').html(titulo);
+
+      var now = new Date();
+      var day = now.getDate();
+      var monthIndex = now.getMonth();
+      var year = now.getFullYear();
+      $('#target-date-documento').html(day + ' de ' + monthNames[monthIndex] + ' de ' + year);
+    }
+
+    var host = window.location.hostname;
+    if (host.startsWith('localhost') || host.startsWith('127.0.0.1')) {
+      window.print();
+    } else {
+      var html = $('html').clone();
+      html.find('head').append('<base href="'+window.location+'">');
+
+      $('#pdf-form input').val(html.html());
+      $('#pdf-form').submit();
+    }
+  }
 </script>
+
+<form id="pdf-form" action="https://prince.bridge.ufsc.br/build_from_html" method="POST" target="_blank">
+  <input type="hidden" name="body" value="Empty">
+</form>

@@ -1,11 +1,19 @@
 @import "variables";
 @import "base";
-@import "layout/structure";
-@import "layout/header";
-@import "layout/content";
 @import "syntax-highlighting";
-@import "tables";
-@import "menu";
-@import "pdf";
-@import "print";
-@import "components/all";
+
+@import "layout/header";
+@import "layout/sidebar";
+@import "layout/post";
+@import "layout/typography";
+@import "layout/print";
+@import "layout/tables";
+
+@import "pages/pdf";
+
+@import "components/breadcrumbs";
+@import "components/menu";
+@import "components/label";
+@import "components/btn";
+@import "components/icons";
+@import "components/forms";
