@@ -19,7 +19,6 @@
 
 // Primeiro nível
 .menu > ul {
-  font-size: 15px;
   font-weight: bold;
 
   & > li {
@@ -36,22 +35,20 @@
     }
 
     & > a.open {
-      background-color: $background-color;
-      cursor: default;
+      border-bottom: 1px solid #ddd;
     }
   }
 
   // Link "Voltar"
   & > li > .back-link {
       color: $brand-color;
-      font-size: 14px;
       text-transform: uppercase;
       padding-top: 6px;
 
       small {
         text-transform: none;
         color: #777;
-        font-size: 12px;
+        font-size: 13px;
         font-weight: $font-weight-normal;
         display: block;
         padding-left: 30px;
@@ -62,7 +59,6 @@
 // Segundo nível
 .menu ul ul {
   background-color: #f5f5f5;
-  font-size: 14px;
   font-weight: $font-weight-normal;
   padding: 15px 30px;
 

@@ -51,7 +51,7 @@ module NavGenerator
       item.title = doc.data['title'] or raise NavError, "title must be specified for file " + doc.path
       item.url = doc.url
       begin
-        item.order = Integer(doc.data[ORDER_KEY]) || 1
+        item.order = Integer(doc.data[ORDER_KEY] || 1)
       rescue ArgumentError
         raise NavError, ORDER_KEY + ' must be integer, defined at page ' + doc.path
       end
