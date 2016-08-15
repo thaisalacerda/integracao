@@ -12,7 +12,7 @@ order: 2
   <dt>{% link cabecalho %}</dt>
   <dd>Definições de cabeçalho para páginas de documentação.</dd>
 
-  <dt>{% link linkagem %}</dt>
+  <dt>{% link linkagem.id %}</dt>
   <dd>Construindo links automáticos entre páginas de documentação.</dd>
 
   <dt>{% link navegacao %}</dt>

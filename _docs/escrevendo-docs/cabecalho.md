@@ -26,7 +26,7 @@ Os seguintes valores são obrigatórios para cada página de documentação:
 
 * `layout`: O layout usado como base para a página, geralmente é `docs`
 * `title`: Título da página
-* `id`: Um id único identificador desta página. Esse id é usado para gerar o {% link navegacao, title: "menu de navegação" %} e pela {% link linkagem, title: "linkagem automática" %}
+* `id`: Um id único identificador desta página. Esse id é usado para gerar o {% link navegacao, title: "menu de navegação" %} e pela {% link linkagem.id, title: "linkagem automática" %}
 
 # Para saber mais
 

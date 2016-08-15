@@ -1,7 +1,7 @@
 ---
 layout: doc
 title: Linkagem automática
-id: linkagem
+id: linkagem.id
 parent: escrevendo-docs
 order: 3
 ---

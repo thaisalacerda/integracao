@@ -1,7 +1,10 @@
-$base-font-family: Helvetica, Arial, sans-serif;
+@import 'https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i';
+
+$base-font-family: "Lato", Helvetica, Arial, sans-serif;
 $monospace-font-family: "Courier New", monospace;
 $base-font-size:   15px;
 $small-font-size:  13px;
+$base-header-size: 30px;
 $base-line-height: 1.5;
 
 $spacing-unit:     28px;
@@ -15,9 +18,10 @@ $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
-$font-weight-light:  300;
+$font-weight-light:  400;
 $font-weight-normal: 400;
 $font-weight-medium: 600;
+$font-weight-bold:   700;
 
 // Width of the content area
 $content-width:     94%;

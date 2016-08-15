@@ -34,7 +34,7 @@ body {
     font-family: $base-font-family;
     font-size: $base-font-size;
     line-height: $base-line-height;
-    font-weight: $font-weight-light;
+    font-weight: $font-weight-normal;
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
@@ -83,13 +83,6 @@ li {
     > ol {
          margin-bottom: 0;
     }
-}
-
-/**
- * Headings
- */
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
 }
 
 /**
@@ -212,21 +205,6 @@ dl dd {
     margin-bottom: 15px;
 }
 
-input[type=search] {
-  width: 100%;
-  margin-bottom: 10px;
-  padding: 8px 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
-  transition: all 0.4s;
-
-  &:focus {
-    outline: 0;
-    border-color: $brand-color;
-  }
-}
-
 label {
   cursor: pointer;
   display: block;
@@ -238,6 +216,18 @@ li p {
 
 li ul {
   margin-bottom: 14px;
+}
+
+/**
+ * Text selection color
+ */
+::-moz-selection {
+   background: $brand-color;
+   color: #fff;
+}
+::selection {
+  background: $brand-color;
+  color: #fff;
 }
 
 /* Helper classes */

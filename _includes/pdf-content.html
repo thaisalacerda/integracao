@@ -1,5 +1,5 @@
 {% for item in include.nav %}
-    <div class="post pdf shown" id="{{ item.id }}">
+    <div class="post pdf shown" id="{{ item.id }}" data-url="{{ item.url }}">
       <header class="post-header">
         <h1 class="post-title">{{ item.page['title'] }}</h1>
       </header>

@@ -9,7 +9,13 @@ version: 2.0.0
 baseurl: "/docs"
 
 # Repositório onde está hospedado os fontes deste site
-github_repo: https://github.com/sismob/jekyll
+github_repo: https://github.com/laboratoriobridge/docs
+
+# Branch e subdiretório onde estão armazenados os arquivos da documentação,
+# relativo ao projeto especificado em `github_repo`
+# Deve ter a forma {branch}/{subdiretório}, onde somente a branch é obrigatória
+# Exemplo: `2.1/documentacao`, `master`
+github_repo_sub: master
 
 exclude: [README.md, Gemfile*, Guardfile]
 
