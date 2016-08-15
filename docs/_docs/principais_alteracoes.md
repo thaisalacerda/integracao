@@ -7,16 +7,19 @@ order: 20
 
 ######Este documento consiste em tabelas representando as estruturas de cada ficha que tiveram alterações em relação a versão 2.0.0 do e-SUS AB (PEC). Cada tabela lista os campos alterados de sua respectiva estrutura, mostrando a situação dos mesmos nas versões 2.0.0 e 2.1.0. As alterações de regras e obrigatoriedade dos campos se encontram descritas nos documentos de cada ficha. 
 
+**Atalhos:**
 
-###### As informações seguem o modelo:
-
-## Nome da ficha
-
-##### Nome da estrutura alterada
-
-| Versão 2.0.0 | Versão 2.1.0 |
-| ------------ | ------------ |
-| Tipo e **nome** do campo na v2.0.0 |  Tipo e **nome** do campo na v2.1.0  |
+- [Ficha de Cadastro Individual](#ficha-de-cadastro-individual);
+- [Ficha de Cadastro Domiciliar e Territorial](#ficha-de-cadastro-domiciliar-e-territorial);
+- [Ficha de Atendimento Individual](#ficha-de-atendimento-individual);
+- [Ficha de Atendimento Odontológico Individual](#ficha-de-atendimento-odontol-gico-individual);
+- [Ficha de Atividade Coletiva](#ficha-de-atividade-coletiva);
+- [Ficha de Procedimentos](#ficha-de-procedimentos);
+- [Ficha de Visita Domiciliar e Territorial](#ficha-de-visita-domiciliar-e-territorial);
+- [Marcadores de Consumo Alimentar](#marcadores-de-consumo-alimentar);
+- [Ficha de Avaliação de Elegibilidade](#ficha-de-avalia-o-de-elegibilidade);
+- [Ficha de Atendimento Domiciliar](#ficha-de-atendimento-domiciliar);
+- [Cabeçalho (headerTransport)](#cabe-alho-headertransport).
 
 <br>
 <hr>
@@ -25,23 +28,23 @@ order: 20
 
 ##### CadastroIndividual
 
-| Versão 2.0.0 | Versão 2.1.0 | 
-| ------------ | ------------ |
+| Tipo e nome do campo na v2.0.0 | Tipo e nome do campo na v2.1.0 | 
+| ------------------------------ | ------------------------------ |
 | HeaderCdsCadastro **dadosGerais** | Não existe |
 | Não existe | SaidaCidadaoCadastro **saidaCidadaoCadastro** |
 | Não existe | UnicaLotacaoHeader **headerTransport** |
 
 ##### CondicoesDeSaude
 
-| Versão 2.0.0 | Versão 2.1.0 | 
-| ------------ | ------------ |
+| Tipo e nome do campo na v2.0.0 | Tipo e nome do campo na v2.1.0 |
+| ------------------------------ | ------------------------------ |
 | boolean **statusTratamentoPsiquicoOuProblemaMental** | Não existe |
 | Não existe  | boolean **statusDiagnosticoMental** |
 
 ##### IdentificacaoUsuarioCidadao
 
-| Versão 2.0.0 | Versão 2.1.0 |
-| ------------ | ------------ |
+| Tipo e nome do campo na v2.0.0 | Tipo e nome do campo na v2.1.0 |
+| ------------------------------ | ------------------------------ |
 | string **nomeSocialCidadao** | string **nomeSocial** |
 | long **dataNascimentoResponsavel** | Não existe |
 | string **numeroCartaoSus** | string **cnsCidadao**|
@@ -59,8 +62,8 @@ order: 20
 
 ##### InformacoesSocioDemograficas
 
-| Versão 2.0.0 | Versão 2.1.0 |
-| ------------ | ------------ |
+| Tipo e nome do campo na v2.0.0 | Tipo e nome do campo na v2.1.0 |
+| ------------------------------ | ------------------------------ |
 | long **motivoSaidaCidadao** | Não existe |
 | long **responsavelPorCrianca** | Não existe |
 | Não existe |  long **identidadeGeneroCidadao**|
@@ -69,8 +72,8 @@ order: 20
 
 ##### SaidaCidadaoCadastro (nova estrutura)
 
-| Versão 2.0.0 | Versão 2.1.0 |
-| ------------ | ------------ |
+| Tipo e nome do campo na v2.0.0 | Tipo e nome do campo na v2.1.0 |
+| ------------------------------ | ------------------------------ |
 | Não existe   | long **motivoSaidaCidadao** |
 | Não existe   | long **dataObito** |
 | Não existe   | string **numeroDO** |
@@ -79,8 +82,8 @@ order: 20
 
 #####InstituicaoPermanencia (nova estrutura)
 
-| Versão 2.0.0 | Versão 2.1.0 |
-| ------------ | ------------ |
+| Tipo e nome do campo na v2.0.0 | Tipo e nome do campo na v2.1.0 |
+| ------------------------------ | ------------------------------ |
 | Não existe | string **nomeInstituicaoPermanencia** |
 | Não existe | boolean **stOutrosProfissionaisVinculados**|
 | Não existe | string **nomeResponsavelTecnico**|
@@ -90,15 +93,15 @@ order: 20
 
 ##### CondicaoMoradia
 
-| Versão 2.0.0 | Versão 2.1.0 |
-| ------------ | ------------ |
+| Tipo e nome do campo na v2.0.0 | Tipo e nome do campo na v2.1.0 |
+| ------------------------------ | ------------------------------ |
 | boolean **stDiponibilidadeEnergiaeletrica** | boolean **stDisponibilidadeEnergiaEletrica**|
 | long **tratamentoAguaDomicilio**  | long **aguaConsumoDomicilio** |
 
 ##### CadastroDomiciliar
 
-| Versão 2.0.0 | Versão 2.1.0 |
-| ------------ | ------------ |
+| Tipo e nome do campo na v2.0.0 | Tipo e nome do campo na v2.1.0 |
+| ------------------------------ | ------------------------------ |
 | HeaderCdsCadastro **dadosGerais** | Não existe |
 | boolean **statusTermoRecusaCadastroDomiciliarAtencaoBasica** | boolean **statusTermoRecusa** |
 | Não existe | long **tipoDeImovel** |
@@ -107,8 +110,8 @@ order: 20
 
 ##### EnderecoLocalPermanencia
 
-| Versão 2.0.0 | Versão 2.1.0 |
-| ------------ | ------------ |
+| Tipo e nome do campo na v2.0.0 | Tipo e nome do campo na v2.1.0 |
+| ------------------------------ | ------------------------------ |
 | string **telReferencial** |  string **telefoneContato** |
 | string **telResidencial** |  string **telefoneResidencia** |
 | Não existe | string **pontoReferencia** |
@@ -119,14 +122,14 @@ order: 20
 
 ##### ProblemaCondicaoAvaliacaoAI
 
-| Versão 2.0.0 | Versão 2.1.0 |
-| ------------ | ------------ |
+| Tipo e nome do campo na v2.0.0 | Tipo e nome do campo na v2.1.0 |
+| ------------------------------ | ------------------------------ |
 | Não existe   | string **cid10_2**|
 
 ##### FichaAtendimentoIndividualChild
 
-| Versão 2.0.0 | Versão 2.1.0 |
-| ------------ | ------------ |
+| Tipo e nome do campo na v2.0.0 | Tipo e nome do campo na v2.1.0 |
+| ------------------------------ | ------------------------------ |
 | Não existe   |  long **racionalidadeSaude** |
 | Não existe   |  double **perimetroCefalico** |
 
@@ -134,29 +137,29 @@ order: 20
 
 ##### FichaAtendimentoOdontologicoChild
 
-| Versão 2.0.0 | Versão 2.1.0 |
-| ------------ | ------------ |
+| Tipo e nome do campo na v2.0.0 | Tipo e nome do campo na v2.1.0 |
+| ------------------------------ | ------------------------------ |
 | string **numCartaoSus**  |  string **cnsCidadao**|
 
 ##Ficha de Atividade Coletiva
 
 ##### ParticipanteRowItem
 
-| Versão 2.0.0 | Versão 2.1.0 |
-| ------------ | ------------ |
+| Tipo e nome do campo na v2.0.0 | Tipo e nome do campo na v2.1.0 |
+| ------------------------------ | ------------------------------ |
 | string **cns**| string **cnsParticipante** |
 | Não existe   | long **sexo** |
 
 ##### ProfissionalCboRowItem
 
-| Versão 2.0.0 | Versão 2.1.0 |
-| ------------ | ------------ |
+| Tipo e nome do campo na v2.0.0 | Tipo e nome do campo na v2.1.0 |
+| ------------------------------ | ------------------------------ |
 |  string **cns** | string **cnsProfissional**|
 
 ##### FichaAtividadeColetiva
 
-| Versão 2.0.0 | Versão 2.1.0 |
-| ------------ | ------------ |
+| Tipo e nome do campo na v2.0.0 | Tipo e nome do campo na v2.1.0 |
+| ------------------------------ | ------------------------------ |
 | long **dtAtividadeColetiva** | Não existe |
 | int **numParticipantesProgramados** | Não existe |
 | string **localAtividade** | string **outraLocalidade** |
@@ -178,16 +181,16 @@ order: 20
 
 ##### FichaProcedimentoChild
 
-| Versão 2.0.0 | Versão 2.1.0 |
-| ------------ | ------------ |
+| Tipo e nome do campo na v2.0.0 | Tipo e nome do campo na v2.1.0 |
+| ------------------------------ | ------------------------------ |
 | string **numCartaoSus**  | string **cnsCidadao**|
 
 ##Ficha de Visita Domiciliar e Territorial
 
 ##### FichaVisitaDomiciliarChild
 
-| Versão 2.0.0 | Versão 2.1.0 |
-| ------------ | ------------ |
+| Tipo e nome do campo na v2.0.0 | Tipo e nome do campo na v2.1.0 |
+| ------------------------------ | ------------------------------ |
 | string **numCartaoSus**  | string **cnsCidadao**|
 | Não existe | string **microArea**|
 | Não existe | boolean **stForaArea**|
@@ -199,16 +202,16 @@ order: 20
 
 ##### FichaConsumoAlimentar
 
-| Versão 2.0.0 | Versão 2.1.0 |
-| ------------ | ------------ |
+| Tipo e nome do campo na v2.0.0 | Tipo e nome do campo na v2.1.0 |
+| ------------------------------ | ------------------------------ |
 | string **numCartaoSus**  | string **cnsCidadao**|
 
 ##Ficha de Avaliação de Elegibilidade
 
 ##### FichaAvaliacaoElegibilidade
 
-| Versão 2.0.0 | Versão 2.1.0 |
-| ------------ | ------------ |
+| Tipo e nome do campo na v2.0.0 | Tipo e nome do campo na v2.1.0 |
+| ------------------------------ | ------------------------------ |
 | UnicaLotacaoHeader **headerTransport** | Não existe |
 | string **numeroCartaoSus** | string **cnsCidadao** |
 | long **codigoNacionalidade** | long **nacionalidadeCidadao** |
@@ -229,8 +232,8 @@ order: 20
 
 ##### EnderecoLocalPermanencia
 
-| Versão 2.0.0 | Versão 2.1.0 |
-| ------------ | ------------ |
+| Tipo e nome do campo na v2.0.0 | Tipo e nome do campo na v2.1.0 |
+| ------------------------------ | ------------------------------ |
 | string **telReferencial** | string **telefoneContato** |
 | string **telResidencial** | string **telefoneResidencia** |
 | Não existe | string **pontoReferencia** |
@@ -239,16 +242,16 @@ order: 20
 
 ##### FichaAtendimentoDomiciliarChild
 
-| Versão 2.0.0 | Versão 2.1.0 |
-| ------------ | ------------ |
+| Tipo e nome do campo na v2.0.0 | Tipo e nome do campo na v2.1.0 |
+| ------------------------------ | ------------------------------ |
 | string **cns** | string **cnsCidadao**|
 | list\<long\> **situacoesPresentes** | list\<long\> **condicoesAvaliadas**|
 | boolean **statusInicioAcompanhamentoPosObito**| Não existe |
 
 ##### FichaAtendimentoDomiciliarMasterThrift
 
-| Versão 2.0.0 | Versão 2.1.0 |
-| ------------ | ------------ |
+| Tipo e nome do campo na v2.0.0 | Tipo e nome do campo na v2.1.0 |
+| ------------------------------ | ------------------------------ |
 | UnicaLotacaoHeader **headerTransport** | Não existe|
 | Não existe | VariasLotacoesHeader **headerTransport** |
 
@@ -256,8 +259,8 @@ order: 20
 
 ##### HeaderCdsCadastro (estrutura inutilizada)
 
-| Versão 2.0.0 | Versão 2.1.0 |
-| ------------ | ------------ |
+| Tipo e nome do campo na v2.0.0 | Tipo e nome do campo na v2.1.0 |
+| ------------------------------ | ------------------------------ |
 |  string **cnesUnidadeSaude** | Não existe |
 |  string **cnsProfissional**| Não existe |
 |  string **codigoIbgeMunicipio** | Não existe |
@@ -267,8 +270,8 @@ order: 20
 
 ##### LotacaoHeader (nova estrutura)
 
-| Versão 2.0.0 | Versão 2.1.0 |
-| ------------ | ------------ |
+| Tipo e nome do campo na v2.0.0 | Tipo e nome do campo na v2.1.0 |
+| ------------------------------ | ------------------------------ |
 | Não existe | string **profissionalCNS**|
 | Não existe | string **cboCodigo_2002**|
 | Não existe | string **cnes**|
@@ -276,8 +279,8 @@ order: 20
 
 ##### VariasLotacoesHeader
 
-| Versão 2.0.0 | Versão 2.1.0 |
-| ------------ | ------------ |
+| Tipo e nome do campo na v2.0.0 | Tipo e nome do campo na v2.1.0 |
+| ------------------------------ | ------------------------------ |
 | UnicaLotacaoHeader **lotacaoForm** | Não existe |
 |  string **profissionalCNS1**| Não existe |
 |  string **cboCodigo\_2002\_1**| Não existe |
