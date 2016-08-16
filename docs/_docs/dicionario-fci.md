@@ -621,7 +621,7 @@ Código do país de nascimento do cidadão.
 * Só pode ser preenchido se o campo [nacionalidadeCidadao](#6-nacionalidadecidadao) = `3 (Estrangeiro)`. Neste caso o preenchimento é obrigatório;
 * Se o campo [nacionalidadeCidadao](#6-nacionalidadecidadao) for igual a `1 (Brasileira)`, este campo deve ser preenchido com `31 (BRASIL)`.
 
-**Referências:** [País]({% url referencias %}#país).
+**Referências:** [País]({% url referencias %}#pa-s).
 
 ### \#14 racaCorCidadao
 Código da raça / cor do cidadão.
@@ -743,8 +743,8 @@ Código das deficiências que o cidadão possui.
 
 **Regras:**
 
-* Requerido preenchimento de pelo menos um item se o campo [statusTemAlgumaDeficiencia](#15-statustemalgumadeficiencia) = `true`;
-* Não deve ser preenchido se o campo [statusTemAlgumaDeficiencia](#15-statustemalgumadeficiencia) = `false`.
+* Requerido preenchimento de pelo menos um item se o campo [statusTemAlgumaDeficiencia](#14-statustemalgumadeficiencia) = `true`;
+* Não deve ser preenchido se o campo [statusTemAlgumaDeficiencia](#14-statustemalgumadeficiencia) = `false`.
 
 **Referências:** [DeficienciaCidadao]({% url dicionario %}#deficienciacidadao).
 
@@ -777,7 +777,7 @@ Código da orientação sexual informada pelo cidadão.
 |--- |--- |--- |--- |
 |Long |Não |- |- |
 
-**Regras:** Não pode ser preenchido se o campo [statusDesejaInformarOrientacaoSexual](#9-statusdesejainformarorientacaosexual) = `false`.
+**Regras:** Não pode ser preenchido se o campo [statusDesejaInformarOrientacaoSexual](#8-statusdesejainformarorientacaosexual) = `false`.
 
 **Referências:** [OrientacaoSexual]({% url dicionario %}#orientacaosexual).
 
@@ -788,7 +788,7 @@ Nome da comunidade tradicional que o cidadão pertence.
 |--- |--- |--- |--- |
 |String |Não |0 |100 |
 
-**Regras:** Não deve ser preenchido se o campo [statusMembroPovoComunidadeTradicional](#12-statusmembropovocomunidadetradicional) = `false`.
+**Regras:** Não deve ser preenchido se o campo [statusMembroPovoComunidadeTradicional](#11-statusmembropovocomunidadetradicional) = `false`.
 
 ### \#6 relacaoParentescoCidadao
 Código da relação de parentesco com o responsável familiar.
@@ -866,7 +866,7 @@ Código da identidade de gênero informada pelo cidadão.
 |--- |--- |--- |--- |
 |Long |Não |- |- |
 
-**Regras:** Não pode ser preenchido se o campo [statusDesejaInformarIdentidadeGenero](#17-statusdesejainformaridentidadegenero) = `false`.
+**Regras:** Não pode ser preenchido se o campo [statusDesejaInformarIdentidadeGenero](#16-statusdesejainformaridentidadegenero) = `false`.
 
 **Referências:** [identidadeGeneroCidadao]({% url dicionario %}#identidadegenerocidadao).
 
