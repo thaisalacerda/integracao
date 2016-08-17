@@ -15,17 +15,17 @@ order: 16
 |[EmSituacaoDeRua]({% url dicionario-fci %}#emsituacaoderua)	|EmSituacaoDeRuaThrift	| emsituacaoderua.xsd |
 |[IdentificacaoUsuarioCidadao]({% url dicionario-fci %}#identificacaousuariocidadao)	|IdentificacaoUsuarioCidadaoThrift	| identificacaousuariocidadao.xsd |
 |[InformacoesSocioDemograficas]({% url dicionario-fci %}#informacoessociodemograficas)	|InformacoesSocioDemograficasThrift	| informacoessociodemograficas.xsd |
+|[SaidaCidadaoCadastro]({% url dicionario-fci %}#saidacidadaocadastro) | SaidaCidadaoCadastroThrift | saidacidadaocadastro.xsd |
 
 ## Ficha de Cadastro Domiciliar
 
 |Dicionário de dados |Thrift |XSD |
 |--- |--- |--- |
 |[CadastroDomiciliar]({% url dicionario-fcd %}#cadastrodomiciliar)	|CadastroDomiciliarThrift	| cadastrodomiciliar.xsd |
-|[IdentificacaoImovel]({% url dicionario-fcd %}#identificacaoimovel)	|IdentificacaoImovelThrift	| identificacaoimovel.xsd |
-|[IdentificacaoResponsavelTecnico]({% url dicionario-fcd %}#identificacaoresponsaveltecnico)	|IdentificacaoResponsavelTecnicoThrift	|identificacaoresponsaveltecnico.xsd |
 |[FamiliaRow]({% url dicionario-fcd %}#familiarow)	|FamiliaRowThrift	| familiarow.xsd |
 |[EnderecoLocalPermanencia]({% url dicionario-fcd %}#enderecolocalpermanencia)	|EnderecoLocalPermanenciaThrift	| enderecolocalpermanencia.xsd |
 |[CondicaoMoradia]({% url dicionario-fcd %}#condicaomoradia)	|CondicaoMoradiaThrift	| condicaomoradia.xsd |
+|[InstituicaoPermanencia]({% url dicionario-fcd %}#instituicaopermanencia)	|InstituicaoPermanenciaThrift	| instituicaopermanencia.xsd |
 
 ## Ficha de Atendimento Individual
 

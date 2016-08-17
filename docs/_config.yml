@@ -1,9 +1,9 @@
 # Site settings
-title: Dicionário de dados e-SUS AB
-description: Dicionário de dados e-SUS AB
+title: Layout e-SUS AB de Dados e Interface (LEDI AB)
+description: Layout e-SUS AB de Dados e Interface (LEDI AB)
 
 # Versão atual da documentação
-version: 2.0.0
+version: 2.1.0
 
 # the subpath of your site, e.g. /blog
 baseurl: "/integracao"

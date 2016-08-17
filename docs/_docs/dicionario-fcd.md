@@ -67,7 +67,7 @@ Marcador que indica se a ficha é uma atualização.
 |---| --- |---  | --- |
 |Boolean|	Sim|	1|	1|
 
-**Observação:** Caso seja uma ficha de atualização, o campo [uuidFichaOriginadora](#12-uuidfichaoriginadora) deve ser preenchido com o UUID da ficha que deu origem ao registro.
+**Observação:** Caso seja uma ficha de atualização, o campo [uuidFichaOriginadora](#11-uuidfichaoriginadora) deve ser preenchido com o UUID da ficha que deu origem ao registro.
 
 ### \#6	quantosAnimaisNoDomicilio
 Número de animais no domicílio.
@@ -130,7 +130,7 @@ Código UUID para identificar a ficha que deu origem ao cadastro do registro.
 |---| --- |---  | --- |
 |String|	Sim|	36|	44|
 
-**Regras:** Se for uma ficha de atualização, deve ser preenchido com o UUID da ficha que deu origem ao registro. Se for uma ficha de cadastro, este campo deve ser igual ao campo [UUID](#11-uuid).
+**Regras:** Se for uma ficha de atualização, deve ser preenchido com o UUID da ficha que deu origem ao registro. Se for uma ficha de cadastro, este campo deve ser igual ao campo [UUID](#10-uuid).
 
 **Referências:** Para ver a referência sobre o UUID, acesse: [UUID Wikipedia](https://en.wikipedia.org/wiki/Universally_unique_identifier).
 
@@ -309,6 +309,7 @@ Código da condição de posse e uso da terra.
 **Regras:** 
 
 * Não deve ser preenchido se o campo [tipoDeImovel](#12-tipodeimovel) = `07` Abrigo, `08` Instituição de longa permanência para idosos, `09` Unidade prisional, `10` Unidade de medida socioeducativa ou `11` Delegacia;
+* Não deve ser preenchido se o campo [localizacao](#5-localizacao) = `83 - Urbana`.
 
 **Referências:** [CondicaoDePosseEUsoDaTerra]({% url dicionario %}#condicaodeposseeusodaterra).
 
@@ -369,7 +370,7 @@ Número de moradores do domicílio.
 **Regras:** 
 
 - Não pode ser menor que o número de [familias](#4-familias) cadastradas.
-- Não pode ser menor que o somatório dos valores preenchidos no campo [numeroMembrosFamilia](#3-numeromembrosfamilia). 
+- Não pode ser menor que o somatório dos valores preenchidos no campo [numeroMembrosFamilia](#3-numeromembrosfamilia), considerando o valor `1` quando este campo não foi informado no cadastro de uma família. 
 
 ### \#9 situacaoMoradiaPosseTerra
 Código da situação de moradia ou de posse da terra.

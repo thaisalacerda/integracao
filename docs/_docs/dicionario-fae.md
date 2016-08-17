@@ -338,7 +338,7 @@ Código do país de nascimento do cidadão.
 * Só pode ser preenchido se o campo [nacionalidadeCidadao](#12-nacionalidadecidadao) = `3 (Estrangeiro)`. Neste caso o preenchimento é obrigatório;
 * Se o campo [nacionalidadeCidadao](#12-nacionalidadecidadao) for igual a `1 (Brasileira)`, este campo deve ser preenchido com `31 (BRASIL)`.
 
-**Referências:** [País]({% url referencias %}#país).
+**Referências:** [País]({% url referencias %}#pa-s).
 
 ## \#33 etnia
 Etnia do cidadão.
