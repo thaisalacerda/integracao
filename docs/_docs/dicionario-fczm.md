@@ -77,7 +77,7 @@ Data de realização do "Teste de olhinho (Reflexo vermelho)".
 
 **Regras:** 
 
-- Não pode ser anterior em 130 anos ou posterior a [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
+- Não pode ser anterior em 20 anos ou posterior a [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
 - Se este campo for preenchido, o campo [coResultadoTesteOlhinho](#8-coresultadotesteolhinho) é obrigatório.
 
 ### \#8 coResultadoTesteOlhinho
@@ -103,7 +103,7 @@ Data de realização do "Exame de fundo de olho (02.11.06.010-0 - Fundoscopia)".
 
 **Regras:** 
 
-- Não pode ser anterior em 130 anos ou posterior a [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
+- Não pode ser anterior em 20 anos ou posterior a [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
 - Se este campo for preenchido, o campo [coResultadoExameFundoOlho](#10-coresultadoexamefundoolho) é obrigatório.
 
 
@@ -130,7 +130,7 @@ Data de realização do "Teste da orelhinha - PEATE (02.11.07.027-0 - Potencial 
 
 **Regras:** 
 
-- Não pode ser anterior em 130 anos ou posterior a [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
+- Não pode ser anterior em 20 anos ou posterior a [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
 - Se este campo for preenchido, o campo [coResultadoTesteOrelhinha](#12-coresultadotesteorelhinha) é obrigatório.
 
 ### \#12 coResultadoTesteOrelhinha
@@ -156,7 +156,7 @@ Data de realização do exame de imagem "US transfontanela (02.05.02.017-8 - Ult
 
 **Regras:** 
 
-- Não pode ser anterior em 130 anos ou posterior a [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
+- Não pode ser anterior em 20 anos ou posterior a [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
 - Se este campo for preenchido, o campo [coResultadoUsTransfontanela](#14-coresultadoustransfontanela) é obrigatório.
 
 ### \#14 coResultadoUsTransfontanela
@@ -182,7 +182,7 @@ Data de realização do exame de imagem "Tomografia computadorizada (02.06.01.00
 
 **Regras:** 
 
-- Não pode ser anterior em 130 anos ou posterior a [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
+- Não pode ser anterior em 20 anos ou posterior a [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
 - Se este campo for preenchido, o campo [coResultadoTomografiaComputadorizada](#16-coresultadotomografiacomputadorizada) é obrigatório.
 
 ### \#16 coResultadoTomografiaComputadorizada
@@ -208,7 +208,7 @@ Data de realização do exame de imagem "Ressonância magnética (02.07.01.006-4
 
 **Regras:** 
 
-- Não pode ser anterior em 130 anos ou posterior a [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
+- Não pode ser anterior em 20 anos ou posterior a [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
 - Se este campo for preenchido, o campo [coResultadoRessonanciaMagnetica](#18-coresultadoressonanciamagnetica) é obrigatório.
 
 ### \#18 coResultadoRessonanciaMagnetica

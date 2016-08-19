@@ -70,7 +70,7 @@ Número do prontuário do cidadão na UBS.
 * Não deve ser preenchido se o campo [tipoDeImovel](#11-tipodeimovel) = `02` comércio, `03` terreno baldio, `04` Ponto Estratégico, `05` Escola, `06` Creche ou `12` Estabelecimento religioso.
 
 ### \#3 cnsCidadao
-Número do cartão SUS do cidadão.
+CNS do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
@@ -138,7 +138,7 @@ Código dos motivos da visita.
 
 **Regras:**
 
-* Não deve ser preenchido caso o campo [desfecho](#8-desfecho) = 3 `AUSENTE` ou 2 `VISITA_RECUSADA`;
+* Não deve ser preenchido caso o campo [desfecho](#8-desfecho) = `3` Ausente ou `2` Visita Recusada;;
 
 * Se o campo [tipoDeImovel](#11-tipodeimovel) = `02` comércio, `03` terreno baldio, `04` Ponto Estratégico, `05` Escola, `06` Creche ou `12` Estabelecimento religioso, então as opções selecionadas deste campo só podem ser:
 
@@ -203,7 +203,7 @@ Peso do cidadão em Quilogramas.
 * Máximo de 3 números após a vírgula;
 * Valor mínimo 0,5 e máximo 500;
 * Não deve ser preenchido se o campo [tipoDeImovel](#11-tipodeimovel) = `02` comércio, `03` terreno baldio, `04` Ponto Estratégico, `05` Escola, `06` Creche ou `12` Estabelecimento religioso.
-* Não deve ser preenchido caso o campo [desfecho](#8-desfecho) = 3 `AUSENTE` ou 2 `VISITA_RECUSADA`;
+* Não deve ser preenchido caso o campo [desfecho](#8-desfecho) = `3` Ausente ou `2` Visita Recusada;
 
 ### \#13 alturaAcompanhamentoNutricional
 Altura do cidadão em centímetros.
@@ -218,4 +218,4 @@ Altura do cidadão em centímetros.
 * Máximo de 1 número após a vírgula;
 * Valor mínimo 20 e máximo 250;
 * Não deve ser preenchido se o campo [tipoDeImovel](#11-tipodeimovel) = `02` comércio, `03` terreno baldio, `04` Ponto Estratégico, `05` Escola, `06` Creche ou `12` Estabelecimento religioso.
-* Não deve ser preenchido caso o campo [desfecho](#8-desfecho) = 3 `AUSENTE` ou 2 `VISITA_RECUSADA`;
+* Não deve ser preenchido caso o campo [desfecho](#8-desfecho) = `3` Ausente ou `2` Visita Recusada;

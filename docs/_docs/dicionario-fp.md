@@ -142,7 +142,7 @@ Número do prontuário do cidadão na UBS.
 |String |Não |0 |30 |
 
 ### \#2 cnsCidadao
-Numero do cartão SUS do cidadão.
+CNS do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
@@ -197,7 +197,7 @@ Indica a realização da escuta inicial.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|Long |Não |- |- |
+|Boolean |Não |- |- |
 
 ### \#8 procedimentos
 Lista dos códigos dos procedimentos que são registrados na ficha de procedimentos.
@@ -210,6 +210,7 @@ Lista dos códigos dos procedimentos que são registrados na ficha de procedimen
 
 - Preencher apenas com o código **AB** do procedimento.
 - É requerido pelo menos um dentre os itens `#8` e `#9`.
+- Se o campo [statusEscutaInicialOrientacao](#7-statusescutainicialorientacao) = `true`, este campo é opcional.
 
 **Referências:** [Procedimentos da Ficha](#procedimentos-da-ficha).
 
@@ -224,10 +225,11 @@ Código dos outros procedimentos do SIGTAP ou SISAB.
 
 **Regras:**
 
-* Só é permitido inserir procedimentos cujo grupo é igual a `01` - Ações de promoção e prevenção em saúde, `02` - Procedimentos com finalidade diagnóstica, `03` - Procedimentos clínicos ou `04` - Procedimentos cirúrgicos.
-* Não podem haver procedimentos que estão na tabela [Procedimentos da Ficha](#procedimentos-da-ficha).
-* Não podem haver procedimentos com o mesmo código.
-* É requerido pelo menos um dentre os itens `#8` e `#9`.
+- Só é permitido inserir procedimentos cujo grupo é igual a `01` - Ações de promoção e prevenção em saúde, `02` - Procedimentos com finalidade diagnóstica, `03` - Procedimentos clínicos ou `04` - Procedimentos cirúrgicos.
+- Não podem haver procedimentos que estão na tabela [Procedimentos da Ficha](#procedimentos-da-ficha).
+- Não podem haver procedimentos com o mesmo código.
+- É requerido pelo menos um dentre os itens `#8` e `#9`.
+- Se o campo [statusEscutaInicialOrientacao](#7-statusescutainicialorientacao) = `true`, este campo é opcional.
 
 **Referências:** Para ver a referência da tabela do SIGTAP acesse: [Tabela unificada SIGTAP](http://sigtap.datasus.gov.br/tabela-unificada/app/sec/procedimento/publicados/consultar).
 
