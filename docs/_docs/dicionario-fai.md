@@ -314,7 +314,7 @@ Código da racionalidade em saúde utilizada.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|List\<Long>|	Não|	0|	1|
+|Long|	Não|	0|	1|
 
 **Referências:**	[racionalidadeSaude]({% url dicionario %}#racionalidadesaude).
 

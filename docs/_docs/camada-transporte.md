@@ -5,9 +5,9 @@ id: camada-transporte
 order: 0
 ---
 
-Cada ficha dentro do arquivo compactado representa um DadoTransport serializado através do [TBinaryProtocol](https://github.com/apache/thrift/blob/0.9.2/lib/java/src/org/apache/thrift/protocol/TBinaryProtocol.java), sendo necessário que a extensão da ficha esteja definida como ".esus".
+Quando a integração for realizada através do **Apache Thrift**, cada ficha dentro do arquivo compactado representa um DadoTransport serializado através do [TBinaryProtocol](https://github.com/apache/thrift/blob/0.9.2/lib/java/src/org/apache/thrift/protocol/TBinaryProtocol.java), sendo necessário que a extensão da ficha esteja definida como ".esus".
 
-O pacote que encapsula os dados transmissíveis, cada ficha deve conter as informações de identificação deste cabeçalho, incluindo o dadoSerializado(conteúdo da ficha).
+O pacote que encapsula os dados transmissíveis, cada ficha deve conter as informações de identificação deste cabeçalho, incluindo o dadoSerializado (conteúdo da ficha).
 
 No caso do software de terceiro o campo remetente será igual ao originadora, que indica qual instalação gerou/enviou o dado.
 

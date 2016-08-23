@@ -98,12 +98,12 @@ Código UUID para identificar a ficha que deu origem ao cadastro do registro.
 
 **Referências:** Para ver a referência sobre o UUID, acesse: [UUID Wikipedia](https://en.wikipedia.org/wiki/Universally_unique_identifier).
 
-### \#10 SaidaCidadaoCadastro
+### \#10 saidaCidadaoCadastro
 Dados referentes ao profissional e a data do cadastro.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|saidaCidadaoCadastro |Não |- |- |
+|SaidaCidadaoCadastro |Não |- |- |
 
 **Referências:** [SaidaCidadaoCadastro](#saidacidadaocadastro).
 

@@ -132,14 +132,14 @@ Condições avaliadas do cidadão.
 
 **Referências:** [Condições Avaliadas](#condi-es-avaliadas).
 
-### \#9	cid10
+### \#9	cid
 Código do CID10 registrado no atendimento.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
 |String|	Não|	-|	-|
 
-### \#10	ciap2
+### \#10	ciap
 Código do CIAP2 registrado no atendimento.
 
 | Tipo | Obrigatório | Mínimo | Máximo |

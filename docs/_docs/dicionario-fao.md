@@ -218,7 +218,7 @@ Código do turno em que o atendimento foi realizado.
 
 ## ProcedimentoQuantidade
 
-### \#1	codigoProcedimento
+### \#1	coMsProcedimento
 Código do procedimento no MS.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
