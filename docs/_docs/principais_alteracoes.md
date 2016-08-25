@@ -5,7 +5,7 @@ id: principais_alteracoes
 order: 20
 ---
 
-######Este documento consiste em tabelas representando as estruturas de cada ficha que tiveram alterações em relação a versão 2.0.0 do e-SUS AB (PEC). Cada tabela lista os campos alterados de sua respectiva estrutura, mostrando a situação dos mesmos nas versões 2.0 e 2.1, conforme segue abaixo:  
+######Este documento consiste em tabelas representando as estruturas de cada ficha que tiveram alterações em relação a versão 2.0 do e-SUS AB (PEC). As tabelas apesentam os campos alterados, mostrando a situação dos mesmos nas versões 2.0 e 2.1, conforme segue abaixo:  
 
 - [Ficha de Cadastro Individual](#ficha-de-cadastro-individual);
 - [Ficha de Cadastro Domiciliar e Territorial](#ficha-de-cadastro-domiciliar-e-territorial);
