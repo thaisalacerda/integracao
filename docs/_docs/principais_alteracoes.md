@@ -7,6 +7,7 @@ order: 20
 
 ######Este documento consiste em tabelas representando as estruturas de cada ficha que tiveram alterações em relação a versão 2.0 do e-SUS AB (PEC). As tabelas apesentam os campos alterados, mostrando a situação dos mesmos nas versões 2.0 e 2.1, conforme segue abaixo:  
 
+- [Cabeçalho (headerTransport)](#cabe-alho-headertransport);
 - [Ficha de Cadastro Individual](#ficha-de-cadastro-individual);
 - [Ficha de Cadastro Domiciliar e Territorial](#ficha-de-cadastro-domiciliar-e-territorial);
 - [Ficha de Atendimento Individual](#ficha-de-atendimento-individual);
@@ -16,13 +17,48 @@ order: 20
 - [Ficha de Visita Domiciliar e Territorial](#ficha-de-visita-domiciliar-e-territorial);
 - [Marcadores de Consumo Alimentar](#marcadores-de-consumo-alimentar);
 - [Ficha de Avaliação de Elegibilidade](#ficha-de-avalia-o-de-elegibilidade);
-- [Ficha de Atendimento Domiciliar](#ficha-de-atendimento-domiciliar);
-- [Cabeçalho (headerTransport)](#cabe-alho-headertransport).
+- [Ficha de Atendimento Domiciliar](#ficha-de-atendimento-domiciliar).
 
-**Obs:** As alterações de regras e obrigatoriedade dos campos se encontram descritas nos documentos de cada ficha. 
+**Obs:** A seguir são apresentadas as **principais alterações** nas estruturas das fichas.  As alterações de regras, obrigatoriedade e opções dos campos se encontram descritas nos documentos de cada ficha. 
 
 <br>
 <hr>
+
+##Cabeçalho (headerTransport)
+
+##### HeaderCdsCadastro (estrutura inutilizada)
+
+| Versão 2.0| Versão 2.1 |
+| --------- | ---------- |
+|  string **cnesUnidadeSaude** | Não existe |
+|  string **cnsProfissional**| Não existe |
+|  string **codigoIbgeMunicipio** | Não existe |
+|  long **dataAtendimento** | Não existe |
+|  string **ineEquipe** | Não existe |
+|  long **microarea** | Não existe |
+
+##### LotacaoHeader (nova estrutura)
+
+| Versão 2.0| Versão 2.1 |
+| --------- | ---------- |
+| Não existe | string **profissionalCNS**|
+| Não existe | string **cboCodigo_2002**|
+| Não existe | string **cnes**|
+| Não existe | string **ine**|
+
+##### VariasLotacoesHeader
+
+| Versão 2.0| Versão 2.1 |
+| --------- | ---------- |
+| UnicaLotacaoHeader **lotacaoForm** | Não existe |
+|  string **profissionalCNS1**| Não existe |
+|  string **cboCodigo\_2002\_1**| Não existe |
+|  string **profissionalCNS2**| Não existe |
+|  string **cboCodigo\_2002\_2** | Não existe |
+| Não existe | LotacaoHeader **lotacaoFormPrincipal**|
+| Não existe | LotacaoHeader **lotacaoFormAtendimentoCompartilhado**|
+| Não existe | long **dataAtendimento**|
+| Não existe | string **codigoIbgeMunicipio**|
 
 ##Ficha de Cadastro Individual
 
@@ -130,6 +166,7 @@ order: 20
 
 | Versão 2.0| Versão 2.1 |
 | --------- | ---------- |
+| long **pic** | Não existe |
 | Não existe   |  long **racionalidadeSaude** |
 | Não existe   |  double **perimetroCefalico** |
 
@@ -168,7 +205,7 @@ order: 20
 | string **responsavelCns** | Não existe |
 | string **responsavelCnesUnidade** | Não existe |
 | string **responsavelNumIne** | Não existe |
-| list\<long\> **praticasTemasParaSaude**| Não existe |
+| list\<long\> **praticasTemasParaSaude**| Separado em duas estruturas: **temasParaSaude** e **praticasEmSaude**|
 | string **codigoIbgeMunicipio** | Não existe | 
 | Não existe | string **cnesLocalAtividade**|
 | Não existe | string **procedimento**|
@@ -255,38 +292,3 @@ order: 20
 | UnicaLotacaoHeader **headerTransport** | Não existe|
 | Não existe | VariasLotacoesHeader **headerTransport** |
 
-##Cabeçalho (headerTransport)
-
-##### HeaderCdsCadastro (estrutura inutilizada)
-
-| Versão 2.0| Versão 2.1 |
-| --------- | ---------- |
-|  string **cnesUnidadeSaude** | Não existe |
-|  string **cnsProfissional**| Não existe |
-|  string **codigoIbgeMunicipio** | Não existe |
-|  long **dataAtendimento** | Não existe |
-|  string **ineEquipe** | Não existe |
-|  long **microarea** | Não existe |
-
-##### LotacaoHeader (nova estrutura)
-
-| Versão 2.0| Versão 2.1 |
-| --------- | ---------- |
-| Não existe | string **profissionalCNS**|
-| Não existe | string **cboCodigo_2002**|
-| Não existe | string **cnes**|
-| Não existe | string **ine**|
-
-##### VariasLotacoesHeader
-
-| Versão 2.0| Versão 2.1 |
-| --------- | ---------- |
-| UnicaLotacaoHeader **lotacaoForm** | Não existe |
-|  string **profissionalCNS1**| Não existe |
-|  string **cboCodigo\_2002\_1**| Não existe |
-|  string **profissionalCNS2**| Não existe |
-|  string **cboCodigo\_2002\_2** | Não existe |
-| Não existe | LotacaoHeader **lotacaoFormPrincipal**|
-| Não existe | LotacaoHeader **lotacaoFormAtendimentoCompartilhado**|
-| Não existe | long **dataAtendimento**|
-| Não existe | string **codigoIbgeMunicipio**|
