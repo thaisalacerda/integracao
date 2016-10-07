@@ -2,10 +2,8 @@
 layout: doc
 title: Ficha de Atendimento Domiciliar
 id: dicionario-fad
-order: 1
+order: 9
 ---
-
-# Ficha de Atendimento Domiciliar
 
 ## FichaAtendimentoDomiciliarMaster
 
@@ -14,9 +12,9 @@ Código UUID para identificar a ficha na base de dados nacional.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|String|	Obrigatório|	36|	44|
+|String|	Sim|	36|	44|
 
-**Regras:** É recomendado concatenar o CNES na frente do UUID, de modo que os 7 digitos (CNES) + 1 de hífen somados aos 36 (32 caracteres + 4 hífen) do UUID são a limitação de 44 bytes do campo.
+**Regras:** É recomendado concatenar o CNES na frente do UUID, de modo que os 7 dígitos (CNES) + 1 de hífen somados aos 36 (32 caracteres + 4 hífen) do UUID são a limitação de 44 bytes do campo.
 
 **Referências:** Formato canônico.	Para ver a referência sobre o UUID, acesse: [UUID Wikipedia](https://en.wikipedia.org/wiki/Universally_unique_identifier).
 
@@ -25,25 +23,27 @@ Tipo de origem dos dados do registro.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Integer|	Obrigatório|	1|	1|
+|Integer|	Sim|	1|	1|
 
 Observações: Utilizar valor 3 (sistemas terceiros).
 
-### \#3	headerTransport
-Profissional que realizou a visita.
-
-| Tipo | Obrigatório | Mínimo | Máximo |
-|---| --- |---  | --- |
-|UnicaLotacaoHeader|	Obrigatório|	-|	-|
-
-**Referências:**	[UnicaLotacaoHeader]({% url profissional %}#unicalotacaoheader)
-
-### \#4	atendimentosDomiciliares
+### \#3	atendimentosDomiciliares
 Lista dos atendimentos realizados pelo profissional.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|List\<FichaAtendimentoDomiciliarChild\>|	Obrigatório|	1|	13|
+|List\<FichaAtendimentoDomiciliarChild\>|	Sim|	0|	99|
+
+**Referências:** [FichaAtendimentoDomiciliarChild](#fichaatendimentodomiciliarchild).
+
+### \#4	headerTransport
+Profissionais que realizaram o atendimento.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|---| --- |---  | --- |
+|VariasLotacoesHeader|	Sim|	-|	-|
+
+**Referências:** [VariasLotacoesHeader]({% url headerTransport %}#variaslotacoesheader).
 
 ## FichaAtendimentoDomiciliarChild
 
@@ -52,12 +52,12 @@ Código do turno onde aconteceu o atendimento.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Obrigatório|	-|	-|
+|Long|	Sim|	-|	-|
 
-**Referências:** [Turno]({% url dicionario %}#turno)
+**Referências:** [Turno]({% url dicionario %}#turno).
 
-### \#2	cns
-CNS do cidadão que participou da atividade.
+### \#2	cnsCidadao
+CNS do cidadão que recebeu atendimento.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
@@ -65,75 +65,82 @@ CNS do cidadão que participou da atividade.
 
 **Regras:** Validado pelo algoritmo.
 
-**Referências:** Para ver o algoritmo utilizado, acesse: [Cartão Net Datasus](http://cartaonet.datasus.gov.br/), em "Downloads" baixe o arquivo de rotina de validação Java.  
+**Referências:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
 
 ### \#3	dataNascimento
 Data de nascimento do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Obrigatório|	-|	-|
+|Long|	Sim|	-|	-|
 
-**Regras:** Não pode ser posterior a [dataAtendimento]({% url profissional%}#5-dataatendimento) e anterior a 130 anos a partir da [dataAtendimento]({% url profissional%}#5-dataatendimento).
+**Regras:** Não pode ser posterior a [dataAtendimento]({% url headerTransport %}#5-dataatendimento) e anterior a 130 anos a partir da [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
 
-**Referencias:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milisegundos.
+**Referencias:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milissegundos.
 
 ### \#4	sexo
 Código do sexo do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Obrigatório|	-|	-|
+|Long|	Sim|	-|	-|
 
-**Referências:**	[Sexo]({% url dicionario%}#sexo)
+**Referências:**	[Sexo]({% url dicionario%}#sexo).
 
 ### \#5	localDeAtendimento
-Cógido do local onde o atendimento foi realizado.
+Código do local onde o atendimento foi realizado.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Obrigatório|	-|	-|
+|Long|	Sim|	-|	-|
 
-**Referências:** [LocalDeAtendimento]({% url dicionario%}#localdeatendimento)
+**Referências:** [LocalDeAtendimento]({% url dicionario%}#localdeatendimento).
 
 ### \#6	atencaoDomiciliarModalidade
 Código da modalidade AD do cidadão atendido.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Obrigatório|	-|	-|
+|Long|	Sim|	-|	-|
 
-**Regras:** Apenas as opções `1`, `2` e `3` são aceitas.
+**Regras:** 
 
-**Referências:** [ModalidadeAD]({% url dicionario %}#modalidadead)
+- Apenas as opções `1`, `2` e `3` são aceitas.
+- Não pode ser preenchido se o campo [tipoAtendimento](#7-tipoatendimento) = `9 - Visita domiciliar pós-óbito`.
+
+**Referências:** [ModalidadeAD]({% url dicionario %}#modalidadead).
 
 ### \#7	tipoAtendimento
 Código do tipo de atendimento.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Obrigatório|	-|	-|
+|Long|	Sim|	-|	-|
 
-**Regras:** Apenas as opções `7` e `8` são aceitas.
+**Regras:** Apenas as opções `7`, `8` ou `9` são aceitas.
 
-**Referências:**: [TipoDeAtendimento]({% url dicionario %}#tipodeatendimento)
+**Referências:** [TipoDeAtendimento]({% url dicionario %}#tipodeatendimento).
 
-### \#8	situacoesPresentes
-Marcadores das situações presentes.
+### \#8	condicoesAvaliadas
+Condições avaliadas do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
 |List\<Long\>|	Não|	0|	24|
 
+**Regras:** Não pode ser preenchido se o campo [tipoAtendimento](#7-tipoatendimento) = `9 - Visita domiciliar pós-óbito`.
+
+**Referências:** [Condições Avaliadas](#condi-es-avaliadas).
+
 ### \#9	cid
-Código do CID registrado no atendimento.
+Código do CID10 registrado no atendimento.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
 |String|	Não|	-|	-|
 
 ### \#10	ciap
-Código do CIAP registrado no atendimento.
+Código do CIAP2 registrado no atendimento.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
@@ -144,41 +151,37 @@ Código dos procedimentos registrados no atendimento disponíveis na ficha.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|List\<String\>|	Não|	0|	21|
+|List\<String\>|	Não|	0|	20|
 
-**Referências:** [ProcedimentosDaAtençãoDomiciliar](#procedimentos-da-atenção-domiciliar)
+**Regras:** Não pode ser preenchido se o campo [tipoAtendimento](#7-tipoatendimento) = `9 - Visita domiciliar pós-óbito`.
+
+**Referências:** [Procedimentos da Atenção Domiciliar](#procedimentos-da-aten-o-domiciliar).
 
 ### \#12	outrosProcedimentos
 Código dos procedimentos SIGTAP registrados no atendimento.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|List\<String\>|	Não	|0|	4|
+|List\<String\>|	Não	|-|	-|
 
 **Regras:**
 
-* Não podem ser iguais aos procedimentos à cima.
-* Não podem conter procedimentos repetidos.
+* Só é permitido inserir procedimentos cujo grupo é igual a `01` - Ações de promoção e prevenção em saúde, `02` - Procedimentos com finalidade diagnóstica, `03` - Procedimentos clínicos ou `04` - Procedimentos cirúrgicos.
+* Não podem ser iguais aos procedimentos da tabela [Procedimentos da Atenção Domiciliar](#procedimentos-da-aten-o-domiciliar) e nem ao procedimento `0301050104 - Visita domiciliar pós-óbito`.
+* Não podem haver procedimentos com o mesmo código.
+
+Observação: Inserir o código do procedimento sem ponto ou hífen, ex: `0201010010`.
 
 ### \#13	condutaDesfecho
 Código do desfecho do atendimento do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |---| --- |---  | --- |
-|Long|	Não|	-|	-|
+|Long|	Sim|	-|	-|
 
-**Regras:**	Não podem conter as opções `7` ou `8`.
+**Referências:** [CondutaDesfecho]({% url dicionario %}#condutadesfecho).
 
-**Referências:**	[CondutaDesfecho]({% url dicionario %}#condutadesfecho)
-
-### \#14	statusInicioAcompanhamentoPosObito
-Marcador que indica se a família irá receber acompanhamento pós-óbito.
-
-| Tipo | Obrigatório | Mínimo | Máximo |
-|---| --- |---  | --- |
-|Boolean|	Não|	-|	-|
-
-## Questionário de Situações Presentes
+## Condições avaliadas
 
 |Nome|	Código|
 |--- |---|
@@ -205,30 +208,31 @@ Marcador que indica se a família irá receber acompanhamento pós-óbito.
 |Suporte ventilatório não invasivo - BiPAP	|21|
 |Diálise peritonial | 22|
 |Paracentese | 23|
-|Medicação  parenteral	|24|
+|Medicação parenteral	|24|
 
 ## Procedimentos da Atenção Domiciliar
 
-|Nome			|Código|
+Código SIGTAP *| Descrição |
 |--- |---|
-|Acompanhamento de paciente em reabilitação em comunicação alternativa			|0301070024|
-|Antibioticoterapia parenteral			|0301050082|
-|Atendimento / acompanhamento de paciente em reabilitação do desenvolvimento neuropsicomotor			|0301070075|
-|Atendimento fisioterapêutico paciente com transtorno respiratório sem complicações sistêmicas			|0302040021|
-|Atendimento médico com finalidade de atestar óbito			|0301050090|
-|Atendimento / acompanhamento em reabilitação nas múltiplas deficiências			|0301070067|
-|Cateterismo vesical de alívio			|0301100047|
-|Cateterismo vesical de demora			|0301100055|
-|Coleta de material para exame laboratorial			|0201020041|
-|Cuidados com estomas			|0301100063|
-|Cuidados com traqueostomia			|0301100071|
-|Enema			|0301100098|
-|Oxigenoterapia			|0301100144|
-|Retirada de pontos de cirurgias básicas (por paciente)			|0301100152|
-|Sondagem gástrica			|0301100179|
-|Terapia de reidratação oral			|0301100187|
-|Terapia de reidratação parenteral			|0301050120|
-|Terapia fonoaudiológica individual			|0301070113|
-|Tratamento de traumatismos de localização especificada / não especificada			|0308010019|
-|Tratamento em reabilitação			|0303190019|
-|Visita domiciliar pós-óbito			|0301050104|
+|0301070024| Acompanhamento de paciente em reabilitação em comunicação alternativa|
+|0301050082|Antibioticoterapia parenteral|
+|0301070075|Atendimento / Acompanhamento de paciente em reabilitação do desenvolvimento neuropsicomotor|
+|0302040021|Atendimento fisioterapêutico em paciente com transtorno respiratório sem complicações sistêmicas|
+|0301050090|Atendimento médico com finalidade de atestar óbito|
+|0301070067|Atendimento / Acompanhamento em reabilitação nas múltiplas deficiências|
+|0301100047|Cateterismo vesical de alívio|
+|0301100055|Cateterismo vesical de demora|
+|0201020041|Coleta de material para exame laboratorial|
+|0301100063|Cuidados com estomas|
+|0301100071|Cuidados com traqueostomia|
+|0301100098|Enema|
+|0301100144|Oxigenoterapia|
+|0301100152|Retirada de pontos de cirurgias básicas (por paciente)|
+|0301100179|Sondagem gástrica|
+|0301100187|Terapia de reidratação oral|
+|0301050120|Terapia de reidratação parenteral|
+|0301070113|Terapia fonoaudiológica individual|
+|0308010019|Tratamento de traumatismos de localização especificada / não especificada|
+|0303190019|Tratamento em reabilitação|
+
+_* Procedimentos pertencentes a competência **07/2016** do SIGTAP._

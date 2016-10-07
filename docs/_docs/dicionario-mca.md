@@ -2,10 +2,9 @@
 layout: doc
 title: Marcadores de Consumo Alimentar
 id: dicionario-mca
-order: 1
+order: 7
 ---
 
-# Marcadores de Consumo Alimentar
 
 ## FichaConsumoAlimentar
 
@@ -17,30 +16,27 @@ Profissional que realizou a visita.
 |--- |--- |--- |--- |
 |UnicaLotacaoHeader |Sim |- |- |
 
-**Referência:** {% link profissional %}
+**Referências:** [UnicaLotacaoHeader]({% url headerTransport %}#unicalotacaoheader).
 
-### \#2 numeroCartaoSus
+### \#2 cnsCidadao
 CNS do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|String |Sim |15 |15 |
+|String |Não |15 |15 |
 
-**Regras:** CNS válido de acordo com o algoritmo.
+**Regras:** CNS validado de acordo com o algoritmo.
 
-**Referência:** Para ver o algoritmo utilizado, acesse: [Cartão Net Datasus](http://cartaonet.datasus.gov.br/). Em "Downloads" baixe o arquivo de rotina de validação Java.  
+**Referências:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
 
 ### \#3 identificacaoUsuario
 Nome do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|String |Sim |5 |100 |
+|String |Sim |3 |70 |
 
-**Regras:**
-
-* Ter ao menos duas palavras.
-* Somente texto e apóstrofo (`'`).
+**Regras:** As regras de validação de um nome estão descritas em {% link validar_nome %}.
 
 ### \#4 dataNascimento
 Data de nascimento do cidadão no formato epoch time.
@@ -49,9 +45,9 @@ Data de nascimento do cidadão no formato epoch time.
 |--- |--- |--- |--- |
 |Long |Sim |- |- |
 
-**Regras:** Não pode ser posterior a [dataAtendimento]({% url profissional %}#5-dataatendimento) e anterior a 130 anos a partir da [dataAtendimento]({% url profissional %}#5-dataatendimento).
+**Regras:** Não pode ser posterior a [dataAtendimento]({% url headerTransport %}#5-dataatendimento) e anterior a 130 anos a partir da [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
 
-**Referêcia**: [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milisegundos.
+**Referência**: [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milissegundos.
 
 ### \#5 sexo
 Código do sexo do cidadão.
@@ -60,7 +56,7 @@ Código do sexo do cidadão.
 |--- |--- |--- |--- |
 |Long |Sim |- |- |
 
-**Referêcia**: [Sexo]({% url dicionario#sexo %})
+**Referência**: [Sexo]({% url dicionario#sexo %}).
 
 ### \#6 localAtendimento
 Código do local onde o atendimento foi realizado.
@@ -69,7 +65,9 @@ Código do local onde o atendimento foi realizado.
 |--- |--- |--- |--- |
 |Long |Sim |- |- |
 
-**Referêcia**: [LocalDeAtendimento]({% url dicionario#localdeatendimento %})
+**Regras:** Apenas valores de `1` a `10`.
+
+**Referência**: [LocalDeAtendimento]({% url dicionario#localdeatendimento %}).
 
 ### \#7 perguntasQuestionarioCriancasMenoresSeisMeses
 Marcadores referentes aos cidadãos menores de seis meses de idade.
@@ -78,9 +76,9 @@ Marcadores referentes aos cidadãos menores de seis meses de idade.
 |--- |--- |--- |--- |
 |List\<PerguntaQuestionarioCriancasMenoresSeisMeses\> |Condicional |- |- |
 
-**Regras:** Requerido se [dataNascimento](#4-datanascimento) < 6 meses a partir da [dataAtendimento]({% url profissional %}#5-dataatendimento).
+**Regras:** Requerido se [dataNascimento](#4-datanascimento) < 6 meses a partir da [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
 
-**Referêcia**: [PerguntaQuestionarioCriancasMenoresSeisMeses](#perguntaquestionariocriancasmenoresseismeses).
+**Referência**: [PerguntaQuestionarioCriancasMenoresSeisMeses](#perguntaquestionariocriancasmenoresseismeses).
 
 Observações: Os campos `#7`, `#8` e `#9` são mutuamente exclusivos, isto é, um e apenas um deles deve não ser nulo.
 
@@ -91,9 +89,9 @@ Marcadores referentes aos cidadãos que tem entre seis e vinte e três meses de 
 |--- |--- |--- |--- |
 |List\<PerguntaQuestionarioCriancasDeSeisVinteTresMeses\> |Condicional |- |- |
 
-**Regras:** Requerido se [dataNascimento](#4-datanascimento) >= 6 meses e <= 23 meses a partir da [dataAtendimento]({% url profissional %}#5-dataatendimento).
+**Regras:** Requerido se [dataNascimento](#4-datanascimento) >= 6 meses e <= 23 meses a partir da [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
 
-**Referêcia**: [PerguntaQuestionarioCriancasDeSeisVinteTresMeses](#perguntaquestionariocriancasdeseisvintetresmeses).
+**Referência**: [PerguntaQuestionarioCriancasDeSeisVinteTresMeses](#perguntaquestionariocriancasdeseisvintetresmeses).
 
 Observações: Os campos `#7`, `#8` e `#9` são mutuamente exclusivos, isto é, um e apenas um deles deve não ser nulo.
 
@@ -104,9 +102,9 @@ Marcadores referentes aos cidadãos que tem vinte e quatro meses ou mais.
 |--- |--- |--- |--- |
 |List\<PerguntaQuestionarioCriancasComMaisDoisAnos\> |Condicional |- |- |
 
-**Regras:** Requerido se [dataNascimento](#4-datanascimento) >= 24 meses a partir da [dataAtendimento]({% url profissional %}#5-dataatendimento).
+**Regras:** Requerido se [dataNascimento](#4-datanascimento) >= 24 meses a partir da [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
 
-**Referêcia**: [PerguntaQuestionarioCriancasComMaisDoisAnos](#perguntaquestionariocriancascommaisdoisanos).
+**Referência**: [PerguntaQuestionarioCriancasComMaisDoisAnos](#perguntaquestionariocriancascommaisdoisanos).
 
 Observações: Os campos `#7`, `#8` e `#9` são mutuamente exclusivos, isto é, um e apenas um deles deve não ser nulo.
 
@@ -117,9 +115,9 @@ Código UUID para identificar a ficha na base de dados nacional.
 |--- |--- |--- |--- |
 |String |Sim |36 |44 |
 
-**Regras:** É recomendado concatenar o CNES na frente do UUID, de modo que os 7 digitos (CNES) + 1 de hífen somados aos 36 (32 caracteres + 4 hífen) do UUID são a limitação de 44 bytes do campo. Formato canônico.
+**Regras:** É recomendado concatenar o CNES na frente do UUID, de modo que os 7 dígitos (CNES) + 1 de hífen somados aos 36 (32 caracteres + 4 hífen) do UUID são a limitação de 44 bytes do campo. Formato canônico.
 
-**Referêcia**: Para ver a referência sobre o UUID, acesse: [UUID Wikipedia](https://en.wikipedia.org/wiki/Universally\_unique\_identifier).
+**Referência**: Para ver a referência sobre o UUID, acesse: [UUID Wikipedia](https://en.wikipedia.org/wiki/Universally\_unique\_identifier).
 
 ### \#11 tpCdsOrigem
 Tipo de origem dos dados do registro.
@@ -139,9 +137,9 @@ Identificador da pergunta referente ao questionário para cidadãos menores de s
 |--- |--- |--- |--- |
 |PerguntaCriancasMenoresSeisMesesEnum |Condicional |- |- |
 
-**Regras:** Obrigatório caso a [dataNascimento](4-datanascimento) seja menos que 6 meses anterior à [DataAtendimento](#5-dataatendimento).
+**Regras:** Obrigatório caso a [dataNascimento](#4-datanascimento) seja menos que 6 meses anterior à [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
 
-**Referência:** [PerguntaCriancasMenoresSeisMesesEnum](#perguntacriancasmenoresseismesesenum).
+**Referências:** [PerguntaCriancasMenoresSeisMesesEnum](#perguntacriancasmenoresseismesesenum).
 
 ### \#2	respostaUnicaEscolha
 Resposta referente à pergunta.
@@ -150,9 +148,9 @@ Resposta referente à pergunta.
 |--- |--- |--- |--- |
 |RespostaUnicaEscolhaEnum |Condicional |- |- |
 
-**Regras:** Obrigatório caso a [dataNascimento](4-datanascimento) seja menos que 6 meses anterior à [DataAtendimento](#5-dataatendimento).
+**Regras:** Obrigatório caso a [dataNascimento](#4-datanascimento) seja menos que 6 meses anterior à [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
 
-**Referência:** [RespostaUnicaEscolhaEnum](#respostaunicaescolhaenum).
+**Referências:** [RespostaUnicaEscolhaEnum](#respostaunicaescolhaenum).
 
 ## PerguntaQuestionarioCriancasDeSeisVinteTresMeses
 
@@ -163,7 +161,7 @@ Identificador da pergunta referente ao questionário para cidadãos menores de s
 |--- |--- |--- |--- |
 |PerguntaCriancasDeSeisVinteTresMesesEnum |Condicional |- |- |
 
-**Regras:** Obrigatório caso a [dataNascimento](4-datanascimento) seja menos que 23 meses e mais que 6 meses anterior à [DataAtendimento](#5-dataatendimento).
+**Regras:** Obrigatório caso a [dataNascimento](#4-datanascimento) seja menos que 23 meses e mais que 6 meses anterior à [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
 
 **Referências:** [PerguntaCriancasDeSeisVinteTresMesesEnum](#perguntacriancasdeseisvintetresmesesenum).
 
@@ -174,7 +172,7 @@ Resposta referente a pergunta.
 |--- |--- |--- |--- |
 |RespostaUnicaEscolhaEnum |Condicional |- |- |
 
-**Regras:** Obrigatório caso a [dataNascimento](4-datanascimento) seja menos que 24 meses e mais que 6 meses anterior à [DataAtendimento](#5-dataatendimento).
+**Regras:** Obrigatório caso a [dataNascimento](#4-datanascimento) seja menos que 24 meses e mais que 6 meses anterior à [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
 
 **Referências:** [RespostaUnicaEscolhaEnum](#respostaunicaescolhaenum).
 
@@ -187,9 +185,9 @@ Pergunta do questionário de cidadãos que tem vinte e quatro meses ou mais.
 |--- |--- |--- |--- |
 |PerguntaCriancasComMaisDoisAnosEnum | Condicional |- |- |
 
-**Regras:** Obrigatório caso a [dataNascimento](4-datanascimento) seja mais que 24 meses anterior à [DataAtendimento](#5-dataatendimento).
+**Regras:** Obrigatório caso a [dataNascimento](#4-datanascimento) seja mais que 24 meses anterior à [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
 
-**Referência:** [PerguntaCriancasComMaisDoisAnosEnum](#perguntacriancascommaisdoisanosenum).
+**Referências:** [PerguntaCriancasComMaisDoisAnosEnum](#perguntacriancascommaisdoisanosenum).
 
 ### \#2	respostaUnicaEscolha
 Resposta referente a pergunta do registro.
@@ -198,9 +196,9 @@ Resposta referente a pergunta do registro.
 |--- |--- |--- |--- |
 |RespostaUnicaEscolhaEnum |Condicional |- |- |
 
-**Regras:** Obrigatório caso a [dataNascimento](4-datanascimento) seja mais que 24 meses anterior à [DataAtendimento](#5-dataatendimento).
+**Regras:** Obrigatório caso a [dataNascimento](#4-datanascimento) seja mais que 24 meses anterior à [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
 
-**Referência:** [RespostaUnicaEscolhaEnum](#respostaunicaescolhaenum).
+**Referências:** [RespostaUnicaEscolhaEnum](#respostaunicaescolhaenum).
 
 Observações: Os campos `#2` e `#3` são mutuamente exclusivos, isto é, um e apenas um deles deve não ser nulo.
 
@@ -213,10 +211,10 @@ Resposta referente à pergunta do registro acima.
 
 **Regras:**
 
-* Deve respeitar as regras das respostas referentes à pergunta .
+* Deve respeitar as regras das respostas referentes à pergunta;
 * Pode ser preenchido somente se a pergunta for 12L.
 
-**Referência:** [RespostaMultiplaEscolhaEnum](#respostamultiplaescolhaenum).
+**Referências:** [RespostaMultiplaEscolhaEnum](#respostamultiplaescolhaenum).
 
 Observações: Os campos `#2` e `#3` são mutuamente exclusivos, isto é, um e apenas um deles deve não ser nulo.
 

@@ -2,7 +2,7 @@
 layout: doc
 title: Dicionário de dados
 id: dicionario
-order: 0
+order: 12
 ---
 
 ## AbastecimentoDeAgua
@@ -36,33 +36,31 @@ order: 0
 |128 |	Gato	|-|
 |129 |	Cachorro	|-|
 |130 |	Pássaro	|-|
-|131 |	De criação (porco, galinha...) |-|
 |132 |	Outros|	-|
 
-## AtencaoDomiciliarOrigem
+## AtencaoDomiciliarProcedencia
 |Código|	Descrição|	Observações|
 |---|---|---|
-|1 | UBS	|-|
-|6 | Outros	|-|
-|11 |	Hospital|	-|
-|12 |	Unidade pronto atendimento	|-|
+|1  | 	Atenção Básica	|-|
+|11 |	Internação hospitalar|	-|
+|12 |	Urgência e emergência	|-|
 |13 |	CACON / UNACON	|-|
-|14 |	Urgência / Emergência hospital SOS	|-|
-|15 |	Hospital SOS demais setores	|-|
+|16 |	Iniciativa do paciente ou terceiros	|-|
+|6  | 	Outros	|-|
 
 ## ConclusaoDestinoElegivel
 |Código|	Descrição|	Observações|
 |---|---|---|
-|1 |	Admissão própria EMAD	|-|
+|1 |	Admissão na própria EMAD	|-|
 |2 |	Encaminhado para outra EMAD	|-|
-|3 |	Encaminhado para atenção básica	|-|
+|3 |	Encaminhado para a Atenção Básica (AD1)	|-|
 |4 |	Outro encaminhamento	|-|
 
 ## ConclusaoDestinoInelegivel
 |Código|	Descrição|	Observações|
 |---|---|---|
 |1 |	Instabilidade clínica	|-|
-|2 |	Necessidade propedeutica|	-|
+|2 |	Necessidade propedêutica|	-|
 |3 |	Outro motivo	|-|
 |4 |	Ausência de cuidador |	-|
 |5 |	Outras condições sociais	|-|
@@ -76,34 +74,35 @@ order: 0
 |104 |	Posseiro	|-|
 |105 |	Arrendatário(a)	|-|
 |106 |	Comodatário(a)	|-|
-|107 | Beneficiário(a) do banco da terra	|-|
+|107 |  Beneficiário(a) do banco da terra	|-|
 |108 |	Não se aplica	|-|
 
 ## CondutaDesfecho
 |Código|	Descrição|	Observações|
 |---|---|---|
-|3 |	Alta administrativa da AD|	-|
-|1 |	Alta clínica da AD|	-|
-|2 |	Encaminhamento para Atenção Básica (AD1)|	-|
-|4 |	Urgência / Emergência|	-|
-|5 |	Internação hospitalar|	-|
-|6 |	Saída por óbito / final de acompanhamento pós-óbito|	-|
+|7 |	Permanência| -|
+|3 |	Alta administrativa|	-|
+|1 |	Alta clínica|	-|
+|9 |	Óbito|	-|
+|2 |	Atenção Básica (AD1)|	#ENCAMINHAMENTO|
+|4 |	Serviço de urgência e emergência|	-|
+|5 |	Serviço de internação hospitalar|	-|
 
 ## CondutaEncaminhamento
 |Código|	Descrição|	Observações|
 |---|---|---|
 |1 |	Retorno para consulta agendada |	-|
 |2 |	Retorno para cuidado continuado / programado |	-|
-|12 | Agendamento para grupos |	-|
+|12|    Agendamento para grupos |	-|
 |3 |	Agendamento para NASF |	-|
 |9 |	Alta do episódio |	-|
-|11 | Encaminhamento interno no dia |	-|
+|11|    Encaminhamento interno no dia |	#ENCAMINHAMENTO|
 |4 |	Encaminhamento para serviço especializado |	-|
 |5 |	Encaminhamento para CAPS |	-|
 |6 |	Encaminhamento para internação hospitalar |	-|
 |7 |	Encaminhamento para urgência |	-|
 |8 |	Encaminhamento para serviço de atenção domiciliar |	-|
-|10 | Encaminhamento intersetorial |	-|
+|10|    Encaminhamento intersetorial |	-|
 
 ## CondutaEncaminhamentoOdonto
 |Código|	Descrição|	Observações|
@@ -113,7 +112,8 @@ order: 0
 |13 |	Agendamento para NASF|	-|
 |14 |	Agendamento para grupos|	-|
 |15 |	Tratamento concluído|	-|
-|1 |	Atendimento à pacientes com necessidades especiais|	-|
+|17 |	Alta do episódio|	-|
+|1 |	Atendimento à pacientes com necessidades especiais|	ENCAMINHAMENTO |
 |2 |	Cirurgia BMF|	-|
 |3 |	Endodontia|	-|
 |4 |	Estomatologia|	-|
@@ -149,7 +149,7 @@ order: 0
 |---|---|---|
 |51 |	Creche|	-|
 |52 |	Pré-escola (exceto CA)|	-|
-|53 |	Classe alfabetizada - CA|	-|
+|53 |	Classe de alfabetização - CA|	-|
 |54 |	Ensino fundamental 1ª a 4ª séries|	-|
 |55 |	Ensino fundamental 5ª a 8ª séries|	-|
 |56 |	Ensino fundamental completo|	-|
@@ -231,12 +231,10 @@ order: 0
 |7 |	Polo (academia da saúde)	|-|
 |8 |	Instituição / Abrigo	|-|
 |9 |	Unidade prisional ou congêneres	|-|
-|10 | Unidade socioeducativa	|-|
-|11 | Hospital |	Utilizado apenas na ficha de atendimento domiciliar |
-|12 |	Unidade de pronto atendimento | Utilizado apenas na ficha de atendimento domiciliar |
-|13 |	CACON / UNACON| Utilizado apenas na ficha de atendimento domiciliar |
-|14 |	Hospital SOS Urgência / Emergência| Utilizado apenas na ficha de atendimento domiciliar |
-|15 |	Hospital SOS demais setores| Utilizado apenas na ficha de atendimento domiciliar |
+|10 |   Unidade socioeducativa	|-|
+|11 |   Hospital |	Utilizado apenas na Ficha de Atendimento Domiciliar |
+|12 |	Unidade de pronto atendimento | Utilizado apenas na Ficha de Atendimento Domiciliar |
+|13 |	CACON / UNACON| Utilizado apenas na Ficha de Atendimento Domiciliar |
 
 ## LocalizacaoDaMoradia
 |Código|	Descrição|	Observações|
@@ -262,7 +260,7 @@ order: 0
 |1 |	AD 1|	-|
 |2 |	AD 2|	-|
 |3 |	AD 3|	-|
-|4 |	Inelegível |	Utilizado apenas na ficha de avaliação de elegibilidade|
+|4 |	Inelegível |	Utilizado apenas na Ficha de Avaliação de Elegibilidade|
 
 ## MotivoSaida
 |Código|	Descrição|	Observações|
@@ -274,22 +272,22 @@ order: 0
 |Código|	Descrição|	Observações|
 |---|---|---|
 |1 |	Cadastramento / Atualização|	#TIPO\_VISITA |
-|29 |	Visita periódica| - |
+|29|	Visita periódica| - |
 |2 |	Consulta|	#BUSCA\_ATIVA|
 |3 |	Exame| - |
 |4 |	Vacina| - |
-|30 |	Condicionalidades do bolsa família| - |
+|30|	Condicionalidades do bolsa família| - |
 |5 |	Gestante|	#ACOMPANHAMENTO |
 |6 |	Puérpera| - |
 |7 |	Recém-nascido| - |
 |8 |	Criança| - |
 |9 |	Pessoa com desnutrição| - |
-|10 | Pessoa em reabilitação ou com deficiência| - |
-|11 | Pessoa com hipertensão| - |
-|12 | Pessoa com diabetes| - |
+|10 | 	Pessoa em reabilitação ou com deficiência| - |
+|11 | 	Pessoa com hipertensão| - |
+|12 | 	Pessoa com diabetes| - |
 |13 |	Pessoa com asma| - |
 |14 |	Pessoa com DPOC / enfisema| -|
-|15 | Pessoa com câncer| - |
+|15 | 	Pessoa com câncer| - |
 |16 |	Pessoa com outras doenças crônicas| - |
 |17 |	Pessoa com hanseníase| - |
 |18 |	Pessoa com tuberculose| - |
@@ -301,11 +299,15 @@ order: 0
 |22 |	Saúde mental| - |
 |23 |	Usuário de álcool| - |
 |24 |	Usuário de outras drogas| - |
+|34 |	Ação educativa| #CONTROLE\_AMBIENTAL\_E\_VETORIAL |
+|35 |	Imóvel com foco| - |
+|36 |	Ação mecânica| - |
+|37 |	Tratamento focal| - |
 |25 |	Egresso de internação |	#OUTROS |
-|26 |	Controle de ambientes / vetores| - |
 |27 |	Convite para atividades coletivas / campanha de saúde| - |
 |31 |	Orientação / Prevenção| - |
 |28 |	Outros| - |
+
 
 ## Nacionalidade
 |Código|	Descrição|	Observações|
@@ -318,19 +320,16 @@ order: 0
 |Código|	Descrição|	Observações|
 |---|---|---|
 |1 |	Avaliação / Diagnóstico| 	-|
-|2 |	Procedimentos clínicos terapeuticos| 	-|
+|2 |	Procedimentos clínicos terapêuticos| 	-|
 |3 |	Prescrição terapêutica| 	-|
 
 ## OrientacaoSexual
 |Código| Descrição|	Observações|
 |---|---|---|
-|5 |	Heterossexual|	-|
-|6 |	Gay|	-|
-|7 |	Lésbica|	-|
-|8 |	Bissexual|	-|
-|9 |	Travesti|	-|
-|10 |	Transsexual|	-|
-|11 |	Outro|	-|
+|148 |	Heterossexual|	-|
+|153 |	Homossexual (gay / lésbica)|	-|
+|154 |	Bissexual|	-|
+|155 |	Outro|	-|
 
 ## OrigemAlimentacao
 |Código|	Descrição|	Observações|
@@ -341,49 +340,43 @@ order: 0
 |40 |	Doação popular|	-|
 |41 |	Outros|	-|
 
-## PraticasIntegrativasComplementares
+## TemasParaSaude
 |Código|	Descrição|	Observações|
 |---|---|---|
-|1 |	Medicina tradicional chinesa|	-|
-|2 |	Antroposofia aplicado a saúde|	-|
-|3 |	Homeopatia|	-|
-|4 |	Fitoterapia|	-|
-|5 |	Termalismo / Crenoterapia|	-|
-|6 |	Práticas corporais e mentais em PICS|	-|
-|7 |	Técnicas manuais em PICS|	-|
-|8 |	Outros|	-|
-
-## PraticasTemasParaSaude
-|Código|	Descrição|	Observações|
-|---|---|---|
-|1 |	Alimentação saudável|	-|
-|2 |	Aplicação tópica de fluor|	-|
-|3 |	Saúde ocular|	-|
-|4 |	Autocuidado de pessoas com doenças crônicas |	-|
-|5 |	Cidadania e direitos homanos|	-|
-|6 |	Saúde do trabalhador|	-|
-|7 |	Dependência química / tabaco / álcool / outras drogas |	-|
-|8 |	Envelhecimento / Climatério / Andropausa  / Etc|	-|
-|9 |	Escovação dentária supervisionada |	-|
+|29 |	Ações de combate ao *Aedes aegypti*| -|
+|19 |	Agravos negligenciados|	-|
+|1  |	Alimentação saudável|	-|
+|4  |	Autocuidado de pessoas com doenças crônicas |	-|
+|5  |	Cidadania e direitos humanos|	-|
+|7  |	Dependência química / tabaco / álcool / outras drogas |	-|
+|8  |	Envelhecimento / Climatério / Andropausa  / Etc|	-|
 |10 |	Plantas medicinais / Fitoterapia|	-|
-|11 |	Práticas corporais / Atividade física|	-|
-|12 |	Práticas corporais e mentais em PIC |	-|
 |13 |	Prevenção da violência e promoção da cultura da paz|	-|
 |14 |	Saúde ambiental|	-|
 |15 |	Saúde bucal|	-|
+|6  |	Saúde do trabalhador|	-|
 |16 |	Saúde mental|	-|
 |17 |	Saúde sexual e reprodutiva|	-|
 |18 |	Semana saúde na escola|	-|
-|19 |	Agravos negligenciados|	-|
+|21 |	Outros |	-|
+
+## PraticasEmSaude
+|Código|	Descrição|	Observações|
+|---|---|---|
 |20 |	Antropometria|	-|
-|21 |	Outros|	-|
-|22 |	Saúde auditiva |	-|
+|2  |	Aplicação tópica de flúor|	-|
 |23 |	Desenvolvimento da linguagem |	-|
+|9  |	Escovação dental supervisionada |	-|
+|11 |	Práticas corporais e Atividade física|	-|
+|25 |	Programa Nacional de Controle do Tabagismo 1|	-|
+|26 |	Programa Nacional de Controle do Tabagismo 2|	-|
+|27 |	Programa Nacional de Controle do Tabagismo 3|	-|
+|28 |	Programa Nacional de Controle do Tabagismo 4|	-|
+|22 |	Saúde auditiva |	-|
+|3  |	Saúde ocular|	-|
 |24 |	Verificação da situação vacinal|	-|
-|25 |	PNCT 1|	-|
-|26 |	PNCT 2|	-|
-|27 |	PNCT 3|	-|
-|28 |	PNCT 4|	-|
+|12 |	Outras |	-|
+|30 |	Outro procedimento coletivo|	-|
 
 ## ProblemaRins
 |Código|	Descrição|	Observações|
@@ -428,6 +421,9 @@ order: 0
 |4 |	Parda|	-|
 |3 |	Amarela|	-|
 |5 |	Indígena|	-|
+|6 |	Sem informação|	-|
+
+
 
 ## RelacaoParentesco
 |Código|	Descrição|	Observações|
@@ -469,6 +465,8 @@ order: 0
 |---|---|---|
 |0 |	Masculino	|-|
 |1 |	Feminino	|-|
+|4 |	Ignorado	|Apenas quando não foi informado o sexo do cidadão.|
+
 
 ## SituacaoDeMoradia
 |Código|	Descrição|	Observações|
@@ -499,6 +497,7 @@ order: 0
 |71 |	Aposentado / Pensionista	|-|
 |72 |	Desempregado	|-|
 |73 |	Não trabalha	|-|
+|147 |	Servidor público / Militar	|-|
 |74 |	Outro	|-|
 
 ## TemasParaReuniao
@@ -536,16 +535,16 @@ order: 0
 |Código|	Descrição|	Observações|
 |---|---|---|
 |2 |	Ficha de Cadastro Individual|	-|
-|3 |	Ficha de Cadastro Domiciliar	|-|
+|3 |	Ficha de Cadastro Domiciliar e Territorial |-|
 |4 |	Ficha de Atendimento Individual	|-|
 |5 |	Ficha de Atendimento Odontológico	|-|
 |6 |	Ficha de Atividade Coletiva	|-|
 |7 |	Ficha de Procedimentos	|-|
-|8 |	Ficha de Visita Domiciliar	|-|
-| - |	-	| - |
+|8 |	Ficha de Visita Domiciliar e Territorial |-|
 |10 |	Ficha de Atendimento Domiciliar	|-|
 |11 |	Ficha de Avaliação de Elegibilidade|	-|
 |12 |	Marcadores de Consumo Alimentar	|-|
+|13 |	Ficha complementar - Síndrome neurológica por Zika / Microcefalia	|-|
 
 ## TipoDeAcessoAoDomicilio
 |Código|	Descrição|	Observações|
@@ -563,15 +562,16 @@ order: 0
 |4 |	Escuta inicial / Orientação | 	-|
 |5 |	Consulta no dia|	-|
 |6 |	Atendimento de urgência|	-|
-|7 |	Atendimento programado|	Utilizados apenas nas fichas de atendimento domiciliar |
-|8 |	Atendimento não programado| Utilizados apenas nas fichas de atendimento domiciliar |
+|7 |	Atendimento programado|	Utilizado apenas nas Fichas de Atendimento Domiciliar |
+|8 |	Atendimento não programado| Utilizado apenas nas Fichas de Atendimento Domiciliar |
+|9 | 	Visita domiciliar pós-óbito| Utilizado apenas nas Fichas de Atendimento Domiciliar |
 
 ## TipoDeConsultaOdonto
 |Código|	Descrição|	Observações|
 |---|---|---|
-|1 |	Primeira consulta odontológica programática|	-|
-|2 |	Consulta de retorno|	-|
-|4 | Consulta de manutenção|	-|
+|1 |	Primeira consulta odontológica programática |	-|
+|2 |	Consulta de retorno em odontologia |	-|
+|4 | 	Consulta de manutenção em odontologia |	-|
 
 ## TipoDeDomicilio
 |Código|	Descrição|	Observações|
@@ -581,20 +581,21 @@ order: 0
 |87 |	Cômodo|	-|
 |88 |	Outro|	-|
 
-## TratamentoDeAguaNoDomicilio
+## AguaConsumoDomicilio
 |Código|	Descrição|	Observações|
 |---|---|---|
-|97 |	Filtração	|-|
-|98 |	Fervura |-|
-|99 |	Cloração	|-|
+|97 |	Filtrada |-|
+|98 |	Fervida |-|
+|99 |	Clorada	|-|
+|152 |  Mineral |-|
 |100 |	Sem tratamento	|-|
 
 ## Turno
 |Código|	Descrição|	Observações|
 |---|---|---|
-|1 |	Matutino|	-|
-|2 |	Vespertino|	-|
-|3 |	Noturno|	-|
+|1 |	Manhã|	-|
+|2 |	Tarde|	-|
+|3 |	Noite|	-|
 
 ## VigilanciaEmSaudeBucal
 |Código|	Descrição|	Observações|
@@ -606,3 +607,352 @@ order: 0
 |5 |	Fluorose dentária moderada / severa |	-|
 |6 |	Traumatismo dento alveolar|	-|
 |99 |	Não identificado|	-|
+
+
+## identidadeGeneroCidadao
+|Código|	Descrição|	Observações|
+|---|---|---|
+|149 |	Homem transsexual|	-|
+|150 |	Mulher transsexual|	-|
+|156 |  Travesti|	-|
+|151 |	Outro|	-|
+
+## etnia
+|Código|	Descrição|
+|---|---|
+|1 |    ACONA (WAKONAS, NACONAS, JAKONA, ACORANES) |
+|2 |    AIKANA (AIKANA, MAS SAKA,TUBARAO) |
+|3 |    AJURU |
+|4 |    AKUNSU (AKUNT''SU) |
+|5 |    AMANAYE |
+|6 |    AMONDAWA |
+|7 |    ANAMBE |
+|8 |    APARAI (APALAI) |
+|9 |    APIAKA (APIACA) |
+|10 |   APINAYE (APINAJE/APINAIE/APINAGE) |
+|11 |   APURINA (APORINA, IPURINA, IPURINA, IPURINAN) |
+|12 |   ARANA (ARACUAI DO VALE DO JEQUITINHONHA) |
+|13 |   ARAPASO (ARAPACO) |
+|14 |   ARARA DE RONDONIA (KARO, URUCU, URUKU) |
+|15 |   ARARA DO ACRE (SHAWANAUA, AMAWAKA) |
+|16 |   ARARA DO ARIPUANA (ARARA DO BEIRADAO/ARI-PUANA) |
+|17 |   ARARA DO PARA (UKARAGMA, UKARAMMA) |
+|18 |   ARAWETE (ARAUETE) |
+|19 |   ARIKAPU (ARICAPU, ARIKAPO, MASUBI, MAXUBI) |
+|20 |   ARIKEM (ARIQUEN, ARIQUEME, ARIKEME) |
+|21 |   ARIKOSE (ARICOBE) |
+|22 |   ARUA |
+|23 |   ARUAK (ARAWAK) |
+|24 |   ASHANINKA (KAMPA) |
+|25 |   ASURINI DO TOCANTINS (AKUAWA/AKWAWA) |
+|26 |   ASURINI DO XINGU (AWAETE) |
+|27 |   ATIKUM (ATICUM) |
+|28 |   AVA - CANOEIRO |
+|29 |   AWETI (AUETI/AUETO) |
+|30 |   BAKAIRI (KURA, BACAIRI) |
+|31 |   BANAWA YAFI (BANAWA, BANAWA-JAFI) |
+|32 |   BANIWA (BANIUA, BANIVA, WALIMANAI, WAKUENAI) |
+|33 |   BARA (WAIPINOMAKA) |
+|34 |   BARASANA (HANERA) |
+|35 |   BARE |
+|36 |   BORORO (BOE) |
+|37 |   BOTOCUDO (GEREN) |
+|38 |   CANOE |
+|39 |   CASSUPA |
+|40 |   CHAMACOCO |
+|41 |   CHIQUITANO (XIQUITANO) |
+|42 |   CIKIYANA (SIKIANA) |
+|43 |   CINTA LARGA (MATETAMAE) |
+|44 |   COLUMBIARA (CORUMBIARA) |
+|45 |   DENI |
+|46 |   DESANA (DESANA, DESANO, DESSANO, WIRA, UMUKOMASA) |
+|47 |   DIAHUI (JAHOI, JAHUI, DIARROI) |
+|48 |   ENAWENE-NAWE (SALUMA) |
+|49 |   FULNI-O |
+|50 |   GALIBI (GALIBI DO OIAPOQUE, KARINHA) |
+|51 |   GALIBI MARWORNO (GALIBI DO UACA, ARUA) |
+|52 |   GAVIAO DE RONDONIA (DIGUT) |
+|53 |   GAVIAO KRIKATEJE |
+|54 |   GAVIAO PARKATEJE (PARKATEJE) |
+|55 |   GAVIAO PUKOBIE (PUKOBIE, PYKOPJE, GAVIAO DO MARANHAO) |
+|56 |   GUAJA (AWA, AVA) |
+|57 |   GUAJAJARA (TENETEHARA) |
+|58 |   GUARANI KAIOWA (PAI TAVYTERA) |
+|59 |   GUARANI M''BYA |
+|60 |   GUARANI NANDEVA (AVAKATUETE, CHIRIPA,NHANDEWA, AVA GUARANI) |
+|61 |   GUATO |
+|62 |   HIMARIMA (HIMERIMA) |
+|63 |   INGARIKO (INGARICO, AKAWAIO, KAPON) |
+|64 |   IRANXE (IRANTXE) |
+|65 |   ISSE |
+|66 |   JABOTI (JABUTI, KIPIU, YABYTI) |
+|67 |   JAMAMADI (YAMAMADI, DJEOROMITXI) |
+|68 |   JARAWARA |
+|69 |   JIRIPANCO (JERIPANCO, GERIPANCO) |
+|70 |   JUMA (YUMA) |
+|71 |   JURUNA |
+|72 |   JURUTI (YURITI) |
+|73 |   KAAPOR (URUBU-KAAPOR, KA''APOR, KAAPORTE) |
+|74 |   KADIWEU (CADUVEO, CADIUEU) |
+|75 |   KAIABI (CAIABI, KAYABI) |
+|76 |   KAIMBE (CAIMBE) |
+|77 |   KAINGANG (CAINGANGUE) |
+|78 |   KAIXANA (CAIXANA) |
+|79 |   KALABASSA (CALABASSA, CALABACAS) |
+|80 |   KALANCO |
+|81 |   KALAPALO (CALAPALO) |
+|82 |   KAMAYURA (CAMAIURA, KAMAIURA) |
+|83 |   KAMBA (CAMBA) |
+|84 |   KAMBEBA (CAMBEBA, OMAGUA) |
+|85 |   KAMBIWA (CAMBIUA) |
+|86 |   KAMBIWA PIPIPA (PIPIPA) |
+|87 |   KAMPE |
+|88 |   KANAMANTI (KANAMATI, CANAMANTI) |
+|89 |   KANAMARI (CANAMARI, KANAMARY, TUKUNA) |
+|90 |   KANELA APANIEKRA (CANELA) |
+|91 |   KANELA RANKOKAMEKRA (CANELA) |
+|92 |   KANINDE |
+|93 |   KANOE (CANOE) |
+|94 |   KANTARURE (CANTARURE) |
+|95 |   KAPINAWA (CAPINAUA) |
+|96 |   KARAJA (CARAJA) |
+|97 |   KARAJA/JAVAE (JAVAE) |
+|98 |   KARAJA/XAMBIOA (KARAJA DO NORTE) |
+|99 |   KARAPANA (CARAPANA, MUTEAMASA, UKOPINOPONA) |
+|100 |  KARAPOTO (CARAPOTO) |
+|101 |  KARIPUNA (CARIPUNA) |
+|102 |  KARIPUNA DO AMAPA (CARIPUNA) |
+|103 |  KARIRI (CARIRI) |
+|104 |  KARIRI-XOCO (CARIRI-CHOCO) |
+|105 |  KARITIANA (CARITIANA) |
+|106 |  KATAWIXI (KATAUIXI,KATAWIN, KATAWISI, CATAUICHI) |
+|107 |  KATUENA (CATUENA, KATWENA) |
+|108 |  KATUKINA (PEDA DJAPA) |
+|109 |  KATUKINA DO ACRE |
+|110 |  KAXARARI (CAXARARI) |
+|111 |  KAXINAWA (HUNI-KUIN, CASHINAUA, CAXINAUA) |
+|112 |  KAXIXO |
+|113 |  KAXUYANA (CAXUIANA) |
+|114 |  KAYAPO (CAIAPO) |
+|115 |  KAYAPO KARARAO (KARARAO) |
+|116 |  KAYAPO TXUKAHAMAE (TXUKAHAMAE) |
+|117 |  KAYAPO XICRIM (XIKRIN) |
+|118 |  KAYUISANA (CAIXANA, CAUIXANA, KAIXANA) |
+|119 |  KINIKINAWA (GUAN, KOINUKOEN, KINIKINAO) |
+|120 |  KIRIRI |
+|121 |  KOCAMA (COCAMA, KOKAMA) |
+|122 |  KOKUIREGATEJE |
+|123 |  KORUBO |
+|124 |  KRAHO (CRAO, KRAO) |
+|125 |  KREJE (KRENYE) |
+|126 |  KRENAK (BORUN, CRENAQUE) |
+|127 |  KRIKATI (KRINKATI) |
+|128 |  KUBEO (CUBEO, COBEWA, KUBEWA, PAMIWA, CUBEU) |
+|129 |  KUIKURO (KUIKURU, CUICURO) |
+|130 |  KUJUBIM (KUYUBI, CUJUBIM) |
+|131 |  KULINA PANO (CULINA) |
+|132 |  KULINA/MADIHA (CULINA, MADIJA, MADIHA) |
+|133 |  KURIPAKO (CURIPACO, CURRIPACO, CORIPACO, WAKUENAI) |
+|134 |  KURUAIA (CURUAIA) |
+|135 |  KWAZA (COAIA, KOAIA) |
+|136 |  MACHINERI (MANCHINERI, MANXINERI) |
+|137 |  MACURAP (MAKURAP) |
+|138 |  MAKU DOW (DOW) |
+|139 |  MAKU HUPDA (HUPDA) |
+|140 |  MAKU NADEB (NADEB) |
+|141 |  MAKU YUHUPDE (YUHUPDE) |
+|142 |  MAKUNA (MACUNA, YEBA-MASA) |
+|143 |  MAKUXI (MACUXI, MACHUSI, PEMON) |
+|144 |  MARIMAM (MARIMA) |
+|145 |  MARUBO |
+|146 |  MATIPU |
+|147 |  MATIS |
+|148 |  MATSE (MAYORUNA) |
+|149 |  MAXAKALI (MAXACALI) |
+|150 |  MAYA (MAYA) |
+|151 |  MAYTAPU |
+|152 |  MEHINAKO (MEINAKU, MEINACU) |
+|153 |  MEKEN (MEQUEM, MEKHEM, MICHENS) |
+|154 |  MENKY (MYKY, MUNKU, MENKI, MYNKY) |
+|155 |  MIRANHA (MIRANHA, MIRANA) |
+|156 |  MIRITI TAPUIA (MIRITI-TAPUYA, BUIA-TAPUYA) |
+|157 |  MUNDURUKU (MUNDURUCU) |
+|158 |  MURA |
+|159 |  NAHUKWA (NAFUQUA) |
+|160 |  NAMBIKWARA DO CAMPO (HALOTESU, KITHAULU, WAKALITESU, SAWENTES, MANDUKA) |
+|161 |  NAMBIKWARA DO NORTE (NEGAROTE ,MAMAINDE, LATUNDE, SABANE E MANDUKA, TAWANDE) |
+|162 |  NAMBIKWARA DO SUL (WASUSU ,HAHAINTESU, ALANTESU, WAIKISU, ALAKETESU, WASUSU, SARARE) |
+|163 |  NARAVUTE (NARUVOTO) |
+|164 |  NAWA (NAUA) |
+|165 |  NUKINI (NUQUINI, NUKUINI) |
+|166 |  OFAIE (OFAYE-XAVANTE) |
+|167 |  ORO WIN |
+|168 |  PAIAKU (JENIPAPO-KANINDE) |
+|169 |  PAKAA NOVA (WARI, PACAAS NOVOS) |
+|170 |  PALIKUR (AUKWAYENE, AUKUYENE, PALIKU''ENE) |
+|171 |  PANARA (KRENHAKARORE , KRENAKORE, KRENA-KARORE) |
+|172 |  PANKARARE (PANCARARE) |
+|173 |  PANKARARU (PANCARARU) |
+|174 |  PANKARARU KALANKO (KALANKO) |
+|175 |  PANKARARU KARUAZU (KARUAZU) |
+|176 |  PANKARU (PANCARU) |
+|177 |  PARAKANA (PARACANA, APITEREWA, AWAETE) |
+|178 |  PARECI (PARESI, HALITI) |
+|179 |  PARINTINTIN |
+|180 |  PATAMONA (KAPON) |
+|181 |  PATAXO |
+|182 |  PATAXO HA-HA-HAE |
+|183 |  PAUMARI (PALMARI) |
+|184 |  PAUMELENHO |
+|185 |  PIRAHA (MURA PIRAHA) |
+|186 |  PIRATUAPUIA (PIRATAPUYA, PIRATAPUYO, PIRA-TAPUYA, WAIKANA) |
+|187 |  PITAGUARI |
+|188 |  POTIGUARA |
+|189 |  POYANAWA (POIANAUA) |
+|190 |  RIKBAKTSA (CANOEIROS, ERIGPAKTSA) |
+|191 |  SAKURABIAT(MEKENS, SAKIRABIAP, SAKIRABIAR) |
+|192 |  SATERE-MAWE (SATERE-MAUE) |
+|193 |  SHANENAWA (KATUKINA) |
+|194 |  SIRIANO (SIRIA-MASA) |
+|195 |  SURIANA |
+|196 |  SURUI DE RONDONIA (PAITER) |
+|197 |  SURUI DO PARA (AIKEWARA) |
+|198 |  SUYA (SUIA/KISEDJE) |
+|199 |  TAPAYUNA (BEICO-DE-PAU) |
+|200 |  TAPEBA |
+|201 |  TAPIRAPE (TAPI''IRAPE) |
+|202 |  TAPUIA (TAPUIA-XAVANTE, TAPUIO) |
+|203 |  TARIANO (TARIANA, TALIASERI) |
+|204 |  TAUREPANG (TAULIPANG, PEMON, AREKUNA, PAGEYN) |
+|205 |  TEMBE |
+|206 |  TENHARIM |
+|207 |  TERENA |
+|208 |  TICUNA (TIKUNA, TUKUNA, MAGUTA) |
+|209 |  TINGUI BOTO |
+|210 |  TIRIYO EWARHUYANA (TIRIYO, TRIO, TARONA, YAWI, PIANOKOTO) |
+|211 |  TIRIYO KAH''YANA (TIRIYO, TRIO, TARONA, YAWI, PIANOKOTO) |
+|212 |  TIRIYO TSIKUYANA (TIRIYO, TRIO, TARONA, YAWI, PIANOKOTO) |
+|213 |  TORA |
+|214 |  TREMEMBE |
+|215 |  TRUKA |
+|216 |  TRUMAI |
+|217 |  TSOHOM DJAPA (TSUNHUM-DJAPA) |
+|218 |  TUKANO (TUCANO, YE''PA-MASA, DASEA) |
+|219 |  TUMBALALA |
+|220 |  TUNAYANA |
+|221 |  TUPARI |
+|222 |  TUPINAMBA |
+|223 |  TUPINIQUIM |
+|224 |  TURIWARA |
+|225 |  TUXA |
+|226 |  TUYUKA (TUIUCA, DOKAPUARA, UTAPINOMAKAPHONA) |
+|227 |  TXIKAO (TXICAO, IKPENG) |
+|228 |  UMUTINA (OMOTINA, BARBADOS) |
+|229 |  URU-EU-WAU-WAU (URUEU-UAU-UAU, URUPAIN, URUPA) |
+|230 |  WAI WAI HIXKARYANA (HIXKARYANA) |
+|231 |  WAI WAI KARAFAWYANA (KARAFAWYANA, KARA-PAWYANA) |
+|232 |  WAI WAI XEREU (XEREU) |
+|233 |  WAI WAI KATUENA (KATUENA) |
+|234 |  WAI WAI MAWAYANA (MAWAYANA) |
+|235 |  WAIAPI (WAYAMPI, OYAMPI, WAYAPY, ) |
+|236 |  WAIMIRI ATROARI (KINA) |
+|237 |  WANANO (UANANO, WANANA) |
+|238 |  WAPIXANA (UAPIXANA, VAPIDIANA, WAPISIANA, WAPISHANA) |
+|239 |  WAREKENA (UAREQUENA, WEREKENA) |
+|240 |  WASSU |
+|241 |  WAURA (UAURA, WAUJA) |
+|242 |  WAYANA (WAIANA, UAIANA) |
+|243 |  WITOTO (UITOTO, HUITOTO) |
+|244 |  XAKRIABA (XACRIABA) |
+|245 |  XAVANTE (A''UWE, AKWE, AWEN, AKWEN) |
+|246 |  XERENTE (AKWE, AWEN, AKWEN) |
+|247 |  XETA |
+|248 |  XIPAIA (SHIPAYA, XIPAYA) |
+|249 |  XOKLENG (SHOKLENG, XOCLENG) |
+|250 |  XOKO (XOCO, CHOCO) |
+|251 |  XUKURU (XUCURU) |
+|252 |  XUKURU KARIRI (XUCURU-KARIRI) |
+|253 |  YAIPIYANA |
+|254 |  YAMINAWA (JAMINAWA, IAMINAWA) |
+|255 |  YANOMAMI NINAM (IANOMAMI, IANOAMA, XIRIANA) |
+|256 |  YANOMAMI SANUMA (IANOMAMI, IANOAMA, XIRIANA) |
+|257 |  YANOMAMI YANOMAM (IANOMAMI, IANOAMA, XIRIANA) |
+|258 |  YAWALAPITI (IAUALAPITI) |
+|259 |  YAWANAWA (IAUANAUA) |
+|260 |  YEKUANA (MAIONGON, YE''KUANA, YEKWANA, MAYONGONG) |
+|261 |  YUDJA (JURUNA, YURUNA) |
+|262 |  ZO''E (POTURU) |
+|263 |  ZORO (PAGEYN) |
+|264 |  ZURUAHA (SOROWAHA, SURUWAHA) |
+
+
+## tipoDeImovel
+|Código|	Descrição|
+|---|---|
+|1 |	Domicílio|
+|2 |	Comércio|
+|3 | 	Terreno baldio|
+|4 |	Ponto Estratégico (cemitério, borracharia, ferro-velho, depósito de sucata ou materiais de construção, garagem de ônibus ou veículo de grande porte)|
+|5 |	Escola|
+|6 |	Creche|
+|7 |	Abrigo|
+|8 |	Instituição de longa permanência para idosos|
+|9 |	Unidade prisional|
+|10 |	Unidade de medida sócio educativa|
+|11 |	Delegacia|
+|12 |	Estabelecimento religioso|
+|99 |	Outros|
+
+
+## racionalidadeSaude
+|Código|	Descrição|
+|---|---|
+|1 |	Medicina Tradicional Chinesa|
+|2 |	Antroposofia aplicada à saúde|
+|3 | 	Homeopatia|
+|4 |	Fitoterapia|
+|5 |	Ayurveda|
+|6 |	Outra|
+
+
+## testeOlhinho
+|Código|	Descrição|
+|---|---|
+|1 |	Presente bilateral	|
+|2 |	Duvidoso ou ausente |
+
+## exameFundoOlho
+|Código|	Descrição|
+|---|---|
+|3 |	Normal	 |
+|4 |	Alterado |
+
+## testeOrelhinha
+|Código|	Descrição|
+|---|---|
+|5 |	Passou |
+|6 |	Falhou |
+
+## usTransfontanela
+|Código|	Descrição|
+|---|---|
+|7 |	Normal |
+|8 |	Sugestivo de infecção congênita |
+|9 |	Outras alterações |
+|10|	Indeterminado  |
+
+## tomografiaComputadorizada
+|Código|	Descrição|
+|---|---|
+|11 |	Normal |
+|12 |	Sugestivo de infecção congênita |
+|13 |	Outras alterações |
+|14 |	Indeterminado  |
+
+## ressonanciaMagnetica
+|Código|	Descrição|
+|---|---|
+|15 |	Normal |
+|16 |	Sugestivo de infecção congênita |
+|17 |	Outras alterações |
+|18 |	Indeterminado  |
