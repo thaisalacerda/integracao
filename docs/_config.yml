@@ -6,7 +6,7 @@ description: Layout e-SUS AB de Dados e Interface (LEDI AB)
 version: 2.1.0
 
 # the subpath of your site, e.g. /blog
-baseurl: "/integracao/v20"
+baseurl: "/integracao"
 
 # Repositório onde está hospedado os fontes deste site
 github_repo: https://github.com/esusab/integracao-private
