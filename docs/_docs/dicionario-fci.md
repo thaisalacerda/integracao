@@ -245,10 +245,10 @@ Marcador se a cidadã está gestante.
 |--- |--- |--- |--- |
 |Boolean |Não |- |- |
 
-**Regras:** Só pode ser preenchido se:
+**Regras:** Não pode ser preenchido se:
 
-* O campo [sexoCidadao](#15-sexocidadao) = `feminino`;
-* O campo [dataNascimentoCidadao](#3-datanascimentocidadao) for mais anterior que 9 anos a partir da [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
+* Campo [sexoCidadao](#15-sexocidadao) = `0 - Masculino`;
+* Campo [dataNascimentoCidadao](#3-datanascimentocidadao) for menor que 9 anos ou maior que 60 anos a partir da [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
 
 ### \#15 statusEstaAcamado
 Marcador se o cidadão está acamado.
