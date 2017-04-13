@@ -43,6 +43,8 @@ Profissionais que realizaram o atendimento.
 |---| --- |---  | --- |
 |VariasLotacoesHeader|	Sim|	-|	-|
 
+**Regras:** Somente as CBOs apresentadas na [Tabela 10 - CBOs que podem registrar ficha de atendimento domiciliar]({% url cbo %}#ficha-de-atendimento-domiciliar) podem ser adicionadas no campo CBO do profissional principal.
+
 **Referências:** [VariasLotacoesHeader]({% url headerTransport %}#variaslotacoesheader).
 
 ## FichaAtendimentoDomiciliarChild

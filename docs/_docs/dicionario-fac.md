@@ -163,6 +163,8 @@ Dados referentes ao profissional responsável e a data do cadastro.
 |--- |--- |--- |--- |
 |UnicaLotacaoHeader |Sim |- |- |
 
+**Regras:** Somente as CBOs apresentadas na [Tabela 5 - CBOs que podem registrar ficha de atividade coletiva]({% url cbo %}#ficha-de-atividade-coletiva) podem ser adicionadas no campo CBO do profissional.
+
 **Referências:** [UnicaLotacaoHeader]({% url headerTransport %}#unicalotacaoheader).
 
 ### \#16	temasParaSaude

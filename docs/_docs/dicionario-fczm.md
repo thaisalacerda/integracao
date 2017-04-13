@@ -15,6 +15,8 @@ Dados referentes ao profissional e a data do cadastro.
 |--- |--- |--- |--- |
 |UnicaLotacaoHeader |Sim |- |- |
 
+**Regras:** Somente as CBOs apresentadas na [Tabela 11 - CBOs que podem registrar ficha complementar - Síndrome neurológica por Zika / Microcefalia]({% url cbo %}#ficha-complementar-s-ndrome-neurol-gica-por-zika-microcefalia) podem ser adicionadas no campo CBO do profissional.
+
 **Referências:** [UnicaLotacaoHeader]({% url headerTransport %}#unicalotacaoheader).
 
 ### \#2	uuidFicha

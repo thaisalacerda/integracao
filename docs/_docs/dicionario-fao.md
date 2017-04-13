@@ -26,6 +26,8 @@ Profissionais que realizaram o atendimento.
 |---| --- |---  | --- |
 |VariasLotacoesHeader|	Sim|	-|	-|
 
+**Regras:** Somente as CBOs apresentadas na [Tabela 4 - CBOs que podem registrar ficha de atendimento odontológico individual]({% url cbo %}#ficha-de-atendimento-odontol-gico-individual) podem ser adicionadas no campo CBO do profissional principal.
+
 **Referências:** [VariasLotacoesHeader]({% url headerTransport %}#variaslotacoesheader).
 
 ### \#3	atendimentosOdontologicos

@@ -27,6 +27,8 @@ Código do CBO do profissional.
 |--- |--- |--- |--- |
 |String |Sim |- |- |
 
+**Regras:** Somente as CBOs apresentadas na tabela da respectiva ficha podem ser adicionadas neste campo.
+
 **Referências:** {% link cbo %}.
 
 Observações: Esta entidade é utilizada para representar o profissional responsável pelas fichas.
@@ -115,6 +117,8 @@ Profissional responsável pelo atendimento.
 |LotacaoHeader |Sim |- |- |
 
 Observações: Esta entidade é utilizada para representar o profissional responsável pela ficha.
+
+**Regras:** Somente as {% link cbo %} apresentadas na tabela da respectiva ficha podem ser adicionadas no campo CBO do profissional responsável.
 
 **Referências:** [LotacaoHeader](#lotacaoheader).
 

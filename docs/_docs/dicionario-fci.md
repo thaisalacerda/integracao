@@ -114,6 +114,8 @@ Dados referentes ao profissional e a data do cadastro.
 |--- |--- |--- |--- |
 |UnicaLotacaoHeader |Sim |- |- |
 
+**Regras:** Somente as CBOs apresentadas na [Tabela 1 - CBOs que podem registrar ficha de cadastro individual]({% url cbo %}#ficha-de-cadastro-individual) podem ser adicionadas no campo CBO do profissional.
+
 **Referências:** [UnicaLotacaoHeader]({% url headerTransport %}#unicalotacaoheader).
 
 ## CondicoesDeSaude

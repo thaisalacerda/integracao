@@ -35,6 +35,8 @@ Profissional que realizou os procedimentos.
 |--- |--- |--- |--- |
 |UnicaLotacaoHeader |Sim |- |- |
 
+**Regras:** Somente as CBOs apresentadas na [Tabela 6 - CBOs que podem registrar ficha de procedimento]({% url cbo %}#ficha-de-procedimento) podem ser adicionadas no campo CBO do profissional.
+
 **Referências:** [UnicaLotacaoHeader]({% url headerTransport %}#unicalotacaoheader).
 
 ### \#4 atendProcedimentos

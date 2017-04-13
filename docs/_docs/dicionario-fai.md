@@ -15,6 +15,8 @@ Profissionais que realizaram o atendimento
 |---| --- |---  | --- |
 |VariasLotacoesHeader|	Sim|	-|	-|
 
+**Regras:** Somente as CBOs apresentadas na [Tabela 3 - CBOs que podem registrar ficha de atendimento individual]({% url cbo %}#ficha-de-atendimento-individual) podem ser adicionadas no campo CBO do profissional principal.
+
 **Referências:** [VariasLotacoesHeader]({% url headerTransport %}#variaslotacoesheader).
 
 ### \#2	atendimentosIndividuais
