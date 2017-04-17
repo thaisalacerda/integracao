@@ -90,7 +90,10 @@ Código do CBO do profissional.
 |--- |--- |--- |--- |
 |String |Sim |- |- |
 
-**Referências:** {% link cbo %}.
+**Regras:**
+
+- Se for registro de [lotacaoFormPrincipal](#1-lotacaoformprincipal) somente as {% link cbo %} apresentadas na tabela da respectiva ficha podem ser adicionadas neste campo;
+- Se for registro de [lotacaoFormAtendimentoCompartilhado](#2-lotacaoformatendimentocompartilhado) a referência é a [Lista com todas as CBOs]({% url cbo %}#lista-com-todas-as-cbos).
 
 ### \#3 cnes
 Código do CNES da unidade de saúde que o profissional está lotado.
@@ -117,8 +120,6 @@ Profissional responsável pelo atendimento.
 |LotacaoHeader |Sim |- |- |
 
 Observações: Esta entidade é utilizada para representar o profissional responsável pela ficha.
-
-**Regras:** Somente as {% link cbo %} apresentadas na tabela da respectiva ficha podem ser adicionadas no campo CBO do profissional responsável.
 
 **Referências:** [LotacaoHeader](#lotacaoheader).
 

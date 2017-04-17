@@ -3,7 +3,7 @@ title: Layout e-SUS AB de Dados e Interface (LEDI AB)
 description: Layout e-SUS AB de Dados e Interface (LEDI AB)
 
 # Versão atual da documentação
-version: 2.1.0
+version: 2.1.1
 
 # the subpath of your site, e.g. /blog
 baseurl: "/integracao"

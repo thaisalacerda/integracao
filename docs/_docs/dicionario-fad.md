@@ -172,6 +172,8 @@ Código dos procedimentos SIGTAP registrados no atendimento.
 * Não podem ser iguais aos procedimentos da tabela [Procedimentos da Atenção Domiciliar](#procedimentos-da-aten-o-domiciliar) e nem ao procedimento `0301050104 - Visita domiciliar pós-óbito`.
 * Não podem haver procedimentos com o mesmo código.
 
+**Referências:** Tabela do SIGTAP, competência 07/2016 disponível em: [Tabela unificada SIGTAP](http://sigtap.datasus.gov.br/tabela-unificada/app/sec/procedimento/publicados/consultar).
+
 Observação: Inserir o código do procedimento sem ponto ou hífen, ex: `0201010010`.
 
 ### \#13	condutaDesfecho

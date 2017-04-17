@@ -11,6 +11,4 @@ order: 19
 |--- |--- |--- |--- |--- |
 |major |Integer |Sim |Valor único = 2 |
 |minor |Integer |Sim |Valor único = 1	|
-|revision |Integer |Sim |Valor único = 0 |
-
-
+|revision |Integer |Sim |Valor único = 1 |

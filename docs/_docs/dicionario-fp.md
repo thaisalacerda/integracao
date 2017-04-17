@@ -233,7 +233,7 @@ Código dos outros procedimentos do SIGTAP ou SISAB.
 - É requerido pelo menos um dentre os itens `#8` e `#9`.
 - Se o campo [statusEscutaInicialOrientacao](#7-statusescutainicialorientacao) = `true`, este campo é opcional.
 
-**Referências:** Para ver a referência da tabela do SIGTAP acesse: [Tabela unificada SIGTAP](http://sigtap.datasus.gov.br/tabela-unificada/app/sec/procedimento/publicados/consultar).
+**Referências:** Tabela do SIGTAP, competência 07/2016 disponível em: [Tabela unificada SIGTAP](http://sigtap.datasus.gov.br/tabela-unificada/app/sec/procedimento/publicados/consultar).
 
 Observação: Inserir o código do procedimento sem ponto ou hífen, ex: `0201010010`. 
 

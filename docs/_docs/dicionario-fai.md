@@ -347,7 +347,7 @@ Código do exame solicitado ou avaliado.
 * Só é possível inserir exames cujo grupo é igual a `02` - Procedimentos com finalidade diagnóstica. 
 * Não inserir exames que estejam presentes na tabela [ListaExames](#listaexames). 
 
-**Referências:** Para ver a referência da tabela do SIGTAP acesse: [Tabela Unificada SIGTAP](http://sigtap.datasus.gov.br/tabela-unificada/app/sec/procedimento/publicados/consultar).
+**Referências:** Tabela do SIGTAP, competência 07/2016 disponível em: [Tabela Unificada SIGTAP](http://sigtap.datasus.gov.br/tabela-unificada/app/sec/procedimento/publicados/consultar).
 
 Observação: Inserir o código do exame sem ponto ou hífen, ex: `0201010010`.
 
