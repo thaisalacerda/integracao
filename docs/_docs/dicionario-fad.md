@@ -172,7 +172,7 @@ Código dos procedimentos SIGTAP registrados no atendimento.
 * Não podem ser iguais aos procedimentos da tabela [Procedimentos da Atenção Domiciliar](#procedimentos-da-aten-o-domiciliar) e nem ao procedimento `0301050104 - Visita domiciliar pós-óbito`.
 * Não podem haver procedimentos com o mesmo código.
 
-**Referências:** Tabela do SIGTAP, competência 07/2016 disponível em: [Tabela unificada SIGTAP](http://sigtap.datasus.gov.br/tabela-unificada/app/sec/procedimento/publicados/consultar).
+**Referências:** Tabela do SIGTAP, competência 03/2017 disponível em: [Tabela unificada SIGTAP](http://sigtap.datasus.gov.br/tabela-unificada/app/sec/procedimento/publicados/consultar).
 
 Observação: Inserir o código do procedimento sem ponto ou hífen, ex: `0201010010`.
 
@@ -238,5 +238,4 @@ Código SIGTAP *| Descrição |
 |0301070113|Terapia fonoaudiológica individual|
 |0308010019|Tratamento de traumatismos de localização especificada / não especificada|
 |0303190019|Tratamento em reabilitação|
-
-_* Procedimentos pertencentes a competência **07/2016** do SIGTAP._
+_* Procedimentos pertencentes a competência **03/2017** do SIGTAP._

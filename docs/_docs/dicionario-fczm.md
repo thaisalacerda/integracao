@@ -108,7 +108,7 @@ Data de realização do "Exame de fundo de olho (02.11.06.010-0 - Fundoscopia)".
 - Não pode ser anterior em 20 anos ou posterior a [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
 - Se este campo for preenchido, o campo [coResultadoExameFundoOlho](#10-coresultadoexamefundoolho) é obrigatório.
 
-**Referências:** O código deste exame é compatível com a competência 07/2016 da tabela do SIGTAP, disponível em: [Tabela unificada SIGTAP](http://sigtap.datasus.gov.br/tabela-unificada/app/sec/procedimento/publicados/consultar).
+**Referências:** O código deste exame é compatível com a competência 03/2017 da tabela do SIGTAP, disponível em: [Tabela unificada SIGTAP](http://sigtap.datasus.gov.br/tabela-unificada/app/sec/procedimento/publicados/consultar).
 
 ### \#10 coResultadoExameFundoOlho
 Resultado do "Exame de fundo de olho (02.11.06.010-0 - Fundoscopia)".
@@ -136,7 +136,7 @@ Data de realização do "Teste da orelhinha - PEATE (02.11.07.027-0 - Potencial 
 - Não pode ser anterior em 20 anos ou posterior a [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
 - Se este campo for preenchido, o campo [coResultadoTesteOrelhinha](#12-coresultadotesteorelhinha) é obrigatório.
 
-**Referências:** O código deste exame é compatível com a competência 07/2016 da tabela do SIGTAP, disponível em: [Tabela unificada SIGTAP](http://sigtap.datasus.gov.br/tabela-unificada/app/sec/procedimento/publicados/consultar).
+**Referências:** O código deste exame é compatível com a competência 03/2017 da tabela do SIGTAP, disponível em: [Tabela unificada SIGTAP](http://sigtap.datasus.gov.br/tabela-unificada/app/sec/procedimento/publicados/consultar).
 
 ### \#12 coResultadoTesteOrelhinha
 Resultado do "Teste da orelhinha - PEATE (02.11.07.027-0 - Potencial evocado auditivo para triagem auditiva)".
@@ -164,7 +164,7 @@ Data de realização do exame de imagem "US transfontanela (02.05.02.017-8 - Ult
 - Não pode ser anterior em 20 anos ou posterior a [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
 - Se este campo for preenchido, o campo [coResultadoUsTransfontanela](#14-coresultadoustransfontanela) é obrigatório.
 
-**Referências:** O código deste exame é compatível com a competência 07/2016 da tabela do SIGTAP, disponível em: [Tabela unificada SIGTAP](http://sigtap.datasus.gov.br/tabela-unificada/app/sec/procedimento/publicados/consultar).
+**Referências:** O código deste exame é compatível com a competência 03/2017 da tabela do SIGTAP, disponível em: [Tabela unificada SIGTAP](http://sigtap.datasus.gov.br/tabela-unificada/app/sec/procedimento/publicados/consultar).
 
 ### \#14 coResultadoUsTransfontanela
 Resultado do exame de imagem "US transfontanela (02.05.02.017-8 - Ultrassonografia transfontanela)".
@@ -192,7 +192,7 @@ Data de realização do exame de imagem "Tomografia computadorizada (02.06.01.00
 - Não pode ser anterior em 20 anos ou posterior a [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
 - Se este campo for preenchido, o campo [coResultadoTomografiaComputadorizada](#16-coresultadotomografiacomputadorizada) é obrigatório.
 
-**Referências:** O código deste exame é compatível com a competência 07/2016 da tabela do SIGTAP, disponível em: [Tabela unificada SIGTAP](http://sigtap.datasus.gov.br/tabela-unificada/app/sec/procedimento/publicados/consultar).
+**Referências:** O código deste exame é compatível com a competência 03/2017 da tabela do SIGTAP, disponível em: [Tabela unificada SIGTAP](http://sigtap.datasus.gov.br/tabela-unificada/app/sec/procedimento/publicados/consultar).
 
 ### \#16 coResultadoTomografiaComputadorizada
 Resultado do exame de imagem "Tomografia computadorizada (02.06.01.007-9 - Tomografia computadorizada do crânio)".
@@ -220,7 +220,7 @@ Data de realização do exame de imagem "Ressonância magnética (02.07.01.006-4
 - Não pode ser anterior em 20 anos ou posterior a [dataAtendimento]({% url headerTransport %}#5-dataatendimento).
 - Se este campo for preenchido, o campo [coResultadoRessonanciaMagnetica](#18-coresultadoressonanciamagnetica) é obrigatório.
 
-**Referências:** O código deste exame é compatível com a competência 07/2016 da tabela do SIGTAP, disponível em: [Tabela unificada SIGTAP](http://sigtap.datasus.gov.br/tabela-unificada/app/sec/procedimento/publicados/consultar).
+**Referências:** O código deste exame é compatível com a competência 03/2017 da tabela do SIGTAP, disponível em: [Tabela unificada SIGTAP](http://sigtap.datasus.gov.br/tabela-unificada/app/sec/procedimento/publicados/consultar).
 
 ### \#18 coResultadoRessonanciaMagnetica
 Resultado do exame de imagem "Ressonância magnética (02.07.01.006-4 - Ressonância magnética de crânio)".
