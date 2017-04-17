@@ -12,7 +12,7 @@ order: 1
 
 ---
 
-*Caso você já realizava a integração com o e-SUS AB na versão 2.0 e deseja saber as principais alterações estruturais de cada ficha para a versão 2.1, [clique aqui]({% url principais_alteracoes %}).*
+*Caso você já realizava a integração com o e-SUS AB na versão 2.1.0 e deseja saber as principais alterações para a versão 2.1.1, [clique aqui]({% url principais_alteracoes %}).*
 
 *Se deseja realizar a integração com a versão 2.0 do e-SUS AB, acesse a versão 2.0 deste documento [clicando aqui](http://esusab.github.io/integracao/v20/).*
 
