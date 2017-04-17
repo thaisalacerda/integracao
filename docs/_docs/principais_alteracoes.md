@@ -9,7 +9,7 @@ order: 20
 
 **1.** {% link cbo %} que podem ser referenciadas no header de cada ficha.
 
-- Fichas com VariasLotacoesHeader, a CBO do profissional referenciado em lotacaoFormAtendimentoCompartilhado pode ser qualquer um da [Lista com todas as CBOs]({% url cbo %}#lista-com-todas-as-cbos).
+- Fichas com **VariasLotacoesHeader**, a CBO do profissional referenciado em **lotacaoFormAtendimentoCompartilhado** pode ser qualquer um da [Lista com todas as CBOs]({% url cbo %}#lista-com-todas-as-cbos).
 
 **2.** Atualizada tabela de [Países]({% url referencias %}#pa-s).
 
