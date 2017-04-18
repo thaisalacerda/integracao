@@ -1,18 +1,12 @@
 ---
 layout: doc
-title: Principais alterações da v2.1.0 para a v2.1.1
+title: Principais alterações da v2.1.1 para a v2.2
 id: principais_alteracoes
 order: 20
 ---
 
-######Este documento consiste relatar as principais alterações em relação à versão 2.1.0 do e-SUS AB (PEC):
+######Este documento relata as principais alterações em relação à versão 2.1.1 do e-SUS AB (PEC):
 
-**1.** {% link cbo %} que podem ser referenciadas no header de cada ficha.
+**1.** Atualização da competência do SIGTAP para 03/2017.
 
-- Fichas com **VariasLotacoesHeader**, a CBO do profissional referenciada em **lotacaoFormAtendimentoCompartilhado** pode ser qualquer uma da [Lista com todas as CBOs]({% url cbo %}#lista-com-todas-as-cbos).
-
-**2.** Atualizada tabela de [Países]({% url referencias %}#pa-s).
-
-**3.** Atualizada tabela de {% link municipios %}.
-
-**4.** Atualizada tabela de [Tipos de logradouro]({% url referencias %}#tipo-de-logradouro).
+**2.** Atualização da lista de procedimentos da tabela [OutroProcedimentoColetivo]({% url dicionario-fac %}#outroprocedimentocoletivo) disponíveis no campo [#13 procedimento]({% url dicionario-fac %}#13-procedimento) da Ficha de Atividade Coletiva.
