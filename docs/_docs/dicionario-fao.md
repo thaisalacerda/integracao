@@ -26,6 +26,8 @@ Profissionais que realizaram o atendimento.
 |---| --- |---  | --- |
 |VariasLotacoesHeader|	Sim|	-|	-|
 
+**Regras:** Somente as CBOs apresentadas na [Tabela 4 - CBOs que podem registrar ficha de atendimento odontológico individual]({% url cbo %}#ficha-de-atendimento-odontol-gico-individual) podem ser adicionadas no campo CBO do profissional principal.
+
 **Referências:** [VariasLotacoesHeader]({% url headerTransport %}#variaslotacoesheader).
 
 ### \#3	atendimentosOdontologicos
@@ -193,10 +195,7 @@ Lista de outros códigos de procedimentos.
 * Não pode conter procedimentos da [ListaProcedimentosRealizados](#listaprocedimentosrealizados);
 * Não podem haver procedimentos com o mesmo código.
 
-**Referências:** 
-
-- [ProcedimentoQuantidade](#procedimentoquantidade).
-- Para ver a referência da tabela do SIGTAP acesse: [Tabela Unificada SIGTAP](http://sigtap.datasus.gov.br/tabela-unificada/app/sec/procedimento/publicados/consultar).
+**Referências:** [ProcedimentoQuantidade](#procedimentoquantidade).
 
 ### \#14	sexo
 Código do sexo do cidadão.
@@ -229,6 +228,8 @@ Código do procedimento no MS.
 
 - Quando a lista partir da estrutura [procedimentosRealizados](#12-procedimentosrealizados), somente os procedimentos **AB** listados em [ListaProcedimentosRealizados](#listaprocedimentosrealizados) podem ser adicionados. Verificar o procedimento AB correspondente ao procedimento SIGTAP desejado;
 - Quando a lista partir da estrutura [outrosSiaProcedimentos](#13-outrossiaprocedimentos), ela não pode conter procedimentos da [ListaProcedimentosRealizados](#listaprocedimentosrealizados) e só podem ser inseridos procedimentos cujo grupo é igual a `01` - Ações de promoção e prevenção em saúde, `02` - Procedimentos com finalidade diagnóstica, `03` - Procedimentos clínicos ou `04` - Procedimentos cirúrgicos.
+
+**Referência:** Tabela do SIGTAP, competência 03/2017 disponível em: [Tabela Unificada SIGTAP](http://sigtap.datasus.gov.br/tabela-unificada/app/sec/procedimento/publicados/consultar).
 
 Observações: 
 
@@ -274,5 +275,4 @@ Quantidade de procedimentos realizados.
 |01.01.02.009-0 | Selamento provisório de cavidade dentária | ABPO025 |
 |04.14.02.038-3 | Tratamento de alveolite | ABPO026 |
 |04.14.02.040-5 | Ulotomia / Ulectomia | ABPO027 |
-
-_* Procedimentos pertencentes a competência **07/2016** do SIGTAP._
+_* Procedimentos pertencentes a competência **03/2017** do SIGTAP._

@@ -35,6 +35,8 @@ Profissional que realizou os procedimentos.
 |--- |--- |--- |--- |
 |UnicaLotacaoHeader |Sim |- |- |
 
+**Regras:** Somente as CBOs apresentadas na [Tabela 6 - CBOs que podem registrar ficha de procedimento]({% url cbo %}#ficha-de-procedimento) podem ser adicionadas no campo CBO do profissional.
+
 **Referências:** [UnicaLotacaoHeader]({% url headerTransport %}#unicalotacaoheader).
 
 ### \#4 atendProcedimentos
@@ -231,7 +233,7 @@ Código dos outros procedimentos do SIGTAP ou SISAB.
 - É requerido pelo menos um dentre os itens `#8` e `#9`.
 - Se o campo [statusEscutaInicialOrientacao](#7-statusescutainicialorientacao) = `true`, este campo é opcional.
 
-**Referências:** Para ver a referência da tabela do SIGTAP acesse: [Tabela unificada SIGTAP](http://sigtap.datasus.gov.br/tabela-unificada/app/sec/procedimento/publicados/consultar).
+**Referências:** Tabela do SIGTAP, competência 03/2017 disponível em: [Tabela unificada SIGTAP](http://sigtap.datasus.gov.br/tabela-unificada/app/sec/procedimento/publicados/consultar).
 
 Observação: Inserir o código do procedimento sem ponto ou hífen, ex: `0201010010`. 
 
@@ -272,5 +274,4 @@ Observação: Inserir o código do procedimento sem ponto ou hífen, ex: `020101
 |Não possui    |Administração de medicamentos via Tópica |ABPG031 |
 |Não possui    |Administração de Penicilina para tratamento de sífilis |ABPG032 |
 |Não possui    |Administração de medicamentos via Subcutânea (SC) |ABPG041 |
-
-_* Procedimentos pertencentes a competência **07/2016** do SIGTAP._
+_* Procedimentos pertencentes a competência **03/2017** do SIGTAP._

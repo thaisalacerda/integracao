@@ -269,6 +269,8 @@ Profissional que realizou a visita.
 |---| --- |---  | --- |
 |VariasLotacoesHeader|	Sim|	-|	-|
 
+**Regras:** Somente as CBOs apresentadas na [Tabela 9 - CBOs que podem registrar ficha de avaliação de elegibilidade]({% url cbo %}#ficha-de-avalia-o-de-elegibilidade) podem ser adicionadas no campo CBO do profissional principal.
+
 **Referências:** [VariasLotacoesHeader]({% url headerTransport %}#variaslotacoesheader).
 
 ### \#27 nomePaiCidadao

@@ -164,6 +164,8 @@ Informações sobre o profissional e a data do cadastro.
 | ---| --- |---  | --- |
 | UnicaLotacaoHeader|	Sim|	-|	-|
 
+**Regras:** Somente as CBOs apresentadas na [Tabela 2 - CBOs que podem registrar ficha de cadastro domiciliar e territorial]({% url cbo %}#ficha-de-cadastro-domiciliar-e-territorial) podem ser adicionadas no campo CBO do profissional.
+
 **Referências:** [UnicaLotacaoHeader]({% url headerTransport %}#unicalotacaoheader).
 
 ## EnderecoLocalPermanencia

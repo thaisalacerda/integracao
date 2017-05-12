@@ -16,6 +16,8 @@ Profissional que realizou a visita.
 |--- |--- |--- |--- |
 |UnicaLotacaoHeader |Sim |- |- |
 
+**Regras:** Somente as CBOs apresentadas na [Tabela 8 - CBOs que podem registrar marcadores de consumo alimentar]({% url cbo %}#marcadores-de-consumo-alimentar) podem ser adicionadas no campo CBO do profissional.
+
 **Referências:** [UnicaLotacaoHeader]({% url headerTransport %}#unicalotacaoheader).
 
 ### \#2 cnsCidadao

@@ -15,6 +15,8 @@ Profissionais que realizaram o atendimento
 |---| --- |---  | --- |
 |VariasLotacoesHeader|	Sim|	-|	-|
 
+**Regras:** Somente as CBOs apresentadas na [Tabela 3 - CBOs que podem registrar ficha de atendimento individual]({% url cbo %}#ficha-de-atendimento-individual) podem ser adicionadas no campo CBO do profissional principal.
+
 **Referências:** [VariasLotacoesHeader]({% url headerTransport %}#variaslotacoesheader).
 
 ### \#2	atendimentosIndividuais
@@ -345,7 +347,7 @@ Código do exame solicitado ou avaliado.
 * Só é possível inserir exames cujo grupo é igual a `02` - Procedimentos com finalidade diagnóstica. 
 * Não inserir exames que estejam presentes na tabela [ListaExames](#listaexames). 
 
-**Referências:** Para ver a referência da tabela do SIGTAP acesse: [Tabela Unificada SIGTAP](http://sigtap.datasus.gov.br/tabela-unificada/app/sec/procedimento/publicados/consultar).
+**Referências:** Tabela do SIGTAP, competência 03/2017 disponível em: [Tabela Unificada SIGTAP](http://sigtap.datasus.gov.br/tabela-unificada/app/sec/procedimento/publicados/consultar).
 
 Observação: Inserir o código do exame sem ponto ou hífen, ex: `0201010010`.
 
@@ -480,6 +482,4 @@ Código do CID10 registrado no atendimento.
 |02.02.11.005-2|Teste do pezinho|ABEX021|
 |02.05.02.014-3|Ultrassonografia obstétrica|ABEX024|
 |02.02.08.008-0|Urocultura|ABEX029|
-
-
-_* Procedimentos pertencentes a competência **07/2016** do SIGTAP._
+_* Procedimentos pertencentes a competência **03/2017** do SIGTAP._

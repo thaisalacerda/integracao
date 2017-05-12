@@ -35,6 +35,8 @@ Profissional que realizou a visita.
 |--- |--- |--- |--- |
 |UnicaLotacaoHeader |Sim |- |- |
 
+**Regras:** Somente as CBOs apresentadas na [Tabela 7 - CBOs que podem registrar ficha de visita domiciliar e territorial]({% url cbo %}#ficha-de-visita-domiciliar-e-territorial) podem ser adicionadas no campo CBO do profissional.
+
 **Referências:** [UnicaLotacaoHeader]({% url headerTransport %}#unicalotacaoheader).
 
 ### \#4 visitasDomiciliares
