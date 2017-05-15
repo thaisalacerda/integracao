@@ -2,7 +2,8 @@
 layout: doc
 title: Ficha de Atendimento Odontológico Individual
 id: dicionario-fao
-order: 3
+parent: index_dicionario
+order: 4
 ---
 
 

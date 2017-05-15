@@ -2,7 +2,8 @@
 layout: doc
 title: Ficha de Atividade Coletiva
 id: dicionario-fac
-order: 4
+parent: index_dicionario
+order: 5
 ---
 
 ## FichaAtividadeColetiva

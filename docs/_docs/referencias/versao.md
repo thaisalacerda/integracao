@@ -2,7 +2,8 @@
 layout: doc
 title: Versão
 id: versao
-order: 19
+parent: referencias
+order: 4
 ---
 
 **Observação:** Indica a versão do dado a ser transportado. A versão do dado não necessariamente reflete a versão do sistema.

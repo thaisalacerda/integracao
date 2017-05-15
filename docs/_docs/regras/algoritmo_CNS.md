@@ -1,9 +1,12 @@
 ---
 layout: doc
-title: Algoritmo de validação do CNS
+title: Validar CNS
 id: algoritmo_CNS
-order: 17
+parent: regras
+order: 1
 ---
+
+O CNS deve ser validado conforme alguma das rotinas abaixo:
 
 ###1. Rotina de validação de Números que iniciam com **1** ou **2**:
 

@@ -2,7 +2,8 @@
 layout: doc
 title: Ficha de Cadastro Individual
 id: dicionario-fci
-order: 0
+parent: index_dicionario
+order: 2
 ---
 
 ## CadastroIndividual

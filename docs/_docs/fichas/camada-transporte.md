@@ -2,14 +2,9 @@
 layout: doc
 title: Camada de Transporte de Dados
 id: camada-transporte
+parent: index_dicionario
 order: 0
 ---
-
-Quando a integração for realizada através do **Apache Thrift**, cada ficha dentro do arquivo compactado representa um DadoTransport serializado através do [TBinaryProtocol](https://github.com/apache/thrift/blob/0.9.2/lib/java/src/org/apache/thrift/protocol/TBinaryProtocol.java), sendo necessário que a extensão da ficha esteja definida como ".esus".
-
-O pacote que encapsula os dados transmissíveis, cada ficha deve conter as informações de identificação deste cabeçalho, incluindo o dadoSerializado (conteúdo da ficha).
-
-No caso do software de terceiro o campo remetente será igual ao originadora, que indica qual instalação gerou/enviou o dado.
 
 ## DadoTransporte
 Os atributos do registro transportado devem seguir as regras aqui descritas. Qualquer inconsistência nos dados transportados resultará no descarte da entidade [DadoTransporte](#dadotransporte).

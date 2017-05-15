@@ -2,7 +2,8 @@
 layout: doc
 title: Ficha de Avaliação de Elegibilidade
 id: dicionario-fae
-order: 8
+parent: index_dicionario
+order: 9
 ---
 
 

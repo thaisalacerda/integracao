@@ -2,7 +2,8 @@
 layout: doc
 title: Validar nome
 id: validar_nome
-order: 18
+parent: regras
+order: 3
 ---
 
 Essas regras foram baseadas nas regras oficiais definidas pelo CADSUS na Especificação Técnica para integração PIX/PDQ

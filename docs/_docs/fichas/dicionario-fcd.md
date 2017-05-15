@@ -2,7 +2,8 @@
 layout: doc
 title: Ficha de Cadastro Domiciliar e Territorial
 id: dicionario-fcd
-order: 1
+parent: index_dicionario
+order: 2
 ---
 
 ## CadastroDomiciliar

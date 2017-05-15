@@ -2,7 +2,8 @@
 layout: doc
 title: Ficha de Atendimento Domiciliar
 id: dicionario-fad
-order: 9
+parent: index_dicionario
+order: 10
 ---
 
 ## FichaAtendimentoDomiciliarMaster

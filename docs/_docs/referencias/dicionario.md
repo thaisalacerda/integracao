@@ -2,7 +2,8 @@
 layout: doc
 title: Dicionário de dados
 id: dicionario
-order: 12
+parent: referencias
+order: 6
 ---
 
 ## AbastecimentoDeAgua

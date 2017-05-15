@@ -2,7 +2,8 @@
 layout: doc
 title: Ficha complementar - Síndrome neurológica por Zika / Microcefalia
 id: dicionario-fczm
-order: 10
+parent: index_dicionario
+order: 11
 ---
 
 

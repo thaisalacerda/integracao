@@ -2,7 +2,8 @@
 layout: doc
 title: Ficha de Procedimentos
 id: dicionario-fp
-order: 5
+parent: index_dicionario
+order: 6
 ---
 
 

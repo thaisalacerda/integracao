@@ -2,7 +2,8 @@
 layout: doc
 title: Ficha de Vacinação
 id: dicionario-fv
-order: 6
+parent: index_dicionario
+order: 7
 ---
 
 

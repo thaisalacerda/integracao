@@ -2,7 +2,8 @@
 layout: doc
 title: Ficha de Atendimento Individual
 id: dicionario-fai
-order: 2
+parent: index_dicionario
+order: 3
 ---
 
 
