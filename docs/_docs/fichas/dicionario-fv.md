@@ -39,7 +39,7 @@ Profissional que realizou a visita.
 **Referências:** [UnicaLotacaoHeader]({% url headerTransport %}#unicalotacaoheader).
 
 ### \#4 vacinacoes
-Lista de Fichas de Vacinação.
+Lista de registros de Vacinação.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
@@ -49,14 +49,23 @@ Lista de Fichas de Vacinação.
 
 ## FichaVacinacaoChild
 
-### \#1 numProntuario
+### \#1 turno
+Código do turno onde aconteceu o atendimento.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|--- |--- |--- |--- |
+|Long |Sim |- |- |
+
+**Referências:** [Turno]({% url dicionario %}#turno).
+
+### \#2 numProntuario
 Número do prontuário do cidadão na UBS.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
 |String |Não |0 |30 |
 
-### \#2 cnsCidadao
+### \#3 cnsCidadao
 CNS do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -67,7 +76,7 @@ CNS do cidadão.
 
 **Referências:** O algoritmo de validação está presente em {% link algoritmo_CNS %}.
 
-### \#3 dtNascimento
+### \#4 dtNascimento
 Data de nascimento do cidadão no formato epoch time.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -78,7 +87,7 @@ Data de nascimento do cidadão no formato epoch time.
 
 **Referências:** [Epoch Wikipedia](https://pt.wikipedia.org/wiki/Era_Unix) em milissegundos.
 
-### \#4 sexo
+### \#5 sexo
 Código do sexo do cidadão.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -87,7 +96,7 @@ Código do sexo do cidadão.
 
 **Referências:** [Sexo]({% url dicionario %}#sexo).
 
-### \#5 localAtendimento
+### \#6 localAtendimento
 Código do local onde o atendimento foi realizado.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
@@ -98,11 +107,91 @@ Código do local onde o atendimento foi realizado.
 
 **Referências:** [LocalDeAtendimento]({% url dicionario %}#localdeatendimento).
 
-### \#6 turno
-Código do turno onde aconteceu o atendimento.
+### \#7 viajante
+Marcador que indica se o cidadão é viajante.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|--- |--- |--- |--- |
+|Boolean |Não |- |- |
+
+### \#8 comunicanteHanseniase
+Marcador que indica se o cidadão é comunicante de hanseníese.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|--- |--- |--- |--- |
+|Boolean |Não |- |- |
+
+### \#9 gestante
+Marcador que indica se a cidadã está gestante.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|--- |--- |--- |--- |
+|Boolean |Não |- |- |
+
+### \#10 puerpera
+Marcador que indica se a cidadã é puerpera.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|--- |--- |--- |--- |
+|Boolean |Não |- |- |
+
+### \#11 vacinas
+Registro das vacinas aplicadas.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|--- |--- |--- |--- |
+|List\<VacinaRowThrift\> |Condicional |0 |99 |
+
+**Referências:** [VacinaRowThrift](#vacinarowthrift).
+
+## VacinaRowThrift
+
+### \#1 imunobiologico
+Código do local onde o atendimento foi realizado.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
 |Long |Sim |- |- |
 
-**Referências:** [Turno]({% url dicionario %}#turno).
+**Regras:** Apenas os valores (especificar...)
+
+**Referências:** [Imunobiologico]({% url dicionario %}#imunobiologico).
+
+### \#2 estrategiaVacinacao
+Código do local onde o atendimento foi realizado.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|--- |--- |--- |--- |
+|Long |Sim |- |- |
+
+**Regras:** Apenas os valores (especificar...)
+
+**Referências:** [EstrategiaVacinacao]({% url dicionario %}#estrategiavacinacao).
+
+### \#3 dose
+Código do local onde o atendimento foi realizado.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|--- |--- |--- |--- |
+|Long |Sim |- |- |
+
+**Regras:** Apenas os valores (especificar...)
+
+**Referências:** [Dose]({% url dicionario %}#dose).
+   
+### \#4 lote
+Código do local onde o atendimento foi realizado.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|--- |--- |--- |--- |
+|String  |Sim |1 |10 |
+
+### \#5 fabricante
+Código do local onde o atendimento foi realizado.
+
+| Tipo | Obrigatório | Mínimo | Máximo |
+|--- |--- |--- |--- |
+|String  |Sim |1 |100 |
+
+    
+    

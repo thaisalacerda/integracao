@@ -203,6 +203,61 @@ order: 6
 |32 |	Outro|	-|
 |33 |	Não sabe|	-|
 
+## Dose
+|Código|	Descrição|	Observações|
+|---|---|---|
+|1|1ª Dose|-
+|2|2ª Dose|-
+|3|3ª Dose|-
+|4|4ª Dose|-
+|5|5ª Dose|-
+|6|1º Reforço|-
+|7|2º Reforço|-
+|8|Dose|-
+|9|Única|-
+|10|Revacinação|-
+|11|Tratamento com  uma dose|-
+|12|Tratamento com duas doses|-
+|13|Tratamento com três doses|-
+|14|Tratamento com quatro doses|-
+|15|Tratamento com cinco doses|-
+|16|Tratamento com seis doses|-
+|17|Tratamento com sete doses|-
+|18|Tratamento com oito doses|-
+|19|Tratamento com nove doses|-
+|20|Tratamento com dez doses|-
+|21|Tratamento com onze doses|-
+|22|Tratamento com doze doses|-
+|23|Tratamento com treze doses|-
+|24|Tratamento com quatorze doses|-
+|25|Tratamento com quinze doses|-
+|26|Tratamento com dezesseis doses|-
+|27|Tratamento com dezessete doses|-
+|28|Tratamento com dezoito doses|-
+|29|Tratamento com dezenove doses|-
+|30|Tratamento com vinte doses|-
+|31|Tratamento com vinte quatro doses|-
+|32|1ª Dose Revacinação|-
+|33|2ª Dose Revacinação|-
+|34|3ª Dose Revacinação|-
+|35|4ª Dose Revacinação|-
+|36|Dose Inicial|-
+|37|Dose Adicional|-
+
+## EstrategiaVacinacao
+|Código|	Descrição|	Observações|
+|---|---|---|
+|1|Rotina|-
+|2|Especial|-
+|3|Bloqueio|-
+|4|Intensificação|-
+|5|Campanha |-
+|6|Campanha seletiva| Não é utilizado
+|7|Soroterapia|-
+|8|Serviço Privado|-
+|9|Monitoramento Rápido de Cobertura Vacinal| Não é utilizado
+|10|Multivacinação|-
+
 ## FormaDeEscoamentoDoBanheiroOuSanitario
 |Código|	Descrição|	Observações|
 |---|---|---|
