@@ -153,8 +153,6 @@ Código do local onde o atendimento foi realizado.
 |--- |--- |--- |--- |
 |Long |Sim |- |- |
 
-**Regras:** Apenas os valores (especificar...)
-
 **Referências:** [Imunobiologico]({% url dicionario %}#imunobiologico).
 
 ### \#2 estrategiaVacinacao
@@ -164,7 +162,7 @@ Código do local onde o atendimento foi realizado.
 |--- |--- |--- |--- |
 |Long |Sim |- |- |
 
-**Regras:** Apenas os valores (especificar...)
+**Regras:** Apenas os valores 1, 2, 3, 4, 5, 7, 8, 10.
 
 **Referências:** [EstrategiaVacinacao]({% url dicionario %}#estrategiavacinacao).
 
@@ -174,8 +172,6 @@ Código do local onde o atendimento foi realizado.
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
 |Long |Sim |- |- |
-
-**Regras:** Apenas os valores (especificar...)
 
 **Referências:** [Dose]({% url dicionario %}#dose).
    
