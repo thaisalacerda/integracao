@@ -243,6 +243,7 @@ order: 6
 |35|4ª Dose Revacinação|-
 |36|Dose Inicial|-
 |37|Dose Adicional|-
+|38|Reforço|-
 
 ## EstrategiaVacinacao
 |Código|	Descrição|	Observações|

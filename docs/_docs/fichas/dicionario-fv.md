@@ -43,7 +43,7 @@ Lista de registros de Vacinação.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|List\<FichaVacinacaoChild\> |Sim |0 |99 |
+|List\<FichaVacinacaoChild\> |Sim |1 |99 |
 
 **Referências:** [FichaVacinacaoChild](#fichavacinacaochild).
 
@@ -128,6 +128,8 @@ Marcador que indica se a cidadã está gestante.
 |--- |--- |--- |--- |
 |Boolean |Não |- |- |
 
+**Regras:** Não pode ser preenchido ser for marcado o campo [puerpera](#10-puerpera).
+
 ### \#10 puerpera
 Marcador que indica se a cidadã é puerpera.
 
@@ -135,12 +137,14 @@ Marcador que indica se a cidadã é puerpera.
 |--- |--- |--- |--- |
 |Boolean |Não |- |- |
 
+**Regras:** Não pode ser preenchido ser for marcado o campo [gestante](#9-gestante).
+
 ### \#11 vacinas
 Registro das vacinas aplicadas.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
-|List\<VacinaRowThrift\> |Condicional |0 |99 |
+|List\<VacinaRowThrift\> |Sim |1 |99 |
 
 **Referências:** [VacinaRowThrift](#vacinarowthrift).
 
@@ -162,7 +166,7 @@ Código do local onde o atendimento foi realizado.
 |--- |--- |--- |--- |
 |Long |Sim |- |- |
 
-**Regras:** Apenas os valores 1, 2, 3, 4, 5, 7, 8, 10.
+**Regras:** Apenas os valores `1`, `2`, `3`, `4`, `5`, `7`, `8`, `10`.
 
 **Referências:** [EstrategiaVacinacao]({% url dicionario %}#estrategiavacinacao).
 
@@ -182,12 +186,17 @@ Código do local onde o atendimento foi realizado.
 |--- |--- |--- |--- |
 |String  |Sim |1 |10 |
 
+**Regras:** Apenas `letras`, `números`, `/`, `.` e `-`.
+
 ### \#5 fabricante
 Código do local onde o atendimento foi realizado.
 
 | Tipo | Obrigatório | Mínimo | Máximo |
 |--- |--- |--- |--- |
 |String  |Sim |1 |100 |
+
+**Regras:** Apenas `letras`, `números`, `/`, `.` e `-`.
+
 
     
     

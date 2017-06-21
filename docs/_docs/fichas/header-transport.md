@@ -30,7 +30,7 @@ Código do CBO do profissional.
 
 **Regras:** Somente as CBOs apresentadas na tabela da respectiva ficha podem ser adicionadas neste campo.
 
-**Referências:** {% link cbo %}.
+**Referências:** {% link grupo_cbo %}.
 
 Observações: Esta entidade é utilizada para representar o profissional responsável pelas fichas.
 
