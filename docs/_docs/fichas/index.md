@@ -8,7 +8,7 @@ order: 0
 #### Lote
 Um lote é um conjunto de arquivos de dados. 
 
-####Arquivos de dados
+####Arquivo de dados
 
 Cada arquivo de dados representa uma ficha.
 
@@ -18,12 +18,12 @@ Quando a integração é realizada através do **Apache Thrift** os arquivos de 
 
 Cada arquivo ".esus" contém apenas uma ficha, conforme descrito no documento {% link camada-transporte %} e ilustrado na imagem abaixo:
 
-![Macro estrutura de um arquivo .esus](../camada_transporte.png "Macro estrutura de um arquivo .esus") *Macro estrutura de um arquivo .esus*
+![Macro estrutura de um arquivo .esus](../camada_transporte.png "Macro estrutura de um arquivo .esus") *Camada de transporte (Macro estrutura de um arquivo .esus)*
 
-#### dadoSerializado
+#### DadoSerializado
 
 Cada ficha pode ser composta por vários arquivos, conforme descrito no documento {% link thrift-xsd%}.
-Os dados das fichas exportadas devem ser estruturados conforme descrito no dicionário de dados de cada uma das fichas. Além destas informações cada ficha apresenta um cabeçalho. Os dados de cada ficha devem ser serializados através do TBinaryProtocol e inseridos no campo dadoSerializado do arquivo ".esus" da respectiva ficha. 
+Os dados das fichas exportadas devem ser estruturados conforme descrito no dicionário de dados de cada uma das fichas. Além destas informações cada ficha apresenta um cabeçalho (HeaderTransport). Os dados de cada ficha devem ser serializados através do TBinaryProtocol e inseridos no campo dadoSerializado do arquivo ".esus" da respectiva ficha. 
 
 - {% link headerTransport %};
 - {% link dicionario-fac %};
@@ -41,7 +41,7 @@ Os dados das fichas exportadas devem ser estruturados conforme descrito no dicio
 
 #### Remetente e originadora
 
-No caso do software de terceiro o campo remetente será igual ao originadora, que indica qual instalação gerou/enviou o dado. Estas informações são representadas por um [DadoInstalacao]({% url camada-transporte %}#dadoinstalacao).
+No caso do software de terceiro o campo remetente será igual ao campo originadora, que indica qual instalação gerou/enviou o dado. Estas informações são representadas por um [DadoInstalacao]({% url camada-transporte %}#dadoinstalacao).
 
 #### Versão
 
