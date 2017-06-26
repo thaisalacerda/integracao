@@ -148,6 +148,8 @@ Registro das vacinas aplicadas.
 
 **Referências:** [VacinaRowThrift](#vacinarowthrift).
 
+**Regras:** Deve estar de acordo com os relacionamentos de Imunobiológico x Estratégia x Dose definidos na tabela [Regra vacinal](../regras/Regra_vacinal_integracao.xlsx).
+
 ## VacinaRowThrift
 
 ### \#1 imunobiologico
