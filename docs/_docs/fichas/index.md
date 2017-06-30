@@ -6,6 +6,7 @@ order: 0
 ---
 
 #### Lote
+
 Um lote é um conjunto de arquivos de dados. 
 
 ####Arquivo de dados
@@ -16,16 +17,50 @@ Os arquivos de dados possuem a mesma macro estrutura, referenciada como camada d
 
 Quando a integração é realizada através do **Apache Thrift** os arquivos de dados devem ser compactados com extensão ".esus". Cada arquivo representa um dadoTransport serializado através do [TBinaryProtocol](https://github.com/apache/thrift/blob/0.9.2/lib/java/src/org/apache/thrift/protocol/TBinaryProtocol.java).
 
-Cada arquivo ".esus" contém apenas uma ficha, conforme descrito no documento {% link camada-transporte %} e ilustrado na imagem abaixo:
+A estrutura da Camada de Transporte é ilustrada na imagem abaixo:
 
-![Macro estrutura de um arquivo .esus](../camada_transporte.png "Macro estrutura de um arquivo .esus") *Camada de transporte (Macro estrutura de um arquivo .esus)*
+![Camada de transporte - Macro estrutura de um arquivo de dados](../camada_transporte.png "Camada de transporte - Macro estrutura de um arquivo de dados") *Camada de transporte - Macro estrutura de um arquivo de dados*
 
-#### DadoSerializado
+A seguir é apresentada definição de cada um dos elementos da Camada de transporte. Por sua vez, o dicionário de dados da Camada de transporte é apresentado no documento {% link camada-transporte %}.
 
-Cada ficha pode ser composta por vários arquivos, conforme descrito no documento {% link thrift-xsd%}.
-Os dados das fichas exportadas devem ser estruturados conforme descrito no dicionário de dados de cada uma das fichas. Além destas informações cada ficha apresenta um cabeçalho (HeaderTransport). Os dados de cada ficha devem ser serializados através do TBinaryProtocol e inseridos no campo dadoSerializado do arquivo ".esus" da respectiva ficha. 
+####1. uuidDadoSerializado
 
-- {% link headerTransport %};
+Este campo indica o UUID do dado serializado.
+
+####2. tipoDadoSerializado
+
+Este campo indica o tipo da ficha contida no dado serializado.
+
+####3. cnesDadoSerializado
+
+Este campo indica o CNES da Unidade de saúde que gerou a fichac ontida no dado serializado.
+
+####4. codIbge
+
+Este campo indica o código do IBGE do município que gerou a ficha contida no dado serializado.
+
+####5. ineDadoSerializado
+
+Este campo indica o código do equipe de sapude que gerou a ficha contida no dado serializado.
+
+####6. numLote
+
+Este campo indica o número do lote ao qual o arquivo de dados (camada de transporte) pertence.
+
+####7. dadoSerializado
+
+Este campo contém a serialização dos dados de uma ficha. A serialização é feita utilizando o [TBinaryProtocol](https://github.com/apache/thrift/blob/0.9.2/lib/java/src/org/apache/thrift/protocol/TBinaryProtocol.java).
+
+O dado serializado possui dois componentes: Cabeçalho e Dados da ficha.
+
+![Estrutura do dado serializado](../dado_serializado.png "Estrutura do dado serializado") *Estrutura do dado serializado*
+
+O dicionário de dados do **Cabeçalho** é definido no documento {% link headerTransport %};
+
+Os **Dados da ficha** devem ser estruturados em arquivos Thrift conforme descrito no documento {% link thrift-xsd %}.
+
+Os dicionários de dados de cada tipo de ficha são definidos nos documentos:
+
 - {% link dicionario-fac %};
 - {% link dicionario-fad %};
 - {% link dicionario-fae %};
@@ -39,11 +74,15 @@ Os dados das fichas exportadas devem ser estruturados conforme descrito no dicio
 - {% link dicionario-fvd %};
 - {% link dicionario-mca %}.
 
-#### Remetente e originadora
+####8. remetente 
 
-No caso do software de terceiro o campo remetente será igual ao campo originadora, que indica qual instalação gerou/enviou o dado. Estas informações são representadas por um [DadoInstalacao]({% url camada-transporte %}#dadoinstalacao).
+No caso do software de terceiro o campo remetente será igual ao campo Originadora.
 
-#### Versão
+####9. originadora
+
+Este campo indica qual instalação gerou/enviou o dado. Estas informações são representadas por um [DadoInstalacao]({% url camada-transporte %}#dadoinstalacao).
+
+####10. versao
 
 O campo versão deve ser informado conforme definido no documento {% link versao %}.
 

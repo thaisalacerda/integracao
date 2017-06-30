@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: Thrift x XSD
+title: Arquivos Thrift / XSD por ficha
 id: thrift-xsd
 order: 16
 ---
