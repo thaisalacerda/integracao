@@ -11,13 +11,13 @@
 
     <div class="page-content">
       <div class="wrapper">
-
+        {% unless page.invisibleSidebar %}
         <div class="sidebar">
           <div class="sidebar-content">
             {% include sidebar.html %}
           </div>
         </div>
-
+     {% endunless %}
         <div class="content">
           {{ content }}
         </div>

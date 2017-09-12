@@ -1,3 +1,15 @@
+.buttonblock  tr, td {
+  border-collapse: collapse;
+  border: none !important; 
+  padding: 0px 15px 0px 0px !important;
+
+}
+
+table.buttonblock{
+  border-collapse: collapse;
+  border: none !important; 
+}
+
 table td {
   padding: 5px 10px;
 }
@@ -23,3 +35,4 @@ table th {
 table tr:nth-child(even) {
   background-color: #f9f9f9;
 }
+

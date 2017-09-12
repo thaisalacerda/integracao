@@ -2,6 +2,7 @@
 layout: doc
 title: Layout e-SUS AB de Dados e Interface (LEDI AB) versão 2.2
 id: dicionario-dados
+invisibleSidebar: true
 order: 1
 ---
 
@@ -12,10 +13,25 @@ order: 1
 
 ---
 
-*Caso você já realizava a integração com o e-SUS AB na versão 2.1.1 e deseja saber as principais alterações para a versão 2.2, [clique aqui]({% url principais_alteracoes %}).*
+Clique nos cards para acessar a documentação da versão desejada:
 
-*Se deseja realizar a integração com a versão 2.0 do e-SUS AB, acesse a versão 2.0 deste documento [clicando aqui](http://esusab.github.io/integracao/v20/).*
 
-*Se deseja realizar a integração com a versão 2.1.0 do e-SUS AB, acesse a versão 2.1.0 deste documento [clicando aqui](http://esusab.github.io/integracao/v210/).*
-
-*Se deseja realizar a integração com a versão 2.1.1 do e-SUS AB, acesse a versão 2.1.1 deste documento [clicando aqui](http://esusab.github.io/integracao/v211/).*
+<table class="buttonblock" style="width: 360px;">
+<tr>
+<td style="min-width: 80px;">
+  <a class="button" href="http://esusab.github.io/integracao/v20/">LEDI AB 2.0</a>
+</td>
+<td style="min-width: 80px;">
+  <a class="button" href="https://doc.esusab.ufsc.br/">LEDI AB 2.0</a>
+</td>
+<td style="min-width: 80px;">
+  <a class="button" href="http://esusab.github.io/integracao/v210/">LEDI AB 2.1.0</a>
+</td>
+<td style="min-width: 80px;">
+  <a class="button" href="http://esusab.github.io/integracao/v211/">LEDI AB 2.1.1</a>
+</td>
+<td style="min-width: 80px;">
+  <a class="button" href="">LEDI AB 2.2</a>
+</td>
+</tr
+</table>
