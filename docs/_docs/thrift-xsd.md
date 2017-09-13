@@ -3,6 +3,7 @@ layout: doc
 title: Arquivos Thrift / XSD por ficha
 id: thrift-xsd
 order: 16
+parent: home_ledi2.2
 ---
 
 

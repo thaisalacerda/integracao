@@ -5,9 +5,11 @@
     <a class="site-title" href="{{ site.baseurl }}/">
       <img src="{{ site.baseurl }}/img/logo-esus.png" alt="e-SUS">
       <span class="title-text">{{ site.title }}</span>
+      {% unless page.homeIntegrcao %}
       {% if site.version %}
         <span class="label">versão {{ site.version }}</span>
       {% endif %}
+      {% endunless %}
     </a>
 
     <nav class="site-nav">

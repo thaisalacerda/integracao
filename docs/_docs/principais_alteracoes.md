@@ -3,6 +3,7 @@ layout: doc
 title: Principais alterações da v2.1.1 para a v2.2
 id: principais_alteracoes
 order: 20
+parent: home_ledi2.2
 ---
 
 ######Este documento relata as principais alterações em relação à versão 2.1.1 do e-SUS AB (PEC):

@@ -2,7 +2,7 @@
 layout: doc
 title: Layout e-SUS AB de Dados e Interface (LEDI AB) versão 2.2
 id: dicionario-dados
-invisibleSidebar: true
+homeIntegrcao: true
 order: 1
 ---
 
@@ -16,22 +16,22 @@ order: 1
 Clique nos cards para acessar a documentação da versão desejada:
 
 
-<table class="buttonblock" style="width: 360px;">
-<tr>
-<td style="min-width: 80px;">
-  <a class="button" href="http://esusab.github.io/integracao/v20/">LEDI AB 2.0</a>
+<table style="width: 360px;">
+<tr id="buttonblock">
+<td id="buttonblock" style="min-width: 80px;">
+  <a class="button" href="http://esusab.github.io/integracao/v20/docs/index.html">LEDI AB 2.0</a>
 </td>
-<td style="min-width: 80px;">
-  <a class="button" href="https://doc.esusab.ufsc.br/">LEDI AB 2.0</a>
+<td id="buttonblock" style="min-width: 80px;">
+  <a class="button" href="https://doc.esusab.ufsc.br/docs/index.html">LEDI AB 2.0</a>
 </td>
-<td style="min-width: 80px;">
-  <a class="button" href="http://esusab.github.io/integracao/v210/">LEDI AB 2.1.0</a>
+<td id="buttonblock" style="min-width: 80px;">
+  <a class="button" href="http://esusab.github.io/integracao/v210/docs/index.html">LEDI AB 2.1.0</a>
 </td>
-<td style="min-width: 80px;">
-  <a class="button" href="http://esusab.github.io/integracao/v211/">LEDI AB 2.1.1</a>
+<td id="buttonblock" style="min-width: 80px;">
+  <a class="button" href="http://esusab.github.io/integracao/v211/docs/index.html">LEDI AB 2.1.1</a>
 </td>
-<td style="min-width: 80px;">
-  <a class="button" href="">LEDI AB 2.2</a>
+<td id="buttonblock" style="min-width: 80px;">
+  <a class="button" href="docs/index.html">LEDI AB 2.2</a>
 </td>
 </tr
 </table>

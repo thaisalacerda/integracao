@@ -3,6 +3,7 @@ layout: doc
 title: Regras
 id: regras
 order: 3
+parent: home_ledi2.2
 ---
 
 O envio de dados de sistemas próprios para o e-SUS AB (PEC) deve atender as regras listadas abaixo:

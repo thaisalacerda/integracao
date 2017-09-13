@@ -3,6 +3,7 @@ layout: doc
 title: Estrutura dos arquivos
 id: index_dicionario
 order: 0
+parent: home_ledi2.2
 ---
 
 #### Lote
